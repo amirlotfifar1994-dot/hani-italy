@@ -478,14 +478,17 @@ html[lang=it] .daily-offer-empty h3,html[lang=en] .daily-offer-empty h3{font:500
 .hero-pan-controls{display:none}
 .postcard-city{font-size:12px;font-weight:600}
 html[lang=fa] .postcard-city{font-family:'Vazirmatn',sans-serif;font-size:11px;letter-spacing:0}
-/* A letter-shaped halo keeps the scene visible: no panel behind the copy. */
+/* Desktop uses the same image-wide contrast treatment as mobile. */
 @media(min-width:651px){
+  .hero{background:#10332f}
+  .hero::after{background:linear-gradient(90deg,#082d28e8 0%,#082d28bf 24%,#082d285c 42%,#082d2800 62%),linear-gradient(0deg,#082d284d,transparent 40%);pointer-events:none}
   .hero-copy{padding-inline:0;width:30%;max-width:405px}
-  .hero h1{color:#092b26;-webkit-text-stroke:1px #fff5de;paint-order:stroke fill;text-shadow:0 1px 2px #fff5de,0 0 8px #fff5de99}
-  .hero-description{color:#092b26;font-weight:650;line-height:1.95;max-width:335px;-webkit-text-stroke:.6px #fff5de;paint-order:stroke fill;text-shadow:0 1px 2px #fff5de,0 0 5px #fff5ded9;background:transparent}
-  .hero .eyebrow,.hero-manifesto{color:#3b3c25;font-weight:600;-webkit-text-stroke:.35px #fff5de;paint-order:stroke fill;text-shadow:0 0 3px #fff5de,0 1px 3px #fff5de}
+  .hero h1{color:#fff8e8;font-weight:500;-webkit-text-stroke:0;text-shadow:0 2px 12px #06201f80}
+  .hero-description{color:#fff8e8;font-weight:500;line-height:1.95;max-width:335px;-webkit-text-stroke:0;text-shadow:0 1px 3px #06201f,0 0 7px #06201f;background:transparent}
+  .hero .eyebrow,.hero-manifesto{color:#edd7a8;font-weight:500;-webkit-text-stroke:0;text-shadow:0 1px 6px #10332f}
   .hero .eyebrow{font-size:11px}
-  html[lang=it] .hero-description,html[lang=en] .hero-description{font-weight:700;line-height:1.55}
+  html[lang=it] .hero-description,html[lang=en] .hero-description{font-weight:500;line-height:1.55}
+  .hero .button{border:1px solid #c8a66b80;background:#173f39;box-shadow:0 4px 18px #06201f30}
 }
 @media(min-width:651px) and (max-width:1000px){.hero-copy{width:35%;max-width:320px}.hero-description{font-size:15px;max-width:285px}.hero-manifesto{letter-spacing:.12em}}
 @media (max-width:650px) {
