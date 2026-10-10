@@ -908,5 +908,15 @@
     "برای کشف تصویر، بکشید",
     "Swipe to explore",
     "Scorri per esplorare"
+  ],
+  "heroRoute": [
+    "ایران → ایتالیا",
+    "IRAN → ITALY",
+    "IRAN → ITALIA"
+  ],
+  "footerRoute": [
+    "ایران → ایتالیا · ریشه‌های مشترک",
+    "IRAN → ITALY · SAME ROOTS",
+    "IRAN → ITALIA · RADICI COMUNI"
   ]
 }
