@@ -19,21 +19,25 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
+      - run: npm audit --omit=dev --audit-level=high
       - run: npm run check
+      - run: npm run security:check
       - run: npm run journal:check
       - run: npm run hosting:check
       - name: Build and start the deployment image
         run: |
           docker build -t persia-market-ci .
-          docker run -d --name persia-market-ci -p 8080:8080 -e AUTH_ORIGIN=https://persia-market-ci.example persia-market-ci
+          docker run -d --name persia-market-ci --user root -v persia-market-ci-data:/app/.local-data -p 8080:8080 -e AUTH_ORIGIN=https://persia-market-ci.example persia-market-ci
           for attempt in $(seq 1 30); do
             if curl --fail --silent http://127.0.0.1:8080/healthz; then break; fi
             sleep 1
           done
           curl --fail --silent --output /dev/null http://127.0.0.1:8080/healthz
           curl --fail --silent --output /dev/null -H 'Host: persia-market-ci.example' 'http://127.0.0.1:8080/blog/milan-italy-city-guide?lang=fa'
+          docker exec persia-market-ci node -e "const fs=require('fs'),assert=require('assert');assert.match(fs.readFileSync('/proc/1/status','utf8'),/Uid:\\s+1000\\s+1000/);assert.equal(fs.statSync('/app/.local-data').mode&511,448);console.log('PASS: root-mounted volume starts with a non-root application and private storage permissions')"
       - name: Container diagnostics and cleanup
         if: always()
         run: |
           docker logs persia-market-ci 2>/dev/null || true
           docker rm -f persia-market-ci 2>/dev/null || true
+          docker volume rm persia-market-ci-data 2>/dev/null || true

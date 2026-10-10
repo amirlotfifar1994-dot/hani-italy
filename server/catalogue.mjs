@@ -7,13 +7,16 @@ import path from 'node:path';
 import {validateOffer,offerPrice} from './offers.mjs';
 const require=createRequire(import.meta.url);
 const sharp=require(require.resolve('sharp',{paths:[fileURLToPath(new URL('..',import.meta.url)),path.dirname(process.execPath)]}));
+sharp.block({operation:['VipsForeignLoadSvg']});
 const categories=['stews','meals','pantry','desserts','rice','spices','nuts','tea','other'];
 const failure=(status,code)=>Object.assign(new Error(code),{status,code});
 const string=(value,max,required=false)=>{if(typeof value!=='string'||value.length>max||(required&&!value.trim()))throw failure(400,'invalidProduct');return value.trim();};
 const translated=(value,max,required=false)=>{if(!Array.isArray(value)||value.length!==3)throw failure(400,'invalidProduct');const values=value.map(v=>string(v,max));const fallback=values.find(Boolean)||'';if(required&&!fallback)throw failure(400,'invalidProduct');return values.map(v=>v||fallback);};
 export async function createCatalogue({database,uploadDir,seed,authorize,origin}){
- await fs.mkdir(uploadDir,{recursive:true});
+ await fs.mkdir(uploadDir,{recursive:true,mode:0o700});
  const db=new DatabaseSync(database);db.exec('PRAGMA journal_mode=WAL; CREATE TABLE IF NOT EXISTS catalogue (id TEXT PRIMARY KEY,data TEXT NOT NULL,version INTEGER NOT NULL,updated_at TEXT NOT NULL); CREATE TABLE IF NOT EXISTS catalogue_meta (id INTEGER PRIMARY KEY CHECK(id=1),revision INTEGER NOT NULL); INSERT OR IGNORE INTO catalogue_meta VALUES(1,1); CREATE TABLE IF NOT EXISTS catalogue_media (key TEXT PRIMARY KEY,width INTEGER NOT NULL,height INTEGER NOT NULL,created_at TEXT NOT NULL);');
+ if(!db.prepare('PRAGMA table_info(catalogue_media)').all().some(c=>c.name==='bytes'))db.exec('ALTER TABLE catalogue_media ADD COLUMN bytes INTEGER NOT NULL DEFAULT 0');
+ for(const media of db.prepare('SELECT key FROM catalogue_media WHERE bytes=0').all()){const info=await fs.stat(path.join(uploadDir,media.key)).catch(()=>null);if(info)db.prepare('UPDATE catalogue_media SET bytes=? WHERE key=?').run(info.size,media.key);}
  db.exec('CREATE TABLE IF NOT EXISTS catalogue_settings (id INTEGER PRIMARY KEY CHECK(id=1),data TEXT NOT NULL,version INTEGER NOT NULL);');
  db.prepare('INSERT OR IGNORE INTO catalogue_settings VALUES(1,?,1)').run(JSON.stringify({hideOutOfStock:false}));
  const settingsRecord=()=>db.prepare('SELECT * FROM catalogue_settings WHERE id=1').get();
@@ -94,8 +97,11 @@ export async function createCatalogue({database,uploadDir,seed,authorize,origin}
     const type=String(req.headers['content-type']||'').split(';')[0];if(!['image/jpeg','image/png','image/webp'].includes(type))throw failure(415,'imageType');
     if(Number(req.headers['content-length'])>5*1024*1024)throw failure(413,'tooLarge');if(imageJobs>=2)throw failure(503,'busy');imageJobs++;
     try{const input=await bytes(req,5*1024*1024);if(!input.length)throw failure(400,'invalidImage');
+     const detected=input.length>=8&&input.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10]))?'image/png':input.length>=3&&input[0]===255&&input[1]===216&&input[2]===255?'image/jpeg':input.length>=12&&input.toString('ascii',0,4)==='RIFF'&&input.toString('ascii',8,12)==='WEBP'?'image/webp':null;
+     if(detected!==type)throw failure(400,'invalidImage');
      let output;try{const metadata=await sharp(input,{limitInputPixels:20000000,animated:false}).metadata();if(!['jpeg','png','webp'].includes(metadata.format)||(metadata.pages||1)>1)throw Error();output=await sharp(input,{limitInputPixels:20000000}).rotate().resize({width:1600,height:1600,fit:'inside',withoutEnlargement:true}).webp({quality:85}).toBuffer({resolveWithObject:true});}catch{throw failure(400,'invalidImage');}
-     const key=randomUUID()+'.webp';await fs.writeFile(path.join(uploadDir,key),output.data,{flag:'wx'});db.prepare('INSERT INTO catalogue_media VALUES(?,?,?,?)').run(key,output.info.width,output.info.height,new Date().toISOString());send(res,201,{image:'/media/'+key,width:output.info.width,height:output.info.height,bytes:output.data.length});
+     const used=db.prepare('SELECT coalesce(sum(bytes),0) n FROM catalogue_media').get().n;if(used+output.data.length>200*1024*1024)throw failure(413,'uploadQuota');
+     const key=randomUUID()+'.webp';await fs.writeFile(path.join(uploadDir,key),output.data,{flag:'wx',mode:0o600});try{db.prepare('INSERT INTO catalogue_media(key,width,height,created_at,bytes) VALUES(?,?,?,?,?)').run(key,output.info.width,output.info.height,new Date().toISOString(),output.data.length);}catch(error){await fs.unlink(path.join(uploadDir,key));throw error;}send(res,201,{image:'/media/'+key,width:output.info.width,height:output.info.height,bytes:output.data.length});
     }finally{imageJobs--;}return true;
    }
    if(url.pathname==='/api/admin/products/bulk'&&req.method==='POST'){

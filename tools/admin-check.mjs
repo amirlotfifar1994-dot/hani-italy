@@ -52,6 +52,7 @@ try{
  assert.equal((await request('/api/admin/products/'+id,{method:'PUT',cookie,body:{version:1,product:{...product,image:'https://attacker.example/x.svg'}}})).status,400);
  assert.equal((await request('/api/admin/uploads',{method:'POST',cookie,raw:Buffer.from('<svg></svg>'),type:'image/svg+xml'})).status,415);
  assert.equal((await request('/api/admin/uploads',{method:'POST',cookie,raw:Buffer.from('invalid png'),type:'image/png'})).status,400);
+ assert.equal((await request('/api/admin/uploads',{method:'POST',cookie,raw:Buffer.from('<svg xmlns="http://www.w3.org/2000/svg"></svg>'),type:'image/png'})).status,400,'Disguised SVG is rejected before decoding');
  const image=await readFile(new URL('../dist/assets/hani/ghormeh.webp',import.meta.url));const uploaded=await request('/api/admin/uploads',{method:'POST',cookie,raw:image,type:'image/webp'});assert.equal(uploaded.status,201);assert.ok(uploaded.data.width<=1600);assert.match(uploaded.data.image,/^\/media\/[a-f0-9-]{36}\.webp$/);const served=await request(uploaded.data.image);assert.equal(served.type,'image/webp');assert.ok(served.buffer.length>100);
  const published=await request('/api/admin/products/'+id,{method:'PUT',cookie,body:{version:1,product:{...product,image:uploaded.data.image,status:'published',cents:725}}});assert.equal(published.status,200);assert.equal(published.data.product.version,2);assert.equal((await request('/api/catalogue')).data.products.find(p=>p.id===id).cents,725);
  assert.equal((await request('/api/admin/products/'+id,{method:'PUT',cookie,body:{version:1,product}})).data.error,'conflict');
@@ -83,7 +84,7 @@ try{
  const hide=await request('/api/admin/settings',{method:'PUT',cookie,body:{settings:{hideOutOfStock:true},version:1}});assert.equal(hide.status,200);assert.ok(hide.data.revision>beforeSetting.data.revision);
  assert.equal((await request('/products/'+seed[0].id+'?lang=it')).status,404,'Hidden product page is not served');
  const hiddenHome=(await request('/?lang=it')).buffer.toString();assert.ok(!hiddenHome.includes('/products/'+seed[0].id+'?'),'Server-rendered home and product links obey visibility');
- const initial=JSON.parse(hiddenHome.match(/window.PersiaInitialCatalogue=([\s\S]+?);<\/script>/)[1]);assert.ok(initial.products.every(p=>p.stock!==0),'Offline fallback contains only visible products');
+ const initial=JSON.parse(hiddenHome.match(/id="data-PersiaInitialCatalogue">([\s\S]+?)<\/script>/)[1]);assert.ok(initial.products.every(p=>p.stock!==0),'Offline fallback contains only visible products');
  assert.ok(!(await request('/sitemap.xml')).buffer.toString().includes('/products/'+seed[0].id+'?'),'Sitemap obeys visibility');
  const visible=(await request('/api/catalogue')).data.products;assert.ok(!visible.some(p=>p.stock===0));assert.ok(visible.some(p=>p.stock===null),'Unlimited stock stays visible');assert.ok(visible.some(p=>p.stock>0),'Positive stock stays visible');assert.ok((await request('/api/admin/products',{cookie})).data.products.some(p=>p.id===id),'Hidden products remain manageable');
  assert.equal((await request('/api/admin/settings',{method:'PUT',cookie,body:{settings:{hideOutOfStock:false},version:1}})).data.error,'settingsConflict');

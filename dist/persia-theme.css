@@ -472,3 +472,11 @@ html[lang=it] .daily-offer-empty h3,html[lang=en] .daily-offer-empty h3{font:500
 
 .price-pending{font-size:.82rem;line-height:1.5;color:var(--muted,#7a705f)}
 .product-prices:has(.price-pending){align-items:center}
+
+/* The opening view contains the measured header and the complete hero. */
+.hero-layout { min-height:max(0px,calc(100svh - var(--home-header-height,165px))); }
+@media (max-width:650px) {
+  .hero { --hero-photo-height:clamp(190px,30svh,355px); }
+  .hero-layout { padding-bottom:calc(var(--hero-photo-height) - 15px); }
+  .hero-scene { height:var(--hero-photo-height); }
+}

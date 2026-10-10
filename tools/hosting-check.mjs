@@ -25,13 +25,15 @@ try{
  await start();
  assert.equal((await hosted('/healthz')).text,'{"status":"ok"}');assert.equal((await hosted('/healthz',{method:'HEAD'})).text,'');assert.equal((await hosted('/healthz',{method:'POST'})).status,405);
  const home=await hosted('/?lang=fa');assert.equal(home.status,200);assert.ok(home.text.includes(origin+'/?lang=fa'));assert.match(home.headers['x-robots-tag'],/noindex/);
+ assert.match(home.headers['content-security-policy'],/script-src 'self';/);assert.equal(home.headers['strict-transport-security'],'max-age=31536000');assert.match(home.text,/id="data-PersiaInitialCatalogue"/);assert.ok(!/<script>/.test(home.text));
  assert.equal((await hosted('/blog/milan-italy-city-guide?lang=fa')).status,200);
  assert.equal((await hosted('/api/auth/session',{host:'attacker.test'})).status,403);
- for(const route of ['/.local-data/accounts.sqlite','/accounts.sqlite','/admin-setup.token','/.env'])assert.equal((await hosted(route)).status,404);
+ for(const route of ['/.local-data/accounts.sqlite','/accounts.sqlite','/admin-setup.token','/.env','/security.key','/catalogue.json'])assert.equal((await hosted(route)).status,404);
  const password='Hosted test passphrase 2026';
  const registration=await hosted('/api/auth/register',{method:'POST',body:{name:'Hosting fixture',email:'hosting@example.com',phone:'',password,language:'fa'}});
  assert.equal(registration.status,201);const setCookie=registration.headers['set-cookie'][0];assert.match(setCookie,/; Secure/);assert.match(setCookie,/; HttpOnly/);
  const cookie=setCookie.split(';')[0];
+ assert.ok(cookie.startsWith('__Host-persia_session='));
  assert.equal((await hosted('/api/account/profile',{method:'PUT',cookie,body:{name:'Persisted hosting fixture',phone:'',language:'fa'}})).status,200);
  const setupToken=await readFile(path.join(dir,'admin-setup.token'),'utf8');
  await stop();await start();assert.equal(await readFile(path.join(dir,'admin-setup.token'),'utf8'),setupToken);
