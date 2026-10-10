@@ -21,7 +21,27 @@ try{
  await context.route('https://fonts.googleapis.com/**',route=>route.fulfill({contentType:'text/css',body:''}));
  await context.route('https://fonts.gstatic.com/**',route=>route.abort());
  await mkdir(path.join(root,'screenshots'),{recursive:true});
- for(const lang of ['fa','it','en']){await page.goto(origin+'/?lang='+lang);await page.waitForFunction(()=>window.PersiaCatalogue?.length===50&&window.PersiaCopy&&window.PersiaSeo?.lang===document.documentElement.lang);await page.locator('#cart-open').waitFor();await page.waitForFunction(()=>document.documentElement.style.getPropertyValue('--home-header-height'));const layout=await page.evaluate(()=>({bottom:document.querySelector('.hero').getBoundingClientRect().bottom,viewport:innerHeight,overflow:document.documentElement.scrollWidth>innerWidth}));assert.ok(layout.bottom>=layout.viewport-1,'Categories stay below the opening viewport');assert.ok(layout.bottom<=layout.viewport+2,'Desktop header and hero fit the viewport');assert.equal(layout.overflow,false);if(lang==='fa')await page.screenshot({path:path.join(root,'screenshots/security-hero-fa.png')});}
+ let releaseImage;
+ const heldImage = new Promise(resolve => { releaseImage = resolve; });
+ await page.route('**/assets/persia/iran-italy-hero.webp', async route => { await heldImage; await route.continue(); });
+ await page.goto(origin+'/?lang=fa',{waitUntil:'domcontentloaded'});
+ assert.equal(await page.locator('.hero-food').evaluate(image=>getComputedStyle(image).opacity),'0','A loading photograph stays faded');
+ releaseImage();
+ await page.waitForFunction(()=>document.querySelector('.hero-food').hasAttribute('data-image-ready'));
+ await page.waitForTimeout(180);
+ const intermediateOpacity=await page.locator('.hero-food').evaluate(image=>Number(getComputedStyle(image).opacity));
+ assert.ok(intermediateOpacity>0&&intermediateOpacity<1,'The decoded photograph fades gradually');
+ await page.waitForFunction(()=>getComputedStyle(document.querySelector('.hero-food')).opacity==='1');
+ assert.equal(await page.locator('.hero-image-caption').count(),0);
+ await page.waitForFunction(()=>window.PersiaCopy&&window.PersiaSeo?.lang==='fa');
+ assert.equal(await page.locator('.postcard-city').textContent(),'ایران ← ایتالیا');
+ assert.ok(!/[،.؛]/.test(await page.locator('.hero-copy').textContent().then(text=>text.replace('SAME ROOTS.','').replace('A BRIGHTER TOMORROW.',''))));
+ await page.unroute('**/assets/persia/iran-italy-hero.webp');
+ await page.emulateMedia({reducedMotion:'reduce'});
+ assert.equal(await page.locator('.hero-food').evaluate(image=>getComputedStyle(image).transitionDuration),'0s');
+ await page.emulateMedia({reducedMotion:'no-preference'});
+ console.log('PASS: delayed image decode, gradual fade, reduced-motion preference, country direction and caption removal.');
+ for(const lang of ['fa','it','en']){await page.goto(origin+'/?lang='+lang);await page.waitForFunction(()=>window.PersiaCatalogue?.length===50&&window.PersiaCopy&&window.PersiaSeo?.lang===document.documentElement.lang);await page.locator('#cart-open').waitFor();await page.waitForFunction(()=>document.documentElement.style.getPropertyValue('--home-header-height'));const layout=await page.evaluate(()=>({bottom:document.querySelector('.hero').getBoundingClientRect().bottom,viewport:innerHeight,overflow:document.documentElement.scrollWidth>innerWidth}));assert.ok(layout.bottom>=layout.viewport-1,'Categories stay below the opening viewport');assert.ok(layout.bottom<=layout.viewport+2,'Desktop header and hero fit the viewport');assert.equal(layout.overflow,false);if(lang==='fa')await page.waitForFunction(()=>getComputedStyle(document.querySelector('.hero-food')).opacity==='1');if(lang==='fa')await page.screenshot({path:path.join(root,'screenshots/security-hero-fa.png')});}
  for(const viewport of [{width:1882,height:913},{width:618,height:895},{width:390,height:844}]){await page.setViewportSize(viewport);await page.goto(origin+'/?lang=fa');await page.waitForFunction(()=>window.PersiaCatalogue?.length===50&&window.PersiaSeo?.lang==='fa');const layout=await page.evaluate(()=>({bottom:document.querySelector('.hero').getBoundingClientRect().bottom,viewport:innerHeight,overflow:document.documentElement.scrollWidth>innerWidth}));assert.ok(layout.bottom>=layout.viewport-1,'Categories stay below the opening view at '+viewport.width+'px');assert.equal(layout.overflow,false);if(viewport.width===390)await page.screenshot({path:path.join(root,'screenshots/security-hero-mobile.png'),fullPage:false});}
  const touch=await context.newCDPSession(page),pan=()=>page.evaluate(()=>parseFloat(document.querySelector('.hero').style.getPropertyValue('--hero-pan')));
  const before=await pan(),heroTop=await page.locator('.hero').evaluate(node=>node.getBoundingClientRect().top),touchY=heroTop+65;

@@ -477,11 +477,11 @@ html[lang=it] .daily-offer-empty h3,html[lang=en] .daily-offer-empty h3{font:500
 .hero-layout { min-height:max(0px,calc(100svh - var(--home-header-height,165px))); }
 .hero-pan-controls{display:none}
 .postcard-city{font-size:12px;font-weight:600}
-html[lang=fa] .postcard-city{font-family:'Vazirmatn',sans-serif;font-size:11px;letter-spacing:0}
+html[lang=fa] .postcard-city{font-family:'Vazirmatn',sans-serif;font-size:11px;letter-spacing:0;direction:rtl;unicode-bidi:isolate;display:block}
 /* Desktop uses the same image-wide contrast treatment as mobile. */
 @media(min-width:651px){
   .hero{background:#10332f}
-  .hero::after{background:linear-gradient(90deg,#082d28e8 0%,#082d28bf 24%,#082d285c 42%,#082d2800 62%),linear-gradient(0deg,#082d284d,transparent 40%);pointer-events:none}
+  .hero::after{background:radial-gradient(ellipse 48% 64% at 9% 62%,#082d28e0 0%,#082d28c9 40%,#082d2860 65%,#082d2800 100%);pointer-events:none}
   .hero-copy{padding-inline:0;width:30%;max-width:405px}
   .hero h1{color:#fff8e8;font-weight:500;-webkit-text-stroke:0;text-shadow:0 2px 12px #06201f80}
   .hero-description{color:#fff8e8;font-weight:500;line-height:1.95;max-width:335px;-webkit-text-stroke:0;text-shadow:0 1px 3px #06201f,0 0 7px #06201f;background:transparent}

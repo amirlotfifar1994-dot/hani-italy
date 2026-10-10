@@ -75,17 +75,17 @@
     "Più di un negozio, un pezzo di casa."
   ],
   "heroEyebrow": [
-    "خانه، هر کجا که باشیم",
+    "خانه هر کجا که باشیم",
     "Home, wherever we are",
     "Casa, ovunque siamo"
   ],
   "heroTitle": [
-    "دور از خانه،<br><em>هنوز کنار هم.</em>",
+    "دور از خانه<br><em>هنوز کنار هم</em>",
     "Far from home.<br><em>Still together.</em>",
     "Lontani,<br><em>ma sempre<br>insieme.</em>"
   ],
   "heroBody": [
-    "طعم‌های ایران، نزدیک‌تر از همیشه. از برنج و زعفران تا خشکبار، چای و غذای آماده؛ برای آن‌هایی که خانه را در دلشان دارند.",
+    "طعم‌های ایران نزدیک‌تر از همیشه از برنج و زعفران تا خشکبار چای و غذای آماده برای آن‌هایی که خانه را در دلشان دارند",
     "The flavours of Iran, a little closer. Rice, saffron, nuts, tea and ready meals — for everyone who carries home in their heart.",
     "I sapori dell’Iran, ora più vicini. Riso, zafferano, frutta secca, tè e piatti pronti, per chi porta la propria terra nel cuore."
   ],
@@ -95,7 +95,7 @@
     "Scopri i piatti Hani"
   ],
   "heroPostcard": [
-    "هر جا که باشیم،<br>ایران با ماست.",
+    "هر جا که باشیم<br>ایران با ماست",
     "Wherever we are,<br>Iran is with us.",
     "Ovunque siamo,<br>l’Iran è con noi."
   ],
@@ -910,12 +910,12 @@
     "Scorri per esplorare"
   ],
   "heroRoute": [
-    "ایران → ایتالیا",
+    "ایران ← ایتالیا",
     "IRAN → ITALY",
     "IRAN → ITALIA"
   ],
   "footerRoute": [
-    "ایران → ایتالیا · ریشه‌های مشترک",
+    "ایران ← ایتالیا · ریشه‌های مشترک",
     "IRAN → ITALY · SAME ROOTS",
     "IRAN → ITALIA · RADICI COMUNI"
   ]

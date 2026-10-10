@@ -1,0 +1,8 @@
+html.images-enhanced img:not([data-no-reveal]) {
+  opacity: 0;
+  transition: opacity 850ms cubic-bezier(.22,.61,.36,1);
+}
+html.images-enhanced img[data-image-ready]:not([data-no-reveal]) { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  html.images-enhanced img:not([data-no-reveal]) { transition: none; }
+}
