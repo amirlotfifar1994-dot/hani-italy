@@ -15,7 +15,7 @@ const addressOK=a=>a&&typeof a.id==='string'&&/^[a-zA-Z0-9-]{1,40}$/.test(a.id)&
 async function passwordHash(password,salt=randomBytes(16).toString('hex')) {
  const result=await derive(password,salt,64,{N:32768,r:8,p:3,maxmem:64*1024*1024});return {salt,hash:result.toString('hex')};
 }
-export function createAuth({database,origin,google={},fetchFn=fetch,adminSetupToken=""}) {
+export function createAuth({database,origin,google={},fetchFn=fetch,adminSetupToken="",clientAddress=req=>req.socket.remoteAddress}) {
  if(database!==':memory:')fs.mkdirSync(path.dirname(database),{recursive:true});
  const db=new DatabaseSync(database);db.exec('PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL;');
  db.exec('CREATE TABLE IF NOT EXISTS users (id TEXT PRIMARY KEY,email TEXT UNIQUE NOT NULL,name TEXT NOT NULL,phone TEXT NOT NULL DEFAULT "",language TEXT NOT NULL DEFAULT "it",salt TEXT NOT NULL,password_hash TEXT NOT NULL,created_at TEXT NOT NULL); CREATE TABLE IF NOT EXISTS sessions (hash TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,expires INTEGER NOT NULL); CREATE TABLE IF NOT EXISTS address_books (user_id TEXT PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,data TEXT NOT NULL DEFAULT "[]",default_id TEXT NOT NULL DEFAULT "");');
@@ -46,7 +46,7 @@ export function createAuth({database,origin,google={},fetchFn=fetch,adminSetupTo
  const send=(res,status,data,headers={})=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','X-Robots-Tag':'noindex, nofollow',...headers});res.end(JSON.stringify(data));};
  const cookie=(token,maxAge=ttl/1000)=>'persia_session='+token+'; Path=/; HttpOnly; SameSite=Strict; Max-Age='+maxAge+(origin.startsWith('https:')?'; Secure':'');
  const newSession=(res,u,status=200)=>{const token=randomBytes(32).toString('base64url');db.prepare('DELETE FROM sessions WHERE expires<=?').run(Date.now());db.prepare('INSERT INTO sessions(hash,user_id,expires) VALUES(?,?,?)').run(hashToken(token),u.id,Date.now()+ttl);send(res,status,{user:rowToUser(u)},{'Set-Cookie':cookie(token)});};
- const throttle=(req,type)=>{const now=Date.now();for(const [k,v]of limits)if(v.until<now)limits.delete(k);const key=req.socket.remoteAddress+':'+type;const entry=limits.get(key)||{count:0,until:now+15*60*1000};entry.count++;limits.set(key,entry);return entry.count<=(type==='register'?8:20);};
+ const throttle=(req,type)=>{const now=Date.now();for(const [k,v]of limits)if(v.until<now)limits.delete(k);const key=clientAddress(req)+':'+type;const entry=limits.get(key)||{count:0,until:now+15*60*1000};entry.count++;limits.set(key,entry);return entry.count<=(type==='register'?8:20);};
  async function body(req){if(!String(req.headers['content-type']||'').startsWith('application/json'))throw Object.assign(new Error(),{code:'contentType',status:415});let size=0,chunks=[];for await(const chunk of req){size+=chunk.length;if(size>32768)throw Object.assign(new Error(),{code:'tooLarge',status:413});chunks.push(chunk);}try{const b=JSON.parse(Buffer.concat(chunks).toString('utf8'));if(!b||Array.isArray(b)||typeof b!=='object')throw Error();return b;}catch{throw Object.assign(new Error(),{code:'invalidData',status:400});}}
  async function hashWork(fn){if(inFlight>=2)throw Object.assign(new Error(),{code:'busy',status:503});inFlight++;try{return await fn();}finally{inFlight--;}}
  async function handle(req,res,url){

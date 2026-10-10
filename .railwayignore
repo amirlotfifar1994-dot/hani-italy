@@ -1,0 +1,9 @@
+.git/
+.local-data/
+.env
+.env.*
+node_modules/
+screenshots/
+research/
+%SystemDrive%/
+*.log
