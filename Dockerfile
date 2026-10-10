@@ -3,6 +3,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev --no-audit --no-fund && mkdir .local-data && chown node:node .local-data
 COPY server ./server
+COPY research/city-photo-credits.json research/city-food-photo-credits.json research/city-food-generated-credits.json research/journal-inline-images-2026-10-08.json research/journal-inline-extra-images-2026-10-08.json ./research/
 COPY tools/preview.mjs tools/admin-setup.mjs ./tools/
 COPY dist ./dist
 ENV NODE_ENV=production HOST=0.0.0.0 PORT=8080 PERSIA_DATA_DIR=/app/.local-data SEO_INDEXING=false
