@@ -430,7 +430,7 @@ html[lang='fa'] .delivery-form h3 { font:500 17px/1.9 'Vazirmatn',sans-serif; }
 .daily-offer-calendar small{font-size:9px;color:#928366;margin-top:4px}
 .daily-offer-stage{display:grid;grid-template-columns:230px minmax(0,1fr);border:1px solid #e0d7c5;border-radius:3px;background:#f5f0e5;overflow:hidden;min-height:300px}
 .daily-offer-feature{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;background:var(--green);color:#fff5df;padding:27px 25px;overflow:hidden;isolation:isolate}
-.daily-offer-feature:after{content:"";position:absolute;inset-inline-end:-70px;bottom:-85px;width:240px;height:240px;background:url('assets/persia-mark.svg') center/contain no-repeat;opacity:.06;z-index:-1}
+.daily-offer-feature:after{content:"";position:absolute;inset-inline-end:-70px;bottom:-85px;width:240px;height:240px;background:url('assets/persia-pasargadae-v1.webp') center/contain no-repeat;opacity:.06;z-index:-1}
 .daily-offer-feature>img{width:40px;height:40px;margin-bottom:14px}
 .daily-offer-feature .eyebrow{color:#c5ae81;font-size:8px;letter-spacing:1.6px;margin:0 0 10px}
 .daily-offer-feature h3{font-size:23px;line-height:1.7;font-weight:500;margin:0;color:#fff5df}
@@ -475,8 +475,28 @@ html[lang=it] .daily-offer-empty h3,html[lang=en] .daily-offer-empty h3{font:500
 
 /* The opening view contains the measured header and the complete hero. */
 .hero-layout { min-height:max(0px,calc(100svh - var(--home-header-height,165px))); }
+.hero-pan-controls{display:none}
 @media (max-width:650px) {
-  .hero { --hero-photo-height:clamp(190px,30svh,355px); }
-  .hero-layout { padding-bottom:calc(var(--hero-photo-height) - 15px); }
-  .hero-scene { height:var(--hero-photo-height); }
+  .hero{background:var(--green-dark);touch-action:pan-y pinch-zoom}
+  .hero-scene{inset:0;height:100%;pointer-events:none}
+  .hero .hero-food{object-fit:cover;object-position:var(--hero-pan,68%) center;user-select:none;-webkit-user-drag:none}
+  .hero::after{background:linear-gradient(180deg,#10332f08 0%,#10332f00 20%,#10332f66 43%,#10332feb 79%,#10332ff5 100%);pointer-events:none}
+  .hero-layout{display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;padding-block:110px 82px;min-height:max(0px,calc(100svh - var(--home-header-height,140px)))}
+  .hero-copy{width:min(87%,360px);padding:0;text-align:start;color:#fff8e8;margin-right:auto}
+  html[dir=rtl] .hero-copy{margin-left:auto;margin-right:0}
+  .hero .eyebrow{color:#edd7a8;font-size:10px;text-shadow:0 1px 6px #10332f}
+  .hero h1{color:#fff8e8;font-size:clamp(31px,7.3vw,43px);line-height:1.55;margin-block:11px 14px;text-shadow:0 2px 14px #06201f80}
+  html[lang=en] .hero h1,html[lang=it] .hero h1{color:#fff8e8;font-size:clamp(43px,11vw,62px);line-height:.98;margin-block:12px 16px}
+  .hero-manifesto{font-size:9px;color:#eddbb7;letter-spacing:.17em;line-height:1.6;margin-block:0 16px}
+  .hero-description{color:#fff8e8;font-size:14px;line-height:1.9;margin:0;text-shadow:0 1px 8px #06201f90;max-width:340px;background:transparent}
+  html[lang=en] .hero-description,html[lang=it] .hero-description{font-size:18px;line-height:1.4;font-weight:500}
+  .hero-actions{margin-top:20px}
+  .hero .button{border:1px solid #c8a66b80;background:#173f39;box-shadow:0 4px 18px #06201f30}
+  .hero-pan-controls{display:flex;align-items:center;gap:9px;position:absolute;bottom:28px;left:16px;z-index:2;direction:ltr;color:#f2dfb9}
+  .hero-pan-controls span{font-size:9px;letter-spacing:.02em;direction:inherit}
+  html[dir=rtl] .hero-pan-controls span{direction:rtl}
+  .hero-pan-controls button{width:32px;height:32px;display:grid;place-items:center;border:1px solid #c8a66b88;border-radius:50%;background:#10332f80;color:#f2dfb9;font-size:17px;cursor:pointer}
+  .hero-pan-controls button:disabled{opacity:.35;cursor:default}
+  .hero-pan-controls button:focus-visible{outline:2px solid #f2dfb9;outline-offset:3px}
+  .hero-image-caption{font-size:6px;background:transparent;opacity:.75;bottom:4px;left:16px}
 }

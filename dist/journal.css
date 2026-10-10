@@ -191,3 +191,31 @@ html[dir=rtl] .journal-guide-heading h1{font:600 31px/1.9 'Vazirmatn',sans-serif
 
 /* Food-guide covers are landscape editorial scenes, not pack portraits. */
 .journal-art-recipe{background:#eae4d7;padding:0}.journal-art-recipe>img{object-fit:cover;padding:0}.journal-guide-hero figure img{height:auto;aspect-ratio:3/2;object-fit:cover;padding:0}.journal-guide-hero figure{overflow:hidden}.journal-guide-hero figcaption{font-size:11px;line-height:1.8}
+
+/* A photographic travel collection, shared by the home and journal listing. */
+.journal-city-collection{display:block;padding:34px;background:#173f39;border-radius:10px}
+.journal-city-collection:before{width:380px;height:380px;bottom:auto;top:-250px;inset-inline-start:-100px;border-color:#c8a66b30}
+.journal-city-collection-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:27px;position:relative}
+.journal-city-collection-heading>div{max-width:720px}
+.journal-city-collection-heading .journal-kicker{margin-bottom:10px;font-size:10px}
+.journal-city-collection-heading :is(h2,h3){margin-bottom:10px;font-size:43px}
+html[dir=rtl] .journal-city-collection-heading :is(h2,h3){font-size:30px;line-height:1.6}
+.journal-city-collection-heading>div>p:last-child{font-size:13px;line-height:1.9;color:#dedfd0;margin:0;max-width:620px}
+.journal-city-collection-heading>a.journal-city-browse{display:flex;gap:16px;align-items:center;flex-shrink:0;padding:10px 0;border-bottom:1px solid #c8a66b70;color:#ead0a1;font-size:11px;text-decoration:none}
+.journal-city-browse>span{font-size:20px}
+.journal-city-collection nav{grid-template-columns:repeat(5,minmax(0,1fr));gap:15px;position:relative}
+.journal-city-collection nav>a.journal-city-postcard{position:relative;display:block;aspect-ratio:4/4.7;padding:0;border:1px solid #c8a66b44;border-radius:4px;overflow:hidden;background:#10332f;isolation:isolate}
+.journal-city-postcard:after{content:'';position:absolute;inset:35% 0 0;background:linear-gradient(180deg,transparent,#092a28e8);z-index:-1}
+.journal-city-postcard>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .35s,filter .35s;filter:brightness(.93)}
+.journal-city-collection nav>a.journal-city-postcard>.journal-city-number{position:absolute;top:12px;inset-inline-start:12px;color:#fff7e5;font:12px/1.4 'DM Sans',sans-serif;letter-spacing:.08em;grid-column:auto;grid-row:auto;text-shadow:0 1px 6px #10332f}
+.journal-city-label{position:absolute;bottom:14px;inset-inline:14px;display:grid;grid-template-columns:1fr auto;gap:3px 8px}
+.journal-city-label strong{font-size:18px;line-height:1.7;font-weight:500;color:#fff8e8}
+.journal-city-label>span:not(.journal-city-arrow){font-size:10px;color:#e7d9bc;grid-row:2}
+.journal-city-arrow{grid-column:2;grid-row:1/3;align-self:center;font-size:22px;color:#e5c48b}
+html[lang=en] .journal-city-label strong,html[lang=it] .journal-city-label strong{font:600 25px/1.3 'Cormorant Garamond',Georgia,serif}
+.journal-city-postcard:hover>img{transform:scale(1.06);filter:brightness(1.04)}
+.journal-city-postcard:focus-visible{outline-offset:2px}
+.journal-city-signature{display:flex;justify-content:space-between;gap:15px;border-top:1px solid #c8a66b33;padding-top:17px;margin:23px 0 0;color:#c5b48d;font:8px/1.4 'DM Sans',sans-serif;letter-spacing:.2em;direction:ltr}
+@media(max-width:1000px){.journal-city-collection{padding:25px}.journal-city-collection nav{gap:10px}.journal-city-label{inset-inline:10px;bottom:10px}.journal-city-label strong{font-size:16px}.journal-city-arrow{font-size:17px}.journal-city-collection-heading{gap:20px}.journal-city-collection-heading :is(h2,h3){font-size:36px}}
+@media(max-width:700px){.journal-city-collection{padding:24px 18px}.journal-city-collection-heading{display:block;margin-bottom:22px}.journal-city-collection-heading>a.journal-city-browse{display:inline-flex;margin-top:12px}.journal-city-collection nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.journal-city-collection nav>a.journal-city-postcard{aspect-ratio:4/4.2}.journal-city-label{inset-inline:12px;bottom:12px}.journal-city-label strong{font-size:17px}.journal-city-collection-heading :is(h2,h3){font-size:36px}html[dir=rtl] .journal-city-collection-heading :is(h2,h3){font-size:25px}.journal-city-collection-heading>div>p:last-child{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.journal-city-postcard>img{transition:none}.journal-city-postcard:hover>img{transform:none}}
