@@ -1,0 +1,1206 @@
+{
+  "ghormeh": {
+    "role": [
+      "در این خورش، سبزی پایه عطر است، لوبیا حجم و بافت می‌دهد و لیموعمانی لایه ترش و خشک‌شده را اضافه می‌کند. این سه نقش را جدا تنظیم کنید: کمبود عطر را با ترشی بیشتر جبران نکنید. برای اولین قابلمه، مقدار شنبلیله و لیمو را کم نگه دارید و مزه را پس از چند دقیقه جوش آرام دوباره بررسی کنید. قارچ جایگزین بافتی این نسخه است، نه تقلید کامل گوشت.",
+      "Herbs provide the aromatic base, beans the body and dried lime a distinct sour note. Adjust them separately: extra acidity cannot replace missing aroma. Start with restrained fenugreek and lime, then taste after simmering. Mushrooms are a texture choice for this version rather than an exact meat substitute.",
+      "Le erbe costruiscono il profumo, i fagioli danno corpo e il lime secco una nota acida particolare. Regolali separatamente: più acidità non sostituisce un aroma mancante. Parti con poco fieno greco e lime, poi assaggia dopo il sobbollire. I funghi offrono consistenza senza imitare esattamente la carne."
+    ],
+    "technique": [
+      "پیش از افزودن لوبیا، یک قاشق از سس را روی بشقاب بریزید: سبزی باید در مایع پخش باشد، نه توده‌ای خشک روی آب. اگر خورش هنوز رقیق است، ابتدا آب را کم کنید و سپس لوبیا را اضافه کنید تا با هم‌زدن طولانی له نشود. روغن روی خورش معیار قطعی آماده‌شدن نیست؛ نرمی لوبیا، نبود طعم خام سبزی و تعادل ترشی را هم بسنجید.",
+      "Before adding beans, spoon some sauce onto a plate: herbs should be integrated rather than a dry clump over watery liquid. Reduce excess water first to avoid breaking the beans through long stirring. An oil layer alone does not establish readiness; check bean tenderness, herb flavour and acidity.",
+      "Prima dei fagioli, versa un cucchiaio di sugo su un piatto: le erbe devono essere amalgamate, non una massa asciutta sopra acqua. Riduci prima il liquido per non rompere i legumi mescolando a lungo. L’olio in superficie non basta: valuta morbidezza, gusto delle erbe e acidità."
+    ],
+    "serving": [
+      "برای سفره اول، برنج ساده و یک همراهی خنک و کم‌چاشنی انتخاب کنید تا عطر خورش واضح بماند. اگر مهمان با غذا آشنا نیست، لیموعمانی را معرفی کنید و ترشی اضافه را جدا بگذارید. در یادداشت پخت، نوع لوبیا، ترکیب سبزی و مقدار لیمو را بنویسید؛ تغییر هم‌زمان همه آن‌ها مقایسه دو قابلمه را دشوار می‌کند.",
+      "Serve the first trial with plain rice and a mild, cool accompaniment. Explain dried lime to unfamiliar guests and offer extra acidity separately. Record bean type, herb mix and lime quantity; changing all three at once makes batches hard to compare.",
+      "Per la prima prova scegli riso semplice e un contorno fresco e delicato. Presenta il lime secco agli ospiti e servi altra acidità a parte. Annota tipo di fagioli, miscela di erbe e lime: cambiarli insieme rende difficile confrontare due preparazioni."
+    ],
+    "qa": [
+      {
+        "q": [
+          "چرا رنگ خورش تیره است اما هنوز خوش‌عطر نیست؟",
+          "Why is a dark stew still short of aroma?",
+          "Perché uno stufato scuro può essere poco aromatico?"
+        ],
+        "a": [
+          "رنگ تنها نتیجه نیست؛ نسبت سبزی، کیفیت آن و احتمال سوختگی را بررسی کنید. سبزی بیشترسرخ‌شده لزوماً خوش‌عطرتر نیست. در نوبت بعد یک عامل را تغییر دهید، نه مقدار روغن و شنبلیله و لیمو را هم‌زمان.",
+          "Colour is only one cue. Check the herb balance, freshness and possible scorching. More frying does not automatically improve aroma. Change one factor next time rather than oil, fenugreek and lime together.",
+          "Il colore è solo un indizio. Controlla proporzioni, freschezza e possibili bruciature. Friggere di più non garantisce profumo migliore. Alla prova successiva cambia un fattore, non olio, fieno greco e lime insieme."
+        ]
+      },
+      {
+        "q": [
+          "نسخه گوشتی را با همین زمان بدون گوشت بپزم؟",
+          "Does the meat version take the same time?",
+          "La versione con carne richiede lo stesso tempo?"
+        ],
+        "a": [
+          "خیر. روش اصلی برای قارچ و لوبیای پخته نوشته شده است. گوشت باید در مرحله جدا به نرمی مناسب برسد؛ پس زمان نسخه بدون گوشت را به آن منتقل نکنید.",
+          "No. The main method uses mushrooms and cooked beans. Meat needs its own tenderising stage; do not transfer the meatless timing to that version.",
+          "No. Il metodo principale usa funghi e fagioli cotti. La carne richiede una fase per diventare tenera; non applicare gli stessi tempi."
+        ]
+      }
+    ]
+  },
+  "gheimeh": {
+    "role": [
+      "لپه در قیمه باید قابل تشخیص بماند و سیب‌زمینی نقش بافت تردِ هنگام سرو را دارد. سس گوجه، لپه و ترشی را پیش از چیدن سیب‌زمینی بچشید. برای پخت نخست، لپه همان بسته را جدا آزمایش کنید: تفاوت دانه‌ها را با افزودن آب بیشتر یا زمان ثابت نمی‌توان همیشه جبران کرد. قیمه را با دال عدس یکسان نگیرید؛ جایگزینی آن، خورش دیگری با بافت نرم‌تر می‌سازد.",
+      "Split peas should remain recognisable; potatoes provide crispness at serving. Taste the sauce and acidity before topping. Test peas from the actual packet separately because cooking behaviour varies. Red lentils produce a softer, different dish rather than an equivalent Gheimeh.",
+      "I legumi devono restare riconoscibili; le patate aggiungono croccantezza al servizio. Assaggia sugo e acidità prima di guarnire. Prova separatamente i legumi della confezione scelta. Le lenticchie rosse danno una preparazione più morbida, non un Gheimeh equivalente."
+    ],
+    "technique": [
+      "پس از نیم‌پزکردن، یک دانه لپه را بین دو قاشق فشار دهید؛ هدف این مرحله نرمی کامل نیست، بلکه شروع نرم‌شدن مرکز است. در خورش آرام هم بزنید. اگر لپه زود نرم شد، آن را دیرتر به سس اضافه کنید. سیب‌زمینی را روی خورش نپزید؛ بخار سس تردی را کم می‌کند و بافت نهایی با چیزی که برای آن برنامه داشتید متفاوت می‌شود.",
+      "After partial cooking, press a pea between two spoons: the centre should be starting to soften. Stir gently in the stew. Add fast-softening peas later. Cook potatoes separately and top just before eating so steam from the sauce does not immediately soften them.",
+      "Dopo la precottura, premi un legume tra due cucchiai: il centro deve iniziare ad ammorbidirsi. Mescola delicatamente. Aggiungi più tardi quelli che si ammorbidiscono presto. Cuoci le patate a parte e mettile sopra al servizio."
+    ],
+    "serving": [
+      "با برنج ساده سرو کنید و سیب‌زمینی هر بشقاب را همان لحظه اضافه کنید. برای کاهش کارِ دقیقه آخر، سس را پیش از شروع آماده‌کردن سیب‌زمینی به غلظت دلخواه برسانید. در خرید ایتالیا، نام دقیق حبوبات و شکل دانه را بررسی کنید؛ عبارت «زرد» به‌تنهایی برای شناسایی لپه کافی نیست.",
+      "Serve over plain rice, topping each portion with potatoes at the last moment. Finish reducing the sauce before preparing the topping. In Italy check the legume name and split shape; “yellow” alone does not identify the right ingredient.",
+      "Servi con riso semplice e aggiungi le patate a ogni porzione all’ultimo momento. Riduci il sugo prima di preparare la guarnizione. In Italia verifica nome del legume e forma spezzata: “giallo” non identifica da solo l’ingrediente."
+    ],
+    "qa": [
+      {
+        "q": [
+          "اگر لپه له شد چه کار کنم؟",
+          "What if the peas break down?",
+          "Cosa fare se i legumi si disfano?"
+        ],
+        "a": [
+          "با هم‌زدن کمتر از له‌شدن بیشتر جلوگیری کنید. شکل اولیه را نمی‌توان برگرداند؛ خورش را به‌عنوان نسخه نرم‌تر سرو کنید و در نوبت بعد نیم‌پزکردن را کوتاه‌تر کنید.",
+          "Reduce stirring. You cannot restore their shape; serve a softer version and shorten the initial cooking next time.",
+          "Mescola meno. La forma non si recupera: servi una versione più morbida e abbrevia la precottura alla prossima prova."
+        ]
+      },
+      {
+        "q": [
+          "سیب‌زمینی فرپز هم مناسب است؟",
+          "Can I use oven potatoes?",
+          "Posso usare patate al forno?"
+        ],
+        "a": [
+          "بله، به‌عنوان روش دیگر این نسخه خانگی. خلال‌ها را هم‌اندازه بگیرید و جدا بپزید؛ نتیجه با سیب‌زمینی سرخ‌شده یکی نیست، اما همچنان می‌توان آن را هنگام سرو افزود.",
+          "Yes, as a different home variation. Cut evenly and cook separately; it will differ from fried potatoes but still works as a serving topping.",
+          "Sì, come variante domestica. Taglia in modo uniforme e cuoci a parte: il risultato differisce dalla frittura ma funziona come guarnizione."
+        ]
+      }
+    ]
+  },
+  "fesenjan": {
+    "role": [
+      "گردو در فسنجان فقط افزودنی نیست؛ پایه غلظت و مزه است. رب انار ترشی و بخشی از شیرینی را می‌سازد و غلظت دو برند می‌تواند متفاوت باشد. پیش از ریختن همه مقدار پیشنهادی، رب را جدا بچشید. نسخه ترش، ملس و شیرین را با تنظیم تدریجی همین تعادل بسازید؛ شکر را راه‌حل پیش‌فرض برای هر مزه ناآشنا ندانید.",
+      "Walnuts form the sauce’s body and flavour. Pomegranate concentrate contributes both acidity and sweetness, which vary between brands. Taste it first. Build sour, balanced or sweet versions gradually rather than treating sugar as the default correction.",
+      "Le noci costruiscono corpo e gusto della salsa. Il concentrato di melograno dà acidità e dolcezza, diverse tra marche. Assaggialo prima. Costruisci gradualmente le versioni acida, equilibrata o dolce senza usare automaticamente zucchero."
+    ],
+    "technique": [
+      "آب را مرحله‌ای تنظیم کنید و گردو را با جوش آرام بپزید. وقتی سس غلیظ می‌شود، کف قابلمه را با قاشق بررسی کنید تا نچسبد. سسی که از قاشق مثل آب می‌ریزد هنوز بافت دلخواه این نسخه را ندارد؛ سس بیش‌ازحد خمیری هم به کمی آب و هم‌زدن ملایم نیاز دارد. قارچ را پس از کاهش آبش اضافه کنید تا سس دوباره رقیق نشود.",
+      "Adjust water in stages and simmer gently. As it thickens, sweep the pan base to prevent sticking. The sauce should coat a spoon but remain fluid. Cook off mushroom moisture before adding them so the sauce is not diluted again.",
+      "Regola l’acqua per gradi e fai sobbollire. Quando si addensa, passa il cucchiaio sul fondo per evitare che attacchi. Il sugo deve velare il cucchiaio ma restare fluido. Riduci l’acqua dei funghi prima di unirli."
+    ],
+    "serving": [
+      "برنج ساده کمک می‌کند مزه گردو و انار را بهتر بسنجید. برای مهمان‌ها ابتدا نسخه ملس را پیشنهاد کنید و چاشنی اضافه را جدا بدهید. اگر قصد مقایسه دو رب را دارید، آن‌ها را در دو مقدار کوچک از سس امتحان کنید؛ قابلمه اصلی را محل آزمون هم‌زمان چند چاشنی نکنید.",
+      "Plain rice lets the walnut-pomegranate balance stand out. Offer extra seasoning separately. To compare two concentrates, test them in small sauce portions rather than adding both to the main pan.",
+      "Il riso semplice mette in evidenza noci e melograno. Servi altri condimenti a parte. Per confrontare due concentrati, provali in piccole porzioni di salsa invece di versarli entrambi nella pentola."
+    ],
+    "qa": [
+      {
+        "q": [
+          "روغن گردو روی خورش دیده نمی‌شود؛ یعنی آماده نیست؟",
+          "Must I see walnut oil on top?",
+          "Devo vedere olio di noci in superficie?"
+        ],
+        "a": [
+          "خیر؛ بافت، غلظت و مزه را هم بسنجید. میزان روغن قابل مشاهده با نوع گردو و روش پخت تغییر می‌کند و معیار واحدی برای همه قابلمه‌ها نیست.",
+          "Not necessarily. Judge texture, thickness and flavour too. Visible oil varies with walnuts and cooking method.",
+          "Non necessariamente. Valuta anche consistenza, densità e gusto. L’olio visibile cambia con noci e metodo."
+        ]
+      },
+      {
+        "q": [
+          "گردو را درشت خرد کنم؟",
+          "Can the walnuts stay coarse?",
+          "Posso lasciare le noci grossolane?"
+        ],
+        "a": [
+          "برای سس یکدست این روش، گردوی ریزتر مناسب‌تر است. تکه‌های درشت بافتی متفاوت می‌سازند؛ اگر آن را می‌خواهید، انتظار سس کاملاً صاف نداشته باشید.",
+          "Finely ground walnuts suit this integrated sauce. Coarse pieces make a different texture; do not expect a smooth result.",
+          "Per questa salsa amalgamata usa noci macinate finemente. Pezzi grossi danno una consistenza diversa, non liscia."
+        ]
+      }
+    ]
+  },
+  "eggplant": {
+    "role": [
+      "در قیمه بادمجان، دو بافت را مستقل بسازید: لپه‌ای که شکلش مانده و بادمجانی که نرم شده اما از هم نپاشیده است. بادمجان بزرگ و پرآب ممکن است به زمان متفاوتی از یک بادمجان کوچک نیاز داشته باشد. در ایتالیا، اندازه و شکل melanzana را در نظر بگیرید و برش‌ها را هم‌ضخامت انتخاب کنید؛ نام غذا زمان پخت همه رقم‌ها را یکسان نمی‌کند.",
+      "Build two textures separately: intact split peas and tender aubergines that hold together. Large watery aubergines may behave differently from small ones. Choose evenly thick cuts of Italian melanzane rather than assuming every variety needs the same time.",
+      "Costruisci due consistenze: legumi integri e melanzane morbide che mantengono la forma. Quelle grandi e acquose possono cuocere diversamente. Scegli tagli di spessore uniforme invece di applicare lo stesso tempo a ogni varietà."
+    ],
+    "technique": [
+      "بادمجان فرپز را با فشار ملایم قاشق امتحان کنید؛ مرکز نباید سفت باشد. سس را پیش از افزودن بادمجان تنظیم کنید و از این مرحله به بعد کمتر هم بزنید. اگر بادمجان وا رفت، به جای تلاش برای برگرداندن شکلش، غذا را با بافت یکپارچه‌تر سرو کنید. در نوبت بعد، برش ضخیم‌تر یا افزودن دیرتر را جداگانه آزمایش کنید.",
+      "Test roasted aubergines with gentle spoon pressure: the centre should be soft. Adjust sauce before adding them and stir less afterwards. If they collapse, serve an integrated texture; next time test thicker cuts or later addition, one change at a time.",
+      "Prova le melanzane con una lieve pressione del cucchiaio: il centro deve essere morbido. Regola il sugo prima di aggiungerle, poi mescola meno. Se si disfano, servi una consistenza amalgamata; la volta dopo prova un taglio più spesso o un’aggiunta tardiva."
+    ],
+    "serving": [
+      "برای سرو، بادمجان را روی سس قرار دهید تا هر بشقاب سهم مشخصی داشته باشد. برنج کم‌چاشنی همراه مناسبی برای این ترکیب است. اگر از بادمجان آماده استفاده می‌کنید، روغن و نمک آن را در تنظیم سس حساب کنید؛ بادمجان آماده را با خورش کامل اشتباه نگیرید.",
+      "Place aubergines over the sauce for clear portions and serve with lightly seasoned rice. Count the salt and oil of prepared aubergines when adjusting sauce. Prepared aubergine alone is not the complete stew.",
+      "Disponi le melanzane sul sugo per porzionarle facilmente e accompagna con riso delicato. Considera sale e olio delle melanzane pronte: da sole non costituiscono lo stufato completo."
+    ],
+    "qa": [
+      {
+        "q": [
+          "بادمجان را پوست بگیرم؟",
+          "Should I peel the aubergine?",
+          "Devo sbucciare le melanzane?"
+        ],
+        "a": [
+          "این روش می‌تواند با مقداری پوست برای نگه‌داشتن شکل اجرا شود. پوست‌گیری کامل هم انتخاب بافتی دیگری است؛ زمان و جابه‌جایی را متناسب با نرمی برش تنظیم کنید.",
+          "Keeping some skin can help the slices hold their shape. Full peeling gives another texture; handle according to tenderness.",
+          "Una parte della buccia aiuta a mantenere la forma. Sbucciare tutto cambia consistenza; maneggia secondo morbidezza."
+        ]
+      },
+      {
+        "q": [
+          "بادمجان را اول داخل سس خام بگذارم؟",
+          "Can raw aubergine go straight into sauce?",
+          "Posso mettere melanzane crude nel sugo?"
+        ],
+        "a": [
+          "روش اصلی این مقاله بر پایه بادمجان ازپیش‌پخته است. افزودن خام مسیر دیگری با آب و زمان متفاوت می‌خواهد؛ مراحل همان روش را بدون تغییر دنبال نکنید.",
+          "This method assumes pre-cooked aubergine. Raw addition requires another liquid and timing plan rather than the same sequence.",
+          "Questo metodo usa melanzane già cotte. L’aggiunta a crudo richiede altri liquidi e tempi, non la stessa sequenza."
+        ]
+      }
+    ]
+  },
+  "celery": {
+    "role": [
+      "کرفس حجم و بافت اصلی خورش را می‌سازد؛ جعفری زمینه سبز و نعناع عطر قوی‌تر دارد. برای شروع، نعناع را کم نگه دارید تا مزه کرفس گم نشود. ساقه‌های ضخیم و نازک را هم‌اندازه ببرید و بخش‌های خیلی سفت را جدا کنید. برگ کرفس می‌تواند مزه را تغییر دهد؛ اگر اضافه می‌کنید، مقدار آن را یادداشت کنید تا نتیجه قابل مقایسه باشد.",
+      "Celery supplies structure, parsley the green base and mint the stronger aroma. Start with restrained mint. Cut thick and thin stalks consistently and remove tough parts. If adding celery leaves, record the amount because they change the balance.",
+      "Il sedano dà struttura, il prezzemolo la base verde e la menta il profumo più deciso. Parti con poca menta. Taglia uniformemente ed elimina le parti dure. Se aggiungi foglie di sedano, annotane la quantità: cambiano l’equilibrio."
+    ],
+    "technique": [
+      "پیش از خاموش‌کردن، یک تکه از ضخیم‌ترین ساقه را امتحان کنید. اگر مرکز آن هنوز سفت است، ظاهر نرم تکه‌های نازک را معیار قرار ندهید. برای کم‌کردن آب خورش، از جوش آرام استفاده کنید و ترشی را پس از رسیدن به غلظت نهایی تنظیم کنید؛ کاهش مایع، مزه چاشنی را هم متمرکز می‌کند.",
+      "Test the thickest piece rather than relying on softer thin slices. Reduce liquid gently and adjust acidity after reaching the final consistency; reduction also concentrates seasoning.",
+      "Prova il pezzo più spesso, non solo quelli sottili. Riduci delicatamente il liquido e regola l’acidità alla densità finale: la riduzione concentra anche i condimenti."
+    ],
+    "serving": [
+      "برنج ساده و سهمی از کرفس در هر بشقاب، سرو را متعادل‌تر می‌کند. اگر نعناع خشک می‌خرید، آن را با نعناع تازه هم‌وزن نگیرید. در مقایسه دو نوبت پخت، نوع نعناع و ضخامت ساقه را ثابت نگه دارید تا اثر زمان پخت روشن شود.",
+      "Serve with plain rice and celery in each portion. Do not swap fresh and dried mint by equal weight. Keep mint type and stalk thickness stable when comparing cooking times.",
+      "Servi con riso semplice e sedano in ogni porzione. Non scambiare menta fresca e secca a pari peso. Mantieni costanti menta e spessore quando confronti i tempi."
+    ],
+    "qa": [
+      {
+        "q": [
+          "چرا نعناع بر طعم کرفس غلبه کرده؟",
+          "Why does mint overpower the celery?",
+          "Perché domina la menta?"
+        ],
+        "a": [
+          "مقدار یا غلظت نعناع ممکن است برای این ترکیب زیاد باشد. در نوبت بعد کمتر شروع کنید؛ افزودن کرفس در پایان، عطر غالب را به‌تنهایی اصلاح نمی‌کند.",
+          "The dose or concentration may be too high. Start with less next time; last-minute celery does not necessarily rebalance it.",
+          "Dose o concentrazione possono essere eccessive. Parti con meno alla prossima prova: altro sedano alla fine non riequilibra necessariamente."
+        ]
+      },
+      {
+        "q": [
+          "آیا همه قطعات کرفس باید کاملاً له شوند؟",
+          "Should all celery collapse?",
+          "Il sedano deve disfarsi?"
+        ],
+        "a": [
+          "در این روش هدف نرمی با حفظ شکل است. اگر بافت نرم‌تر می‌خواهید، آن را انتخاب شخصی بدانید و زمان را با آزمون همان ساقه تنظیم کنید.",
+          "Here the target is tender pieces holding their shape. A softer texture is a personal variation; test the actual stalks.",
+          "L’obiettivo è morbidezza mantenendo la forma. Una consistenza più morbida è una variante personale: prova i gambi scelti."
+        ]
+      }
+    ]
+  },
+  "spinach": {
+    "role": [
+      "اسفناج بخش اصلی حجم و رنگ است و آلو، مزه ترش‌وشیرین را وارد می‌کند. آلو خشک در بسته‌های ایتالیایی همیشه همان آلو خورشتی ایرانی نیست؛ پیش از ریختن همه مقدار، یک عدد را بچشید. شیرینی بیشتر یا بافت خیلی نرم را با تنظیم مقدار و زمان افزودن مدیریت کنید، نه با فرض اینکه هر آلو رفتار یکسانی دارد.",
+      "Spinach provides volume and colour; plums add sweet-sour flavour. Italian dried plums are not always equivalent to Iranian stew plums. Taste one first and adjust quantity and addition time for its sweetness and softness.",
+      "Gli spinaci danno volume e colore; le prugne il gusto agrodolce. Quelle secche italiane non sono sempre equivalenti alle prugne iraniane da stufato. Assaggiane una e regola quantità e momento dell’aggiunta."
+    ],
+    "technique": [
+      "آب اسفناج را پیش از تنظیم آب قابلمه در نظر بگیرید. اسفناج منجمد و تازه، به‌خصوص پس از آبگیری، حجم یکسانی ندارند. آلو را وقتی اضافه کنید که فرصت نرم‌شدن داشته باشد اما با هم‌زدن از هم نپاشد. اگر سس رقیق شد، آن را آرام کم‌آب کنید و آلوهای نرم را بی‌دلیل جابه‌جا نکنید.",
+      "Account for spinach moisture before adding water. Fresh and frozen spinach differ in volume after draining. Give plums time to soften without excessive stirring. Reduce a watery sauce gently while leaving tender plums intact.",
+      "Considera l’acqua degli spinaci prima di aggiungerne. Fresco e surgelato hanno volumi diversi dopo scolatura. Lascia ammorbidire le prugne senza mescolare troppo. Riduci delicatamente il sugo mantenendo integri i frutti."
+    ],
+    "serving": [
+      "این نسخه با برنج ساده فرصت می‌دهد تفاوت آلوها را بهتر حس کنید. برای نخستین خرید، بسته‌ای با توضیح روشن درباره هسته و ترکیبات انتخاب کنید. مقدار آب و نوع آلو را در یادداشت پخت بنویسید تا در نوبت بعد تنظیم شیرینی و ترشی آسان‌تر باشد.",
+      "Plain rice helps you notice plum differences. Check whether the pack is pitted and read its ingredients. Record the plum type and water quantity for a more controlled second batch.",
+      "Il riso semplice fa percepire le differenze delle prugne. Verifica noccioli e ingredienti sulla confezione. Annota tipo di prugna e acqua per regolare meglio la seconda preparazione."
+    ],
+    "qa": [
+      {
+        "q": [
+          "اگر آلو خیلی شیرین بود، شکر را حذف کنم؟",
+          "What if the plums are very sweet?",
+          "E se le prugne sono molto dolci?"
+        ],
+        "a": [
+          "این دستور شکر لازم ندارد. مقدار آلو را کمتر شروع کنید و ترشی را در پایان کم‌کم تنظیم کنید؛ از افزودن زیاد آبلیمو برای اصلاح فوری پرهیز کنید.",
+          "This method needs no sugar. Start with fewer plums and adjust acidity gradually at the end.",
+          "Questo metodo non richiede zucchero. Parti con meno prugne e regola gradualmente l’acidità alla fine."
+        ]
+      },
+      {
+        "q": [
+          "اسفناج را کاملاً پوره کنم؟",
+          "Should I puree the spinach?",
+          "Devo frullare gli spinaci?"
+        ],
+        "a": [
+          "خیر، برای بافت این نسخه خردکردن کافی است. پوره‌کردن مسیر دیگری می‌سازد و شکل خورش و حس دهانی آن را تغییر می‌دهد.",
+          "Chopping is sufficient here. Pureeing creates another texture and changes the character of the stew.",
+          "Qui basta tagliare. Frullare crea un’altra consistenza e cambia il carattere dello stufato."
+        ]
+      }
+    ]
+  },
+  "rice": {
+    "role": [
+      "کته و آبکش دو مسیر کنترل آب‌اند، نه دو نام برای یک مرحله. در کته آب داخل قابلمه جذب می‌شود؛ در آبکش بخشی از پخت در آب فراوان انجام و سپس آب خارج می‌شود. برای اولین آزمایش با یک برنج ایتالیایی، مقدار کم بردارید و دستور بسته را نقطه شروع قرار دهید. برنج مناسب ریزوتو را معادل خودکار برنج دانه‌بلند این روش ندانید.",
+      "Absorption rice and parboiled-then-drained rice manage water differently. Start a new Italian rice variety with a small batch and its pack instructions. Risotto rice is not an automatic equivalent to the long-grain rice used here.",
+      "La cottura per assorbimento e quella con scolatura gestiscono l’acqua diversamente. Prova una nuova varietà italiana in piccola quantità seguendo inizialmente la confezione. Il riso da risotto non equivale automaticamente a quello lungo."
+    ],
+    "technique": [
+      "در روش آبکش، چند دانه را قبل از صاف‌کردن بررسی کنید: بیرون نرم شده باشد و مرکز هنوز کمی مقاومت داشته باشد. اگر برنج پیش از دم‌کردن کاملاً نرم است، بخار بیشتر دانه‌ها را به همان شکل اولیه برنمی‌گرداند. زعفران دم‌کرده را با بخش کوچکی از برنج مخلوط کنید تا هم رنگ واضح باشد و هم همه برنج خیس نشود.",
+      "Before draining, test several grains: softened outside with some firmness remaining inside. Steaming cannot restore grains already overcooked. Mix saffron infusion with a small rice portion for clear colour without wetting the whole batch.",
+      "Prima di scolare prova più chicchi: morbidi fuori, ancora leggermente resistenti al centro. Il vapore non recupera chicchi già troppo cotti. Mescola l’infuso di zafferano con una piccola porzione per colorarla senza bagnare tutto il riso."
+    ],
+    "serving": [
+      "برنج را با حرکت آرام از هم باز کنید و سهم زعفرانی را هنگام سرو اضافه کنید. اگر ته‌دیگ درست می‌کنید، آن را یک مرحله جدا با نتیجه وابسته به قابلمه و حرارت بدانید. اولین بار، هم‌زمان نوع برنج، مقدار آب و کف قابلمه را عوض نکنید.",
+      "Fluff gently and add the saffron portion at serving. Tahdig is a separate pan-and-heat-dependent step. Avoid changing rice variety, water and pan base together on your first trial.",
+      "Sgrana delicatamente e aggiungi la parte allo zafferano al servizio. Il tahdig dipende da recipiente e calore. Alla prima prova non cambiare insieme riso, acqua e fondo della pentola."
+    ],
+    "qa": [
+      {
+        "q": [
+          "برنج چسبناک شده؛ با آبکش دوباره درست می‌شود؟",
+          "Can draining again fix sticky rice?",
+          "Scolare di nuovo corregge il riso colloso?"
+        ],
+        "a": [
+          "معمولاً بافت اولیه برنمی‌گردد. برنج را کمتر هم بزنید و در نوبت بعد نوع برنج و زمان نیم‌پزکردن را بررسی کنید؛ دانه‌های له‌شده را به زور جدا نکنید.",
+          "The original texture generally cannot be restored. Stir less and review variety and parboiling time next time.",
+          "La consistenza originale generalmente non si recupera. Mescola meno e rivedi varietà e precottura alla prossima prova."
+        ]
+      },
+      {
+        "q": [
+          "همه برنج را زعفرانی کنم؟",
+          "Should all the rice be saffron-coloured?",
+          "Devo colorare tutto il riso?"
+        ],
+        "a": [
+          "انتخاب سرو است. برای این راهنما، بخشی کوچک رنگ می‌گیرد؛ اگر همه را زعفرانی می‌خواهید، مایع اضافه را در برنامه آب همان روش حساب کنید.",
+          "It is a serving choice. This guide colours a small portion; count extra liquid in the cooking plan if colouring all of it.",
+          "È una scelta di servizio. Qui si colora una piccola parte; considera il liquido aggiuntivo se vuoi colorare tutto."
+        ]
+      }
+    ]
+  },
+  "dolmeh": {
+    "role": [
+      "برگ مو فقط پوشش نیست؛ شوری و ترشی آن هم وارد غذا می‌شود. برگ آماده در آب‌نمک را طبق بسته آماده کنید و قبل از تنظیم نمک مواد، مزه‌اش را بسنجید. برگ لطیف و برگ ضخیم رفتار یکسانی ندارند. برای شروع، برگ خوراکی مشخص و اندازه نزدیک به هم انتخاب کنید تا مقایسه پخت و مقدار مواد هر دلمه آسان باشد.",
+      "Vine leaves contribute salt and acidity as well as a wrapper. Prepare brined leaves as the pack directs and taste before salting the filling. Choose explicitly edible leaves of similar size; thick and delicate leaves behave differently.",
+      "Le foglie danno sale e acidità oltre all’involucro. Prepara quelle in salamoia secondo confezione e assaggiale prima di salare il ripieno. Scegli foglie dichiarate alimentari e simili per dimensione; quelle spesse e delicate cuociono diversamente."
+    ],
+    "technique": [
+      "مواد را وسط برگ در مقدار کم بگذارید و دو طرف را قبل از جمع‌کردن نهایی به داخل تا کنید. دلمه بیش‌ازحد پرشده جای کافی برای تغییر حجم برنج ندارد. دلمه‌ها را در قابلمه منظم کنار هم بچینید و مایع را آرام اضافه کنید. برای کنترل پخت، یک دلمه نمونه را باز کنید؛ نرمی برگ به‌تنهایی کامل‌پختن مرکز را ثابت نمی‌کند.",
+      "Use a modest filling amount and fold the sides inward before closing. Overfilling leaves little room for rice expansion. Arrange closely and add liquid gently. Open a test parcel to check the centre rather than judging only the wrapper.",
+      "Usa poco ripieno e piega i lati prima di chiudere. Troppo ripieno lascia poco spazio al riso. Disponi vicine e versa delicatamente. Apri un involtino campione per controllare il centro, non solo la foglia."
+    ],
+    "serving": [
+      "برای پذیرایی، اندازه یکنواخت مهم‌تر از تعداد زیاد است. دلمه ترش و ملس را با مقدار چاشنی متفاوت بسازید، اما نمک برگ را فراموش نکنید. اگر برگ پیدا نکردید، پیچیدن همان مواد در سبزی دیگر یک غذای تطبیقی است؛ نام و زمان دلمه برگ مو را بدون تغییر به آن منتقل نکنید.",
+      "For serving, consistent size matters more than quantity. Adjust sourness separately from leaf salt. Another vegetable wrapper is an adaptation with its own cooking behaviour, not the same vine-leaf method.",
+      "Per il servizio conta la dimensione uniforme. Regola acidità e sale delle foglie separatamente. Un altro involucro vegetale è un adattamento con cottura propria, non lo stesso metodo delle foglie di vite."
+    ],
+    "qa": [
+      {
+        "q": [
+          "چرا دلمه باز می‌شود؟",
+          "Why do parcels open?",
+          "Perché gli involtini si aprono?"
+        ],
+        "a": [
+          "پرکردن زیاد، برگ پاره یا چیدمان خیلی آزاد را بررسی کنید. مواد کمتر و برگ سالم‌تر کمک می‌کند؛ جوش شدید هم شکل دلمه را به هم می‌زند.",
+          "Check overfilling, torn leaves and loose arrangement. Smaller filling portions and gentle simmering help preserve shape.",
+          "Controlla troppo ripieno, foglie rotte e disposizione larga. Meno ripieno e sobbollire delicato aiutano la forma."
+        ]
+      },
+      {
+        "q": [
+          "برگ خیلی شور است؛ نمک بیشتری به مواد بدهم؟",
+          "Should I salt filling with salty leaves?",
+          "Salare il ripieno con foglie molto salate?"
+        ],
+        "a": [
+          "ابتدا آماده‌سازی و آبکشی مجاز روی بسته را انجام دهید. سپس نمک مواد را با مزه برگ هماهنگ کنید، نه فقط با مقدار نوشته‌شده برای یک برگ دیگر.",
+          "First follow the pack’s permitted preparation and rinsing. Then adjust filling salt to the actual leaf, not another product’s quantity.",
+          "Segui prima preparazione e risciacquo indicati sulla confezione. Regola poi il ripieno in base alle foglie effettive."
+        ]
+      }
+    ]
+  },
+  "ash": {
+    "role": [
+      "در آش رشته، رشته بخشی از غلظت را می‌سازد و حبوبات پخته باید بافت خود را حفظ کنند. سبزی، پیازداغ و نعناع‌داغ نقش‌های متفاوت دارند؛ همه عطر را با زیادکردن نعناع نسازید. اگر پاستا را جای رشته امتحان می‌کنید، آن را نسخه تطبیقی بدانید: ضخامت، زمان پخت و مقدار نمک متفاوت است و نتیجه دقیق آش با رشته ایرانی نیست.",
+      "Noodles help thicken Ash while cooked legumes should keep their shape. Herbs, fried onions and mint oil contribute different aromas. Pasta is an adaptation, with different thickness, timing and salt, rather than an identical substitute for Iranian reshteh.",
+      "La pasta addensa l’Ash e i legumi cotti devono mantenere forma. Erbe, cipolle e olio alla menta danno aromi diversi. La pasta italiana è un adattamento con spessore, tempi e sale propri, non identico al reshteh."
+    ],
+    "technique": [
+      "رشته را وقتی اضافه کنید که عدس به بافت مناسب نزدیک شده باشد. پس از افزودن، آرام هم بزنید تا به کف نچسبد، اما حبوبات را خرد نکنید. یک رشته را برای کنترل مرکز آن امتحان کنید. غلظت آش را پیش از ریختن همه تزئینات بسنجید؛ کشک و پیازداغ قرار نیست آش کم‌پخته یا بسیار آبکی را پنهان کنند.",
+      "Add noodles when lentils are nearly at the desired texture. Stir gently to prevent sticking without breaking beans. Test a noodle’s centre and check soup consistency before garnishing; toppings cannot replace proper cooking.",
+      "Aggiungi la pasta quando le lenticchie sono quasi pronte. Mescola delicatamente evitando di rompere i fagioli. Prova il centro di una pasta e valuta la densità prima di guarnire: i condimenti non sostituiscono la cottura."
+    ],
+    "serving": [
+      "کشک را برای سرو جدا هم می‌توان گذاشت تا هر نفر مقدار دلخواه را انتخاب کند. ماست یا جایگزین گیاهی طعم و بافت یکسان کشک ندارد؛ اگر استفاده می‌کنید، آن را در معرفی غذا ذکر کنید. ترکیبات و حساسیت‌ها را از محصول واقعی بررسی کنید، نه فقط از نام «آش».",
+      "Serve kashk separately if guests want different amounts. Yogurt or a plant alternative changes flavour and texture; explain the adaptation. Check actual ingredient and allergen labels rather than inferring them from the dish name.",
+      "Puoi servire kashk a parte. Yogurt o alternativa vegetale cambiano gusto e consistenza: presenta l’adattamento. Verifica ingredienti e allergeni reali, senza dedurli dal nome."
+    ],
+    "qa": [
+      {
+        "q": [
+          "آش بعد از خاموش‌کردن غلیظ شد؛ چه کنم؟",
+          "What if it thickens off the heat?",
+          "Se si addensa fuori dal fuoco?"
+        ],
+        "a": [
+          "در زمان تکمیل پخت، آب داغ را کم‌کم اضافه و غلظت را دوباره بررسی کنید. ریختن یکباره مقدار زیاد آب کنترل مزه و بافت را دشوار می‌کند.",
+          "When finishing cooking, add hot water gradually and reassess. A large addition makes flavour and texture harder to control.",
+          "Al termine della cottura aggiungi acqua calda gradualmente e rivaluta. Troppa in una volta rende difficile il controllo."
+        ]
+      },
+      {
+        "q": [
+          "رشته خیلی شور است؟",
+          "What if noodles are salty?",
+          "Se la pasta è salata?"
+        ],
+        "a": [
+          "نمک را پیش از افزودن رشته کامل نکنید. شوری رشته، حبوبات قوطی و کشک را با هم در مزه نهایی حساب کنید.",
+          "Delay final salting until noodles are added; account for canned legumes and kashk too.",
+          "Rimanda la salatura finale dopo la pasta e considera anche legumi in scatola e kashk."
+        ]
+      }
+    ]
+  },
+  "beans": {
+    "role": [
+      "خوراک لوبیا با لوبیای پخته شروع می‌شود؛ مرحله اصلی این مقاله ساخت سس و هماهنگ‌کردن مزه آن است. لوبیای قوطی را با وزن آبکش‌شده حساب کنید، نه وزن کل قوطی. بورلوتی در ایتالیا یک انتخاب تطبیقی است؛ اندازه و نرمی دانه را بررسی کنید و انتظار نداشته باشید تمام محصولات با نام چیتی یا بورلوتی یک رفتار داشته باشند.",
+      "This method starts with cooked beans; its main task is developing and combining the sauce. Use drained rather than total tin weight. Italian borlotti are a practical adaptation; inspect size and tenderness rather than assuming all packs behave identically.",
+      "Il metodo parte da fagioli cotti: sviluppa soprattutto il sugo. Usa il peso sgocciolato, non quello totale. I borlotti italiani sono un adattamento pratico; verifica dimensione e morbidezza della confezione."
+    ],
+    "technique": [
+      "رب را با پیاز تفت دهید و سپس آب را اضافه کنید تا سس پیش از ورود لوبیا شکل بگیرد. اگر لوبیا بسیار نرم است، آن را دیرتر اضافه کنید و به‌جای هم‌زدن پی‌درپی، آرام جابه‌جا کنید. برای غلظت بیشتر، کاهش مایع را ابتدا امتحان کنید؛ له‌کردن بخشی از لوبیا انتخاب بافتی دیگری است.",
+      "Cook paste with onion before adding water so sauce develops first. Add very tender beans later and move them gently. Try reducing liquid before mashing; mashing beans is a separate texture choice.",
+      "Cuoci il concentrato con cipolla prima dell’acqua. Aggiungi più tardi i fagioli molto morbidi e muovili delicatamente. Prova prima a ridurre il liquido: schiacciarli è una scelta di consistenza diversa."
+    ],
+    "serving": [
+      "این خوراک می‌تواند با نان یا برنج سرو شود؛ میزان مایع را با روش سرو هماهنگ کنید. برای نان، سسِ کمی روان‌تر خوش‌مصرف است و برای بشقاب برنج، غلظت بیشتری ممکن است مطلوب باشد. انتخاب شما قاعده ثابت همه خانواده‌ها نیست.",
+      "Serve with bread or rice and adjust sauce consistency accordingly. A looser sauce suits dipping; a thicker one may suit rice. These are serving choices, not rules for every household.",
+      "Servi con pane o riso regolando la densità. Un sugo più fluido si presta al pane, uno più denso può accompagnare il riso. Sono scelte di servizio, non regole universali."
+    ],
+    "qa": [
+      {
+        "q": [
+          "مایع قوطی را داخل سس بریزم؟",
+          "Should tin liquid go into the sauce?",
+          "Versare il liquido della scatola?"
+        ],
+        "a": [
+          "روش اصلی لوبیای آبکش‌شده دارد. اگر مایع را استفاده می‌کنید، ترکیبات و شوری آن را بررسی و آب دستور را متناسب کم کنید؛ این همان مسیر اصلی نیست.",
+          "The main method uses drained beans. If keeping liquid, check its ingredients and salt and reduce added water accordingly.",
+          "Qui si usano fagioli scolati. Se mantieni il liquido, controlla ingredienti e sale e riduci l’acqua aggiunta."
+        ]
+      },
+      {
+        "q": [
+          "چرا دانه‌ها با هم‌زدن شکسته‌اند؟",
+          "Why did stirring break the beans?",
+          "Perché mescolando si rompono?"
+        ],
+        "a": [
+          "لوبیای خیلی نرم تحمل هم‌زدن طولانی ندارد. سس را زودتر آماده کنید و لوبیا را در مرحله آخر با حرکت آرام مخلوط کنید.",
+          "Very soft beans cannot withstand long stirring. Develop sauce first, then combine gently.",
+          "I fagioli molto morbidi non reggono mescolamenti lunghi. Prepara il sugo prima e amalgama delicatamente."
+        ]
+      }
+    ]
+  },
+  "soya": {
+    "role": [
+      "سویا در این راهنما، سویای بافت‌دار خشک است؛ سس سویاِ مایع یا دانه کامل سویا همان ماده نیست. آبگیری طبق بسته و کاهش رطوبت اضافه، مسیر بافت سس را تعیین می‌کند. گوجه و پیاز پایه مزه‌اند و قارچ و فلفل بخشی از نسخه خانگی ما. برای اولین بار، نسبت سس به پاستا را کم‌کم تنظیم کنید تا رشته‌ها زیر مقدار زیاد سس پنهان نشوند.",
+      "Use dry textured soya, not liquid soy sauce or whole soybeans. Pack-directed hydration and draining determine texture. Tomato and onion form the base; mushrooms and pepper belong to this home version. Adjust sauce-to-pasta balance gradually.",
+      "Usa soia disidratata testurizzata, non salsa di soia o fagioli interi. Reidratazione e scolatura secondo confezione determinano la consistenza. Pomodoro e cipolla sono la base; funghi e peperone appartengono a questa versione."
+    ],
+    "technique": [
+      "سویا را پس از آماده‌سازی با پیاز و سبزیجات مخلوط کنید و اجازه دهید رطوبت اضافی کم شود؛ سپس گوجه را اضافه کنید. برای پاستای ایتالیایی، رشته و سس را نزدیک سرو هماهنگ کنید. برای ماکارونی دم‌کرده ایرانی، مرحله دم‌کردن و ته‌دیگ جداست؛ زمان پاستای روی بسته را بدون تغییر به همه مراحل آن منتقل نکنید.",
+      "Reduce moisture from prepared soya with onion and vegetables before adding tomato. For Italian-style pasta combine near serving. Iranian steamed macaroni adds separate steaming and tahdig stages; pack pasta timing does not describe the entire process.",
+      "Riduci l’umidità di soia e verdure prima del pomodoro. Per la pasta italiana unisci vicino al servizio. Il maccherone persiano aggiunge vapore e tahdig: il tempo della confezione non descrive tutto il processo."
+    ],
+    "serving": [
+      "در سرو اول، ادویه را ساده نگه دارید و بعد از ترکیب با پاستا دوباره مزه را بسنجید. برای لازانیا، مقدار رطوبت باید با پاستا و دیگر اجزای همان دستور هماهنگ شود؛ این سس به‌تنهایی یک دستور کامل لازانیا نیست.",
+      "Keep seasoning simple at first and taste again after mixing with pasta. Lasagne moisture depends on sheets and other components; this sauce alone is not a complete lasagne recipe.",
+      "Parti con condimenti semplici e riassaggia dopo aver unito la pasta. L’umidità per lasagne dipende da sfoglie e altri componenti: la salsa non è da sola una ricetta completa."
+    ],
+    "qa": [
+      {
+        "q": [
+          "سویا مزه آبکی دارد؟",
+          "Why does soya taste watery?",
+          "Perché la soia è acquosa?"
+        ],
+        "a": [
+          "آبگیری و کاهش آب را بررسی کنید. گوجه بیشتر لزوماً این مشکل را حل نمی‌کند؛ پیش از افزودن سس، رطوبت اضافه را کنترل کنید.",
+          "Check draining and moisture reduction before sauce. Extra tomato does not necessarily solve excess water.",
+          "Controlla scolatura e riduzione dell’umidità prima del sugo. Altro pomodoro non risolve necessariamente."
+        ]
+      },
+      {
+        "q": [
+          "این روش حتماً بدون حساسیت غذایی است؟",
+          "Is this automatically allergen-free?",
+          "È automaticamente senza allergeni?"
+        ],
+        "a": [
+          "خیر. سویا و پاستا و افزودنی‌ها باید طبق برچسب بررسی شوند. «بدون گوشت» درباره وجود یا نبود آلرژن‌ها چیزی را تضمین نمی‌کند.",
+          "No. Check soya, pasta and additives on their labels. Meatless does not guarantee absence of allergens.",
+          "No. Controlla etichette di soia, pasta e aggiunte. Senza carne non garantisce assenza di allergeni."
+        ]
+      }
+    ]
+  },
+  "okra": {
+    "role": [
+      "هدف این نسخه، بامیه نرم با شکل قابل تشخیص در سس گوجه است. اندازه بامیه‌ها را نزدیک به هم انتخاب کنید؛ چند بامیه درشت در میان بامیه‌های کوچک کنترل زمان را دشوار می‌کند. در خرید با نام okra یا gombo، شکل و وضعیت خود محصول را هم ببینید. بامیه منجمد و تازه را از نظر رطوبت و آماده‌سازی یکسان فرض نکنید.",
+      "The target is tender, recognisable okra in tomato sauce. Similar pod sizes make timing easier. Look for okra or gombo but inspect the actual product. Fresh and frozen pods differ in moisture and preparation.",
+      "L’obiettivo è gombo morbido ma riconoscibile nel pomodoro. Dimensioni simili facilitano i tempi. Cerca okra o gombo verificando il prodotto. Fresco e surgelato differiscono in umidità e preparazione."
+    ],
+    "technique": [
+      "ساقه را با دقت کوتاه کنید تا بدنه بامیه بی‌دلیل باز نشود. سس را پیش از اضافه‌کردن بامیه به مزه دلخواه نزدیک کنید و پس از آن کمتر هم بزنید. برای کنترل نرمی یک بامیه بزرگ‌تر را امتحان کنید. خردکردن بامیه روش دیگری می‌سازد؛ اگر آن را می‌خواهید، انتظار ظاهر بامیه کامل را نداشته باشید.",
+      "Trim carefully without unnecessarily opening the pod. Develop sauce first and stir less after adding okra. Test a larger pod for tenderness. Chopped okra creates a different texture and appearance.",
+      "Accorcia il picciolo senza aprire inutilmente il baccello. Prepara prima il sugo e mescola meno dopo. Prova un baccello grande per la morbidezza. Tagliarlo produce consistenza e aspetto diversi."
+    ],
+    "serving": [
+      "ترشی را در پایان تدریجی تنظیم کنید و با برنج ساده سرو کنید. برای بار اول، مقدار کمی بامیه از همان خرید بپزید تا بافت مطلوبتان را بشناسید. روغن بیشتر یا ادویه تندتر، جای انتخاب بامیه مناسب و پخت کنترل‌شده را نمی‌گیرد.",
+      "Adjust acidity gradually at the end and serve with plain rice. A small trial helps you decide the texture you prefer. More oil or stronger spice cannot replace pod selection and controlled cooking.",
+      "Regola l’acidità gradualmente e servi con riso semplice. Una piccola prova aiuta a scegliere la consistenza. Più olio o spezie forti non sostituiscono scelta e cottura controllata."
+    ],
+    "qa": [
+      {
+        "q": [
+          "بامیه را حلقه‌ای ببرم؟",
+          "Can I slice okra into rounds?",
+          "Posso tagliare il gombo a rondelle?"
+        ],
+        "a": [
+          "می‌توانید نسخه‌ای دیگر بسازید، اما این روش برای بامیه کامل نوشته شده است. زمان، مقدار مایع و بافت نتیجه را جدا بررسی کنید.",
+          "That makes another version. This method uses whole pods; reassess timing, liquid and texture separately.",
+          "È un’altra versione. Qui si usano baccelli interi: rivaluta tempi, liquido e consistenza."
+        ]
+      },
+      {
+        "q": [
+          "چرا بامیه‌ها از هم پاشیده‌اند؟",
+          "Why did the pods fall apart?",
+          "Perché i baccelli si disfano?"
+        ],
+        "a": [
+          "اندازه نامتوازن، پخت طولانی یا هم‌زدن زیاد را بررسی کنید. در نوبت بعد، شکل مشابه انتخاب و بامیه را دیرتر اضافه کنید.",
+          "Check uneven sizes, long cooking or frequent stirring. Choose similar pods and add later next time.",
+          "Controlla dimensioni diverse, cottura lunga o troppo mescolamento. Scegli baccelli simili e aggiungili più tardi."
+        ]
+      }
+    ]
+  },
+  "herb-stew": {
+    "role": [
+      "قلیه این راهنما بر پایه گشنیز، سیر و تمرهندی ساخته می‌شود و ماهی ندارد. شنبلیله فقط بخشی از عطر است و زیادکردن آن جای گشنیز را نمی‌گیرد. تمرهندی خمیری، غلیظ یا رقیق می‌تواند مقدار مصرف متفاوتی بخواهد؛ پیش از افزودن، ترکیبات و مزه بسته را بررسی کنید. قارچ در این نسخه برای بافت اضافه می‌شود و درباره ترکیبات کارخانه هانی ادعایی نمی‌سازد.",
+      "This fish-free Ghalieh centres on coriander, garlic and tamarind. Fenugreek complements rather than replaces coriander. Tamarind products vary in concentration; check ingredients and taste first. Mushrooms belong to this home version, not a claim about Hani’s formula.",
+      "Questa Ghalieh senza pesce usa coriandolo, aglio e tamarindo. Il fieno greco completa, non sostituisce il coriandolo. I prodotti di tamarindo variano: leggi ingredienti e assaggia. I funghi appartengono alla versione domestica, non alla formula Hani."
+    ],
+    "technique": [
+      "برای کنترل مزه، ابتدا پایه سبزی و سیر را کامل کنید، سپس مقدار کمی تمرهندی اضافه کنید. سس را با همان غلظتی بچشید که قرار است سرو شود؛ مایع زیاد می‌تواند ترشی را موقتاً کم‌رنگ نشان دهد. قارچ کم‌آب‌شده را آرام مخلوط کنید تا مقدار آب سس ناگهان تغییر نکند.",
+      "Build the herb-garlic base before adding a little tamarind. Taste at serving consistency: excess water can temporarily mask acidity. Combine mushrooms after reducing their moisture to keep sauce consistency stable.",
+      "Prepara la base di erbe e aglio prima di poco tamarindo. Assaggia alla densità di servizio: troppa acqua può mascherare temporaneamente l’acidità. Unisci funghi dopo averne ridotto l’umidità."
+    ],
+    "serving": [
+      "برنج ساده کمک می‌کند ترشی و عطر سبزی روشن بماند. برای مهمان، این غذا را به‌روشنی «نسخه بدون ماهی» معرفی کنید. اگر ماهی اضافه می‌کنید، مسیر جداگانه‌ای برای پخت همان ماهی لازم است و زمان قارچ را نمی‌توان جای آن گذاشت.",
+      "Serve with plain rice and identify it as a fish-free version. Adding fish needs a separate method suitable for that fish, not the mushroom timing.",
+      "Servi con riso semplice e presenta la versione senza pesce. Aggiungerlo richiede un metodo adatto al pesce scelto, non i tempi dei funghi."
+    ],
+    "qa": [
+      {
+        "q": [
+          "تمر هندی ندارم؛ فقط آبلیمو بدهم؟",
+          "Can lemon replace tamarind?",
+          "Il limone sostituisce il tamarindo?"
+        ],
+        "a": [
+          "برای نسخه تطبیقی می‌تواند ترشی بدهد، اما مزه تمرهندی را تکرار نمی‌کند. کم‌کم اضافه کنید و آن را همان قلیه با تمرهندی معرفی نکنید.",
+          "It adds acidity in an adaptation but does not reproduce tamarind flavour. Add gradually and name the change.",
+          "Aggiunge acidità in un adattamento, non il gusto del tamarindo. Dosa gradualmente e indica il cambiamento."
+        ]
+      },
+      {
+        "q": [
+          "سیر سوخته را با سبزی بیشتر اصلاح کنم؟",
+          "Can more herbs fix burnt garlic?",
+          "Più erbe correggono aglio bruciato?"
+        ],
+        "a": [
+          "نه به‌طور قابل اعتماد. مرحله سیر را با حرارت ملایم‌تر تکرار کنید؛ تلخی سوختگی را زیر عطر بیشتر پنهان نکنید.",
+          "Not reliably. Repeat the garlic stage at gentler heat instead of covering scorched bitterness with more aroma.",
+          "Non in modo affidabile. Ripeti l’aglio a calore più dolce invece di coprire l’amaro della bruciatura."
+        ]
+      }
+    ]
+  },
+  "curd": {
+    "role": [
+      "بادمجان پایه بافت است و کشک، چاشنی شور و ترش آن؛ پیازداغ و نعناع روی این پایه می‌نشینند. ماست یا کرم گیاهی معادل دقیق کشک نیست. برای انتخاب در ایتالیا، دنبال محصول خوراکی با ترکیبات و راهنمای مصرف مشخص باشید. وجود لبنیات یا نبود آن را از نام غذا حدس نزنید و بسته واقعی را بررسی کنید.",
+      "Aubergine forms the texture; kashk adds salt and acidity, with onions and mint layered over it. Yogurt or a plant cream is not identical. Choose an edible product with clear ingredients and instructions; do not infer dairy status from the dish name.",
+      "La melanzana dà consistenza, il kashk sale e acidità, cipolle e menta completano. Yogurt o crema vegetale non sono identici. Scegli un prodotto alimentare con ingredienti e istruzioni chiare; non dedurre i latticini dal nome."
+    ],
+    "technique": [
+      "بادمجان باید نرم باشد تا با فشار قاشق باز شود؛ خردکردن شدید، جای پخت کامل را نمی‌گیرد. آب اضافه را پیش از افزودن تمام کشک کم کنید و نمک را بعد از آن بسنجید. برای بافت روستایی، بادمجان را با قاشق له کنید؛ مخلوط‌کن نسخه‌ای صاف‌تر می‌سازد و رشته‌های بادمجان را از بین می‌برد.",
+      "Aubergines should yield to a spoon; aggressive chopping does not replace cooking. Reduce excess water before adding all the kashk, then check salt. Spoon-mashing keeps texture; blending produces a smoother version.",
+      "Le melanzane devono cedere al cucchiaio: tritare non sostituisce cuocere. Riduci l’acqua prima del kashk e poi controlla il sale. Schiacciare mantiene consistenza; frullare produce una versione più liscia."
+    ],
+    "serving": [
+      "برای سرو با نان، بخشی از پیازداغ را نگه دارید تا بافت نهایی مشخص بماند. مقدار تزئین را متناسب با شوری و روغن کل غذا بگیرید. اگر همراه پاستا استفاده می‌کنید، آن را پیشنهاد ترکیبی تحریریه بدانید و غلظت را برای چسبیدن به پاستا تنظیم کنید.",
+      "Reserve some onions for texture when serving with bread. Account for garnish salt and oil. Using it with pasta is an editorial pairing; adjust consistency so it coats the pasta.",
+      "Con il pane tieni parte delle cipolle per la consistenza. Considera sale e olio della guarnizione. Con la pasta è un abbinamento editoriale: regola la crema perché la rivesta."
+    ],
+    "qa": [
+      {
+        "q": [
+          "کشک را زیاد ریخته‌ام و شور شده؟",
+          "What if too much kashk makes it salty?",
+          "Troppo kashk rende tutto salato?"
+        ],
+        "a": [
+          "نمک یا تزئین شور بیشتری اضافه نکنید. اگر بادمجان ساده پخته دارید، کمی از آن را جداگانه مخلوط و مزه را بسنجید؛ برای نوبت بعد کشک را مرحله‌ای بریزید.",
+          "Avoid more salty toppings. Test plain cooked aubergine in a small portion; add kashk in stages next time.",
+          "Evita guarnizioni salate. Prova melanzana cotta semplice in una piccola porzione; dosa kashk per gradi la prossima volta."
+        ]
+      },
+      {
+        "q": [
+          "نعناع‌داغ باید سیاه شود؟",
+          "Should fried mint turn black?",
+          "La menta deve annerire?"
+        ],
+        "a": [
+          "خیر. هدف عطر است، نه سوختن. مقدار کم را با حرارت کنترل‌شده آماده کنید و به محض رسیدن به عطر، از حرارت دور کنید.",
+          "No. The goal is aroma, not scorching. Use controlled heat and remove when fragrant.",
+          "No. Serve profumo, non bruciatura. Controlla il calore e togli quando è fragrante."
+        ]
+      }
+    ]
+  },
+  "baghali": {
+    "role": [
+      "نام باقلا قاتق نباید تفاوت حبوبات را پنهان کند. روش اصلی این صفحه از لوبیای سفید پخته برای دسترسی آسان‌تر استفاده می‌کند؛ این انتخاب با نسخه‌های دارای باقلای محلی یکسان نیست. لوبیا، شوید و سیر پایه مزه این سازگاری‌اند. تخم‌مرغ اختیاری است و حذف آن باید در معرفی نسخه شما روشن باشد.",
+      "This accessible home method uses cooked white beans; it is not identical to versions made with local broad beans. Beans, dill and garlic form this adaptation’s base. Egg is optional and its presence or omission should be clear.",
+      "Questo metodo accessibile usa fagioli bianchi cotti, diversi dalle versioni con fave locali. Legumi, aneto e aglio sono la base dell’adattamento. L’uovo è facoltativo e la sua presenza o assenza va indicata."
+    ],
+    "technique": [
+      "پیش از افزودن لوبیا، سیر و شوید را با حرارت کنترل‌شده آماده کنید. لوبیای بسیار نرم را طولانی هم نزنید. اگر تخم‌مرغ استفاده می‌کنید، آن را در مرحله آخر و با پخت مناسب همان تخم‌مرغ اضافه کنید؛ زیادشدن مایع یا جابه‌جایی پی‌درپی می‌تواند شکل سرو را تغییر دهد. برای نسخه بدون تخم‌مرغ، بافت سس را مستقل تنظیم کنید.",
+      "Prepare garlic and dill gently before adding beans. Avoid long stirring of very soft beans. Add optional eggs near the end and cook appropriately; excessive liquid or movement changes presentation. Without egg, adjust sauce texture independently.",
+      "Prepara delicatamente aglio e aneto prima dei fagioli. Non mescolare a lungo legumi molto morbidi. Aggiungi l’uovo verso la fine e cuocilo adeguatamente; liquido e movimento cambiano la presentazione. Senza uovo regola il sugo a parte."
+    ],
+    "serving": [
+      "همراه برنج ساده سرو کنید و شوید اضافه را صرفاً برای پررنگ‌کردن ظاهر نریزید. در خرید، fagioli bianchi، fave و aneto سه چیز متفاوت‌اند؛ برچسب نام ماده را با تصویر یا نام فارسی غذا اشتباه نگیرید.",
+      "Serve with plain rice; do not add dill only for a greener appearance. In shops fagioli bianchi, fave and aneto identify different ingredients; read the actual label.",
+      "Servi con riso semplice senza aggiungere aneto solo per il colore. Fagioli bianchi, fave e aneto indicano ingredienti diversi: leggi l’etichetta effettiva."
+    ],
+    "qa": [
+      {
+        "q": [
+          "آیا نسخه لوبیای سفید را سنتی معرفی کنیم؟",
+          "Is the white-bean version the traditional definition?",
+          "La versione con fagioli bianchi definisce la tradizione?"
+        ],
+        "a": [
+          "این مقاله آن را سازگاری خانگی برای دسترسی معرفی می‌کند. نام دقیق حبوبات را بگویید و آن را نماینده همه روش‌های شمال ایران ندانید.",
+          "Here it is an accessible home adaptation. Name the beans and avoid presenting it as every northern Iranian version.",
+          "Qui è un adattamento domestico accessibile. Specifica i legumi senza rappresentare tutte le versioni dell’Iran settentrionale."
+        ]
+      },
+      {
+        "q": [
+          "شوید خشک را برابر تازه وزن کنم؟",
+          "Use equal fresh and dried dill weight?",
+          "Stesso peso di aneto fresco e secco?"
+        ],
+        "a": [
+          "خیر. غلظت و حجم متفاوت‌اند؛ با مقدار پیشنهادی کوچک شروع کنید و بر اساس عطر همان بسته تنظیم کنید.",
+          "No. Concentration and volume differ; begin with the small proposed dose and assess that pack.",
+          "No. Concentrazione e volume differiscono: parti dalla piccola dose proposta e valuta la confezione."
+        ]
+      }
+    ]
+  },
+  "sholezard": {
+    "role": [
+      "در شله‌زرد، برنج پایه بافت است؛ زعفران رنگ و عطر و گلاب لایه معطر پایانی را می‌سازد. گلاب خوراکی را با فرآورده آرایشی اشتباه نگیرید. میزان عطر محصولات خوراکی هم متفاوت است؛ برای نخستین بار مقدار کم بریزید. دارچین تزئینِ چاشنی‌دار است و زیادکردن آن می‌تواند عطر زعفران را بپوشاند.",
+      "Rice provides texture, saffron colour and aroma, and edible rosewater the final fragrance. Cosmetic rose products are unsuitable substitutes. Even edible products vary in strength; start small. Heavy cinnamon can hide saffron aroma.",
+      "Il riso dà consistenza, lo zafferano colore e profumo, l’acqua di rose alimentare la nota finale. I cosmetici non sono sostituti. Anche prodotti alimentari variano in intensità: parti con poco. Troppa cannella copre lo zafferano."
+    ],
+    "technique": [
+      "برنج را پیش از مرحله شیرین‌کردن به نرمی مناسب برسانید. یک قاشق از مخلوط را برای دیدن بافت بردارید؛ دانه نباید مرکز سفت واضح داشته باشد. هنگام غلیظ‌شدن کف ظرف را آرام هم بزنید. سفتی شله‌زرد گرم را تنها معیار نکنید؛ پس از برداشتن از حرارت، بافت می‌تواند تغییر کند، پس یک نمونه کوچک را برای سرو دلخواه بررسی کنید.",
+      "Soften rice before sweetening. A spoonful should not contain obviously hard centres. Stir the base gently as it thickens. Assess a small serving sample as well as the hot pot because texture changes off the heat.",
+      "Ammorbidisci il riso prima di dolcificare: non deve avere centri duri. Mescola delicatamente il fondo quando si addensa. Valuta anche un piccolo campione da servire: la consistenza cambia fuori dal fuoco."
+    ],
+    "serving": [
+      "در ظرف‌های کم‌عمق سرو کنید تا تزئین ساده دیده شود. اگر مغز بادام یا پسته اضافه می‌کنید، آن را به مهمان‌ها معرفی و ترکیباتشان را بررسی کنید. برای مقایسه دو گلاب، مقدار کمی از شله‌زرد را جدا کنید؛ کل قابلمه را هم‌زمان با دو عطر نامعلوم ترکیب نکنید.",
+      "Shallow bowls show a simple decoration. Identify any almond or pistachio additions to guests. Compare rosewaters in small separate portions rather than mixing unknown strengths through the whole pot.",
+      "Ciotole basse mostrano una decorazione semplice. Presenta agli ospiti mandorle o pistacchi aggiunti. Confronta acque di rose in piccole porzioni separate invece di miscelare intensità sconosciute nell’intera pentola."
+    ],
+    "qa": [
+      {
+        "q": [
+          "شله‌زرد رنگ دارد اما عطر ندارد؟",
+          "Why is the pudding coloured but not aromatic?",
+          "Perché è colorato ma poco profumato?"
+        ],
+        "a": [
+          "مقدار و کیفیت زعفران و غلبه گلاب یا دارچین را بررسی کنید. رنگ بیشتر به‌تنهایی عطر بهتر را ثابت نمی‌کند.",
+          "Check saffron dose and quality and whether rosewater or cinnamon dominates. More colour alone does not establish better aroma.",
+          "Controlla dose e qualità dello zafferano e predominio di rose o cannella. Più colore non dimostra più profumo."
+        ]
+      },
+      {
+        "q": [
+          "از پودر دارچین داخل کل دسر استفاده کنم؟",
+          "Can cinnamon go through the entire dessert?",
+          "Posso mescolare cannella in tutto il dolce?"
+        ],
+        "a": [
+          "می‌توانید نسخه دیگری بسازید، اما رنگ و مزه تغییر می‌کند. روش این مقاله دارچین را برای تزئین محدود نگه می‌دارد.",
+          "It makes a different version with changed colour and flavour. Here cinnamon is a restrained topping.",
+          "Crea una versione diversa per colore e gusto. Qui la cannella è una guarnizione misurata."
+        ]
+      }
+    ]
+  },
+  "fried-eggplant": {
+    "role": [
+      "بادمجان سرخ‌شده یک ماده آماده برای تکمیل غذاست، نه لزوماً یک خورش کامل. ضخامت برش، نرمی مرکز و مقدار روغن سه تصمیم مهم‌اند. برای آزمون نخست، چند برش هم‌اندازه از یک بادمجان انتخاب کنید؛ مقایسه بادمجان‌های متفاوت در تابه و فر، نتیجه را مبهم می‌کند. روش فرپز را مسیر دیگری با پوسته و بافت متفاوت بدانید.",
+      "Prepared aubergine is an ingredient, not necessarily a full stew. Slice thickness, centre softness and oil are key decisions. Compare equal slices from one aubergine first; oven cooking produces a different surface and texture from pan frying.",
+      "La melanzana preparata è un ingrediente, non necessariamente uno stufato completo. Spessore, morbidezza e olio sono decisivi. Confronta fette uguali della stessa melanzana: il forno produce superficie e consistenza diverse dalla padella."
+    ],
+    "technique": [
+      "برش‌ها را روی هم انباشته نکنید و پیش از جابه‌جایی فرصت دهید سطحشان شکل بگیرد. یک برش ضخیم‌تر را برای نرمی مرکز امتحان کنید. رنگ طلاییِ بیرون با مرکز سفت، پایان پخت نیست. برای مصرف در سس، بادمجان را در پایان اضافه کنید تا با هم‌زدن طولانی شکلش از بین نرود.",
+      "Leave room between slices and let the surface develop before moving them. Test a thick slice: golden outside is insufficient if the centre stays hard. Add cooked aubergines late to sauce to preserve their shape.",
+      "Lascia spazio tra le fette e forma la superficie prima di muoverle. Prova una fetta spessa: dorata fuori non basta se il centro è duro. Aggiungi tardi nel sugo per preservare la forma."
+    ],
+    "serving": [
+      "برای کشک بادمجان، قیمه بادمجان و سرو کنار غذا از همین ماده با روش تکمیل متفاوت استفاده می‌شود. نمک و روغن بادمجان آماده را در دستور بعدی حساب کنید. برای نسخه بدون سس، کمی ترشی جدا هنگام سرو امکان تنظیم مزه هر نفر را می‌دهد.",
+      "Use different finishing methods for kashk, aubergine stew or a side dish. Count prepared aubergine salt and oil in the next recipe. Extra acidity can be offered separately for a plain serving.",
+      "Usa finiture diverse per kashk, stufato o contorno. Considera sale e olio della melanzana pronta nella ricetta successiva. Per servirla semplice, offri acidità a parte."
+    ],
+    "qa": [
+      {
+        "q": [
+          "چرا بادمجان بیرون تیره و داخل سفت است؟",
+          "Why is it dark outside but hard inside?",
+          "Perché è scura fuori ma dura dentro?"
+        ],
+        "a": [
+          "حرارت بالا یا برش ضخیم را بررسی کنید. در نوبت بعد ضخامت یکنواخت و حرارت کنترل‌شده انتخاب کنید؛ تیره‌ترکردن سطح مشکل مرکز را حل نمی‌کند.",
+          "Check excessive heat or thick cuts. Use even thickness and controlled heat; darkening the surface further will not fix the centre.",
+          "Controlla calore eccessivo o taglio spesso. Usa spessore uniforme e calore controllato: scurire ancora non corregge il centro."
+        ]
+      },
+      {
+        "q": [
+          "بادمجان آماده را دوباره طولانی سرخ کنم؟",
+          "Should prepared aubergine be fried again?",
+          "Friggere di nuovo a lungo quella pronta?"
+        ],
+        "a": [
+          "ابتدا راهنمای بسته و نرمی محصول را بررسی کنید. برای ماده‌ای که از قبل پخته است، همان مراحل بادمجان خام را تکرار نکنید.",
+          "Check the pack and existing tenderness first. Already-cooked aubergine does not need the raw-aubergine sequence repeated automatically.",
+          "Verifica confezione e morbidezza. Una melanzana già cotta non richiede automaticamente tutti i passaggi del crudo."
+        ]
+      }
+    ]
+  },
+  "baghali-rice": {
+    "role": [
+      "در باقالی پلو، دانه برنج، باقلا و شوید باید هر سه قابل تشخیص باشند. باقلای با پوست و پوست‌گرفته وزن قابل مصرف یکسان ندارند؛ مقدار دستور را برای بخش خوراکی حساب کنید. شوید تازه و خشک را با مقدار یکسان جایگزین نکنید. اگر اولین بار با باقلای ایتالیایی می‌پزید، پیش از ترکیب با برنج، نرمی یک دانه را بررسی کنید.",
+      "Rice, broad beans and dill should each remain recognisable. Whole pods and peeled beans have different edible weights; count the edible portion. Fresh and dried dill are not interchangeable by equal quantity. Test an Italian broad bean before combining.",
+      "Riso, fave e aneto devono restare riconoscibili. Baccelli e fave sbucciate hanno pesi edibili diversi: conta la parte utilizzabile. Aneto fresco e secco non si scambiano in pari quantità. Prova una fava prima di unire."
+    ],
+    "technique": [
+      "زمان افزودن باقلا را بر اساس وضعیت واقعی آن تنظیم کنید: باقلای ازپیش‌نرم با باقلای خام مسیر یکسان ندارد. برنج را پیش از مرحله دم‌کردن بیش‌ازحد نرم نکنید. هنگام لایه‌کردن، باقلا و شوید را پخش کنید؛ هم‌زدن شدید برای یکدست‌شدن می‌تواند دانه‌ها را بشکند.",
+      "Time beans according to their actual tenderness: pre-softened and raw beans differ. Avoid overcooking rice before steaming. Distribute dill and beans while layering instead of stirring vigorously and breaking grains.",
+      "Regola l’aggiunta secondo morbidezza: fave già tenere e crude differiscono. Non cuocere troppo il riso prima del vapore. Distribuisci fave e aneto negli strati invece di mescolare energicamente."
+    ],
+    "serving": [
+      "این برنج می‌تواند پایه یک وعده بدون گوشت یا همراه غذای دیگری باشد. در سرو، بخشی از باقلا را به هر بشقاب برسانید و زعفران را اختیاری نگه دارید. برای مقایسه روش‌ها، ابتدا نوع باقلا و برنج را ثابت کنید و تنها یک عامل را تغییر دهید.",
+      "Serve as a meatless base or accompaniment. Give each portion some beans; saffron is optional. Compare methods by keeping rice and bean type stable and changing one factor.",
+      "Servi come base senza carne o accompagnamento. Metti fave in ogni porzione; lo zafferano è facoltativo. Confronta metodi mantenendo costanti riso e fave e cambiando un fattore."
+    ],
+    "qa": [
+      {
+        "q": [
+          "باقلا به‌جای سبز روشن، خیلی نرم شده؟",
+          "What if beans become very soft?",
+          "Se le fave diventano troppo morbide?"
+        ],
+        "a": [
+          "رنگ تنها معیار نیست؛ نرمی و زمان پخت را بررسی کنید. در نوبت بعد باقلای نرم را دیرتر اضافه کنید و کمتر جابه‌جا کنید.",
+          "Colour alone is not decisive. Check tenderness and timing; add soft beans later and move less next time.",
+          "Il colore non basta. Valuta morbidezza e tempi; aggiungi più tardi le fave tenere e muovile meno."
+        ]
+      },
+      {
+        "q": [
+          "نخودفرنگی جای باقلاست؟",
+          "Are peas equivalent to broad beans?",
+          "I piselli equivalgono alle fave?"
+        ],
+        "a": [
+          "برای یک برنج سبزیجاتی می‌توانند استفاده شوند، اما طعم و شکل باقالی پلو را دقیق تکرار نمی‌کنند. تغییر را در نام نسخه توضیح دهید.",
+          "They work in a vegetable rice adaptation but do not reproduce broad-bean flavour and shape. Explain the change.",
+          "Funzionano in un riso vegetale adattato ma non riproducono gusto e forma delle fave. Specifica la variazione."
+        ]
+      }
+    ]
+  },
+  "ghormeh-herbs": {
+    "role": [
+      "برای انتخاب سبزی قرمه، اول مشخص کنید محصول فقط سبزی است یا خورش کامل. تازه، خشک، منجمد و سرخ‌شده هرکدام کار متفاوتی از شما می‌خواهند. وزن تازه را به وزن خشک تبدیل مستقیم نکنید. نسبت این راهنما پیشنهاد خانگی است؛ ترکیب و روغن سبزی آماده یک برند را فقط از برچسب همان محصول بشناسید.",
+      "First identify herb preparation versus complete stew. Fresh, dried, frozen and pre-fried mixes require different work. Fresh weight is not a direct dry-weight conversion. This ratio is editorial; a brand’s ingredients and oil must come from its actual label.",
+      "Distingui miscela di erbe e stufato completo. Fresco, secco, surgelato e già cotto richiedono operazioni diverse. Il peso fresco non si converte direttamente al secco. Le proporzioni sono editoriali; per un marchio leggi l’etichetta."
+    ],
+    "technique": [
+      "برای تازه، پاک‌کردن و آبگیری را پیش از خردکردن کامل کنید و بخش‌های خیلی سفت را جدا بگذارید. تابه پهن به کاهش آب کمک می‌کند. در مخلوط آماده، هدف شما تکمیل غذاست، نه تکرار تمام مراحل سبزی خام. اگر روغن یا نمک از قبل دارد، آن را در مرحله بعدی خورش حساب کنید.",
+      "Clean and drain fresh herbs, removing very tough parts before chopping. A wide pan helps moisture reduction. With prepared mixes finish the dish rather than repeating all raw-herb steps; count existing oil and salt.",
+      "Pulisci e scola le erbe fresche eliminando parti dure prima di tritare. Una padella larga aiuta a ridurre l’acqua. Con miscele pronte completa il piatto senza ripetere tutto il crudo; considera olio e sale presenti."
+    ],
+    "serving": [
+      "برای خرید در ایتالیا، نام برگ را از دانه جدا کنید و درباره شنبلیله سؤال دقیق بپرسید. یک مخلوط را ابتدا در قابلمه کوچک آزمایش کنید و نسبت، وزن مصرفی و نوع محصول را ثبت کنید. محصول خوش‌عطرتر را با رنگ تیره‌تر یکی ندانید.",
+      "In Italy distinguish leaves from seeds, especially fenugreek. Test one mix in a small pan and record type, amount and proportions. Darker colour does not automatically mean better aroma.",
+      "In Italia distingui foglie e semi, soprattutto per il fieno greco. Prova una miscela in piccola quantità annotando tipo, dose e proporzioni. Il colore più scuro non garantisce profumo migliore."
+    ],
+    "qa": [
+      {
+        "q": [
+          "سبزی سرخ‌شده همان قرمه‌سبزی آماده است؟",
+          "Are fried herbs a complete Ghormeh Sabzi?",
+          "Le erbe cotte sono Ghormeh completo?"
+        ],
+        "a": [
+          "خیر؛ ممکن است فقط بخش سبزی غذا باشد. لوبیا، چاشنی و دیگر مراحل را طبق دستور غذای خود و راهنمای بسته تکمیل کنید.",
+          "No. It may be only the herb component; finish beans, seasoning and other stages as your recipe and pack require.",
+          "No. Possono essere solo la parte erbacea; completa legumi, condimenti e fasi secondo ricetta e confezione."
+        ]
+      },
+      {
+        "q": [
+          "شنبلیله بیشتر، عطر بهتر می‌دهد؟",
+          "Does more fenugreek mean better aroma?",
+          "Più fieno greco migliora il profumo?"
+        ],
+        "a": [
+          "نه لزوماً. مقدار زیاد می‌تواند بر بقیه عطرها غلبه کند. کم شروع کنید و مخلوط را پس از تکمیل پخت بسنجید.",
+          "Not necessarily. Too much can dominate other aromas. Start small and assess after cooking.",
+          "Non necessariamente. Troppo domina gli altri aromi. Parti con poco e valuta dopo la cottura."
+        ]
+      }
+    ]
+  },
+  "mirza": {
+    "role": [
+      "بادمجان دودی، سیر و گوجه سه محور میرزا قاسمی این راهنما هستند. تخم‌مرغ نسخه اختیاری ماست و حذف آن باید روشن باشد. بادمجان کبابی و فرپز ممکن است درجه دود متفاوتی بدهند؛ انتظار نداشته باشید افزودن ادویه، عطر دود را دقیق بسازد. هدف اصلی، مرکز نرم و ترکیب متعادل گوجه و سیر است.",
+      "Smoked aubergine, garlic and tomato define this guide. Egg is optional and should be identified. Roasting methods yield different smoky intensity; seasoning cannot exactly recreate smoke. Aim for a soft centre and balanced tomato and garlic.",
+      "Melanzana affumicata, aglio e pomodoro guidano la ricetta. L’uovo è facoltativo e va indicato. Metodi di arrostimento danno fumo diverso; le spezie non lo ricreano esattamente. Cerca centro morbido e aglio e pomodoro equilibrati."
+    ],
+    "technique": [
+      "پس از پخت بادمجان، با قاشق نرمی بخش مرکزی را امتحان کنید و سپس گوشت آن را جدا کنید. آب گوجه را پیش از ترکیب نهایی کاهش دهید تا غذا به سس آبکی تبدیل نشود. اگر تخم‌مرغ می‌زنید، مرحله آن را مستقل و با پخت مناسب انجام دهید. هم‌زدن بیشتر، جای کاهش آب گوجه نیست.",
+      "Test the aubergine centre before removing its flesh. Reduce tomato moisture before combining so the spread is not watery. Cook optional eggs appropriately in their own stage. Extra stirring does not replace moisture reduction.",
+      "Prova il centro prima di estrarre la polpa. Riduci l’acqua del pomodoro prima di amalgamare. Cuoci adeguatamente l’uovo nella sua fase. Mescolare di più non sostituisce la riduzione."
+    ],
+    "serving": [
+      "با نان یا برنج ساده سرو کنید و بافت بادمجان را کامل پوره نکنید اگر تکه‌های نرم را ترجیح می‌دهید. برای مقایسه کباب و فر، همان بادمجان و مقدار گوجه را ثابت نگه دارید. نتیجه را نسخه خانگی خود معرفی کنید، نه یک دستور واحد برای تمام گیلان.",
+      "Serve with bread or plain rice; keep soft pieces if preferred over puree. Compare roasting methods using the same aubergine and tomato amounts. This is a home version, not a single definition for all Gilan.",
+      "Servi con pane o riso semplice e conserva pezzi morbidi se preferisci. Confronta cotture con stesse melanzane e pomodoro. È una versione domestica, non una definizione unica per il Gilan."
+    ],
+    "qa": [
+      {
+        "q": [
+          "میرزا قاسمی بدون تخم‌مرغ هم ممکن است؟",
+          "Can I omit eggs?",
+          "Posso omettere le uova?"
+        ],
+        "a": [
+          "بله، در نسخه تطبیقی این راهنما. بافت تغییر می‌کند؛ درباره وجود تخم‌مرغ در محصول آماده از نام غذا نتیجه‌گیری نکنید.",
+          "Yes, in this adaptation, with a changed texture. Do not infer egg content of a prepared product from its name.",
+          "Sì, in questo adattamento, con consistenza diversa. Non dedurre le uova del prodotto pronto dal nome."
+        ]
+      },
+      {
+        "q": [
+          "غذا عطر دودی ندارد؟",
+          "What if there is little smoke flavour?",
+          "Se il gusto affumicato è lieve?"
+        ],
+        "a": [
+          "روش فرپز ممکن است عطر ملایم‌تری بدهد. بادمجان را صرفاً برای دود بیشتر نسوزانید؛ تفاوت روش را بپذیرید و نرمی و مزه را معیار بگیرید.",
+          "Oven roasting may be milder. Do not burn aubergines merely for more smoke; judge tenderness and flavour.",
+          "Il forno può essere più delicato. Non bruciare le melanzane solo per più fumo: valuta morbidezza e gusto."
+        ]
+      }
+    ]
+  },
+  "masala": {
+    "role": [
+      "ماسالا نام یک فرمول یگانه نیست؛ ترکیب ادویه دو بسته ممکن است متفاوت باشد. این نسخه سس خانگی با گوجه، پیاز، زنجبیل و خامه است. garam masala را با هر پودر «کاری» یکسان فرض نکنید. ترکیب نوشته‌شده روی بسته را بخوانید و مقدار اولیه را کم بگیرید؛ رنگ پررنگ سس به‌تنهایی شدت ادویه را نشان نمی‌دهد.",
+      "Masala is not one universal formula; blends differ. This home sauce uses tomato, onion, ginger and cream. Garam masala is not automatically equivalent to any curry powder. Read the blend and start small; colour does not reveal spice intensity.",
+      "Masala non è una formula unica: le miscele differiscono. Qui usiamo pomodoro, cipolla, zenzero e panna. Garam masala non equivale a ogni polvere curry. Leggi la miscela e parti con poco: il colore non misura l’intensità."
+    ],
+    "technique": [
+      "پیاز را نرم و رطوبت گوجه را کنترل کنید تا پایه سس آماده باشد. ادویه را مرحله‌ای اضافه کنید و بعد از مخلوط‌شدن دوباره بچشید. خامه را طبق روش به پایه هماهنگ کنید، نه برای پنهان‌کردن هر ادویه زیاد. سبزیجات پخته را در پایان با سس مخلوط کنید تا بافت خود را حفظ کنند.",
+      "Soften onions and manage tomato moisture first. Add spices in stages and taste after combining. Cream balances this version but should not be treated as a universal fix for excess spice. Add cooked vegetables near the end.",
+      "Ammorbidisci cipolla e controlla l’acqua del pomodoro. Aggiungi spezie per gradi e assaggia. La panna equilibra questa versione ma non corregge universalmente eccessi. Unisci verdure cotte alla fine."
+    ],
+    "serving": [
+      "برنج ساده، گل‌کلم و هویج پیشنهاد سرو این مقاله‌اند. با ترکیب سبزیجات دیگر هم می‌توان نسخه تازه ساخت؛ نام و مقدار را در یادداشت پخت ثبت کنید. ترکیبات سس آماده تجاری را از فرمول پیشنهادی این صفحه حدس نزنید.",
+      "Plain rice, cauliflower and carrots are this guide’s serving suggestions. Other vegetables make another version; record amounts. This home formula does not establish the ingredients of a commercial sauce.",
+      "Riso semplice, cavolfiore e carote sono proposte della guida. Altre verdure creano una variante: annota quantità. La formula domestica non determina ingredienti di una salsa commerciale."
+    ],
+    "qa": [
+      {
+        "q": [
+          "خامه گیاهی را یک‌به‌یک جایگزین کنم؟",
+          "Can plant cream replace dairy identically?",
+          "Panna vegetale come sostituto identico?"
+        ],
+        "a": [
+          "غلظت و مزه محصولات متفاوت است. مقدار کم را در بخشی از سس آزمایش و ترکیبات بسته را بررسی کنید؛ نتیجه ممکن است همان نسخه لبنی نباشد.",
+          "Products differ in thickness and taste. Test a small sauce portion and check ingredients; the result may differ.",
+          "Densità e gusto variano. Prova una piccola porzione e controlla ingredienti: il risultato può cambiare."
+        ]
+      },
+      {
+        "q": [
+          "سس بیش‌ازحد تند شده؟",
+          "What if the sauce is too hot?",
+          "Se la salsa è troppo piccante?"
+        ],
+        "a": [
+          "ادویه بیشتری اضافه نکنید. اگر پایه ساده دارید، مقدار کمی سس را با آن آزمایش کنید. دفعه بعد ادویه همان بسته را مرحله‌ای بریزید.",
+          "Stop adding spice. Test dilution with a plain base in a small portion; dose that blend gradually next time.",
+          "Non aggiungere spezie. Prova una piccola diluizione con base semplice; dosa gradualmente quella miscela la prossima volta."
+        ]
+      }
+    ]
+  },
+  "mushroom-beans": {
+    "role": [
+      "فرق این خوراک با لوبیای ساده، نقش قارچ در عطر و بافت است. لوبیا باید از قبل پخته باشد و قارچ فرصت کاهش آب داشته باشد. قارچ خردشده خیلی ریز ممکن است در سس پنهان شود؛ برای بافت قابل تشخیص، برش‌های نزدیک به هم انتخاب کنید. وزن لوبیای قوطی را پس از آبکش‌کردن بسنجید.",
+      "Mushrooms distinguish this dish in aroma and texture. Use cooked beans and let mushrooms lose excess water. Consistent visible slices work better than tiny pieces if you want distinct texture. Measure tinned beans after draining.",
+      "I funghi distinguono gusto e consistenza. Usa fagioli cotti e lascia perdere acqua ai funghi. Fette uniformi visibili mantengono più carattere dei pezzetti minuscoli. Pesa i fagioli dopo scolatura."
+    ],
+    "technique": [
+      "قارچ را در تابه‌ای با فضای کافی آماده کنید؛ انباشتن آن می‌تواند مرحله کاهش آب را طولانی کند. سس را پیش از افزودن لوبیای بسیار نرم به غلظت نزدیک کنید. در پایان، قارچ و لوبیا را با حرکت آرام ترکیب کنید تا یکی له نشود و دیگری فقط در مایع زیاد شناور نباشد.",
+      "Give mushrooms sufficient pan space. Reduce sauce before adding very tender beans. Combine gently at the end to keep beans intact and mushrooms integrated rather than floating in excess liquid.",
+      "Dai spazio ai funghi in padella. Riduci il sugo prima dei fagioli molto teneri. Amalgama delicatamente per mantenerli integri e integrare i funghi senza liquido eccessivo."
+    ],
+    "serving": [
+      "با نان یا برنج سرو کنید و نمک را با توجه به لوبیا و سس گوجه تنظیم کنید. برای نوبت اول، قارچ و لوبیا را در دو مرحله جدا آماده کنید؛ این کار کمک می‌کند علت بافت آبکی یا له‌شدن را درست تشخیص دهید.",
+      "Serve with bread or rice and account for bean and tomato salt. Preparing mushrooms and beans in separate stages helps identify watery texture or broken beans on a first trial.",
+      "Servi con pane o riso considerando sale di legumi e pomodoro. Fasi separate per funghi e fagioli aiutano a individuare liquido eccessivo o legumi rotti alla prima prova."
+    ],
+    "qa": [
+      {
+        "q": [
+          "قارچ خام را با لوبیا بریزم؟",
+          "Add raw mushrooms with beans?",
+          "Unire funghi crudi ai fagioli?"
+        ],
+        "a": [
+          "در این روش، قارچ ابتدا جدا آماده می‌شود. افزودن خام، آب و زمان سس را تغییر می‌دهد؛ برای همان نتیجه مراحل اصلی را نگه دارید.",
+          "Here mushrooms are prepared first. Raw addition changes water and timing; follow the main stages for this texture.",
+          "Qui i funghi sono preparati prima. Il crudo cambia acqua e tempi: mantieni le fasi per questa consistenza."
+        ]
+      },
+      {
+        "q": [
+          "خوراک را کامل پوره کنم؟",
+          "Can I puree the entire dish?",
+          "Posso frullare tutto?"
+        ],
+        "a": [
+          "می‌شود یک کرم لوبیا و قارچ ساخت، اما دیگر بافت این خوراک را ندارد. آن را پیشنهاد سرو دیگری معرفی کنید و غلظت را جدا تنظیم کنید.",
+          "That creates a bean-mushroom cream, not this texture. Identify it as another serving version and adjust consistency separately.",
+          "Crea una crema di fagioli e funghi, non questa consistenza. Presentala come altra variante e regola la densità."
+        ]
+      }
+    ]
+  },
+  "rice-sack": {
+    "role": [
+      "برای انتخاب برنج، فقط بلندی دانه یا نام روی کیسه کافی نیست. نوع مصرف روی بسته، مقدار آب پیشنهادی و نتیجه یک پخت کوچک را کنار هم ببینید. این راهنما درباره برنج دانه‌بلند است؛ نمونه کاتالوگ، رقم یا منشأ تأییدشده‌ای ندارد. ادعاهایی مثل «بهترین برنج ایرانی» را بدون اطلاعات محصول به آن نسبت ندهید.",
+      "Long grains or a bag name alone do not define suitability. Compare pack use, water advice and a small trial. This guide concerns long-grain rice; the sample listing has no verified cultivar or origin and cannot substantiate quality claims.",
+      "La lunghezza o il nome del sacco non bastano. Confronta uso indicato, acqua consigliata e una piccola prova. La voce campione non ha varietà o origine verificate e non sostiene dichiarazioni di qualità."
+    ],
+    "technique": [
+      "در آزمون نخست، وزن برنج و آب را ثبت و از همان قابلمه استفاده کنید. چند دانه از نقاط مختلف را برای نرمی امتحان کنید. اگر مرکز سفت ماند، با حرارت و مقدار آب همان روش تنظیم کنید؛ هم‌زدن شدید یا فشار به دانه، آزمون مناسب پخت نیست. نسبت موفق یک برنج را خودکار به برنج دیگر منتقل نکنید.",
+      "Record rice and water weights and keep the same pan. Test grains from different spots. Adjust heat and water for hard centres rather than vigorous stirring. A ratio successful for one variety does not automatically transfer to another.",
+      "Registra pesi di riso e acqua e usa la stessa pentola. Prova chicchi da punti diversi. Per centri duri regola calore e acqua, non mescolamento energico. Un rapporto riuscito non vale automaticamente per un’altra varietà."
+    ],
+    "serving": [
+      "برای خورش، دانه‌های جدا و بافت مطلوب خودتان را هدف بگیرید؛ برای غذای دیگر ممکن است معیار متفاوت باشد. کته، آبکش و برنج آماده را از هم تفکیک کنید. یک جدول کوچک از نوع برنج، نسبت آب و نتیجه، برای خرید بعدی از حفظ‌کردن یک زمان ثابت مفیدتر است.",
+      "For stew choose the grain separation you prefer; other dishes need other criteria. Distinguish absorption, drained and ready rice. A record of variety, water and result is more useful than one memorised time.",
+      "Per lo stufato scegli la separazione che preferisci; altri piatti richiedono criteri diversi. Distingui assorbimento, scolatura e riso pronto. Annotare varietà, acqua e risultato vale più di un tempo unico."
+    ],
+    "qa": [
+      {
+        "q": [
+          "همه برنج دانه‌بلند همان نسبت آب را می‌خواهد؟",
+          "Does all long-grain rice use one ratio?",
+          "Tutto il riso lungo usa lo stesso rapporto?"
+        ],
+        "a": [
+          "خیر. نوع، روش و ظرف مؤثرند. با بسته و آزمون کوچک شروع کنید و نسبت را برای همان ترکیب ثبت کنید.",
+          "No. Variety, method and pan matter. Start with the pack and a small trial; record that combination.",
+          "No. Contano varietà, metodo e recipiente. Parti dalla confezione e da una prova piccola annotando la combinazione."
+        ]
+      },
+      {
+        "q": [
+          "برنج آماده را مثل خام بشویم و بجوشانیم؟",
+          "Treat ready rice like raw rice?",
+          "Trattare il riso pronto come crudo?"
+        ],
+        "a": [
+          "راهنمای همان بسته را اجرا کنید. محصول ازپیش‌پخته مسیر خام را ندارد و جوشاندن دوباره می‌تواند بافت را تغییر دهد.",
+          "Follow that pack. Pre-cooked products do not require the raw-rice sequence; boiling again may change texture.",
+          "Segui la confezione. Il precotto non richiede la sequenza del crudo; bollire di nuovo può cambiarne la consistenza."
+        ]
+      }
+    ]
+  },
+  "saffron": {
+    "role": [
+      "برای کاربرد زعفران، رنگ و عطر را جدا بسنجید. رشته زعفران، پودر و فرآورده مخلوط‌شده یک محصول واحد نیستند؛ ترکیبات بسته را بخوانید. نمونه فروشگاه در این مرحله کیفیت یا منشأ قطعی ندارد. برای شروع، مقدار کم از همان محصول را دم کنید و مایع را پیش از ورود به غذا بررسی کنید، نه اینکه فقط از رنگ تصویر نتیجه بگیرید.",
+      "Assess colour and aroma separately. Threads, powder and blends are different products; read ingredients. The store sample does not confirm quality or origin. Infuse a small amount first and assess the actual liquid rather than an image.",
+      "Valuta colore e profumo separatamente. Stimmi, polvere e miscele sono prodotti diversi: leggi ingredienti. Il campione del negozio non conferma qualità o origine. Prepara poco infuso e valuta il liquido reale, non una foto."
+    ],
+    "technique": [
+      "ظرف کوچک و مقدار اندازه‌گیری‌شده کمک می‌کند دوز غذا قابل کنترل باشد. زعفران را با ابزار تمیز نرم کنید، مایع را مرحله‌ای وارد غذا کنید و آب آن را در نسبت کلی دستور حساب کنید. برای برنج، قسمتی کوچک را رنگ بگیرید؛ برای سس، پس از افزودن فرصت بدهید عطر و رنگ پخش شود و سپس تصمیم به مقدار بیشتر بگیرید.",
+      "A small vessel and measured dose make cooking easier to control. Grind with clean tools and count infusion water in the recipe. Colour a small rice portion; in sauce allow distribution before deciding on more.",
+      "Un recipiente piccolo e dosi misurate facilitano il controllo. Usa strumenti puliti e conta l’acqua dell’infuso. Colora una parte del riso; nel sugo attendi la distribuzione prima di aggiungerne."
+    ],
+    "serving": [
+      "برنج زعفرانی و شله‌زرد دو کاربرد این مجموعه‌اند. استفاده کنار غذاهای ایتالیایی پیشنهاد آشپزی است و باید با دستور همان غذا هماهنگ شود. برای مقایسه روش‌ها، مقدار زعفران و آب را ثابت نگه دارید و فقط یک عامل را عوض کنید.",
+      "Saffron rice and rice pudding are two connected uses. Italian-food pairings are cooking suggestions requiring the dish’s own method. Keep saffron and water amounts stable when comparing infusion approaches.",
+      "Riso e budino sono due usi collegati. Abbinamenti italiani sono suggerimenti da coordinare alla ricetta. Mantieni costanti zafferano e acqua confrontando metodi d’infusione."
+    ],
+    "qa": [
+      {
+        "q": [
+          "رنگ پررنگ یعنی زعفران بهتر است؟",
+          "Does stronger colour mean better saffron?",
+          "Più colore significa zafferano migliore?"
+        ],
+        "a": [
+          "به‌تنهایی خیر. تصویر و رنگ، اصالت یا کیفیت را ثابت نمی‌کنند؛ اطلاعات محصول و عطر و کاربرد واقعی را جدا بررسی کنید.",
+          "Not alone. Colour or a picture does not prove authenticity or quality; check product information and actual aroma and use.",
+          "Non da solo. Colore o foto non dimostrano autenticità o qualità: verifica informazioni, profumo e uso reale."
+        ]
+      },
+      {
+        "q": [
+          "مایع دم‌کرده را بدون حساب به برنج اضافه کنم؟",
+          "Add infusion without counting its water?",
+          "Aggiungere infuso senza contarne l’acqua?"
+        ],
+        "a": [
+          "در مقدار زیاد، رطوبت را تغییر می‌دهد. آن را در برنامه آب دستور حساب کنید یا با مقدار کوچک برنجِ سرو مخلوط کنید.",
+          "Large quantities change moisture. Include it in the water plan or mix with a small serving portion.",
+          "Quantità grandi cambiano umidità. Contala nell’acqua prevista o mescola una piccola porzione da servire."
+        ]
+      }
+    ]
+  },
+  "pistachios": {
+    "role": [
+      "پسته با پوست، مغز خام و مغز شور کاربرد یکسان ندارند. وزن پسته با پوست را برای یک دستور مغزپسته مستقیم استفاده نکنید. در شیرینی یا تزئین شله‌زرد، شوری و اندازه خردشدن را کنترل کنید. رنگ سبز به‌تنهایی منشأ، رقم یا کیفیت را ثابت نمی‌کند؛ نمونه کاتالوگ فعلاً چنین اطلاعات تأییدشده‌ای ندارد.",
+      "In-shell, raw and salted kernels have different uses. Do not use in-shell weight as kernel weight. For desserts control salt and chop size. Green colour alone proves neither origin nor grade; the sample listing has no verified claims.",
+      "Pistacchi con guscio, crudi e salati hanno usi diversi. Il peso con guscio non equivale ai gherigli. Nei dolci controlla sale e taglio. Il verde non prova origine o qualità; la voce campione non ha dati verificati."
+    ],
+    "technique": [
+      "برای خردکردن، ابتدا پوست سخت را کامل جدا و مغزها را بررسی کنید. چاقو تکه‌های قابل تشخیص می‌دهد؛ آسیاب طولانی می‌تواند بافت را به خمیر نزدیک کند. در آزمون نخست، مقدار کوچک را با حرکت کوتاه خرد کنید و پیش از ادامه شکل ذرات را ببینید. مغز شور را با مقدار نمک دستور هماهنگ کنید.",
+      "Remove hard shells completely. A knife gives distinct pieces; prolonged grinding may approach a paste. Start with a small batch and short pulses, checking particles. Count salted kernels in the recipe’s seasoning.",
+      "Elimina completamente i gusci duri. Il coltello dà pezzi distinti; macinare a lungo può avvicinare a una pasta. Prova poco con impulsi brevi controllando le particelle. Considera il sale dei pistacchi nel piatto."
+    ],
+    "serving": [
+      "روی برنج، خرما یا دسر از مقدار کم شروع کنید تا پسته هم بافت بدهد و هم دیده شود. برای کاربرد در پستو یا پاستا، آن را یک ایده ترکیبی معرفی کنید و روغن و نمک را با همان دستور تنظیم کنید. پسته را از نظر حساسیت غذایی طبق بسته و نیاز مهمان بررسی کنید.",
+      "Start with a small topping for rice, dates or desserts. Pesto or pasta use is a pairing idea; adjust oil and salt to that recipe. Check pack ingredients and guests’ allergen needs.",
+      "Parti con poca guarnizione su riso, datteri o dolci. Pesto e pasta sono idee d’abbinamento: regola olio e sale secondo ricetta. Verifica ingredienti e necessità degli ospiti."
+    ],
+    "qa": [
+      {
+        "q": [
+          "پسته شور روی شله‌زرد مناسب است؟",
+          "Can salted pistachios top rice pudding?",
+          "Pistacchi salati sul budino?"
+        ],
+        "a": [
+          "انتخاب مزه است؛ ابتدا مقدار کم را جدا امتحان کنید. برای نتیجه ملایم‌تر، مغز بدون نمک راحت‌تر کنترل می‌شود.",
+          "It is a flavour choice. Test a small portion; unsalted kernels make a mild result easier to control.",
+          "È una scelta di gusto. Prova poco a parte: i gherigli non salati facilitano un risultato delicato."
+        ]
+      },
+      {
+        "q": [
+          "خردشده با خمیر پسته یکی است؟",
+          "Are chopped pistachios the same as paste?",
+          "Tritato e pasta di pistacchio sono uguali?"
+        ],
+        "a": [
+          "خیر. اندازه ذرات و کاربرد متفاوت است. خمیر آماده ممکن است ترکیبات دیگری هم داشته باشد؛ برچسب را جدا بخوانید.",
+          "No. Texture and use differ; commercial paste may include other ingredients, so read its label.",
+          "No. Consistenza e uso differiscono; la pasta commerciale può contenere altri ingredienti: leggi l’etichetta."
+        ]
+      }
+    ]
+  },
+  "rosewater": {
+    "role": [
+      "نخستین تصمیم، خوراکی‌بودن گلاب است. بطری آرایشی یا عطری برای این دستور نیست. روی محصول خوراکی، افزودنی، شیرینی و غلظت عطر را بررسی کنید. این نوشیدنی با گلاب کم شروع می‌شود تا امکان تنظیم باشد؛ عطر قوی قرار نیست جای تعادل آب، ترشی و شیرینی را بگیرد.",
+      "First confirm that rosewater is edible; cosmetic or fragrance products are not for this recipe. Check additives, sweetness and aroma strength. Start with a little so water, acidity and sweetness remain balanced.",
+      "Verifica prima che sia alimentare: cosmetici o profumi non servono per questa ricetta. Controlla aggiunte, dolcezza e intensità. Parti con poco per mantenere equilibrio tra acqua, acidità e zucchero."
+    ],
+    "technique": [
+      "مقدار کم گلاب را در بخشی از آب حل کنید و پیش از تهیه همه نوشیدنی مزه را بسنجید. شیرینی و آبلیمو را جداگانه مرحله‌ای اضافه کنید. اگر گلاب غالب شد، در یک مقدار کوچک با آب ساده نسبت را آزمایش کنید؛ افزودن بیشتر شکر لزوماً عطر زیاد را متعادل نمی‌کند.",
+      "Dilute a small dose in part of the water before making the entire drink. Add sweetness and lemon separately in stages. If rosewater dominates, test dilution in a small portion; more sugar does not necessarily balance excess aroma.",
+      "Diluisci poco in parte dell’acqua prima di tutta la bevanda. Aggiungi dolcezza e limone separatamente per gradi. Se domina, prova a diluire una porzione: più zucchero non equilibra necessariamente troppo profumo."
+    ],
+    "serving": [
+      "گلاب در شله‌زرد کاربرد دیگری با دوز و بافت متفاوت دارد. نسبت موفق نوشیدنی را مستقیم به دسر منتقل نکنید. برای مهمان‌ها نوشیدنی کم‌عطر را پایه قرار دهید و درباره گلاب توضیح کوتاه بدهید؛ «ایرانی»بودن، میزان عطر مطلوب همه را یکسان نمی‌کند.",
+      "Rice pudding is another use with different texture and dosage. A drink ratio does not transfer directly to dessert. Offer a gently scented base to guests; preferences vary between people.",
+      "Nel budino dose e consistenza cambiano. Il rapporto di una bevanda non si trasferisce direttamente al dolce. Per gli ospiti parti da profumo delicato: le preferenze sono diverse."
+    ],
+    "qa": [
+      {
+        "q": [
+          "همه acqua di roseها خوراکی‌اند؟",
+          "Is every acqua di rose edible?",
+          "Ogni acqua di rose è alimentare?"
+        ],
+        "a": [
+          "خیر؛ کاربرد خوراکی باید روشن باشد. نام روی بطری به‌تنهایی کافی نیست؛ برچسب و توضیح استفاده را بررسی کنید.",
+          "No. Food use must be explicit. The bottle name alone is insufficient; check labelling and intended use.",
+          "No. L’uso alimentare deve essere esplicito. Il nome della bottiglia non basta: verifica etichetta e destinazione."
+        ]
+      },
+      {
+        "q": [
+          "رنگ نوشیدنی باید صورتی باشد؟",
+          "Must the drink be pink?",
+          "La bevanda deve essere rosa?"
+        ],
+        "a": [
+          "خیر. این روش پایه شفاف دارد؛ رنگ تصویر، رنگ الزامی محصول نیست. اگر چیزی برای رنگ اضافه می‌کنید، آن را در ترکیبات نسخه ذکر کنید.",
+          "No. This method has a clear base. Any added colouring ingredient belongs in the version’s ingredient description.",
+          "No. Qui la base è limpida. Se aggiungi ingredienti coloranti, dichiarali nella descrizione della versione."
+        ]
+      }
+    ]
+  },
+  "dates": {
+    "role": [
+      "خرمای نرم، نیمه‌خشک و خشک برای پرکردن یا خردکردن رفتار متفاوت دارند. برای این پیشنهاد سرو، خرمایی انتخاب کنید که بدون پاره‌شدن باز شود و هسته‌اش راحت جدا شود. نام رقم یا منشأ را فقط از رنگ و شکل حدس نزنید؛ محصول نمونه فروشگاه اطلاعات تأییدشده رقم ندارد. خرمای پرشده با مغز، ترکیبات متفاوت از خرمای ساده دارد.",
+      "Soft, semi-dry and dry dates behave differently when filling or chopping. Choose dates that open without tearing and can be pitted neatly. Colour and shape do not establish cultivar or origin; the sample listing is unverified. Filled dates have extra ingredients.",
+      "Datteri morbidi, semisecchi e secchi si comportano diversamente. Scegli quelli che si aprono senza rompersi e si snocciolano facilmente. Forma e colore non provano varietà o origine; il campione non è verificato. Il ripieno aggiunge ingredienti."
+    ],
+    "technique": [
+      "هر خرما را باز و هسته را کامل خارج کنید؛ سپس مقدار کمی مغز بگذارید تا شکلش بماند. اگر برای مخلوط دسر خرد می‌کنید، اندازه‌ها را نزدیک بگیرید تا هر قاشق سهم مشابه داشته باشد. خرمای بسیار خشک برای این سرو همان بافت خرمای نرم را ندارد؛ روش دیگری انتخاب کنید، نه اینکه آن را به زور پر کنید.",
+      "Open each date and remove its stone fully. Use modest filling to keep its shape. Cut evenly for dessert mixtures. Very dry dates do not give the same filled texture as soft dates; choose another serving method.",
+      "Apri e togli completamente il nocciolo. Usa poco ripieno per mantenere forma. Taglia uniformemente per i dolci. Datteri molto secchi non danno la stessa consistenza di quelli morbidi: scegli un altro servizio."
+    ],
+    "serving": [
+      "برای یک بشقاب ساده، خرمای معمولی و خرمای پرشده را کنار هم بچینید تا مهمان انتخاب کند. همراه چای سیاه، شیرینی اضافی را پیش‌فرض نگیرید. اگر گردو یا پسته استفاده می‌کنید، نوع مغز را در معرفی پذیرایی مشخص کنید.",
+      "Arrange plain and filled dates together for choice. With black tea, extra sweetener need not be automatic. Identify walnut or pistachio fillings to guests.",
+      "Disponi datteri semplici e ripieni per offrire scelta. Con tè nero non aggiungere automaticamente altro dolcificante. Specifica agli ospiti ripieni di noci o pistacchi."
+    ],
+    "qa": [
+      {
+        "q": [
+          "هر خرما برای پرکردن مناسب است؟",
+          "Is every date suitable for filling?",
+          "Ogni dattero si presta al ripieno?"
+        ],
+        "a": [
+          "خیر. بافت و امکان بازکردن مهم‌اند. یک عدد را آزمایش کنید و خرمای بسیار خشک را برای کاربرد متفاوت کنار بگذارید.",
+          "No. Test texture and opening with one date; reserve very dry dates for a different use.",
+          "No. Prova consistenza e apertura con un dattero; usa quelli molto secchi diversamente."
+        ]
+      },
+      {
+        "q": [
+          "خرمای پرشده را خرمای ساده معرفی کنم؟",
+          "Describe filled dates as plain dates?",
+          "Presentare ripieni come datteri semplici?"
+        ],
+        "a": [
+          "نوع مغز و افزودنی را مشخص کنید. خرمای پرشده دیگر فقط یک ماده نیست و برای انتخاب مهمان این تفاوت مهم است.",
+          "Name nuts and additions. Filled dates are no longer a single ingredient; that matters for guests’ choices.",
+          "Specifica frutta secca e aggiunte. Non è più un solo ingrediente: conta per la scelta degli ospiti."
+        ]
+      }
+    ]
+  },
+  "black-tea": {
+    "role": [
+      "برگ چای، اندازه ذرات، مقدار آب و زمان دم‌کردن را کنار هم تنظیم کنید. چای کیسه‌ای و برگ درشت رفتار یکسان ندارند و «چای ایرانی» هم یک درجه ثابت از غلظت نیست. بسته انتخاب‌شده را نقطه شروع قرار دهید. نمونه کاتالوگ در این مرحله منشأ یا درجه تأییدشده‌ای ندارد؛ کیفیت را از تصویر استکان نتیجه نگیرید.",
+      "Leaf size, dose, water and infusion time work together. Tea bags and large leaves differ; Iranian tea is not one fixed strength. Start with the chosen pack. The sample listing has no verified origin or grade; a glass image cannot establish quality.",
+      "Dimensione delle foglie, dose, acqua e tempo lavorano insieme. Bustine e foglie grandi differiscono; il tè iraniano non ha una sola intensità. Parti dalla confezione. Il campione non verifica origine o grado; la foto non prova qualità."
+    ],
+    "technique": [
+      "برای آزمون اول، مقدار برگ و آب را اندازه بگیرید و پس از زمان پیشنهادی بسته بچشید. اگر می‌خواهید غلیظ‌تر شود، در نوبت بعد یک عامل را تغییر دهید. باقی‌ماندن برگ در مایع می‌تواند مزه را همچنان تغییر دهد؛ برای مقایسه منصفانه دو چای، آن‌ها را در مرحله مشابه صاف کنید و ظرف هم‌اندازه بگیرید.",
+      "Measure leaves and water and taste after the pack’s suggested time. Change one factor next time for more strength. Leaves remaining in liquid can continue changing flavour; strain at comparable stages when comparing two teas.",
+      "Misura foglie e acqua e assaggia al tempo indicato. Cambia un fattore alla prova successiva per più intensità. Foglie nel liquido continuano a cambiarlo: filtra in fasi comparabili quando confronti due tè."
+    ],
+    "serving": [
+      "برای پذیرایی، چای ساده را پایه قرار دهید و خرما یا شیرینی را جدا بدهید. اگر هل یا گلاب اضافه می‌کنید، ابتدا یک استکان را امتحان و آن را نسخه معطر معرفی کنید. چای ساده، چای شیرین و چای معطر را به‌عنوان انتخاب‌های مختلف نگه دارید.",
+      "Serve plain tea with dates or sweets separately. Test cardamom or rosewater in one glass first and identify the scented variation. Keep plain, sweetened and aromatic tea as distinct choices.",
+      "Servi tè semplice con datteri o dolci a parte. Prova cardamomo o rose in un bicchiere e presenta la variante profumata. Mantieni distinti tè semplice, dolcificato e aromatico."
+    ],
+    "qa": [
+      {
+        "q": [
+          "چای تلخ شد؛ فقط شکر اضافه کنم؟",
+          "Should sugar fix bitter tea?",
+          "Lo zucchero corregge tè amaro?"
+        ],
+        "a": [
+          "شکر مزه دیگری اضافه می‌کند، اما علت را رفع نمی‌کند. مقدار برگ و زمان را بررسی کنید و در آزمون بعد یکی را کم کنید.",
+          "Sugar adds another taste without fixing the cause. Review dose and time and reduce one next time.",
+          "Lo zucchero aggiunge un gusto senza correggere la causa. Rivedi dose e tempo e riducine uno."
+        ]
+      },
+      {
+        "q": [
+          "رنگ تیره‌تر یعنی دم بهتر؟",
+          "Is darker tea necessarily better brewed?",
+          "Più scuro significa infusione migliore?"
+        ],
+        "a": [
+          "خیر؛ رنگ، عطر و مزه را جدا بسنجید. نتیجه خوب برای یک چای یا یک نفر، معیار ثابت همه چای‌ها و سلیقه‌ها نیست.",
+          "No. Assess colour, aroma and taste separately. A good result for one tea or person is not universal.",
+          "No. Valuta colore, aroma e gusto separatamente. Un risultato adatto a un tè o persona non è universale."
+        ]
+      }
+    ]
+  }
+}

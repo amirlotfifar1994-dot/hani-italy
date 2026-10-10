@@ -1,0 +1,26 @@
+[
+  {
+    "key": "verona-2",
+    "prompt": "Use case: photorealistic-natural. Asset type: editorial illustration for a Verona local food guide. Create a single realistic food photograph of risotto all'Amarone, traditional Verona risotto made from Vialone Nano rice and red Amarone wine. A generous serving of creamy burgundy-mauve risotto on an understated ivory ceramic shallow plate, visibly individual small rice grains, glossy butter-mantecare texture, subtle grated cheese melting in. No meat chunks, no seafood, no tomato sauce. A small blurred wineglass behind, linen napkin on a natural stone trattoria table. Angled overhead food photography, entire dish visible, soft natural window lighting, appetizing true-to-life texture. Landscape 3:2, image only, no labels, text, logos, watermark. Illustrative serving, not a real restaurant photograph."
+  },
+  {
+    "key": "verona-3",
+    "prompt": "Use case: photorealistic-natural. Asset type: editorial illustration for a Verona local food guide. Single realistic food photograph of bollito con pearà, Verona boiled meat served with its traditional pearà sauce. Several tender thin slices of plainly boiled beef, muted brown-grey cooked color, NO grill marks, arranged on a simple ivory dinner plate. Alongside the beef a generous spoonful of thick beige-to-grey sauce made of bread crumbs, broth and abundant black pepper, visibly grainy and pepper-speckled; a small terracotta sauce bowl containing the same pearà behind the plate. Simple pale stone trattoria tabletop with folded linen. No red sauce, no steak-char, no noodles. Whole plate visible, angled overhead editorial food photography, warm natural daylight, realistic appetizing texture. Landscape 3:2, no text, logos or watermark. Illustrative serving, not a real restaurant photograph."
+  },
+  {
+    "key": "milan-3",
+    "prompt": "Use case: photorealistic-natural. Create a single high quality editorial food photograph for a Milan local cuisine guide: traditional ossobuco alla milanese, a thick cross-cut veal shank braised until tender, clearly visible round marrow bone in its centre, in glossy golden brown braising juices, sprinkled very lightly with chopped parsley-lemon gremolata, served with a small portion of saffron-yellow risotto beside it on an ivory ceramic plate. No grilled steak, no raw meat, no pork, no excessive garnish. Entire plate visible, angled overhead, pale stone trattoria tabletop, linen napkin, soft daylight, sharp true-to-life textures and appetizing color. Landscape 3:2. No text, watermark, branding or people. Illustrative serving, not a real restaurant photograph."
+  },
+  {
+    "key": "florence-3",
+    "prompt": "Use case: photorealistic-natural. Single high quality editorial food photograph for Florence local cuisine guide. Traditional bistecca alla fiorentina: a very thick large T-bone beef steak grilled with clear seared exterior and a pink interior exposed in a few slices cut beside the intact bone. Large simple serving plate, small rosemary sprig, modest coarse salt, Tuscan rustic tableware, pale stone table and linen. Steak is the clear subject, entire steak and plate visible, natural window light, warm real color, photographic detail. No sauces, no hamburger, no flour coating, no fries, no words, logos or watermark. Landscape 3:2 angled overhead. Illustrative serving, not a real restaurant photograph."
+  },
+  {
+    "key": "palermo-3",
+    "prompt": "Use case: photorealistic-natural. Single high quality editorial food photograph for Palermo local cuisine guide. Three golden crispy Sicilian arancine, rounded rice balls with breadcrumb fried crust on a simple ivory plate, one cut open showing white rice, a small heart of tomato-braised beef ragù and green peas. Round Palermo style rice balls, not conical. A clean pale stone tabletop, softly blurred linen, whole plate in frame. Natural daylight, sharp crunchy texture, attractive authentic food photography. Landscape 3:2 angled overhead. No text, signage, watermarks or packaging. Illustrative serving, not a real restaurant photograph."
+  },
+  {
+    "key": "palermo-4",
+    "prompt": "Use case: photorealistic-natural. Single high quality editorial food photograph for Palermo local cuisine guide. Four traditional Sicilian cannoli, crisp brown tubular fried pastry shells with creamy white sheep-milk ricotta filling visible at both ends, some decorated with crushed pistachios at the ends, a light dusting of powdered sugar. Arranged on a small ivory ceramic plate, entire desserts visible, rustic pale stone cafe tabletop, subtle linen, natural soft window lighting, photographic appetizing texture. Landscape 3:2 angled overhead. No chocolate dipped shells, no fruit piled around, no croissant, no signage, words, logos, watermarks or package. Illustrative serving, not a real restaurant photograph."
+  }
+]

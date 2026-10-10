@@ -1,0 +1,562 @@
+[
+  {
+    "id": "ghormeh",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-7e014995-9574-47ff-b639-7c259c8ed6bb.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Ghormeh Sabzi: a dark green finely chopped herb stew with visible red kidney beans and browned mushrooms, NO meat. Shallow green glazed bowl with a small separate bowl of plain rice and dried Persian limes. Three-quarter macro view on light limestone. Herb stew must look dark emerald and coarse, not a green puree. Style: premium authentic home-food magazine photography, real irregular food texture, natural window light, appetizing but credible, restrained cream/deep green/warm gold setting. Main dish entirely visible in central 70%, useful for a 3:2 hero and cropped cards. Single scene, no collage, no packaging, no brand marks, no text, no watermark, no hands. Each asset has its own composition.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 218378
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 65186
+    }
+  },
+  {
+    "id": "gheimeh",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-588a547c-cb98-460d-9286-c32f07cf562f.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Persian meatless Gheimeh: rich orange tomato stew with clearly visible intact yellow split peas, topped with a neat handful of slender golden fried potato matchsticks. Round ivory bowl, folded deep green napkin, one dried lime. Overhead view on dark walnut wood, no meat. Style: premium authentic home-food magazine photography, real irregular food texture, natural window light, appetizing but credible, restrained cream/deep green/warm gold setting. Main dish entirely visible in central 70%, useful for a 3:2 hero and cropped cards. Single scene, no collage, no packaging, no brand marks, no text, no watermark, no hands. Each asset has its own composition.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 211238
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 56588
+    }
+  },
+  {
+    "id": "fesenjan",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-4d10ae35-d765-46b5-81a9-74958bcc57b0.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Meatless Persian Fesenjan: thick glossy dark brown finely ground walnut and pomegranate sauce, a few browned mushrooms visible. Dark handmade ceramic shallow bowl, cracked walnuts and cut pomegranate to one side. Dramatic low side angle with soft daylight on warm stone, no chicken or meat. Style: premium authentic home-food magazine photography, real irregular food texture, natural window light, appetizing but credible, restrained cream/deep green/warm gold setting. Main dish entirely visible in central 70%, useful for a 3:2 hero and cropped cards. Single scene, no collage, no packaging, no brand marks, no text, no watermark, no hands. Each asset has its own composition.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 228406
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 72512
+    }
+  },
+  {
+    "id": "eggplant",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-0f8952ea-ef47-4349-a6bd-603988de0cc1.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Persian Gheimeh Bademjan meatless stew: two long roasted eggplant halves with intact purple skins resting on tomato-yellow split pea stew. Oval cream dish, restrained herbs and rice at edge. Close diagonal overhead composition on pale sage linen. No meat, no potato topping. Style: premium authentic home-food magazine photography, real irregular food texture, natural window light, appetizing but credible, restrained cream/deep green/warm gold setting. Main dish entirely visible in central 70%, useful for a 3:2 hero and cropped cards. Single scene, no collage, no packaging, no brand marks, no text, no watermark, no hands. Each asset has its own composition.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 299264
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 74076
+    }
+  },
+  {
+    "id": "celery",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-b1a10d91-01be-4787-a1e2-aa7546e69c57.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Meatless Persian celery stew: distinct pale green celery batons in a dark parsley-mint broth with golden onion, no meat, no beans. Low ivory earthenware bowl on charcoal stone, fresh celery stalk cropped at corner. Medium close side view, gentle steam. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 184310
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 58612
+    }
+  },
+  {
+    "id": "spinach",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-ecde5faf-7db2-4137-9d49-79d99600a907.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Persian spinach and dried plum stew without meat: wilted dark green spinach and several shiny whole brown-gold dried plums in a thick sauce. Terracotta dish on pale cream table, three-quarter angle, warm side daylight. No red kidney beans, no meat. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 193996
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 60552
+    }
+  },
+  {
+    "id": "rice",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-988d44ef-f4c2-4089-bd32-a83c3c15ac40.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Fluffy Persian saffron rice: individual long white rice grains with a bright golden saffron crown and a small separate crisp tahdig wedge. Elegant white wide plate on dark forest green linen. Three-quarter close view highlighting separate grains, not risotto. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 144586
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 44758
+    }
+  },
+  {
+    "id": "dolmeh",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-b3f3d7bb-feb5-4b9b-b694-6566ee712de9.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Persian vegetarian vine-leaf dolmeh: eight tightly folded squat square parcels of olive green grape leaves arranged in a shallow blue-green glazed platter, one parcel opened showing rice, yellow split peas and chopped dill. Top-down shot on cream limestone, subtle lemon wedge. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 308394
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 82642
+    }
+  },
+  {
+    "id": "ash",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-ab125c1f-49d3-42e6-94e8-01c950f633f2.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Ash Reshteh Persian herb noodle soup: thick green herb soup with visible chickpeas, beans and flat wheat noodles, garnished with modest white kashk swirls, brown fried onions and mint oil. Deep cream bowl with spoon on walnut board. Forty-five degree close shot. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 208088
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 63672
+    }
+  },
+  {
+    "id": "beans",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-0b2e19f4-3f96-4cdb-ba26-1afae5a2df31.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Persian pinto-bean tomato casserole: plump beige speckled cooked pinto beans in glossy muted orange tomato sauce, no mushrooms, no meat. Small rustic metal saucepan on warm pale stone, bread at edge. Direct overhead frame. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 265672
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 72452
+    }
+  },
+  {
+    "id": "soya",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-41d2d68c-152b-44be-8303-a6b9d4fed5e0.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Persian soya pasta: long cooked spaghetti lightly coated in red tomato sauce with fine textured soya mince, small mushroom and pepper pieces, alongside a tiny crispy potato tahdig piece. Off-white plate on sage stone. Close low angle; no animal mince, no grated cheese. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 190896
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 57232
+    }
+  },
+  {
+    "id": "okra",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-00187e23-f27f-48a0-a8a6-556d6722c590.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Persian meatless okra stew: small whole green okra pods with intact tapered tips in brick-red tomato sauce. Oval dark green ceramic bowl, lemon slice and sparse garlic at edge. Oblique overhead on ivory plaster, pods clearly visible, no meat. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 265688
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 71748
+    }
+  },
+  {
+    "id": "herb-stew",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-5dc5a42c-8ca8-4005-b7b4-f01adfd17858.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Ghalieh Persian herb and tamarind stew without fish: finely chopped coriander dark green thick sauce, a few browned sliced mushrooms, garlic, brown tamarind pod nearby. Shallow copper-colored pot on dark wood. Moody three-quarter macro; no fish, no kidney beans, no rice inside stew. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 219342
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 67696
+    }
+  },
+  {
+    "id": "curd",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-695d4106-b07e-432c-835a-2b0907127c9f.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Kashk Bademjan: thick Persian mashed roasted eggplant spread in a handmade cream shallow bowl, restrained pale kashk drizzle, fried onion ribbons and tiny dried mint oil pools. A spoonful of spread lifted slightly by resting spoon; rustic bread at corner. Side-lit close view on deep sage linen. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 217858
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 64966
+    }
+  },
+  {
+    "id": "baghali",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-0dd7471d-5fd6-44df-955f-1f3c177b34a1.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Baghali Ghatogh home variation: cooked creamy white beans in a golden-green dill and garlic broth, one softly set egg in the center. Small green pottery saucepan on cream table, dill sprigs nearby. Intimate top-down view. White beans, not green peas. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 242564
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 71888
+    }
+  },
+  {
+    "id": "sholezard",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-cb9bf32d-21a3-488c-b09c-377df2e86d73.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Sholeh Zard Persian saffron rice pudding: bright golden yellow soft grainy pudding in a shallow porcelain bowl, simple cinnamon diamond motif with a few almond slivers. Two small rose petals nearby. Close overhead shot on warm walnut; no text, no elaborate unreadable calligraphy. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 214490
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 61698
+    }
+  },
+  {
+    "id": "fried-eggplant",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-1bb07b74-49f0-435b-a48d-41ea465cd0ba.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Cooking guide for aubergines: six golden roasted aubergine slices with deep purple edges arranged on a baking tray lined with parchment, one halved raw aubergine near edge, subtle olive oil gloss. Diagonal top-down composition on pale stone; no stew or tomato sauce. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 270070
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 77548
+    }
+  },
+  {
+    "id": "baghali-rice",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-48d358b1-213e-43e3-a2bd-abb1affdfcfd.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Baghali Polo: fluffy long-grain white rice scattered generously with finely chopped green dill and peeled pale green broad beans, a few saffron-tinted grains. Wide green-edged bowl on cream linen. Forty-five degree close shot, no meat and no green peas. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 250062
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 72506
+    }
+  },
+  {
+    "id": "ghormeh-herbs",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-df761952-7de5-4ba7-bd01-2620fd7e34d8.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Persian Ghormeh herb preparation: distinct bunches of fresh flat-leaf parsley, coriander and green spring onion on a wooden cutting board, small mound finely chopped herbs and tiny ceramic dish of dried fenugreek leaves. Overhead editorial ingredient still life on pale stone. NO stew, no packaging, no labels, no visible knife blade pointing at viewer. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 293832
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 83424
+    }
+  },
+  {
+    "id": "mirza",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-d701ccbf-7fe4-4c2f-8fea-8e369c91ae0a.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Mirza Ghasemi: chunky smoked eggplant, tomato and garlic spread with soft scrambled egg blended through it, in a round terracotta shallow dish; roasted smoky eggplant with wrinkled charred skin beside it. Close low oblique shot on olive linen, no white kashk or yogurt topping. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 214406
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 63224
+    }
+  },
+  {
+    "id": "masala",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-0b969ccd-9816-4cf0-9201-64417f0a7059.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Creamy tomato masala sauce served with cooked cauliflower florets and carrot pieces in a small cream bowl, tiny bowl of warm brown ground spices and fresh ginger beside it. Bright three-quarter photo on deep green table. Rust-orange silky sauce, no meat, no curry leaves, no packaging. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 195710
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 55486
+    }
+  },
+  {
+    "id": "mushroom-beans",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-576a6abc-1705-451c-b71d-ef4c4218e5c3.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Pinto beans and mushroom casserole: plump cooked pinto beans and prominent browned sliced button mushrooms in thick tomato gravy, rustic ivory oval serving dish with warm wooden spoon. Low close-up on dark sage stone. No meat, no herb puree, mushroom slices prominent. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 247922
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 68260
+    }
+  },
+  {
+    "id": "rice-sack",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-df1ed477-c085-4bae-bc35-13ebaeefac66.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Long-grain rice cooking guide ingredient still life: a ceramic scoop of uncooked slender long white rice grains spilling onto warm stone, small green bowl of cooked plain fluffy long-grain rice beside it. Macro diagonal overhead, linen corner and restrained kitchen setting. No labelled bag, no risotto, no saffron crown. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 202448
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 66200
+    }
+  },
+  {
+    "id": "saffron",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-b63136d1-0cf5-4b55-ab6d-2570f00d26a5.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Saffron infusion guide: delicate red saffron threads in a tiny porcelain dish, small glass cup of vivid transparent amber-gold saffron water and a stone mortar containing a few crushed threads. Macro side view with light shining through infusion, pale limestone, subtle green linen. No fake labels, no finished stew. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 154184
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 51386
+    }
+  },
+  {
+    "id": "pistachios",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-b55be3bb-6145-474e-a13e-a3b8695ae729.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Pistachio cooking guide: naturally green-purple shelled pistachio kernels, a small mound chopped pistachios on a wooden board, a few open beige shells off to the side. Intimate top-down still life on ivory linen with green glazed small bowl. Texture-focused, no dates, no sweets, no packaging. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 275008
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 79716
+    }
+  },
+  {
+    "id": "rosewater",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-b1eafcae-c507-456d-860b-1693c40f1ef7.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Edible rosewater serving guide: clear pale drink in a slim glass with small ice cubes and a lemon peel curl, unlabelled clear carafe and just two pink rose petals nearby. Delicate side-lit editorial close-up on warm cream stone with muted green background. Drink remains mostly clear, not opaque pink; no perfume bottle. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 100664
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 32582
+    }
+  },
+  {
+    "id": "dates",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-00625902-be1a-48ee-b607-f02ee45b414f.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Dates serving guide: eight glossy deep brown pitted dates, some filled with bright green chopped pistachios and walnut pieces, arranged on a long small cream platter. One opened date shows filling clearly. Diagonal overhead on deep forest green cloth. No bowl of mixed nuts, no saffron rice, no packaging. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 195354
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 61356
+    }
+  },
+  {
+    "id": "black-tea",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-b351785b-04dd-4c52-839a-54bc7d1b2ca0.png",
+    "prompt": "Use case: photorealistic-natural. Asset: unique wide landscape editorial cover photograph for Persia Market cooking journal, 1536x1024. Subject: Persian black tea brewing guide: dark amber clear tea in a traditional slim waist glass on a saucer, small clear heat-safe teapot softly blurred behind, loose black tea leaves in tiny green dish. Low side view on dark warm wood, strong warm window backlight through tea, no milk, no text. Style: premium authentic home-food magazine photography, real food texture, natural window light, credible and appetizing, restrained cream/deep green/warm gold setting. Main subject in central 70%, designed for wide 3:2 hero and cropped article cards. Single scene, no collage, no packaging, no brand marks, no writing, no watermark, no people. Specific preparation follows the described scene, not factory pack contents.",
+    "tool": "built-in image_gen",
+    "input": {
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "width": 1280,
+      "height": 853,
+      "bytes": 131720
+    },
+    "card": {
+      "width": 640,
+      "height": 427,
+      "bytes": 44556
+    }
+  }
+]

@@ -1,2 +1,24 @@
 .claude/
 .openai/
+
+.local-data/
+
+.env
+.env.*
+!.env.example
+
+node_modules/
+*.log
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.token
+%SystemDrive%/
+screenshots/
+research/generated-journal-details/
+
+# Private supplier workbook extracts and procurement quantities.
+research/listino-audit/source-cells.json
+research/listino-audit/assortment-plan.json
+research/hani-assortment-reconciliation-2026-10-05.md

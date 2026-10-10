@@ -1,0 +1,202 @@
+[
+  {
+    "id": "okra-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/okra-stew-meatless/",
+    "sourceRow": 41,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/okra-tin-480.webp"
+  },
+  {
+    "id": "celery-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/celery-stew-2/",
+    "sourceRow": 42,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/celery-tin-480.webp"
+  },
+  {
+    "id": "ghormeh-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/ghormeh-stew-2/",
+    "sourceRow": 43,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/ghormeh-tin-480.webp"
+  },
+  {
+    "id": "gheimeh-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/gheimeh-stew-2/",
+    "sourceRow": 44,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/gheimeh-tin-480.webp"
+  },
+  {
+    "id": "eggplant-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/gheimeh-bademjan-stew-2/",
+    "sourceRow": 45,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/eggplant-tin-480.webp"
+  },
+  {
+    "id": "fesenjan-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/fesenjan-stew-2/",
+    "sourceRow": 46,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/fesenjan-tin-480.webp"
+  },
+  {
+    "id": "ash-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/ash-reshteh/",
+    "sourceRow": 48,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/ash-tin-480.webp"
+  },
+  {
+    "id": "ash-shole-ghalamkar-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/ash-shole-ghalamkar/",
+    "sourceRow": 49,
+    "status": "draft",
+    "publicationHold": true,
+    "image": "assets/hani/ash-shole-ghalamkar-tin-480.webp"
+  },
+  {
+    "id": "haleem-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/haleem-meatless/",
+    "sourceRow": 50,
+    "status": "draft",
+    "publicationHold": true,
+    "image": "assets/hani/haleem-tin-480.webp"
+  },
+  {
+    "id": "curd-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/eggplant-curd/",
+    "sourceRow": 52,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/curd-tin-480.webp"
+  },
+  {
+    "id": "fried-eggplant-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/fried-eggplant-2/",
+    "sourceRow": 53,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/fried-eggplant-tin-480.webp"
+  },
+  {
+    "id": "mirza-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/mirza-ghasemi-2/",
+    "sourceRow": 54,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/mirza-tin-480.webp"
+  },
+  {
+    "id": "cooked-spinach-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/cooked-spinach/",
+    "sourceRow": 55,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/cooked-spinach-tin-480.webp"
+  },
+  {
+    "id": "broad-beans-tin-460",
+    "sourceUrl": "https://hanifoods.nl/products/broad-beans/",
+    "sourceRow": 57,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/broad-beans-tin-460.webp"
+  },
+  {
+    "id": "dolmeh-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/dolmeh/",
+    "sourceRow": 59,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/dolmeh-tin-480.webp"
+  },
+  {
+    "id": "kuku-herbs-tin-460",
+    "sourceUrl": "https://hanifoods.nl/products/kuku-sabzi-herbs/",
+    "sourceRow": 60,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/kuku-herbs-tin-460.webp"
+  },
+  {
+    "id": "kufteh-tabrizi-tin-460",
+    "sourceUrl": "https://hanifoods.nl/products/kufteh-tabrizi/",
+    "sourceRow": 61,
+    "status": "draft",
+    "publicationHold": true,
+    "image": "assets/hani/kufteh-tabrizi-tin-460.webp"
+  },
+  {
+    "id": "ghormeh-herbs-tin-460",
+    "sourceUrl": "https://hanifoods.nl/products/fried-ghormeh-herbs-2/",
+    "sourceRow": 63,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/ghormeh-herbs-tin-460.webp"
+  },
+  {
+    "id": "mint-parsley-tin-460",
+    "sourceUrl": "https://hanifoods.nl/products/fried-mint-and-parsley/",
+    "sourceRow": 64,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/mint-parsley-tin-460.webp"
+  },
+  {
+    "id": "celery-herbs-tin-460",
+    "sourceUrl": "https://hanifoods.nl/products/fried-celery-herbs/",
+    "sourceRow": 65,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/celery-herbs-tin-460.webp"
+  },
+  {
+    "id": "fried-onion-tin-200",
+    "sourceUrl": "https://hanifoods.nl/products/fried-onion/",
+    "sourceRow": 66,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/fried-onion-tin-200.webp"
+  },
+  {
+    "id": "fried-garlic-tin-300",
+    "sourceUrl": "https://hanifoods.nl/products/fried-garlic/",
+    "sourceRow": 67,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/fried-garlic-tin-300.webp"
+  },
+  {
+    "id": "caramelized-onion-tin-480",
+    "sourceUrl": "https://hanifoods.nl/products/caramelized-onion/",
+    "sourceRow": 68,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/caramelized-onion-tin-480.webp"
+  },
+  {
+    "id": "onion-puree-tin-460",
+    "sourceUrl": "https://hanifoods.nl/products/onion-puree/",
+    "sourceRow": 69,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/onion-puree-tin-460.webp"
+  },
+  {
+    "id": "samanoo-tin-600",
+    "sourceUrl": "https://hanifoods.nl/products/samanoo/",
+    "sourceRow": 71,
+    "status": "published",
+    "publicationHold": false,
+    "image": "assets/hani/samanoo-tin-600.webp"
+  }
+]

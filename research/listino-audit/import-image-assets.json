@@ -1,0 +1,702 @@
+[
+  {
+    "productUrl": "https://hanifoods.nl/products/samanoo/",
+    "asset": {
+      "id": "2ec137ef5329c786",
+      "kind": "image",
+      "name": "Samanoo-600-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 832,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Samanoo-600-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "2ec137ef5329c786",
+      "kind": "image",
+      "name": "Samanoo-600-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/323953c0-dcd1-4216-9f72-7eaf5abde798/2ec137ef5329c786.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Samanoo-600-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/fried-eggplant-2/",
+    "asset": {
+      "id": "5a693483e79185f0",
+      "kind": "image",
+      "name": "ried-Eggplant-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 849,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/ried-Eggplant-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "5a693483e79185f0",
+      "kind": "image",
+      "name": "ried-Eggplant-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/323953c0-dcd1-4216-9f72-7eaf5abde798/5a693483e79185f0.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/ried-Eggplant-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/onion-puree/",
+    "asset": {
+      "id": "6a57b24d2b1616d7",
+      "kind": "image",
+      "name": "Onion-Puree-460-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 866,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Onion-Puree-460-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "6a57b24d2b1616d7",
+      "kind": "image",
+      "name": "Onion-Puree-460-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/323953c0-dcd1-4216-9f72-7eaf5abde798/6a57b24d2b1616d7.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Onion-Puree-460-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/okra-stew-meatless/",
+    "asset": {
+      "id": "a0de70b60a31e3c7",
+      "kind": "image",
+      "name": "Okra-Stew-Meatless-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 883,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Okra-Stew-Meatless-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "a0de70b60a31e3c7",
+      "kind": "image",
+      "name": "Okra-Stew-Meatless-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/323953c0-dcd1-4216-9f72-7eaf5abde798/a0de70b60a31e3c7.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Okra-Stew-Meatless-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/mirza-ghasemi-2/",
+    "asset": {
+      "id": "c84c081a614118c7",
+      "kind": "image",
+      "name": "Mirza-Ghasemi-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 900,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Mirza-Ghasemi-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "c84c081a614118c7",
+      "kind": "image",
+      "name": "Mirza-Ghasemi-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/323953c0-dcd1-4216-9f72-7eaf5abde798/c84c081a614118c7.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Mirza-Ghasemi-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/kuku-sabzi-herbs/",
+    "asset": {
+      "id": "7146387a20c9f209",
+      "kind": "image",
+      "name": "Kuku-Sabzi-Herbs-460-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 917,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Kuku-Sabzi-Herbs-460-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "7146387a20c9f209",
+      "kind": "image",
+      "name": "Kuku-Sabzi-Herbs-460-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/323953c0-dcd1-4216-9f72-7eaf5abde798/7146387a20c9f209.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Kuku-Sabzi-Herbs-460-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/kufteh-tabrizi/",
+    "asset": {
+      "id": "cee759161e331275",
+      "kind": "image",
+      "name": "Kufteh-Tabrizi-460-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 934,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Kufteh-Tabrizi-460-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "cee759161e331275",
+      "kind": "image",
+      "name": "Kufteh-Tabrizi-460-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/323953c0-dcd1-4216-9f72-7eaf5abde798/cee759161e331275.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Kufteh-Tabrizi-460-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/haleem-meatless/",
+    "asset": {
+      "id": "733e8d9f33e3a42c",
+      "kind": "image",
+      "name": "Haleem-Meatless-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 753,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Haleem-Meatless-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "733e8d9f33e3a42c",
+      "kind": "image",
+      "name": "Haleem-Meatless-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/733e8d9f33e3a42c.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Haleem-Meatless-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/ghormeh-stew-2/",
+    "asset": {
+      "id": "49a5b331db5c6607",
+      "kind": "image",
+      "name": "Ghormeh-Stew-Meatless-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 770,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Ghormeh-Stew-Meatless-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "49a5b331db5c6607",
+      "kind": "image",
+      "name": "Ghormeh-Stew-Meatless-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/49a5b331db5c6607.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Ghormeh-Stew-Meatless-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/gheimeh-stew-2/",
+    "asset": {
+      "id": "8523637c840593c7",
+      "kind": "image",
+      "name": "Gheimeh-Stew-Meatless-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 787,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Gheimeh-Stew-Meatless-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "8523637c840593c7",
+      "kind": "image",
+      "name": "Gheimeh-Stew-Meatless-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/8523637c840593c7.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Gheimeh-Stew-Meatless-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/gheimeh-bademjan-stew-2/",
+    "asset": {
+      "id": "520580865f64f97e",
+      "kind": "image",
+      "name": "Gheimeh-Bademjan-Stew-Meatless-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 804,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Gheimeh-Bademjan-Stew-Meatless-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "520580865f64f97e",
+      "kind": "image",
+      "name": "Gheimeh-Bademjan-Stew-Meatless-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/520580865f64f97e.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Gheimeh-Bademjan-Stew-Meatless-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/fried-onion/",
+    "asset": {
+      "id": "b21f485744a8c303",
+      "kind": "image",
+      "name": "Fried-Onion-200-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 821,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Onion-200-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "b21f485744a8c303",
+      "kind": "image",
+      "name": "Fried-Onion-200-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/b21f485744a8c303.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Onion-200-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/fried-mint-and-parsley/",
+    "asset": {
+      "id": "787a15c054a0332a",
+      "kind": "image",
+      "name": "Fried-Mint-and-Parsley-460-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 838,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Mint-and-Parsley-460-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "787a15c054a0332a",
+      "kind": "image",
+      "name": "Fried-Mint-and-Parsley-460-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/787a15c054a0332a.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Mint-and-Parsley-460-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/fried-ghormeh-herbs-2/",
+    "asset": {
+      "id": "7c4d193e2bd9162b",
+      "kind": "image",
+      "name": "Fried-Ghormeh-Herbs-460-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 855,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Ghormeh-Herbs-460-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "7c4d193e2bd9162b",
+      "kind": "image",
+      "name": "Fried-Ghormeh-Herbs-460-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/7c4d193e2bd9162b.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Ghormeh-Herbs-460-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/fried-garlic/",
+    "asset": {
+      "id": "e4ee42d69747664e",
+      "kind": "image",
+      "name": "Fried-Garlic-300-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 872,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Garlic-300-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "e4ee42d69747664e",
+      "kind": "image",
+      "name": "Fried-Garlic-300-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/e4ee42d69747664e.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Garlic-300-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/fried-celery-herbs/",
+    "asset": {
+      "id": "7f3cbd1e75339752",
+      "kind": "image",
+      "name": "Fried-Celery-Herbs-460-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 889,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Celery-Herbs-460-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "7f3cbd1e75339752",
+      "kind": "image",
+      "name": "Fried-Celery-Herbs-460-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/7f3cbd1e75339752.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Celery-Herbs-460-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/fesenjan-stew-2/",
+    "asset": {
+      "id": "dcc01b47a2784268",
+      "kind": "image",
+      "name": "Fesenjan-Stew-Meatless-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 906,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fesenjan-Stew-Meatless-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "dcc01b47a2784268",
+      "kind": "image",
+      "name": "Fesenjan-Stew-Meatless-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/dcc01b47a2784268.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Fesenjan-Stew-Meatless-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/eggplant-curd/",
+    "asset": {
+      "id": "1b4dec6b3d16749c",
+      "kind": "image",
+      "name": "Eggplant-Curd-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 923,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Eggplant-Curd-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "1b4dec6b3d16749c",
+      "kind": "image",
+      "name": "Eggplant-Curd-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/1b4dec6b3d16749c.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Eggplant-Curd-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/dolmeh/",
+    "asset": {
+      "id": "e50220547cbaa89f",
+      "kind": "image",
+      "name": "Dolmeh-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 940,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Dolmeh-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "e50220547cbaa89f",
+      "kind": "image",
+      "name": "Dolmeh-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/4b0d63b3-618b-40e0-b0c7-00333859aa98/e50220547cbaa89f.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Dolmeh-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/cooked-spinach/",
+    "asset": {
+      "id": "d69986265bb53a68",
+      "kind": "image",
+      "name": "Cooked-Spinach-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 753,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Cooked-Spinach-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "d69986265bb53a68",
+      "kind": "image",
+      "name": "Cooked-Spinach-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/200a79f3-8497-486b-b80e-54ded5e74c16/d69986265bb53a68.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Cooked-Spinach-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/celery-stew-2/",
+    "asset": {
+      "id": "da53a297eaafa9f8",
+      "kind": "image",
+      "name": "Celery-Stew-Meatless-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 770,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Celery-Stew-Meatless-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "da53a297eaafa9f8",
+      "kind": "image",
+      "name": "Celery-Stew-Meatless-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/200a79f3-8497-486b-b80e-54ded5e74c16/da53a297eaafa9f8.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Celery-Stew-Meatless-480-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/caramelized-onion/",
+    "asset": {
+      "id": "d97b8bbf668e06c4",
+      "kind": "image",
+      "name": "Caramelized-Onion.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 787,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Caramelized-Onion.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "d97b8bbf668e06c4",
+      "kind": "image",
+      "name": "Caramelized-Onion.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/200a79f3-8497-486b-b80e-54ded5e74c16/d97b8bbf668e06c4.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Caramelized-Onion.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/broad-beans/",
+    "asset": {
+      "id": "120133c4e4c61c8f",
+      "kind": "image",
+      "name": "Broad-Beans-460-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 804,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Broad-Beans-460-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "120133c4e4c61c8f",
+      "kind": "image",
+      "name": "Broad-Beans-460-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/200a79f3-8497-486b-b80e-54ded5e74c16/120133c4e4c61c8f.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Broad-Beans-460-gr.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/ash-shole-ghalamkar/",
+    "asset": {
+      "id": "b6b435fbd56c469b",
+      "kind": "image",
+      "name": "Ash-Shole-Ghalamkar.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 821,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Ash-Shole-Ghalamkar.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "b6b435fbd56c469b",
+      "kind": "image",
+      "name": "Ash-Shole-Ghalamkar.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/200a79f3-8497-486b-b80e-54ded5e74c16/b6b435fbd56c469b.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Ash-Shole-Ghalamkar.webp"
+    }
+  },
+  {
+    "productUrl": "https://hanifoods.nl/products/ash-reshteh/",
+    "asset": {
+      "id": "dd6a739929af4d3d",
+      "kind": "image",
+      "name": "Ash-Reshteh-480-gr.webp",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 838,
+          "property": "src"
+        }
+      ],
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Ash-Reshteh-480-gr.webp"
+    },
+    "download": {
+      "contentType": "image/webp",
+      "id": "dd6a739929af4d3d",
+      "kind": "image",
+      "name": "Ash-Reshteh-480-gr.webp",
+      "path": "C:\\Users\\Amir\\AppData\\Local\\Temp/browser-use/assets/200a79f3-8497-486b-b80e-54ded5e74c16/dd6a739929af4d3d.webp",
+      "url": "https://hanifoods.nl/wp-content/uploads/2024/06/Ash-Reshteh-480-gr.webp"
+    }
+  }
+]

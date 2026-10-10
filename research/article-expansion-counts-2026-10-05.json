@@ -1,0 +1,563 @@
+{
+  "date": "2026-10-05",
+  "articles": [
+    {
+      "slug": "hani-products-italy",
+      "before": {
+        "fa": 1755,
+        "en": 1717,
+        "it": 1723
+      },
+      "after": {
+        "fa": 2058,
+        "en": 1999,
+        "it": 1996
+      },
+      "added": {
+        "fa": 303,
+        "en": 282,
+        "it": 273
+      }
+    },
+    {
+      "slug": "iran-italy-cultural-connections",
+      "before": {
+        "fa": 1547,
+        "en": 1303,
+        "it": 1306
+      },
+      "after": {
+        "fa": 1863,
+        "en": 1570,
+        "it": 1553
+      },
+      "added": {
+        "fa": 316,
+        "en": 267,
+        "it": 247
+      }
+    },
+    {
+      "slug": "italy-places-that-feel-like-iran",
+      "before": {
+        "fa": 2298,
+        "en": 2440,
+        "it": 2300
+      },
+      "after": {
+        "fa": 2661,
+        "en": 2761,
+        "it": 2617
+      },
+      "added": {
+        "fa": 363,
+        "en": 321,
+        "it": 317
+      }
+    },
+    {
+      "slug": "ghormeh-sabzi-recipe-italy",
+      "before": {
+        "fa": 1250,
+        "en": 1063,
+        "it": 1011
+      },
+      "after": {
+        "fa": 1540,
+        "en": 1288,
+        "it": 1232
+      },
+      "added": {
+        "fa": 290,
+        "en": 225,
+        "it": 221
+      }
+    },
+    {
+      "slug": "gheimeh-recipe-italy",
+      "before": {
+        "fa": 483,
+        "en": 416,
+        "it": 411
+      },
+      "after": {
+        "fa": 747,
+        "en": 605,
+        "it": 588
+      },
+      "added": {
+        "fa": 264,
+        "en": 189,
+        "it": 177
+      }
+    },
+    {
+      "slug": "fesenjan-recipe-italy",
+      "before": {
+        "fa": 483,
+        "en": 393,
+        "it": 402
+      },
+      "after": {
+        "fa": 738,
+        "en": 561,
+        "it": 560
+      },
+      "added": {
+        "fa": 255,
+        "en": 168,
+        "it": 158
+      }
+    },
+    {
+      "slug": "gheimeh-bademjan-recipe-italy",
+      "before": {
+        "fa": 464,
+        "en": 401,
+        "it": 405
+      },
+      "after": {
+        "fa": 716,
+        "en": 577,
+        "it": 567
+      },
+      "added": {
+        "fa": 252,
+        "en": 176,
+        "it": 162
+      }
+    },
+    {
+      "slug": "celery-stew-recipe-italy",
+      "before": {
+        "fa": 438,
+        "en": 371,
+        "it": 367
+      },
+      "after": {
+        "fa": 683,
+        "en": 530,
+        "it": 518
+      },
+      "added": {
+        "fa": 245,
+        "en": 159,
+        "it": 151
+      }
+    },
+    {
+      "slug": "spinach-plum-stew-recipe-italy",
+      "before": {
+        "fa": 450,
+        "en": 379,
+        "it": 374
+      },
+      "after": {
+        "fa": 689,
+        "en": 535,
+        "it": 518
+      },
+      "added": {
+        "fa": 239,
+        "en": 156,
+        "it": 144
+      }
+    },
+    {
+      "slug": "saffron-rice-recipe-italy",
+      "before": {
+        "fa": 440,
+        "en": 377,
+        "it": 383
+      },
+      "after": {
+        "fa": 693,
+        "en": 541,
+        "it": 546
+      },
+      "added": {
+        "fa": 253,
+        "en": 164,
+        "it": 163
+      }
+    },
+    {
+      "slug": "dolmeh-vine-leaves-recipe-italy",
+      "before": {
+        "fa": 455,
+        "en": 382,
+        "it": 398
+      },
+      "after": {
+        "fa": 714,
+        "en": 550,
+        "it": 561
+      },
+      "added": {
+        "fa": 259,
+        "en": 168,
+        "it": 163
+      }
+    },
+    {
+      "slug": "ash-reshteh-recipe-italy",
+      "before": {
+        "fa": 439,
+        "en": 378,
+        "it": 380
+      },
+      "after": {
+        "fa": 686,
+        "en": 543,
+        "it": 536
+      },
+      "added": {
+        "fa": 247,
+        "en": 165,
+        "it": 156
+      }
+    },
+    {
+      "slug": "persian-pinto-beans-recipe-italy",
+      "before": {
+        "fa": 387,
+        "en": 332,
+        "it": 330
+      },
+      "after": {
+        "fa": 620,
+        "en": 493,
+        "it": 478
+      },
+      "added": {
+        "fa": 233,
+        "en": 161,
+        "it": 148
+      }
+    },
+    {
+      "slug": "soya-pasta-sauce-recipe-italy",
+      "before": {
+        "fa": 424,
+        "en": 360,
+        "it": 364
+      },
+      "after": {
+        "fa": 658,
+        "en": 515,
+        "it": 512
+      },
+      "added": {
+        "fa": 234,
+        "en": 155,
+        "it": 148
+      }
+    },
+    {
+      "slug": "okra-stew-recipe-italy",
+      "before": {
+        "fa": 414,
+        "en": 350,
+        "it": 356
+      },
+      "after": {
+        "fa": 643,
+        "en": 505,
+        "it": 496
+      },
+      "added": {
+        "fa": 229,
+        "en": 155,
+        "it": 140
+      }
+    },
+    {
+      "slug": "ghalieh-herb-stew-recipe-italy",
+      "before": {
+        "fa": 429,
+        "en": 365,
+        "it": 373
+      },
+      "after": {
+        "fa": 657,
+        "en": 517,
+        "it": 519
+      },
+      "added": {
+        "fa": 228,
+        "en": 152,
+        "it": 146
+      }
+    },
+    {
+      "slug": "kashk-bademjan-recipe-italy",
+      "before": {
+        "fa": 451,
+        "en": 391,
+        "it": 384
+      },
+      "after": {
+        "fa": 689,
+        "en": 554,
+        "it": 534
+      },
+      "added": {
+        "fa": 238,
+        "en": 163,
+        "it": 150
+      }
+    },
+    {
+      "slug": "baghali-ghatogh-recipe-italy",
+      "before": {
+        "fa": 409,
+        "en": 348,
+        "it": 350
+      },
+      "after": {
+        "fa": 630,
+        "en": 512,
+        "it": 502
+      },
+      "added": {
+        "fa": 221,
+        "en": 164,
+        "it": 152
+      }
+    },
+    {
+      "slug": "sholezard-recipe-italy",
+      "before": {
+        "fa": 414,
+        "en": 369,
+        "it": 373
+      },
+      "after": {
+        "fa": 643,
+        "en": 532,
+        "it": 530
+      },
+      "added": {
+        "fa": 229,
+        "en": 163,
+        "it": 157
+      }
+    },
+    {
+      "slug": "fried-eggplant-cooking-guide",
+      "before": {
+        "fa": 415,
+        "en": 342,
+        "it": 345
+      },
+      "after": {
+        "fa": 647,
+        "en": 513,
+        "it": 500
+      },
+      "added": {
+        "fa": 232,
+        "en": 171,
+        "it": 155
+      }
+    },
+    {
+      "slug": "baghali-polo-recipe-italy",
+      "before": {
+        "fa": 397,
+        "en": 334,
+        "it": 344
+      },
+      "after": {
+        "fa": 623,
+        "en": 494,
+        "it": 496
+      },
+      "added": {
+        "fa": 226,
+        "en": 160,
+        "it": 152
+      }
+    },
+    {
+      "slug": "ghormeh-sabzi-herb-mix-italy",
+      "before": {
+        "fa": 405,
+        "en": 345,
+        "it": 349
+      },
+      "after": {
+        "fa": 628,
+        "en": 509,
+        "it": 508
+      },
+      "added": {
+        "fa": 223,
+        "en": 164,
+        "it": 159
+      }
+    },
+    {
+      "slug": "mirza-ghasemi-recipe-italy",
+      "before": {
+        "fa": 412,
+        "en": 339,
+        "it": 334
+      },
+      "after": {
+        "fa": 641,
+        "en": 507,
+        "it": 487
+      },
+      "added": {
+        "fa": 229,
+        "en": 168,
+        "it": 153
+      }
+    },
+    {
+      "slug": "masala-sauce-cooking-guide-italy",
+      "before": {
+        "fa": 415,
+        "en": 351,
+        "it": 345
+      },
+      "after": {
+        "fa": 642,
+        "en": 521,
+        "it": 495
+      },
+      "added": {
+        "fa": 227,
+        "en": 170,
+        "it": 150
+      }
+    },
+    {
+      "slug": "pinto-beans-mushrooms-recipe-italy",
+      "before": {
+        "fa": 390,
+        "en": 340,
+        "it": 336
+      },
+      "after": {
+        "fa": 621,
+        "en": 497,
+        "it": 480
+      },
+      "added": {
+        "fa": 231,
+        "en": 157,
+        "it": 144
+      }
+    },
+    {
+      "slug": "long-grain-rice-buying-cooking-italy",
+      "before": {
+        "fa": 403,
+        "en": 336,
+        "it": 335
+      },
+      "after": {
+        "fa": 639,
+        "en": 507,
+        "it": 499
+      },
+      "added": {
+        "fa": 236,
+        "en": 171,
+        "it": 164
+      }
+    },
+    {
+      "slug": "saffron-infusion-cooking-guide",
+      "before": {
+        "fa": 396,
+        "en": 324,
+        "it": 317
+      },
+      "after": {
+        "fa": 636,
+        "en": 489,
+        "it": 461
+      },
+      "added": {
+        "fa": 240,
+        "en": 165,
+        "it": 144
+      }
+    },
+    {
+      "slug": "pistachios-persian-italian-serving-guide",
+      "before": {
+        "fa": 367,
+        "en": 305,
+        "it": 297
+      },
+      "after": {
+        "fa": 597,
+        "en": 468,
+        "it": 453
+      },
+      "added": {
+        "fa": 230,
+        "en": 163,
+        "it": 156
+      }
+    },
+    {
+      "slug": "edible-rosewater-italy-cooking-guide",
+      "before": {
+        "fa": 365,
+        "en": 322,
+        "it": 306
+      },
+      "after": {
+        "fa": 576,
+        "en": 482,
+        "it": 453
+      },
+      "added": {
+        "fa": 211,
+        "en": 160,
+        "it": 147
+      }
+    },
+    {
+      "slug": "dates-serving-guide-italy",
+      "before": {
+        "fa": 359,
+        "en": 307,
+        "it": 302
+      },
+      "after": {
+        "fa": 588,
+        "en": 469,
+        "it": 452
+      },
+      "added": {
+        "fa": 229,
+        "en": 162,
+        "it": 150
+      }
+    },
+    {
+      "slug": "persian-black-tea-brewing-italy",
+      "before": {
+        "fa": 400,
+        "en": 323,
+        "it": 325
+      },
+      "after": {
+        "fa": 634,
+        "en": 491,
+        "it": 483
+      },
+      "added": {
+        "fa": 234,
+        "en": 168,
+        "it": 158
+      }
+    }
+  ]
+}
