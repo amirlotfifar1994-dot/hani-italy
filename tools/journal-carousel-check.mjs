@@ -28,23 +28,27 @@ try {
     await page.waitForFunction(()=>window.PersiaCopy&&window.PersiaSeo?.lang===document.documentElement.lang);
     const carousel=page.locator('.journal-carousel'),track=page.locator('.journal-carousel-track');
     await carousel.scrollIntoViewIfNeeded();
-    assert.ok(await track.locator('.journal-card').count()>3,'There are additional stories to slide to');
+    assert.equal(await track.locator('.journal-card').count(),6,'Six curated stories are available');
     assert.equal(await track.locator('.journal-city-collection').count(),0,'City guides stay outside the slider');
     assert.equal(await page.locator('.journal-city-postcard').count(),10);
-    assert.equal(await page.locator('.journal-carousel-dots button').count(),2,'Three cards are visible on desktop');
+    assert.equal(await page.locator('.journal-carousel-dots button').count(),4,'Three cards are visible on desktop');
     assert.equal(await active(),'0');
     assert.equal(await page.locator('[data-story-previous]').isDisabled(),true);
     await page.locator('[data-story-next]').click();
     await page.waitForFunction(()=>document.querySelector('.journal-carousel-dots button[aria-current=true]')?.dataset.storyPage==='1');
-    assert.equal(await page.locator('[data-story-next]').isDisabled(),true);
+    assert.equal(await page.locator('[data-story-next]').isDisabled(),false);
     assert.equal(await track.locator('a').first().getAttribute('href').then(url=>url.endsWith('?lang='+lang)),true);
-    await track.focus();await page.keyboard.press('Home');
+    await track.focus();await page.keyboard.press('End');
+    await page.waitForFunction(()=>document.querySelector('.journal-carousel-dots button[aria-current=true]')?.dataset.storyPage==='3');
+    assert.equal(await page.locator('[data-story-next]').isDisabled(),true);
+    await page.keyboard.press('Home');
     await page.waitForFunction(()=>document.querySelector('.journal-carousel-dots button[aria-current=true]')?.dataset.storyPage==='0');
     await page.keyboard.press(lang==='fa'?'ArrowLeft':'ArrowRight');
     await page.waitForFunction(()=>document.querySelector('.journal-carousel-dots button[aria-current=true]')?.dataset.storyPage==='1');
     await page.keyboard.press('Home');
     await page.waitForFunction(()=>document.querySelector('.journal-carousel-dots button[aria-current=true]')?.dataset.storyPage==='0');
     if(lang==='fa') {
+      await page.waitForFunction(()=>{const track=document.querySelector('.journal-carousel-track');return Math.abs(track.querySelector('.journal-card').getBoundingClientRect().right-track.getBoundingClientRect().right)<2;});
       await page.waitForFunction(()=>[...document.querySelectorAll('.journal-carousel-track img')].every(image=>image.complete&&image.naturalWidth&&getComputedStyle(image).opacity==='1'));
       await carousel.screenshot({path:path.join(root,'screenshots/'+(remote?'live-':'')+'journal-slider-desktop.png')});
     }
@@ -53,9 +57,10 @@ try {
   }
   await page.goto(origin+'/?lang=fa');await page.waitForFunction(()=>window.PersiaCopy);
   await page.setViewportSize({width:850,height:1000});
-  await page.waitForFunction(()=>document.querySelectorAll('.journal-carousel-dots button').length===3);
+  await page.waitForFunction(()=>document.querySelectorAll('.journal-carousel-dots button').length===5);
   await page.setViewportSize({width:390,height:844});
-  await page.waitForFunction(()=>document.querySelectorAll('.journal-carousel-dots button').length===4);
+  await page.waitForFunction(()=>document.querySelectorAll('.journal-carousel-dots button').length===6);
+  assert.ok(await page.locator('.journal-carousel-track').evaluate(node=>Math.abs(node.clientWidth-node.querySelector('.journal-card').getBoundingClientRect().width)<2),'A mobile card fills the track exactly');
   await page.locator('.journal-carousel-track').scrollIntoViewIfNeeded();
   const touch=await context.newCDPSession(page),y=await page.locator('.journal-carousel-track').evaluate(node=>node.getBoundingClientRect().top+90);
   await touch.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:70,y}]});
@@ -69,19 +74,37 @@ try {
   });
   await page.emulateMedia({reducedMotion:'reduce'});
   await page.locator('.journal-carousel-dots button').last().click();
-  await page.waitForFunction(()=>document.querySelector('.journal-carousel-dots button[aria-current=true]')?.dataset.storyPage==='3');
+  await page.waitForFunction(()=>document.querySelector('.journal-carousel-dots button[aria-current=true]')?.dataset.storyPage==='5');
   assert.equal(await page.locator('[data-story-next]').isDisabled(),true);
   assert.equal(await page.locator('.journal-carousel-track').evaluate(node=>getComputedStyle(node).scrollBehavior),'auto');
   await page.locator('.journal-carousel-dots button').first().click();
   await page.waitForFunction(()=>document.querySelector('.journal-carousel-dots button[aria-current=true]')?.dataset.storyPage==='0');
   await page.waitForFunction(()=>{const track=document.querySelector('.journal-carousel-track');return Math.abs(track.querySelector('.journal-card').getBoundingClientRect().right-track.getBoundingClientRect().right)<2;});
-  await page.waitForFunction(()=>[...document.querySelectorAll('.journal-carousel-track img')].every(image=>image.complete&&image.naturalWidth&&getComputedStyle(image).opacity==='1'));
+  await page.waitForFunction(()=>{const image=document.querySelector('.journal-carousel-track img');return image.complete&&image.naturalWidth&&getComputedStyle(image).opacity==='1';});
   await page.locator('.journal-carousel').screenshot({path:path.join(root,'screenshots/'+(remote?'live-':'')+'journal-slider-mobile.png')});
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   console.log('PASS: tablet resize, native mobile swipe, pagination, reduced motion and no page overflow');
+  for(const lang of ['fa','en','it'])for(const width of [320,360,390,618]){
+    await page.setViewportSize({width,height:844});await page.goto(origin+'/?lang='+lang);
+    await page.waitForFunction(()=>window.PersiaCopy&&window.PersiaSeo?.lang===document.documentElement.lang);
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'No overflow at '+width+' '+lang+' '+JSON.stringify(await page.evaluate(()=>({width:document.documentElement.scrollWidth,boxes:[...document.querySelectorAll('body *')].map(node=>({tag:node.tagName,class:node.className,parent:node.parentElement.className,left:node.getBoundingClientRect().left,right:node.getBoundingClientRect().right})).filter(box=>box.right>innerWidth).slice(0,20)}))));
+    const layout=await page.evaluate(()=>{const brand=document.querySelector('header#home .brand').getBoundingClientRect(),word=document.querySelector('header#home .brand-word').getBoundingClientRect(),actions=document.querySelector('.header-actions').getBoundingClientRect();return {sameRow:Math.abs((brand.top+brand.bottom)/2-(actions.top+actions.bottom)/2)<4,separate:Math.max(brand.right,word.right)<=actions.left+1};});
+    assert.ok(layout.sameRow&&layout.separate,'Logo and controls share one row at '+width+' '+lang);
+    assert.equal(await page.locator('[data-t=heroPanHint]').count(),0);
+    assert.equal(await page.locator('#mobile-language').inputValue(),lang);
+    await page.locator('#menu-toggle').click();await page.locator('#header-search').waitFor({state:'visible'});
+    assert.equal(await page.locator('#menu-toggle').getAttribute('aria-expanded'),'true');
+    await page.locator('#header-search').focus();await page.keyboard.press('Escape');
+    assert.equal(await page.locator('#menu-toggle').getAttribute('aria-expanded'),'false');
+    assert.equal(await page.locator('#header-search').isVisible(),false);
+    if(width===390&&lang==='fa')await page.screenshot({path:path.join(root,'screenshots/'+(remote?'live-':'')+'modern-mobile-home.png')});
+  }
+  await page.locator('#mobile-language').selectOption('fa');
+  await page.waitForFunction(()=>document.documentElement.lang==='fa');
+  console.log('PASS: compact one-row header at 320–618px in all languages, expandable search, Escape and language selection');
   const plain=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}}),fallback=await plain.newPage();
   await fallback.goto(origin+'/?lang=fa');
-  assert.ok(await fallback.locator('.journal-carousel-track .journal-card').count()>3);
+  assert.equal(await fallback.locator('.journal-carousel-track .journal-card').count(),6);
   assert.equal(await fallback.locator('.journal-carousel-controls').isVisible(),false);
   assert.ok(await fallback.locator('.journal-carousel-track').evaluate(node=>node.scrollWidth>node.clientWidth));
   assert.deepEqual(errors,[]);

@@ -1,0 +1,56 @@
+/* A lighter, contemporary finish around the original Persian palette. */
+.mobile-language{display:none}
+body#top .button{border-radius:999px;min-height:46px;padding:12px 24px;font-weight:600;transition:background .2s,box-shadow .2s,transform .2s}
+body#top .button:hover{box-shadow:0 6px 18px #10332f20;transform:translateY(-1px)}
+body#top .button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+body#top .hero .button{padding:10px 14px 10px 24px;gap:20px;border-color:#d2b57a88;background:#173f39e8;box-shadow:0 8px 28px #06201f40}
+body#top .hero .button>span[aria-hidden]{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#dfc38f20;font-size:17px}
+body#top .hero h1{font-weight:600;letter-spacing:-.025em}
+body#top .hero h1 em{font-style:normal;font-weight:500}
+body#top .hero-description{line-height:1.95}
+body#top .section-heading h2{line-height:1.6;letter-spacing:-.025em}
+body#top .header-search{border-radius:12px}
+body#top .filters button{border-radius:8px}
+body#top .daily-offer-stage,body#top .daily-offer-empty{border-radius:16px;overflow:hidden}
+body#top .journal-card{border-radius:16px;overflow:hidden;background:#fffdf8;border-color:#e3dccf;box-shadow:0 4px 16px #173f3906;transition:box-shadow .2s}
+body#top .journal-card:hover{box-shadow:0 8px 26px #173f3910}
+body#top .journal-card-copy{padding:24px}
+body#top .journal-card-copy h3{font-weight:600;line-height:1.8}
+body#top .journal-card-copy>p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;line-height:1.9}
+body#top .journal-read{font-weight:600;border-radius:0}
+@media(max-width:700px){body#top .journal-carousel-track{grid-auto-columns:100%;gap:16px}.journal-home .journal-card-copy{padding:22px}.journal-home .journal-card-image{aspect-ratio:3/2}body#top .journal-carousel-controls{gap:8px}body#top .journal-carousel-dots>button{width:24px}body#top .journal-carousel-controls>button{flex-shrink:0}body#top .journal-carousel-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);min-width:0}}
+@media(max-width:650px){
+ html{scroll-padding-top:90px}
+ header#home .shell{width:calc(100% - 24px)}
+ header#home .header-inner{flex-wrap:nowrap;min-height:68px;padding-block:8px;gap:8px;position:relative}
+ header#home .brand{flex:0 1 auto;min-width:0;gap:7px}
+ header#home .brand img{width:30px;height:30px;flex-shrink:0}
+ header#home .brand>.brand-word{font-size:24px;white-space:nowrap}
+ header#home .brand small{font-size:6px;letter-spacing:.16em}
+ header#home .header-actions{flex-basis:auto;flex-shrink:0;gap:3px;margin-inline-start:auto}
+ header#home .languages,header#home #favorites-toggle{display:none}
+ .mobile-language{display:flex;align-items:center}
+ .mobile-language select{color:#ead6ad;background:transparent;border:0;padding:0;width:41px;height:44px;font:11px 'DM Sans','Vazirmatn',sans-serif;cursor:pointer}
+ .mobile-language option{background:#173f39;color:#fff8e8}
+ header#home .icon-button{width:34px;height:44px;border-radius:10px}
+ header#home .icon-button svg{width:21px;height:21px}
+ header#home .count{width:14px;height:14px;font-size:8px;top:3px;right:0}
+ header#home .header-search{display:none}
+ html:not(.images-enhanced) header#home .header-inner{flex-wrap:wrap}
+ html:not(.images-enhanced) header#home .header-search{display:flex}
+ header#home.menu-open .header-inner{flex-wrap:wrap}
+ header#home.menu-open .header-search{display:flex;flex-basis:100%;order:3;margin-top:4px}
+ header#home.menu-open nav{gap:10px;padding-block:14px}
+ header#home nav>a,header#home nav>button{padding:9px 12px;border-radius:9px;background:#e9e1d3;white-space:normal}
+ .announcement>.shell{min-height:22px}
+ .announcement,.announcement button{font-size:8px}
+ body#top .hero-layout{padding-block:110px 74px}
+ body#top .hero-copy{width:min(92%,360px)}
+ body#top .hero h1{font-size:clamp(31px,8vw,43px);line-height:1.6}
+ body#top .hero-description{font-size:14px;line-height:1.9}
+ body#top .hero-pan-controls{left:auto;right:12px;bottom:18px;gap:6px}
+ body#top .hero-pan-controls button{width:36px;height:36px;background:#10332f55;border-color:#edd7a866}
+ body#top .hero-actions{margin-top:22px}
+}
+@media(max-width:380px){header#home .brand>.brand-word{font-size:clamp(18px,5.4vw,20px)}header#home .brand img{width:26px;height:26px}header#home .brand small{font-size:5px}header#home .header-actions{gap:1px}header#home .header-inner{gap:4px}header#home .icon-button{width:32px}.mobile-language select{width:37px}}
+@media(prefers-reduced-motion:reduce){body#top .button,body#top .journal-card{transition:none}body#top .button:hover{transform:none}}

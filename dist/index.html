@@ -12,10 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=persia-6" />
-    <link rel="stylesheet" href="persia-theme.css?v=soft-hero-6" />
+    <link rel="stylesheet" href="persia-theme.css?v=modern-home-7" />
+    <link rel="stylesheet" href="modern-home.css?v=1" />
     <link rel="stylesheet" href="account.css?v=auth-1" />
     <link rel="stylesheet" href="journal.css?v=journal-slider-10" />
-    <script type="module" src="bootstrap.js?v=journal-slider-7"></script>
+    <script type="module" src="bootstrap.js?v=modern-home-8"></script>
   <link rel="stylesheet" href="comments.css?v=1"></head>
   <body id="top">
     <a class="skip-link" href="#shop" data-t="skip">رفتن به فروشگاه</a>
@@ -26,6 +27,7 @@
         <form class="header-search" id="header-search-form" role="search"><label class="sr-only" for="header-search" data-t="search">جست‌وجوی محصول</label><input id="header-search" type="search" placeholder="جست‌وجوی محصولات ایرانی…" data-placeholder="headerSearch" /><button type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></svg><span class="sr-only" data-t="search">جست‌وجوی محصول</span></button></form>
         <div class="header-actions">
           <div class="languages" aria-label="Language"><button data-lang="it">IT</button><button data-lang="fa">فارسی</button><button data-lang="en">EN</button></div>
+          <label class="mobile-language"><span class="sr-only">Language</span><select id="mobile-language" aria-label="Language"><option value="fa">فا</option><option value="it">IT</option><option value="en">EN</option></select></label>
           <button class="icon-button" id="account-open" aria-controls="account-panel" aria-expanded="false" aria-label="پنل کاربری"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span id="account-open-label" class="sr-only">پنل کاربری</span></button>
           <button class="icon-button" id="favorites-toggle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" /></svg><span class="sr-only" data-t="favorites">علاقه‌مندی‌ها</span><span id="favorite-count" class="count">0</span></button>
           <button class="icon-button" id="cart-open"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2l3 12h10l3-9H6M9 20h.01M18 20h.01" /></svg><span class="sr-only" data-t="cart">سبد خرید</span><span id="cart-count" class="count">0</span></button>
@@ -46,7 +48,7 @@
           <p class="hero-description" data-t="heroBody">طعم‌های ایران نزدیک‌تر از همیشه از برنج و زعفران تا خشکبار چای و غذای آماده برای آن‌هایی که خانه را در دلشان دارند</p>
           <div class="hero-actions"><a class="button primary" href="#shop" data-category="hani"><span data-t="explore">کشف محصولات</span><span aria-hidden="true">→</span></a></div>
         </div><div class="hero-postcard"><span class="postcard-city" data-t="heroRoute">ایران ← ایتالیا</span><p data-t="heroPostcard">هر جا که باشیم<br />ایران با ماست</p><span aria-hidden="true">♡</span><small>HOME IS A FEELING</small></div></div>
-        <div class="hero-pan-controls"><button type="button" data-hero-pan="-1" aria-label="نمای سمت چپ تصویر">←</button><span data-t="heroPanHint">برای کشف تصویر، بکشید</span><button type="button" data-hero-pan="1" aria-label="نمای سمت راست تصویر">→</button></div>
+        <div class="hero-pan-controls"><button type="button" data-hero-pan="-1" aria-label="نمای سمت چپ تصویر">←</button><button type="button" data-hero-pan="1" aria-label="نمای سمت راست تصویر">→</button></div>
       </section>
       <section class="category-section shell" id="categories" aria-label="دسته‌بندی محصولات">
         <div class="category-grid">

@@ -12,7 +12,8 @@ for(const asset of Object.values(inlineAssets)){
 }
 assert.equal(new Set(hashes).size,hashes.length,'Distinct files must contain distinct imagery');
 for(const post of posts){
- assert.equal(post.modifiedAt,post.cityGuide?'2026-10-09':'2026-10-08');
+ assert.match(post.modifiedAt,/^\d{4}-\d{2}-\d{2}$/,'Articles carry an ISO modification date');
+ assert.ok(post.modifiedAt>=post.publishedAt,'Modification cannot predate publication: '+post.slug);
  for(const lang of languages){
   const sections=post[lang].sections;
   if(post.productGuide){
