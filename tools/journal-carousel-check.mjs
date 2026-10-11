@@ -132,7 +132,7 @@ try {
   await page.locator('footer').screenshot({path:path.join(root,'screenshots/'+(remote?'live-':'')+'minimal-footer.png'),style:'header#home{visibility:hidden}'});
   const plain=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}}),fallback=await plain.newPage();
   if(!remote)await plain.route('https://fonts.googleapis.com/**',route=>route.fulfill({contentType:'text/css',body:''}));
-  await fallback.goto(origin+'/?lang=fa',{waitUntil:'domcontentloaded'});
+  await fallback.goto(origin+'/?lang=fa',{waitUntil:'load',timeout:60000});
   await fallback.waitForFunction(()=>getComputedStyle(document.querySelector('[data-hero-image="1"]')).position==='absolute');
   await fallback.waitForFunction(()=>getComputedStyle(document.querySelector('.journal-carousel-track')).display==='grid');
   assert.equal(await fallback.locator('[data-hero-image="0"]').evaluate(node=>getComputedStyle(node).opacity),'1');
