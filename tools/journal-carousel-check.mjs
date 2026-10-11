@@ -24,7 +24,7 @@ try {
   await mkdir(path.join(root,'screenshots'),{recursive:true});
   const active=()=>page.locator('.journal-carousel-dots button[aria-current=true]').getAttribute('data-story-page');
   for(const lang of ['fa','it','en']) {
-    await page.goto(origin+'/?lang='+lang);
+    await page.goto(origin+'/?lang='+lang,{waitUntil:'domcontentloaded'});
     await page.waitForFunction(()=>window.PersiaCopy&&window.PersiaSeo?.lang===document.documentElement.lang);
     const carousel=page.locator('.journal-carousel'),track=page.locator('.journal-carousel-track');
     await carousel.scrollIntoViewIfNeeded();
@@ -55,7 +55,7 @@ try {
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
     console.log('PASS: '+lang+' desktop RTL/LTR arrows, keyboard, boundaries, links and city separation');
   }
-  await page.goto(origin+'/?lang=fa');await page.waitForFunction(()=>window.PersiaCopy);
+  await page.goto(origin+'/?lang=fa',{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>window.PersiaCopy);
   await page.setViewportSize({width:850,height:1000});
   await page.waitForFunction(()=>document.querySelectorAll('.journal-carousel-dots button').length===5);
   await page.setViewportSize({width:390,height:844});
@@ -96,7 +96,7 @@ try {
   await context.unroute('**/api/auth/session',holdSession);
   console.log('PASS: navigation works while the session request is pending');
   for(const lang of ['fa','en','it'])for(const width of [320,360,390,618]){
-    await page.setViewportSize({width,height:844});await page.goto(origin+'/?lang='+lang);
+    await page.setViewportSize({width,height:844});await page.goto(origin+'/?lang='+lang,{waitUntil:'domcontentloaded'});
     await page.waitForFunction(()=>window.PersiaStoreReady&&window.PersiaSeo?.lang===document.documentElement.lang);
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'No overflow at '+width+' '+lang+' '+JSON.stringify(await page.evaluate(()=>({width:document.documentElement.scrollWidth,boxes:[...document.querySelectorAll('body *')].map(node=>({tag:node.tagName,class:node.className,parent:node.parentElement.className,left:node.getBoundingClientRect().left,right:node.getBoundingClientRect().right})).filter(box=>box.right>innerWidth).slice(0,20)}))));
     const layout=await page.evaluate(()=>{const brand=document.querySelector('header#home .brand').getBoundingClientRect(),word=document.querySelector('header#home .brand-word').getBoundingClientRect(),actions=document.querySelector('.header-actions').getBoundingClientRect();return {sameRow:Math.abs((brand.top+brand.bottom)/2-(actions.top+actions.bottom)/2)<4,separate:Math.max(brand.right,word.right)<=actions.left+1};});
@@ -114,7 +114,8 @@ try {
   await page.waitForFunction(()=>document.documentElement.lang==='fa');
   console.log('PASS: compact one-row header at 320–618px in all languages, expandable search, Escape and language selection');
   const plain=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}}),fallback=await plain.newPage();
-  await fallback.goto(origin+'/?lang=fa');
+  if(!remote)await plain.route('https://fonts.googleapis.com/**',route=>route.fulfill({contentType:'text/css',body:''}));
+  await fallback.goto(origin+'/?lang=fa',{waitUntil:'domcontentloaded'});
   assert.equal(await fallback.locator('.journal-carousel-track .journal-card').count(),6);
   assert.equal(await fallback.locator('.journal-carousel-controls').isVisible(),false);
   assert.ok(await fallback.locator('.journal-carousel-track').evaluate(node=>node.scrollWidth>node.clientWidth));
