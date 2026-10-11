@@ -84,9 +84,20 @@ try {
   await page.locator('.journal-carousel').screenshot({path:path.join(root,'screenshots/'+(remote?'live-':'')+'journal-slider-mobile.png')});
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   console.log('PASS: tablet resize, native mobile swipe, pagination, reduced motion and no page overflow');
+  let releaseSession,reachedSession;
+  const sessionGate=new Promise(resolve=>{releaseSession=resolve;}),sessionReached=new Promise(resolve=>{reachedSession=resolve;});
+  const holdSession=async route=>{reachedSession();await sessionGate;await route.continue();};
+  await context.route('**/api/auth/session',holdSession);
+  await page.goto(origin+'/?lang=fa',{waitUntil:'domcontentloaded'});await sessionReached;
+  assert.equal(await page.evaluate(()=>Boolean(window.PersiaStoreReady)),false);
+  await page.locator('#menu-toggle').click();assert.equal(await page.locator('#header-search').isVisible(),true);
+  await page.locator('#menu-toggle').click();assert.equal(await page.locator('#header-search').isVisible(),false);
+  releaseSession();await page.waitForFunction(()=>window.PersiaStoreReady);
+  await context.unroute('**/api/auth/session',holdSession);
+  console.log('PASS: navigation works while the session request is pending');
   for(const lang of ['fa','en','it'])for(const width of [320,360,390,618]){
     await page.setViewportSize({width,height:844});await page.goto(origin+'/?lang='+lang);
-    await page.waitForFunction(()=>window.PersiaCopy&&window.PersiaSeo?.lang===document.documentElement.lang);
+    await page.waitForFunction(()=>window.PersiaStoreReady&&window.PersiaSeo?.lang===document.documentElement.lang);
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'No overflow at '+width+' '+lang+' '+JSON.stringify(await page.evaluate(()=>({width:document.documentElement.scrollWidth,boxes:[...document.querySelectorAll('body *')].map(node=>({tag:node.tagName,class:node.className,parent:node.parentElement.className,left:node.getBoundingClientRect().left,right:node.getBoundingClientRect().right})).filter(box=>box.right>innerWidth).slice(0,20)}))));
     const layout=await page.evaluate(()=>{const brand=document.querySelector('header#home .brand').getBoundingClientRect(),word=document.querySelector('header#home .brand-word').getBoundingClientRect(),actions=document.querySelector('.header-actions').getBoundingClientRect();return {sameRow:Math.abs((brand.top+brand.bottom)/2-(actions.top+actions.bottom)/2)<4,separate:Math.max(brand.right,word.right)<=actions.left+1};});
     assert.ok(layout.sameRow&&layout.separate,'Logo and controls share one row at '+width+' '+lang);

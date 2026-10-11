@@ -8,7 +8,9 @@ desktop keeps three cards and tablet keeps two. No autoplay is enabled.
 The mobile header places the wordmark, language selector, account, cart and
 menu in one row. Opening the menu reveals product search and navigation.
 Escape closes it. Language selection uses the existing store action. The
-static search form remains visible when JavaScript is disabled. Hero touch
+menu is initialized before authentication/catalogue loading, so it also works
+on slower connections. Early language changes use a normal server navigation.
+The static search form remains visible when JavaScript is disabled. Hero touch
 panning and its arrow alternatives remain, with the visible swipe instruction
 removed. Rounded buttons and article cards retain the green/gold palette.
 
@@ -38,3 +40,5 @@ counts, native swiping, RTL/LTR arrows, keyboard boundaries, reduced motion,
 JavaScript-free links and scrolling, and mobile header layout at 320, 360,
 390 and 618 pixels in all three languages. Header checks include the text's
 actual box to detect logo/control overlap even with fallback fonts.
+The browser check also holds the session request and exercises menu/search
+before storefront hydration to protect that loading behavior.

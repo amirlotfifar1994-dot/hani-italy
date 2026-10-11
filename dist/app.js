@@ -472,10 +472,6 @@ $("#cart-open").addEventListener("click", () => {
   renderCart();
   openDialog("cart-dialog");
 });
-$("#menu-toggle").addEventListener("click", () => {
-  const open = $("header").classList.toggle("menu-open");
-  $("#menu-toggle").setAttribute("aria-expanded", String(open));
-});
 $("#checkout").addEventListener("click", async () => {
   await refreshCatalogue();
   if (!basketLines().length) return;
