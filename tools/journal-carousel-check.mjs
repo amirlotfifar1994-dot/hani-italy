@@ -134,6 +134,7 @@ try {
   if(!remote)await plain.route('https://fonts.googleapis.com/**',route=>route.fulfill({contentType:'text/css',body:''}));
   await fallback.goto(origin+'/?lang=fa',{waitUntil:'domcontentloaded'});
   await fallback.waitForFunction(()=>getComputedStyle(document.querySelector('[data-hero-image="1"]')).position==='absolute');
+  await fallback.waitForFunction(()=>getComputedStyle(document.querySelector('.journal-carousel-track')).display==='grid');
   assert.equal(await fallback.locator('[data-hero-image="0"]').evaluate(node=>getComputedStyle(node).opacity),'1');
   assert.equal(await fallback.locator('[data-hero-image="1"]').evaluate(node=>getComputedStyle(node).opacity),'0');
   assert.equal(await fallback.locator('.hero-slide-controls').isVisible(),false);

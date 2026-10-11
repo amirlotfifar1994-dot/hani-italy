@@ -12,11 +12,12 @@ existing decorative placements.
 
 Mobile keeps full-height cover framing with two actual image slides: the new
 historic panorama followed by the earlier Iran–Italy tea-and-food scene.
-Arrows, page dots and horizontal swipes change the image with an 850ms
-crossfade, rather than panning its crop. Vertical scrolling and pinch gestures
-remain available. There is no autoplay, reduced motion disables the fade, and
-the first image remains visible without JavaScript. Each slide keeps its own
-fixed crop and multilingual alternative text. CSS contrast remains active.
+Arrows and page dots change the image with an 850ms crossfade on both desktop
+and mobile. On mobile, horizontal touch instead pans the active picture to
+explore it; each slide remembers its own crop. Vertical scrolling and pinch
+gestures remain available. There is no autoplay, reduced motion disables the
+fade, and the first image remains visible without JavaScript. Each slide has
+multilingual alternative text. CSS contrast remains active.
 
 The homepage's introduction now describes the online Iranian supermarket,
 its range of brands and its journal, without the former phase/preview copy.
