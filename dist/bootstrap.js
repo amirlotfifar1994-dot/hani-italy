@@ -1,7 +1,7 @@
 for(const key of ['PersiaSeo','PersiaInitialCatalogue','PersiaProductGuides','PersiaBlogPreviews']){const node=document.getElementById('data-'+key);if(node)window[key]=JSON.parse(node.textContent);}
 const homeHeader=document.querySelector('header#home'),announcement=document.querySelector('.announcement');
 if(homeHeader){const sizeHero=()=>document.documentElement.style.setProperty('--home-header-height',Math.ceil(homeHeader.getBoundingClientRect().height+(announcement?.getBoundingClientRect().height||0))+'px');sizeHero();const observer=new ResizeObserver(sizeHero);observer.observe(homeHeader);if(announcement)observer.observe(announcement);document.fonts.ready.then(sizeHero);}
-await import('./hero-pan.js?v=2');
+await import('./hero-slider.js?v=1');
 await import('./journal-carousel.js?v=1');
 await import('./mobile-header.js?v=2');
 window.PersiaAuth={user:null,googleEnabled:false,available:false,async request(path,{method='GET',body}={}){const response=await fetch(path,{method,credentials:'same-origin',signal:AbortSignal.timeout(10000),headers:{...(body?{'Content-Type':'application/json'}:{}),...(this.user?{'X-Persia-User':this.user.id}:{})},body:body?JSON.stringify(body):undefined});let data;try{data=await response.json();}catch{throw Object.assign(new Error('unavailable'),{code:'unavailable'});}if(!response.ok)throw Object.assign(new Error(data.error||'serverError'),{code:data.error||'serverError',status:response.status});return data;},async initialize(){try{const data=await this.request('/api/auth/session');this.user=data.user;this.googleEnabled=data.googleEnabled;this.available=true;}catch{} }};

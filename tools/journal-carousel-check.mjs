@@ -7,6 +7,7 @@ import {once} from 'node:events';
 import path from 'node:path';
 import http from 'node:http';
 import {fileURLToPath} from 'node:url';
+import {checkHeroSlider} from './hero-slider-ui.mjs';
 const require=createRequire(import.meta.url),{chromium}=require(process.argv[2]||'playwright');
 const root=fileURLToPath(new URL('../',import.meta.url)),remote=process.argv[4];
 let directory,child,browser,origin=remote;
@@ -43,6 +44,7 @@ try {
     assert.equal(await page.locator('[data-story-next]').isDisabled(),true);
     await page.keyboard.press('Home');
     await page.waitForFunction(()=>document.querySelector('.journal-carousel-dots button[aria-current=true]')?.dataset.storyPage==='0');
+    await page.waitForFunction(()=>{const track=document.querySelector('.journal-carousel-track'),card=track.querySelector('.journal-card'),rtl=getComputedStyle(track).direction==='rtl';return Math.abs(card.getBoundingClientRect()[rtl?'right':'left']-track.getBoundingClientRect()[rtl?'right':'left'])<2;});
     await page.keyboard.press(lang==='fa'?'ArrowLeft':'ArrowRight');
     await page.waitForFunction(()=>document.querySelector('.journal-carousel-dots button[aria-current=true]')?.dataset.storyPage==='1');
     await page.keyboard.press('Home');
@@ -120,6 +122,10 @@ try {
   await page.locator('#mobile-language').selectOption('fa');
   await page.waitForFunction(()=>document.documentElement.lang==='fa');
   console.log('PASS: compact one-row header at 320–618px in all languages, expandable search, Escape and language selection');
+  await page.emulateMedia({reducedMotion:'no-preference'});
+  await checkHeroSlider(page,context);
+  await page.waitForFunction(()=>getComputedStyle(document.querySelector('[data-hero-image="0"]')).opacity==='1');
+  await page.screenshot({path:path.join(root,'screenshots/'+(remote?'live-':'')+'hero-slideshow-mobile.png')});
   await page.locator('footer [data-info=contact]').click();
   assert.equal(await page.locator('#info-body a[href="tel:+31110000111"]').textContent(),'+31110000111');
   await page.locator('[data-close=info-dialog]').click();
@@ -127,6 +133,9 @@ try {
   const plain=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}}),fallback=await plain.newPage();
   if(!remote)await plain.route('https://fonts.googleapis.com/**',route=>route.fulfill({contentType:'text/css',body:''}));
   await fallback.goto(origin+'/?lang=fa',{waitUntil:'domcontentloaded'});
+  assert.equal(await fallback.locator('[data-hero-image="0"]').evaluate(node=>getComputedStyle(node).opacity),'1');
+  assert.equal(await fallback.locator('[data-hero-image="1"]').evaluate(node=>getComputedStyle(node).opacity),'0');
+  assert.equal(await fallback.locator('.hero-slide-controls').isVisible(),false);
   assert.equal(await fallback.locator('.journal-carousel-track .journal-card').count(),6);
   assert.equal(await fallback.locator('.journal-carousel-controls').isVisible(),false);
   assert.ok(await fallback.locator('.journal-carousel-track').evaluate(node=>node.scrollWidth>node.clientWidth));

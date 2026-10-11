@@ -22,6 +22,11 @@ body#top .hero .button>span[aria-hidden]{display:grid;place-items:center;width:2
 body#top .hero h1{font-weight:600;letter-spacing:-.025em}
 body#top .hero h1 em{font-style:normal;font-weight:500}
 body#top .hero-description{line-height:1.95}
+/* Independent cover images crossfade; swiping changes scenes, never their crop. */
+body#top .hero .hero-food[data-hero-image]{position:absolute;inset:0;object-fit:cover;object-position:center;opacity:0;transition:opacity 850ms cubic-bezier(.22,.61,.36,1);pointer-events:none}
+body#top .hero .hero-food[data-hero-image].is-active{opacity:1}
+html.images-enhanced body#top .hero .hero-food[data-hero-image].is-active:not([data-image-ready]){opacity:0}
+.hero-slide-controls{display:none}
 body#top .section-heading h2{line-height:1.6;letter-spacing:-.025em}
 body#top .header-search{border-radius:12px}
 body#top .filters button{border-radius:8px}
@@ -59,13 +64,21 @@ body#top .journal-read{font-weight:600;border-radius:0}
  .announcement>.shell{min-height:22px}
  .announcement,.announcement button{font-size:8px}
  body#top .hero-layout{padding-block:110px 74px}
- body#top .hero .hero-food{object-position:var(--hero-pan,92%) center}
+ body#top .hero .hero-food[data-hero-image="0"]{object-position:92% center}
+ body#top .hero .hero-food[data-hero-image="1"]{object-position:68% center}
  body#top .hero-copy{width:min(92%,360px)}
  body#top .hero h1{font-size:clamp(31px,8vw,43px);line-height:1.6}
  body#top .hero-description{font-size:14px;line-height:1.9}
- body#top .hero-pan-controls{left:auto;right:12px;bottom:18px;gap:6px}
- body#top .hero-pan-controls button{width:36px;height:36px;background:#10332f55;border-color:#edd7a866}
+ body#top .hero-slider-ready .hero-slide-controls{display:flex;align-items:center;position:absolute;right:12px;bottom:14px;gap:8px;z-index:2;direction:ltr}
+ .hero-slide-controls>button{width:44px;height:44px;display:grid;place-items:center;background:#10332f55;border:1px solid #edd7a866;border-radius:50%;color:#f2dfb9;font-size:19px;cursor:pointer}
+ .hero-slide-controls button:focus-visible{outline:2px solid #f2dfb9;outline-offset:3px}
+ html[dir=rtl] .hero-slide-controls>button>span{transform:scaleX(-1)}
+ .hero-slide-dots{display:flex;gap:2px}
+ .hero-slide-dots>button{position:relative;width:26px;height:44px;padding:0;background:none;border:0;cursor:pointer}
+ .hero-slide-dots>button::after{content:"";display:block;width:6px;height:6px;margin:auto;border-radius:50%;background:#f2dfb966;transition:background .25s,transform .25s}
+ .hero-slide-dots>button[aria-current=true]::after{background:#f2dfb9;transform:scale(1.35)}
  body#top .hero-actions{margin-top:22px}
 }
 @media(max-width:380px){header#home .brand>.brand-word{font-size:clamp(18px,5.4vw,20px)}header#home .brand img{width:26px;height:26px}header#home .brand small{font-size:5px}header#home .header-actions{gap:1px}header#home .header-inner{gap:4px}header#home .icon-button{width:32px}.mobile-language select{width:37px}}
 @media(prefers-reduced-motion:reduce){body#top .button,body#top .journal-card{transition:none}body#top .button:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){body#top .hero .hero-food[data-hero-image],.hero-slide-dots>button::after{transition:none}}

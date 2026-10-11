@@ -13,10 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=persia-6" />
     <link rel="stylesheet" href="persia-theme.css?v=modern-home-7" />
-    <link rel="stylesheet" href="modern-home.css?v=2" />
+    <link rel="stylesheet" href="modern-home.css?v=3" />
     <link rel="stylesheet" href="account.css?v=auth-1" />
     <link rel="stylesheet" href="journal.css?v=journal-slider-10" />
-    <script type="module" src="bootstrap.js?v=public-home-10"></script>
+    <script type="module" src="bootstrap.js?v=public-home-11"></script>
   <link rel="stylesheet" href="comments.css?v=1"></head>
   <body id="top">
     <a class="skip-link" href="#shop" data-t="skip">رفتن به فروشگاه</a>
@@ -40,7 +40,10 @@
     </header>
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-scene"><img class="hero-food" src="assets/persia/persepolis-rome-hero-v1.webp" alt="پیوند خاطره شهرهای ایران و زندگی در ایتالیا" data-alt="heroImageAlt" width="1983" height="793" fetchpriority="high" /></div>
+        <div class="hero-scene">
+          <img class="hero-food is-active" data-hero-image="0" src="assets/persia/persepolis-rome-hero-v1.webp" alt="تصویر هنری تخت جمشید و کلسیوم رم در کنار سفره‌ای ایرانی و ایتالیایی" data-alt="heroImageAlt" width="1983" height="793" fetchpriority="high" />
+          <img class="hero-food" data-hero-image="1" src="assets/persia/iran-italy-hero.webp" alt="تصویر هنری شهرهای ایران و میلان در کنار چای و خوراکی‌های ایرانی" data-alt="heroImageAlt2" width="2560" height="1024" fetchpriority="low" aria-hidden="true" />
+        </div>
         <div class="shell hero-layout"><div class="hero-copy">
           <p class="eyebrow" data-t="heroEyebrow">خانه هر کجا که باشیم</p>
           <h1 id="hero-title" data-t="heroTitle">دور از خانه<br /><em>هنوز کنار هم</em></h1>
@@ -48,7 +51,12 @@
           <p class="hero-description" data-t="heroBody">طعم‌های ایران نزدیک‌تر از همیشه از برنج و زعفران تا خشکبار چای و غذای آماده برای آن‌هایی که خانه را در دلشان دارند</p>
           <div class="hero-actions"><a class="button primary" href="#shop" data-category="hani"><span data-t="explore">کشف محصولات</span><span aria-hidden="true">→</span></a></div>
         </div><div class="hero-postcard"><span class="postcard-city" data-t="heroRoute">ایران ← ایتالیا</span><p data-t="heroPostcard">هر جا که باشیم<br />ایران با ماست</p><span aria-hidden="true">♡</span><small>HOME IS A FEELING</small></div></div>
-        <div class="hero-pan-controls"><button type="button" data-hero-pan="-1" aria-label="نمای سمت چپ تصویر">←</button><button type="button" data-hero-pan="1" aria-label="نمای سمت راست تصویر">→</button></div>
+        <div class="hero-slide-controls">
+          <button type="button" data-hero-step="-1" aria-label="تصویر قبلی"><span aria-hidden="true">←</span></button>
+          <div class="hero-slide-dots"><button type="button" data-hero-slide="0" aria-label="تصویر ۱ از ۲" aria-current="true"></button><button type="button" data-hero-slide="1" aria-label="تصویر ۲ از ۲" aria-current="false"></button></div>
+          <button type="button" data-hero-step="1" aria-label="تصویر بعدی"><span aria-hidden="true">→</span></button>
+          <span class="sr-only" data-hero-status aria-live="polite" aria-atomic="true"></span>
+        </div>
       </section>
       <section class="category-section shell" id="categories" aria-label="دسته‌بندی محصولات">
         <div class="category-grid">

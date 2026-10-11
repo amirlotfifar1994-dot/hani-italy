@@ -10,9 +10,13 @@ Published asset: `/assets/persia/persepolis-rome-hero-v1.webp` — 1983 × 793,
 upscaling. The earlier hero remains available in the repository and in other
 existing decorative placements.
 
-Mobile keeps full-height cover framing, horizontal touch panning and arrow
-alternatives. The initial framing is 92% toward the Rome side; panning left
-reveals Persepolis. CSS contrast and the soft image reveal remain active.
+Mobile keeps full-height cover framing with two actual image slides: the new
+historic panorama followed by the earlier Iran–Italy tea-and-food scene.
+Arrows, page dots and horizontal swipes change the image with an 850ms
+crossfade, rather than panning its crop. Vertical scrolling and pinch gestures
+remain available. There is no autoplay, reduced motion disables the fade, and
+the first image remains visible without JavaScript. Each slide keeps its own
+fixed crop and multilingual alternative text. CSS contrast remains active.
 
 The homepage's introduction now describes the online Iranian supermarket,
 its range of brands and its journal, without the former phase/preview copy.
