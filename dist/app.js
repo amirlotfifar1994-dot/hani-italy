@@ -294,7 +294,7 @@ function renderInfo() {
   if (!keys[activeInfo]) return;
   $("#info-title").textContent = t(keys[activeInfo][0]);
   $("#info-body").textContent = t(keys[activeInfo][1]);
-  if(activeInfo === "contact") $("#info-body").innerHTML = `<p>${escapeHtml(t("contactBody"))}</p><div class="contact-placeholders">${["contactPhone","contactEmail","contactAddress"].map(key=>`<div class="contact-placeholder"><span>${escapeHtml(t(key))}</span><b aria-label="${escapeHtml(t(key))}"></b></div>`).join("")}</div>`;
+  if(activeInfo === "contact") $("#info-body").innerHTML = `<p>${escapeHtml(t("contactBody"))}</p><div class="contact-placeholders">${["contactPhone","contactEmail","contactAddress"].map(key=>`<div class="contact-placeholder"><span>${escapeHtml(t(key))}</span>${key==='contactPhone'?`<a href="tel:${escapeHtml(t('publicPhone'))}" dir="ltr">${escapeHtml(t('publicPhone'))}</a>`:`<b aria-label="${escapeHtml(t(key))}"></b>`}</div>`).join("")}</div>`;
 }
 
 function updateSeoMetadata(){

@@ -1,5 +1,19 @@
 /* A lighter, contemporary finish around the original Persian palette. */
 .mobile-language{display:none}
+.announcement-phone{color:#edd7a8;text-decoration:none;font:500 10px 'DM Sans',sans-serif;letter-spacing:.04em;padding-block:4px}
+.announcement-phone:hover{text-decoration:underline;text-underline-offset:3px}
+body#top footer{padding-top:38px}
+body#top .footer-grid{grid-template-columns:minmax(0,1.8fr) minmax(0,1fr) minmax(0,1fr);gap:35px;align-items:start}
+body#top .footer-grid>div:not(.footer-brand){display:flex;flex-direction:column;align-items:flex-start}
+body#top .footer-grid h3{font-size:11px;margin-bottom:12px;letter-spacing:.02em}
+body#top .footer-grid>div>a:not(.brand),body#top .footer-grid>div>button{margin:0;min-height:32px;line-height:1.7;background:none}
+body#top .footer-grid .footer-motto{margin:15px 0 7px;font-size:20px}
+body#top .footer-location{display:block;margin-top:0;font-size:10px}
+body#top .footer-skyline{max-width:1150px;margin:24px auto 0;opacity:.85}
+body#top .footer-bottom>.shell{min-height:54px;font-size:10px;gap:16px}
+.footer-utility{display:flex;gap:20px;align-items:center}
+.footer-utility>button{padding:0;background:none;font-size:inherit;color:inherit}
+@media(max-width:650px){body#top .footer-grid{grid-template-columns:1fr 1fr;gap:24px 20px}.footer-brand{grid-column:1/-1}body#top .footer-grid .brand img{width:35px;height:35px}body#top .footer-grid .brand .brand-word{font-size:28px}body#top .footer-grid .footer-motto{font-size:17px;margin-top:12px}body#top .footer-skyline{width:calc(100% - 24px);margin-top:20px}body#top .footer-bottom>.shell{flex-wrap:wrap;padding-block:14px;gap:12px;justify-content:space-between}body#top .footer-bottom>.shell>span:first-child{flex-basis:auto}.footer-utility{gap:15px;font-size:9px}.announcement-phone{font-size:9px}}
 body#top .button{border-radius:999px;min-height:46px;padding:12px 24px;font-weight:600;transition:background .2s,box-shadow .2s,transform .2s}
 body#top .button:hover{box-shadow:0 6px 18px #10332f20;transform:translateY(-1px)}
 body#top .button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
@@ -45,6 +59,7 @@ body#top .journal-read{font-weight:600;border-radius:0}
  .announcement>.shell{min-height:22px}
  .announcement,.announcement button{font-size:8px}
  body#top .hero-layout{padding-block:110px 74px}
+ body#top .hero .hero-food{object-position:var(--hero-pan,92%) center}
  body#top .hero-copy{width:min(92%,360px)}
  body#top .hero h1{font-size:clamp(31px,8vw,43px);line-height:1.6}
  body#top .hero-description{font-size:14px;line-height:1.9}

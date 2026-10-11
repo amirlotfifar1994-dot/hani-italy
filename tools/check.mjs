@@ -45,6 +45,7 @@ const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1]);
 assert.equal(new Set(ids).size, ids.length, "Duplicate IDs");
 for (const match of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
   const asset = match[1].split("?")[0];
+  if(asset.startsWith('tel:')){assert.match(asset,/^tel:\+[1-9]\d{6,14}$/,'Use a valid international telephone link');continue;}
   if (/^(https?:|data:)/.test(asset)||asset==="/blog") continue;
   await fs.access(new URL("dist/" + asset, root));
 }

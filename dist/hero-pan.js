@@ -1,6 +1,6 @@
 const hero=document.querySelector('.hero'),image=hero?.querySelector('.hero-food'),mobile=matchMedia('(max-width:650px)');
 if(hero&&image){
- let position=68,gesture=null;
+ let position=92,gesture=null;
  const setPosition=value=>{position=Math.max(0,Math.min(100,value));hero.style.setProperty('--hero-pan',position+'%');hero.querySelector('[data-hero-pan="-1"]').disabled=position===0;hero.querySelector('[data-hero-pan="1"]').disabled=position===100;};
  const label=()=>{const lang=document.documentElement.lang;hero.querySelectorAll('[data-hero-pan]').forEach(button=>{const right=Number(button.dataset.heroPan)>0;button.setAttribute('aria-label',({fa:['نمای سمت چپ تصویر','نمای سمت راست تصویر'],en:['Explore the left of the image','Explore the right of the image'],it:['Esplora la parte sinistra','Esplora la parte destra']})[lang==='fa'||lang==='it'?lang:'en'][Number(right)]);});};
  label();new MutationObserver(label).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});

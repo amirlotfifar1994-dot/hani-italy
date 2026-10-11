@@ -50,6 +50,9 @@ try {
     if(lang==='fa') {
       await page.waitForFunction(()=>{const track=document.querySelector('.journal-carousel-track');return Math.abs(track.querySelector('.journal-card').getBoundingClientRect().right-track.getBoundingClientRect().right)<2;});
       await page.waitForFunction(()=>[...document.querySelectorAll('.journal-carousel-track img')].every(image=>image.complete&&image.naturalWidth&&getComputedStyle(image).opacity==='1'));
+      const image=track.locator('img').first();
+      const timing=await image.evaluate(node=>{const style=getComputedStyle(node),properties=style.transitionProperty.split(',').map(s=>s.trim()),durations=style.transitionDuration.split(',').map(parseFloat);return durations[properties.indexOf('transform')]||0;});
+      assert.ok(timing>=1.1,'Image fade must retain a slow transform transition');
       await carousel.screenshot({path:path.join(root,'screenshots/'+(remote?'live-':'')+'journal-slider-desktop.png')});
     }
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
@@ -102,6 +105,10 @@ try {
     const layout=await page.evaluate(()=>{const brand=document.querySelector('header#home .brand').getBoundingClientRect(),word=document.querySelector('header#home .brand-word').getBoundingClientRect(),actions=document.querySelector('.header-actions').getBoundingClientRect();return {sameRow:Math.abs((brand.top+brand.bottom)/2-(actions.top+actions.bottom)/2)<4,separate:Math.max(brand.right,word.right)<=actions.left+1};});
     assert.ok(layout.sameRow&&layout.separate,'Logo and controls share one row at '+width+' '+lang);
     assert.equal(await page.locator('[data-t=heroPanHint]').count(),0);
+    assert.equal(await page.locator('.announcement-phone').getAttribute('href'),'tel:+31110000111');
+    assert.equal(await page.locator('.announcement [data-info=preview]').count(),0);
+    assert.equal(await page.locator('.footer-skyline svg').count(),1);
+    assert.ok(!/آزمایشی|مرحله اول|preview|phase one|prima fase/i.test(await page.locator('#network').textContent()));
     assert.equal(await page.locator('#mobile-language').inputValue(),lang);
     await page.locator('#menu-toggle').click();await page.locator('#header-search').waitFor({state:'visible'});
     assert.equal(await page.locator('#menu-toggle').getAttribute('aria-expanded'),'true');
@@ -113,6 +120,10 @@ try {
   await page.locator('#mobile-language').selectOption('fa');
   await page.waitForFunction(()=>document.documentElement.lang==='fa');
   console.log('PASS: compact one-row header at 320–618px in all languages, expandable search, Escape and language selection');
+  await page.locator('footer [data-info=contact]').click();
+  assert.equal(await page.locator('#info-body a[href="tel:+31110000111"]').textContent(),'+31110000111');
+  await page.locator('[data-close=info-dialog]').click();
+  await page.locator('footer').screenshot({path:path.join(root,'screenshots/'+(remote?'live-':'')+'minimal-footer.png'),style:'header#home{visibility:hidden}'});
   const plain=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}}),fallback=await plain.newPage();
   if(!remote)await plain.route('https://fonts.googleapis.com/**',route=>route.fulfill({contentType:'text/css',body:''}));
   await fallback.goto(origin+'/?lang=fa',{waitUntil:'domcontentloaded'});

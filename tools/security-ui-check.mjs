@@ -23,7 +23,7 @@ try{
  await mkdir(path.join(root,'screenshots'),{recursive:true});
  let releaseImage;
  const heldImage = new Promise(resolve => { releaseImage = resolve; });
- await page.route('**/assets/persia/iran-italy-hero.webp', async route => { await heldImage; await route.continue(); });
+ await page.route('**/assets/persia/persepolis-rome-hero-v1.webp', async route => { await heldImage; await route.continue(); });
  await page.goto(origin+'/?lang=fa',{waitUntil:'domcontentloaded'});
  assert.equal(await page.locator('.hero-food').evaluate(image=>getComputedStyle(image).opacity),'0','A loading photograph stays faded');
  releaseImage();
@@ -36,7 +36,7 @@ try{
  await page.waitForFunction(()=>window.PersiaCopy&&window.PersiaSeo?.lang==='fa');
  assert.equal(await page.locator('.postcard-city').textContent(),'ایران ← ایتالیا');
  assert.ok(!/[،.؛]/.test(await page.locator('.hero-copy').textContent().then(text=>text.replace('SAME ROOTS.','').replace('A BRIGHTER TOMORROW.',''))));
- await page.unroute('**/assets/persia/iran-italy-hero.webp');
+ await page.unroute('**/assets/persia/persepolis-rome-hero-v1.webp');
  await page.emulateMedia({reducedMotion:'reduce'});
  assert.equal(await page.locator('.hero-food').evaluate(image=>getComputedStyle(image).transitionDuration),'0s');
  await page.emulateMedia({reducedMotion:'no-preference'});
