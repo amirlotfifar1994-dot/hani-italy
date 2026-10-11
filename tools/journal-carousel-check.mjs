@@ -26,7 +26,7 @@ try {
   const active=()=>page.locator('.journal-carousel-dots button[aria-current=true]').getAttribute('data-story-page');
   for(const lang of ['fa','it','en']) {
     await page.goto(origin+'/?lang='+lang,{waitUntil:'domcontentloaded'});
-    await page.waitForFunction(()=>window.PersiaCopy&&window.PersiaSeo?.lang===document.documentElement.lang);
+    await page.waitForFunction(()=>window.PersiaStoreReady&&window.PersiaSeo?.lang===document.documentElement.lang);
     const carousel=page.locator('.journal-carousel'),track=page.locator('.journal-carousel-track');
     await carousel.scrollIntoViewIfNeeded();
     assert.equal(await track.locator('.journal-card').count(),6,'Six curated stories are available');
@@ -133,6 +133,7 @@ try {
   const plain=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}}),fallback=await plain.newPage();
   if(!remote)await plain.route('https://fonts.googleapis.com/**',route=>route.fulfill({contentType:'text/css',body:''}));
   await fallback.goto(origin+'/?lang=fa',{waitUntil:'domcontentloaded'});
+  await fallback.waitForFunction(()=>getComputedStyle(document.querySelector('[data-hero-image="1"]')).position==='absolute');
   assert.equal(await fallback.locator('[data-hero-image="0"]').evaluate(node=>getComputedStyle(node).opacity),'1');
   assert.equal(await fallback.locator('[data-hero-image="1"]').evaluate(node=>getComputedStyle(node).opacity),'0');
   assert.equal(await fallback.locator('.hero-slide-controls').isVisible(),false);
