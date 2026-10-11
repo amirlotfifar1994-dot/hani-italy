@@ -1,9 +1,11 @@
 # Homepage catalogue design
 
-The product shelf now uses three cards per desktop row beside the editorial
-panel, and two on small screens. Pack photography stays unchanged, with larger
-contain framing on warm backgrounds. Complete add buttons, larger price type,
-favourite controls and discreet product badges create a clearer hierarchy.
+The product shelf uses four compact cards per desktop row beside the editorial
+panel, three on tablets and two on small screens. Pack photography stays
+unchanged, with contain framing in 165px desktop and 135px mobile image areas.
+Prices and add controls share one row, reducing card height and excess whitespace.
+Mobile uses a 44px plus control with an accessible text label; desktop also
+shows the label. Favourite controls and discreet badges retain the hierarchy.
 
 Search and sort sit in one rounded toolbar; category filters are capsules and
 scroll horizontally on phones. The original food photograph remains in a
