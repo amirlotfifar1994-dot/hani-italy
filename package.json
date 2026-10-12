@@ -12,6 +12,7 @@
     "security:check": "node --check dist/admin-security.js && node tools/security-check.mjs",
     "dev": "node tools/preview.mjs",
     "carousel:check": "node tools/journal-carousel-check.mjs",
+    "account:ui:check": "node tools/account-ui-check.mjs",
     "check": "node --check dist/app.js && node --check dist/account.js && node --check dist/bootstrap.js && node --check dist/catalog-layout.js && node --check dist/hero-slider.js && node --check dist/admin.js && node --check server/auth.mjs && node --check server/catalogue.mjs && node --check server/offers.mjs && node tools/check.mjs && node tools/auth-check.mjs && node tools/admin-check.mjs && node --check dist/journal.js && node --check server/product-guide-data.mjs && node --check server/product-guide-images.mjs && node --check server/product-guides.mjs && node --check server/blog-editorial-extensions.mjs && node --check server/blog-content.mjs && node --check server/blog.mjs && node --check server/seo.mjs && node --check server/seo-pages.mjs && node tools/seo-check.mjs && node --check server/comments.mjs && node --check dist/comments.js && node --check dist/admin-comments.js && node tools/comments-check.mjs",
     "admin:setup": "node tools/admin-setup.mjs",
     "journal:check": "node --check server/blog.mjs && node --check server/product-guides.mjs && node --check server/hani-brand-article.mjs && node --check server/italy-city-guides.mjs && node --check server/italy-iran-comparisons.mjs && node tools/journal-depth-check.mjs && node tools/seo-check.mjs"

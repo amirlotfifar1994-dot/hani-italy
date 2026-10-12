@@ -47,7 +47,7 @@
   }
   function favouritesView() {
     const list=products.filter(p=>favorites.has(p.id));
-    return '<div class="account-section-title"><h2>'+e(A('saved'))+'</h2><span class="account-badge">'+number(list.length)+'</span></div>'+(list.length?'<div class="account-favourites">'+list.map(p=>'<article class="account-saved-product">'+productArt(p,'account-product-photo')+'<div><span class="eyebrow">'+e(p.brand||t('sampleBrand'))+'</span><h3><button data-product="'+p.id+'">'+e(local(p.name))+'</button></h3><p>'+measure(p)+' · '+money(p.cents)+'</p><div class="account-actions">'+button(t('add'),'data-add="'+p.id+'"',true)+button(A('remove'),'data-account-unfavorite="'+p.id+'"')+'</div></div></article>').join('')+'</div>':empty(A('noSaved')));
+    return '<div class="account-section-title"><h2>'+e(A('saved'))+'</h2><span class="account-badge">'+number(list.length)+'</span></div>'+(list.length?'<div class="account-favourites">'+list.map(p=>'<article class="account-saved-product">'+productArt(p,'account-product-photo')+'<div><span class="eyebrow">'+e(p.brand||t('sampleBrand'))+'</span><h3><button data-product="'+p.id+'">'+e(local(p.name))+'</button></h3><p>'+measure(p)+'</p><div class="product-prices">'+productPrice(p)+'</div><div class="account-actions">'+button(t(canBuy(p)?'add':p.stockPending||p.cents===null?'notReady':'unavailableProduct'),'data-add="'+p.id+'"'+(canBuy(p)?'':' disabled'),true)+button(A('remove'),'data-account-unfavorite="'+p.id+'"')+'</div></div></article>').join('')+'</div>':empty(A('noSaved')));
   }
   function passwordField(id,label,autocomplete='current-password') {
     return '<label for="'+id+'"><span>'+e(label)+'</span><span class="password-control"><input id="'+id+'" name="'+id+'" aria-label="'+e(label)+'" type="password" required '+(autocomplete==='new-password'?'minlength="15" ':'')+'maxlength="128" autocomplete="'+autocomplete+'" dir="ltr"><button type="button" data-password-toggle="'+id+'" aria-pressed="false">'+e(A('showPassword'))+'</button></span></label>';
@@ -123,7 +123,7 @@
     if(event.target.id==='account-profile-form'){
       event.preventDefault();const form=event.target;const phone=form.querySelector('#profile-phone');phone.setCustomValidity(validPhone(phone.value)?'':A('phoneInvalid'));if(!form.reportValidity())return;
       const next={name:form.querySelector('#profile-name').value.trim(),phone:phone.value,language:form.querySelector('#profile-language').value};const submit=form.querySelector('[type=submit]');submit.disabled=true;
-      try{const data=await api('/api/account/profile',{method:'PUT',body:next});user=data.user;auth.user=user;profile=user;lang=user.language;store.write('persia.v1.language',lang);applyLanguage();message=A('savedMessage');}catch(error){message=errorText(error);}render();updateCheckoutAddresses();return;
+      try{const data=await api('/api/account/profile',{method:'PUT',body:next});user=data.user;auth.user=user;profile=user;setLanguage(user.language);message=A('savedMessage');}catch(error){message=errorText(error);}render();updateCheckoutAddresses();return;
     }
     if(event.target.id==='account-address-form'){
       event.preventDefault();const form=event.target;const next={id:editing||crypto.randomUUID(),label:form.querySelector('#address-label').value.trim(),recipient:form.querySelector('#address-recipient').value.trim(),street:form.querySelector('#address-street').value.trim(),city:form.querySelector('#address-city').value.trim(),postcode:form.querySelector('#address-postcode').value};
@@ -138,7 +138,7 @@
   document.addEventListener('input',event=>{if(event.target.matches('input'))event.target.setCustomValidity('');if(event.target.id==='address-postcode')event.target.value=event.target.value.replace(/[۰-۹]/g,d=>String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d))).replace(/[٠-٩]/g,d=>String('٠١٢٣٤٥٦٧٨٩'.indexOf(d)));if(event.target.closest('#account-address-form'))event.target.setCustomValidity('');});
   function fillDestination(id) {const a=addresses.find(a=>a.id===id);if(!a)return;document.querySelector('#delivery-city').value=a.city;document.querySelector('#delivery-city').setCustomValidity('');document.querySelector('#delivery-postcode').value=a.postcode;}
   document.querySelector('#checkout-address').addEventListener('change',event=>fillDestination(event.target.value));
-  document.querySelector('#checkout').addEventListener('click',()=>{updateCheckoutAddresses();document.querySelector('#checkout-address').value=defaultId;fillDestination(defaultId);});
+  document.addEventListener('persia:checkout',()=>{updateCheckoutAddresses();document.querySelector('#checkout-address').value=defaultId;fillDestination(defaultId);});
   document.querySelector('#confirm-demo').addEventListener('click',()=>{if(!panel.hidden)render();});
   document.querySelector('#header-search-form').addEventListener('submit',()=>{if(!panel.hidden)location.hash='shop';});
   document.addEventListener('persia:catalogue',()=>{render();updateCheckoutAddresses();});

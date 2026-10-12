@@ -312,6 +312,14 @@ function updateSeoMetadata(){
  document.querySelectorAll('script[type="application/ld+json"]').forEach(node=>{try{const schema=JSON.parse(node.textContent);for(const entity of schema['@graph']||[]){if(entity['@type']==='WebPage'){entity['@id']=url+'#page';entity.url=url;entity.inLanguage=lang;entity.name=document.title;entity.description=$('meta[name=description]').content;}}node.textContent=JSON.stringify(schema).replace(/</g,'\\u003c');}catch{}});
 }
 window.addEventListener('hashchange',updateSeoMetadata);
+function setLanguage(next) {
+  lang = next;
+  store.write("persia.v1.language", lang);
+  const languageUrl = new URL(location.href);
+  languageUrl.searchParams.set("lang", lang);
+  history.replaceState(null, "", languageUrl.pathname + languageUrl.search + languageUrl.hash);
+  applyLanguage();
+}
 function applyLanguage() {
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "fa" ? "rtl" : "ltr";
@@ -354,10 +362,7 @@ document.addEventListener("click", (event) => {
   const el = event.target.closest("button,a");
   if (!el) return;
   if (el.dataset.lang) {
-    lang = el.dataset.lang;
-    store.write("persia.v1.language", lang);
-    const languageUrl=new URL(location.href);languageUrl.searchParams.set("lang",lang);history.replaceState(null,"",languageUrl.pathname+languageUrl.search+languageUrl.hash);
-    applyLanguage();
+    setLanguage(el.dataset.lang);
   }
   if (el.dataset.filter) {
     if (el.dataset.filter === "all") expandedCatalogue = true;
@@ -479,6 +484,7 @@ $("#checkout").addEventListener("click", async () => {
   $("#delivery-form").reset();
   setOrderStep("destination");
   renderOrder();
+  document.dispatchEvent(new CustomEvent("persia:checkout"));
   $("#cart-dialog").close();
   openDialog("order-dialog");
 });
