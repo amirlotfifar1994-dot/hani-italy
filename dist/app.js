@@ -29,6 +29,7 @@ let filter = "hani",
   currentProduct = null,
   orderSnapshot = null,
   activeInfo = null;
+let checkoutStarting = false, confirmingOrder = false;
 const validOrder = (order) => order && typeof order === "object" &&
   /^PM-DEMO-[A-F0-9]{8}$/.test(order.id) && Number.isFinite(Date.parse(order.date)) &&
   order.destination && typeof order.destination.city === "string" && order.destination.city.trim().length >= 2 && order.destination.city.length <= 80 && /^[0-9]{5}$/.test(order.destination.postcode) &&
@@ -39,12 +40,6 @@ const storedOrders = store.read("persia.v1.orders", []);
 const orderHistory = Array.isArray(storedOrders) ? storedOrders.filter(validOrder).slice(0, 5) : [];
 const rawBasket = store.read("persia.v1.basket", window.PersiaAuth?.user ? {} : store.read("hani.v1.basket", {})),
   basket = {};
-if (rawBasket && typeof rawBasket === "object" && !Array.isArray(rawBasket)) {
-  for (const p of products) {
-    const q = rawBasket[p.id];
-    if (Number.isInteger(q) && q > 0 && q <= 99 && p.stock!==0&&!p.stockPending&&!p.publicationHold&&Number.isInteger(p.cents)&&p.cents>0) basket[p.id] = Math.min(q,p.stock??99);
-  }
-}
 const rawFavorites = store.read("persia.v1.favorites", window.PersiaAuth?.user ? [] : store.read("hani.v1.favorites", []));
 const favorites = new Set(
   Array.isArray(rawFavorites)
@@ -76,6 +71,19 @@ const image = (p) => p.image;
 const measure = (p) => number(p.weight) + " " + t(p.unit === "pcs" ? "pieces" : p.unit === "ml" ? "millilitres" : "grams")+(p.packaging?" · "+t(p.packaging):"");
 const orderLineName=line=>line.name?.length===3?local(line.name):local(products.find(p=>p.id===line.id)?.name||[line.id,line.id,line.id]);
 const canBuy=p=>p&&Number.isInteger(p.cents)&&p.cents>0&&!p.stockPending&&!p.publicationHold&&p.status!=='draft'&&p.status!=='archived'&&(p.stock===null||p.stock===undefined||p.stock>0);
+function reconcileBasket(incoming) {
+  const next = {};
+  if (incoming && typeof incoming === "object" && !Array.isArray(incoming)) {
+    for (const p of products) {
+      const quantity = incoming[p.id];
+      if (canBuy(p) && Number.isInteger(quantity) && quantity > 0 && quantity <= 99)
+        next[p.id] = Math.min(quantity, p.stock ?? 99);
+    }
+  }
+  for (const id of Object.keys(basket)) delete basket[id];
+  Object.assign(basket, next);
+}
+reconcileBasket(rawBasket);
 const hasDiscount=p=>Number.isInteger(p.cents)&&Number.isInteger(p.compareAtCents)&&p.compareAtCents>p.cents;
 const productPrice=p=>p.cents===null?`<b class="price price-pending">${t('pricePending')}</b>`:`<b class="price">${money(p.cents)}</b>${hasDiscount(p)?`<del class="reference-price">${money(p.compareAtCents)}</del><span class="sale-percentage">−${number(Math.round((1-p.cents/p.compareAtCents)*100))}%</span>`:""}`;
 const productUrl=p=>"/products/"+p.id+"?lang="+lang;
@@ -94,6 +102,11 @@ const normalize = (value) =>
     .replace(/\s+/g, " ")
     .trim();
 Object.assign(dictionary,{productSource:['مشاهده منبع محصول ↗','View product source ↗','Vedi la fonte del prodotto ↗'],haniBrand:['محصولات هانی','Hani products','Prodotti Hani'],viewHani:['مشاهده همه محصولات هانی ←','View all Hani products →','Vedi tutti i prodotti Hani →'],catalogSource:["محصولات هانی بر اساس فهرست ۴۷ قلمی عرضه و کاتالوگ هلند ثبت شده‌اند. اطلاعات هر وزن و بسته‌بندی را جداگانه بررسی کنید. منبع محصولات: ","Hani products follow the 47-item assortment list and Netherlands catalogue. Check each weight and pack separately. Product source: ","I prodotti Hani seguono la lista di 47 referenze e il catalogo olandese. Consulta separatamente ogni peso e confezione. Fonte dei prodotti: "],catalogueChanged:['قیمت یا موجودی تغییر کرده است؛ سبد را دوباره بررسی کنید.','Price or availability changed; review your bag again.','Prezzo o disponibilità cambiati; controlla il carrello.'],pieces:['عدد','pieces','pezzi'],other:['سایر محصولات','Other products','Altri prodotti'],marketProduct:['پرشیا مارکت','Persia Market','Persia Market'],unavailableProduct:['ناموجود','Unavailable','Non disponibile'],managedNote:['مشخصات توسط مدیریت فروشگاه وارد شده است. پیش از خرید واقعی، اطلاعات بسته‌بندی و حساسیت‌ها را بررسی کنید.','Details entered by store management. Check packaging and allergens before real purchases.','Dettagli inseriti dalla gestione. Controlla confezione e allergeni prima di acquisti reali.']});
+Object.assign(dictionary,{catalogueUnavailable:[
+  'قیمت و موجودی به‌روز دریافت نشد؛ دوباره امتحان کنید',
+  'Could not check current prices and stock. Please try again.',
+  'Impossibile verificare prezzi e disponibilità aggiornati. Riprova.'
+]});
 const heart =
   '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';
 function toast(message) {
@@ -231,7 +244,7 @@ function renderDetail() {
 }
 function basketLines() {
   return products
-    .filter((p) => basket[p.id])
+    .filter((p) => basket[p.id] && canBuy(p))
     .map((p) => ({ id: p.id, quantity: basket[p.id] }));
 }
 function total(lines = basketLines()) {
@@ -252,7 +265,8 @@ function renderCart() {
         .join("")
     : `<div class="empty-state"><h3>${t("emptyCart")}</h3><p>${t("emptyCartBody")}</p><button class="button primary" data-browse>${t("explore")}</button></div>`;
   $("#cart-total").textContent = money(total());
-  $("#checkout").disabled = !lines.length;
+  $("#checkout").disabled = checkoutStarting || !lines.length;
+  $("#cart-orders").hidden = !orderHistory.length;
   updateCounts();
 }
 function renderOrder() {
@@ -394,6 +408,7 @@ document.addEventListener("click", (event) => {
   if (el.dataset.close) $("#" + el.dataset.close).close();
   if (el.hasAttribute("data-orders")) {
     $("#order-dialog").close();
+    $("#cart-dialog").close();
     renderSavedOrders();
     openDialog("orders-dialog");
   }
@@ -478,15 +493,23 @@ $("#cart-open").addEventListener("click", () => {
   openDialog("cart-dialog");
 });
 $("#checkout").addEventListener("click", async () => {
-  await refreshCatalogue();
-  if (!basketLines().length) return;
-  orderSnapshot = { lines: basketLines().map(line => ({ ...line, cents: products.find(p => p.id === line.id).cents, name:[...products.find(p=>p.id===line.id).name] })), date: new Date().toISOString() };
-  $("#delivery-form").reset();
-  setOrderStep("destination");
-  renderOrder();
-  document.dispatchEvent(new CustomEvent("persia:checkout"));
-  $("#cart-dialog").close();
-  openDialog("order-dialog");
+  if (checkoutStarting) return;
+  checkoutStarting = true;
+  $("#checkout").disabled = true;
+  try {
+    if (!await refreshCatalogue()) { toast(t("catalogueUnavailable")); return; }
+    if (!basketLines().length || !$("#cart-dialog").open) return;
+    orderSnapshot = { lines: basketLines().map(line => ({ ...line, cents: products.find(p => p.id === line.id).cents, name:[...products.find(p=>p.id===line.id).name] })), date: new Date().toISOString() };
+    $("#delivery-form").reset();
+    setOrderStep("destination");
+    renderOrder();
+    document.dispatchEvent(new CustomEvent("persia:checkout"));
+    $("#cart-dialog").close();
+    openDialog("order-dialog");
+  } finally {
+    checkoutStarting = false;
+    $("#checkout").disabled = !basketLines().length;
+  }
 });
 $("#delivery-city").addEventListener("input", () => $("#delivery-city").setCustomValidity(""));
 $("#delivery-postcode").addEventListener("input", event => {
@@ -513,24 +536,33 @@ $("#back-to-basket").addEventListener("click", () => {
   openDialog("cart-dialog");
 });
 $("#confirm-demo").addEventListener("click", async () => {
-  await refreshCatalogue();
-  if(orderSnapshot?.lines.some(line=>{const p=products.find(p=>p.id===line.id);return !canBuy(p)||line.quantity>(p.stock??99)||line.cents!==p.cents;})){toast(t("catalogueChanged"));$("#order-dialog").close();renderCart();openDialog("cart-dialog");return;}
-  if (!orderSnapshot?.destination || orderSnapshot.id) return;
-  orderSnapshot.id = "PM-DEMO-" + crypto.randomUUID().replaceAll("-", "").slice(0, 8).toUpperCase();
-  orderSnapshot.date = new Date().toISOString();
-  orderHistory.unshift(orderSnapshot);
-  orderHistory.splice(5);
-  store.write("persia.v1.orders", orderHistory);
-  for (const line of orderSnapshot.lines) {
-    const remaining = (basket[line.id] || 0) - line.quantity;
-    if (remaining > 0) basket[line.id] = remaining;
-    else delete basket[line.id];
+  if (confirmingOrder || !orderSnapshot?.destination || orderSnapshot.id) return;
+  const snapshot = orderSnapshot, destination = snapshot.destination;
+  confirmingOrder = true;
+  $("#confirm-demo").disabled = true;
+  try {
+    if (!await refreshCatalogue()) { toast(t("catalogueUnavailable")); return; }
+    if (orderSnapshot !== snapshot || snapshot.destination !== destination || !$("#order-dialog").open || $("#order-actions").hidden) return;
+    if(snapshot.lines.some(line=>{const p=products.find(p=>p.id===line.id);return !canBuy(p)||line.quantity>(p.stock??99)||line.cents!==p.cents;})){toast(t("catalogueChanged"));$("#order-dialog").close();renderCart();openDialog("cart-dialog");return;}
+    orderSnapshot.id = "PM-DEMO-" + crypto.randomUUID().replaceAll("-", "").slice(0, 8).toUpperCase();
+    orderSnapshot.date = new Date().toISOString();
+    orderHistory.unshift(orderSnapshot);
+    orderHistory.splice(5);
+    store.write("persia.v1.orders", orderHistory);
+    for (const line of orderSnapshot.lines) {
+      const remaining = (basket[line.id] || 0) - line.quantity;
+      if (remaining > 0) basket[line.id] = remaining;
+      else delete basket[line.id];
+    }
+    save();
+    renderCart();
+    renderOrder();
+    setOrderStep("receipt");
+    $("#download-order").focus();
+  } finally {
+    confirmingOrder = false;
+    $("#confirm-demo").disabled = false;
   }
-  save();
-  renderCart();
-  renderOrder();
-  setOrderStep("receipt");
-  $("#download-order").focus();
 });
 $("#download-order").addEventListener("click", () => {
   if (!orderSnapshot?.id) return;
@@ -586,16 +618,7 @@ $$("dialog").forEach((dialog) =>
 );
 window.addEventListener("storage", (event) => {
   if (event.key === customerStorageKey("persia.v1.basket") || event.key === customerStorageKey("persia.v1.favorites")) {
-    const incoming = store.read("persia.v1.basket", {});
-    for (const id of Object.keys(basket)) delete basket[id];
-    if (incoming && typeof incoming === "object")
-      for (const p of products)
-        if (
-          Number.isInteger(incoming[p.id]) &&
-          incoming[p.id] > 0 &&
-          incoming[p.id] <= 99
-        )
-          basket[p.id] = incoming[p.id];
+    reconcileBasket(store.read("persia.v1.basket", {}));
     const f = store.read("persia.v1.favorites", []);
     favorites.clear();
     if (Array.isArray(f))
@@ -607,8 +630,25 @@ window.addEventListener("storage", (event) => {
 });
 applyLanguage();
 
-let refreshingCatalogue=false;
-async function refreshCatalogue(){if(refreshingCatalogue||!window.PersiaAuth.available)return;refreshingCatalogue=true;try{const data=await window.PersiaAuth.request('/api/catalogue');if(data.revision===window.PersiaCatalogueRevision&&JSON.stringify(data.products)===JSON.stringify(products))return;window.PersiaCatalogueRevision=data.revision;products.splice(0,products.length,...data.products);for(const id of Object.keys(basket)){const p=products.find(p=>p.id===id);if(!canBuy(p))delete basket[id];else basket[id]=Math.min(basket[id],p.stock??99);}for(const id of favorites)if(!products.some(p=>p.id===id))favorites.delete(id);save();renderProducts();renderCart();renderDetail();renderOrder();renderSavedOrders();document.dispatchEvent(new CustomEvent('persia:catalogue'));}catch{}finally{refreshingCatalogue=false;}}
+let catalogueRefresh = null;
+function refreshCatalogue() {
+  if (catalogueRefresh) return catalogueRefresh;
+  if (!window.PersiaAuth.available) return Promise.resolve(false);
+  catalogueRefresh = (async () => {
+    try {
+      const data = await window.PersiaAuth.request('/api/catalogue');
+      if (data.revision === window.PersiaCatalogueRevision && JSON.stringify(data.products) === JSON.stringify(products)) return true;
+      window.PersiaCatalogueRevision = data.revision;
+      products.splice(0, products.length, ...data.products);
+      reconcileBasket(basket);
+      for (const id of favorites) if (!products.some(p => p.id === id)) favorites.delete(id);
+      save(); renderProducts(); renderCart(); renderDetail(); renderOrder(); renderSavedOrders();
+      document.dispatchEvent(new CustomEvent('persia:catalogue'));
+      return true;
+    } catch { return false; }
+  })().finally(() => { catalogueRefresh = null; });
+  return catalogueRefresh;
+}
 window.addEventListener('storage',event=>{if(event.key==='persia.catalogue.change')refreshCatalogue();});window.addEventListener('focus',refreshCatalogue);
 // Refresh across Italian calendar boundaries, even with no administrator edit.
 setInterval(()=>{if(!document.hidden)refreshCatalogue();},15000);
