@@ -163,8 +163,8 @@ function renderProducts() {
   const matchedCount = list.length;
   const showFeatured = ["all", "hani"].includes(filter) && !query && sort === "featured" && !expandedCatalogue;
   $("#show-catalogue").textContent = t(filter === "hani" ? "viewHani" : "viewCatalogue");
-  if (showFeatured) list = list.slice(0, 6);
-  $("#show-catalogue").hidden = !showFeatured || matchedCount <= 6;
+  if (showFeatured) list = list.slice(0, 8);
+  $("#show-catalogue").hidden = !showFeatured || matchedCount <= 8;
   $("#products").innerHTML = list.map(productCard).join("");
   renderDailyOffers();
   $("#results-count").textContent =
