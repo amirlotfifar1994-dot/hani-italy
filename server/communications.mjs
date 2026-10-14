@@ -1,0 +1,72 @@
+import {DatabaseSync} from 'node:sqlite';
+import {createHmac,timingSafeEqual} from 'node:crypto';
+
+const fail=(status,code)=>Object.assign(Error(code),{status,code});
+const emailOK=value=>typeof value==='string'&&value.length<=254&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+const send=(res,status,data)=>res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow'}).end(JSON.stringify(data));
+export function createCommunications({database,origin,authorize,products,audit=()=>{},environment=process.env,fetchFn=fetch,now=Date.now,startWorker=true}){
+ const db=new DatabaseSync(database);
+ db.exec(`PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;
+ CREATE TABLE IF NOT EXISTS communication_settings(id INTEGER PRIMARY KEY CHECK(id=1),data TEXT NOT NULL,version INTEGER NOT NULL);
+ INSERT OR IGNORE INTO communication_settings VALUES(1,'{"emailEnabled":false,"whatsappEnabled":false}',1);
+ CREATE TABLE IF NOT EXISTS order_email_queue(order_id TEXT PRIMARY KEY,snapshot TEXT NOT NULL,payload TEXT,status TEXT NOT NULL DEFAULT 'waiting',attempts INTEGER NOT NULL DEFAULT 0,first_attempt INTEGER NOT NULL DEFAULT 0,next_at INTEGER NOT NULL DEFAULT 0,provider_id TEXT,error TEXT,created_at INTEGER NOT NULL);
+ CREATE TABLE IF NOT EXISTS whatsapp_inbox(message_id TEXT PRIMARY KEY,recipient TEXT NOT NULL,reply TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'pending',created_at INTEGER NOT NULL,provider_id TEXT,error TEXT);`);
+ db.exec("UPDATE order_email_queue SET status='pending' WHERE status='sending'; UPDATE whatsapp_inbox SET status='uncertain' WHERE status='sending';");
+ const read=()=>{const row=db.prepare('SELECT * FROM communication_settings WHERE id=1').get();return {settings:JSON.parse(row.data),version:row.version};};
+ const emailReady=()=>Boolean(environment.RESEND_API_KEY&&emailOK(environment.ORDER_NOTIFY_TO)&&emailOK(environment.ORDER_EMAIL_FROM));
+ const whatsappReady=()=>Boolean(environment.WHATSAPP_ACCESS_TOKEN&&/^\d{5,30}$/.test(environment.WHATSAPP_PHONE_NUMBER_ID||'')&&(environment.WHATSAPP_APP_SECRET||'').length>=16&&(environment.WHATSAPP_VERIFY_TOKEN||'').length>=24&&/^v\d{2}\.\d+$/.test(environment.WHATSAPP_API_VERSION||''));
+ const notificationStatus=id=>{const row=db.prepare('SELECT status FROM order_email_queue WHERE order_id=?').get(id);return row?.status||'waiting';};
+ function enqueueOrder(order){db.prepare('INSERT OR IGNORE INTO order_email_queue(order_id,snapshot,created_at) VALUES(?,?,?)').run(order.id,JSON.stringify(order),now());}
+ const snapshot=()=>({...read(),email:{configured:emailReady(),accepted:db.prepare("SELECT COUNT(*) n FROM order_email_queue WHERE status='accepted'").get().n,pending:db.prepare("SELECT COUNT(*) n FROM order_email_queue WHERE status IN ('waiting','pending','sending')").get().n,failed:db.prepare("SELECT COUNT(*) n FROM order_email_queue WHERE status IN ('failed','review')").get().n},whatsapp:{configured:whatsappReady(),webhook:origin+'/api/webhooks/whatsapp',accepted:db.prepare("SELECT COUNT(*) n FROM whatsapp_inbox WHERE status='accepted'").get().n,failed:db.prepare("SELECT COUNT(*) n FROM whatsapp_inbox WHERE status IN ('failed','uncertain')").get().n}});
+ async function bytes(req,max){let size=0,chunks=[];for await(const chunk of req){size+=chunk.length;if(size>max)throw fail(413,'tooLarge');chunks.push(chunk);}return Buffer.concat(chunks);}
+ async function body(req){if(!String(req.headers['content-type']||'').startsWith('application/json'))throw fail(415,'contentType');try{const value=JSON.parse(await bytes(req,4096));if(!value||typeof value!=='object'||Array.isArray(value))throw Error();return value;}catch(error){if(error.status)throw error;throw fail(400,'invalidData');}}
+ function botReply(text){
+  const fa=/[\u0600-\u06ff]/.test(text),en=/\b(hello|hi|order|price|stock|help|shipping)\b/i.test(text),lang=fa?'fa':en?'en':'it',idx={fa:0,en:1,it:2}[lang];
+  const normalize=value=>String(value).toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f\u064b-\u065f]/g,'').replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/[^a-z0-9\u0600-\u06ff]+/g,' ').trim();
+  const query=normalize(text);
+  if(/سفارش|پیگیری|\border\b|\bordine\b/.test(query))return ({fa:'برای پیگیری سفارش، وارد حساب خود در فروشگاه شوید. اطلاعات شخصی سفارش‌ها در این چت نمایش داده نمی‌شود.',en:'Sign in to your store account to review your orders. Personal order details are not shared in this chat.',it:'Accedi al tuo account per controllare gli ordini. I dati personali non sono condivisi in questa chat.'})[lang]+'\n'+origin+'/?lang='+lang+'#account/overview';
+  const tokens=query.split(' ').filter(t=>t.length>=3),matches=products().filter(p=>tokens.some(token=>normalize(p.name.join(' ')).includes(token))).slice(0,3);
+  if(matches.length)return matches.map(p=>{const price=Number.isInteger(p.cents)?new Intl.NumberFormat(lang==='fa'?'fa-IR':lang==='en'?'en-IE':'it-IT',{style:'currency',currency:'EUR'}).format(p.cents/100):({fa:'قیمت در انتظار تأیید',en:'Price to be confirmed',it:'Prezzo da confermare'})[lang];const availability=({fa:p.stockPending?'موجودی در انتظار تأیید':p.stock===0?'ناموجود':'موجود',en:p.stockPending?'Stock to be confirmed':p.stock===0?'Out of stock':'Available',it:p.stockPending?'Scorte da confermare':p.stock===0?'Esaurito':'Disponibile'})[lang];return p.name[idx]+'\n'+price+' · '+availability+'\n'+origin+'/products/'+encodeURIComponent(p.id)+'?lang='+lang;}).join('\n\n');
+  return ({fa:'به پرشیا مارکت خوش آمدید. نام محصول را بفرستید تا قیمت و موجودی آن را ببینید. برای سفارش‌ها، «پیگیری سفارش» را بنویسید.',en:'Welcome to Persia Market. Send a product name for price and availability, or type “order” for your account link.',it:'Benvenuto in Persia Market. Scrivi il nome di un prodotto per prezzo e disponibilità, oppure “ordine” per il tuo account.'})[lang]+'\n'+origin+'/shop?lang='+lang;
+ }
+ let working=null,closed=false;
+ async function work(){if(working||closed)return working;working=(async()=>{
+  const {settings}=read();
+  if(settings.emailEnabled&&emailReady()){
+   const rows=db.prepare("SELECT * FROM order_email_queue WHERE status IN ('waiting','pending') AND next_at<=? ORDER BY created_at LIMIT 5").all(now());
+   for(const row of rows){if(closed)break;if(row.first_attempt&&now()-row.first_attempt>=23*3600000){db.prepare("UPDATE order_email_queue SET status='review',error='retryWindow' WHERE order_id=?").run(row.order_id);continue;}
+    const order=JSON.parse(row.snapshot),payload=row.payload||JSON.stringify({from:environment.ORDER_EMAIL_FROM,to:[environment.ORDER_NOTIFY_TO],subject:'[DEMO] Persia Market · '+order.id,text:['New demo checkout — no payment, shipment or stock reservation.',order.id,order.createdAt,order.city+' · '+order.postcode,order.customerEmail||'Guest',...order.lines.map(line=>line.name[1]+' × '+line.quantity+' · EUR '+(line.cents*line.quantity/100).toFixed(2)),'Items subtotal: EUR '+(order.totalCents/100).toFixed(2),origin+'/admin.html?view=orders'].join('\n')});
+    const claim=db.prepare("UPDATE order_email_queue SET status='sending',payload=COALESCE(payload,?),attempts=attempts+1,first_attempt=CASE WHEN first_attempt=0 THEN ? ELSE first_attempt END WHERE order_id=? AND status IN ('waiting','pending')").run(payload,now(),row.order_id);if(!claim.changes)continue;
+    const claimed=db.prepare('SELECT payload,attempts FROM order_email_queue WHERE order_id=?').get(row.order_id);
+    try{const response=await fetchFn('https://api.resend.com/emails',{method:'POST',redirect:'error',signal:AbortSignal.timeout(15000),headers:{Authorization:'Bearer '+environment.RESEND_API_KEY,'Content-Type':'application/json','Idempotency-Key':'persia-order/'+row.order_id},body:claimed.payload});const data=await response.json().catch(()=>({}));if(!response.ok||typeof data.id!=='string'){const permanent=response.status>=400&&response.status<500&&![408,409,429].includes(response.status);throw Object.assign(Error(),{permanent,code:'provider'+response.status});}db.prepare("UPDATE order_email_queue SET status='accepted',provider_id=?,error=NULL WHERE order_id=?").run(data.id.slice(0,200),row.order_id);audit('notification.email_accepted',null,row.order_id);}catch(error){const exhausted=claimed.attempts>=8,status=error.permanent||exhausted?'failed':'pending';db.prepare('UPDATE order_email_queue SET status=?,error=?,next_at=? WHERE order_id=?').run(status,error.code||'connection',now()+Math.min(3600000,60000*2**(claimed.attempts-1)),row.order_id);}
+   }
+  }
+  if(settings.whatsappEnabled&&whatsappReady()){
+   const rows=db.prepare("SELECT * FROM whatsapp_inbox WHERE status='pending' ORDER BY created_at LIMIT 5").all();
+   for(const row of rows){if(closed)break;if(now()-row.created_at>=23*3600000){db.prepare("UPDATE whatsapp_inbox SET status='failed',error='expired' WHERE message_id=?").run(row.message_id);continue;}if(!db.prepare("UPDATE whatsapp_inbox SET status='sending' WHERE message_id=? AND status='pending'").run(row.message_id).changes)continue;
+    try{const response=await fetchFn('https://graph.facebook.com/'+environment.WHATSAPP_API_VERSION+'/'+environment.WHATSAPP_PHONE_NUMBER_ID+'/messages',{method:'POST',redirect:'error',signal:AbortSignal.timeout(15000),headers:{Authorization:'Bearer '+environment.WHATSAPP_ACCESS_TOKEN,'Content-Type':'application/json'},body:JSON.stringify({messaging_product:'whatsapp',recipient_type:'individual',to:row.recipient,type:'text',text:{preview_url:false,body:row.reply.slice(0,4096)}})});const data=await response.json().catch(()=>({}));if(!response.ok||!data.messages?.[0]?.id)throw Object.assign(Error(),{code:'provider'+response.status,known:true});db.prepare("UPDATE whatsapp_inbox SET status='accepted',provider_id=? WHERE message_id=?").run(String(data.messages[0].id).slice(0,200),row.message_id);}catch(error){db.prepare('UPDATE whatsapp_inbox SET status=?,error=? WHERE message_id=?').run(error.known?'failed':'uncertain',error.code||'connection',row.message_id);}
+   }
+  }
+  db.prepare('DELETE FROM whatsapp_inbox WHERE created_at<?').run(now()-30*86400000);
+ })().finally(()=>{working=null;});return working;}
+ const tick=()=>{void work().catch(()=>{});};
+ const timer=startWorker?setInterval(tick,30000):null;timer?.unref();if(startWorker)tick();
+ async function handle(req,res,url){
+  if(url.pathname==='/api/webhooks/whatsapp'){
+   try{if(!whatsappReady())throw fail(503,'integrationUnconfigured');
+    if(req.method==='GET'){const token=url.searchParams.get('hub.verify_token')||'',challenge=url.searchParams.get('hub.challenge')||'';if(url.searchParams.get('hub.mode')!=='subscribe'||Buffer.byteLength(token)!==Buffer.byteLength(environment.WHATSAPP_VERIFY_TOKEN)||!timingSafeEqual(Buffer.from(token),Buffer.from(environment.WHATSAPP_VERIFY_TOKEN))||!/^[a-zA-Z0-9_-]{1,200}$/.test(challenge))throw fail(403,'signature');res.writeHead(200,{'Content-Type':'text/plain','Cache-Control':'no-store'}).end(challenge);return true;}
+    if(req.method!=='POST')throw fail(405,'method');const raw=await bytes(req,262144),signature=req.headers['x-hub-signature-256']||'',expected='sha256='+createHmac('sha256',environment.WHATSAPP_APP_SECRET).update(raw).digest('hex');if(!/^sha256=[a-f0-9]{64}$/.test(signature)||!timingSafeEqual(Buffer.from(signature),Buffer.from(expected)))throw fail(403,'signature');let payload;try{payload=JSON.parse(raw);}catch{throw fail(400,'invalidData');}if(payload.object!=='whatsapp_business_account')throw fail(400,'invalidData');if(!read().settings.whatsappEnabled){send(res,200,{received:true,ignored:true});return true;}
+    for(const entry of (Array.isArray(payload.entry)?payload.entry:[]).slice(0,10))for(const change of (Array.isArray(entry.changes)?entry.changes:[]).slice(0,10)){const value=change.value;if(value?.metadata?.phone_number_id!==environment.WHATSAPP_PHONE_NUMBER_ID)continue;for(const message of (Array.isArray(value.messages)?value.messages:[]).slice(0,20)){if(message.type!=='text'||typeof message.id!=='string'||message.id.length>200||!/^\d{7,15}$/.test(message.from)||typeof message.text?.body!=='string'||message.text.body.length>4096)continue;const created=Number(message.timestamp)*1000;if(!Number.isFinite(created)||created>now()+300000||now()-created>23*3600000)continue;db.prepare('INSERT OR IGNORE INTO whatsapp_inbox(message_id,recipient,reply,created_at) VALUES(?,?,?,?)').run(message.id,message.from,botReply(message.text.body),created);}}
+    send(res,200,{received:true});return true;
+   }catch(error){send(res,error.status||500,{error:error.code||'serverError'});return true;}
+  }
+  if(url.pathname!=='/api/admin/integrations'&&!/^\/api\/admin\/integrations\/email\/PM-DEMO-[A-F0-9]{8}\/retry$/.test(url.pathname))return false;
+  try{const admin=authorize(req);
+   if(url.pathname==='/api/admin/integrations'&&req.method==='GET'){send(res,200,snapshot());return true;}
+   if(url.pathname==='/api/admin/integrations'&&req.method==='PUT'){const input=await body(req),record=read();if(input.version!==record.version)throw fail(409,'settingsConflict');if(!input.settings||typeof input.settings.emailEnabled!=='boolean'||typeof input.settings.whatsappEnabled!=='boolean'||Object.keys(input.settings).sort().join(',')!=='emailEnabled,whatsappEnabled')throw fail(400,'invalidData');if(input.settings.emailEnabled&&!emailReady()||input.settings.whatsappEnabled&&!whatsappReady())throw fail(400,'integrationUnconfigured');db.prepare('UPDATE communication_settings SET data=?,version=version+1 WHERE id=1 AND version=?').run(JSON.stringify(input.settings),record.version);audit('integrations.updated',admin.id);send(res,200,snapshot());return true;}
+   if(req.method==='POST'&&url.pathname.includes('/retry')){await body(req);const id=url.pathname.split('/')[5],row=db.prepare('SELECT * FROM order_email_queue WHERE order_id=?').get(id);if(!row||!['failed','pending'].includes(row.status)||!read().settings.emailEnabled||!emailReady()||row.first_attempt&&now()-row.first_attempt>=23*3600000)throw fail(409,'notificationReview');db.prepare("UPDATE order_email_queue SET status='pending',next_at=0 WHERE order_id=?").run(id);audit('notification.retry',admin.id,id);send(res,200,{queued:true});return true;}
+   throw fail(405,'method');
+  }catch(error){send(res,error.status||500,{error:error.code||'serverError'});return true;}
+ }
+ return {handle,enqueueOrder,notificationStatus,snapshot,work,botReply,async close(){if(closed)return;closed=true;if(timer)clearInterval(timer);await working;db.close();}};
+}

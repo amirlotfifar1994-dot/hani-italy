@@ -1,0 +1,85 @@
+/* A lighter, contemporary finish around the original Persian palette. */
+.mobile-language{display:none}
+.announcement-phone{color:#edd7a8;text-decoration:none;font:500 10px 'DM Sans',sans-serif;letter-spacing:.04em;padding-block:4px}
+.announcement-phone:hover{text-decoration:underline;text-underline-offset:3px}
+body#top footer{padding-top:38px}
+body#top .footer-grid{grid-template-columns:minmax(0,1.8fr) minmax(0,1fr) minmax(0,1fr);gap:35px;align-items:start}
+body#top .footer-grid>div:not(.footer-brand){display:flex;flex-direction:column;align-items:flex-start}
+body#top .footer-grid h3{font-size:11px;margin-bottom:12px;letter-spacing:.02em}
+body#top .footer-grid>div>a:not(.brand),body#top .footer-grid>div>button{margin:0;min-height:32px;line-height:1.7;background:none}
+body#top .footer-grid .footer-motto{margin:15px 0 7px;font-size:20px}
+body#top .footer-location{display:block;margin-top:0;font-size:10px}
+body#top .footer-skyline{max-width:1150px;margin:24px auto 0;opacity:.85}
+body#top .footer-bottom>.shell{min-height:54px;font-size:10px;gap:16px}
+.footer-utility{display:flex;gap:20px;align-items:center}
+.footer-utility>button{padding:0;background:none;font-size:inherit;color:inherit}
+@media(max-width:650px){body#top .footer-grid{grid-template-columns:1fr 1fr;gap:24px 20px}.footer-brand{grid-column:1/-1}body#top .footer-grid .brand img{width:35px;height:35px}body#top .footer-grid .brand .brand-word{font-size:28px}body#top .footer-grid .footer-motto{font-size:17px;margin-top:12px}body#top .footer-skyline{width:calc(100% - 24px);margin-top:20px}body#top .footer-bottom>.shell{flex-wrap:wrap;padding-block:14px;gap:12px;justify-content:space-between}body#top .footer-bottom>.shell>span:first-child{flex-basis:auto}.footer-utility{gap:15px;font-size:9px}.announcement-phone{font-size:9px}}
+body#top .button{border-radius:999px;min-height:46px;padding:12px 24px;font-weight:600;transition:background .2s,box-shadow .2s,transform .2s}
+body#top .button:hover{box-shadow:0 6px 18px #10332f20;transform:translateY(-1px)}
+body#top .button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+body#top .hero .button{padding:10px 14px 10px 24px;gap:20px;border-color:#d2b57a88;background:#173f39e8;box-shadow:0 8px 28px #06201f40}
+body#top .hero .button>span[aria-hidden]{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#dfc38f20;font-size:17px}
+body#top .hero h1{font-weight:600;letter-spacing:-.025em}
+body#top .hero h1 em{font-style:normal;font-weight:500}
+body#top .hero-description{line-height:1.95}
+/* Buttons crossfade scenes; mobile touch explores each scene independently. */
+body#top .hero .hero-food[data-hero-image]{position:absolute;inset:0;object-fit:cover;object-position:center;opacity:0;transition:opacity 850ms cubic-bezier(.22,.61,.36,1);pointer-events:none}
+body#top .hero .hero-food[data-hero-image].is-active{opacity:1}
+html.images-enhanced body#top .hero .hero-food[data-hero-image].is-active:not([data-image-ready]){opacity:0}
+.hero-slide-controls{display:none}
+body#top .hero-slider-ready .hero-slide-controls{display:flex;align-items:center;position:absolute;right:40px;bottom:24px;gap:8px;z-index:2;direction:ltr}
+.hero-slide-controls>button{width:44px;height:44px;display:grid;place-items:center;background:#10332f80;border:1px solid #edd7a899;border-radius:50%;color:#f2dfb9;font-size:19px;cursor:pointer;backdrop-filter:blur(6px)}
+.hero-slide-controls button:focus-visible{outline:2px solid #f2dfb9;outline-offset:3px}
+html[dir=rtl] .hero-slide-controls>button>span{transform:scaleX(-1)}
+.hero-slide-dots{display:flex;gap:2px;background:#10332f66;border-radius:24px;padding-inline:4px}
+.hero-slide-dots>button{position:relative;width:26px;height:44px;padding:0;background:none;border:0;cursor:pointer}
+.hero-slide-dots>button::after{content:"";display:block;width:6px;height:6px;margin:auto;border-radius:50%;background:#f2dfb966;transition:background .25s,transform .25s}
+.hero-slide-dots>button[aria-current=true]::after{background:#f2dfb9;transform:scale(1.35)}
+body#top .section-heading h2{line-height:1.6;letter-spacing:-.025em}
+body#top .header-search{border-radius:12px}
+body#top .filters button{border-radius:8px}
+body#top .daily-offer-stage,body#top .daily-offer-empty{border-radius:16px;overflow:hidden}
+body#top .journal-card{border-radius:16px;overflow:hidden;background:#fffdf8;border-color:#e3dccf;box-shadow:0 4px 16px #173f3906;transition:box-shadow .2s}
+body#top .journal-card:hover{box-shadow:0 8px 26px #173f3910}
+body#top .journal-card-copy{padding:24px}
+body#top .journal-card-copy h3{font-weight:600;line-height:1.8}
+body#top .journal-card-copy>p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;line-height:1.9}
+body#top .journal-read{font-weight:600;border-radius:0}
+@media(max-width:700px){body#top .journal-carousel-track{grid-auto-columns:100%;gap:16px}.journal-home .journal-card-copy{padding:22px}.journal-home .journal-card-image{aspect-ratio:3/2}body#top .journal-carousel-controls{gap:8px}body#top .journal-carousel-dots>button{width:24px}body#top .journal-carousel-controls>button{flex-shrink:0}body#top .journal-carousel-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);min-width:0}}
+@media(max-width:650px){
+ html{scroll-padding-top:90px}
+ header#home .shell{width:calc(100% - 24px)}
+ header#home .header-inner{flex-wrap:nowrap;min-height:68px;padding-block:8px;gap:8px;position:relative}
+ header#home .brand{flex:0 1 auto;min-width:0;gap:7px}
+ header#home .brand img{width:30px;height:30px;flex-shrink:0}
+ header#home .brand>.brand-word{font-size:24px;white-space:nowrap}
+ header#home .brand small{font-size:6px;letter-spacing:.16em}
+ header#home .header-actions{flex-basis:auto;flex-shrink:0;gap:3px;margin-inline-start:auto}
+ header#home .languages,header#home #favorites-toggle{display:none}
+ .mobile-language{display:flex;align-items:center}
+ .mobile-language select{color:#ead6ad;background:transparent;border:0;padding:0;width:41px;height:44px;font:11px 'DM Sans','Vazirmatn',sans-serif;cursor:pointer}
+ .mobile-language option{background:#173f39;color:#fff8e8}
+ header#home .icon-button{width:34px;height:44px;border-radius:10px}
+ header#home .icon-button svg{width:21px;height:21px}
+ header#home .count{width:14px;height:14px;font-size:8px;top:3px;right:0}
+ header#home .header-search{display:none}
+ html:not(.images-enhanced) header#home .header-inner{flex-wrap:wrap}
+ html:not(.images-enhanced) header#home .header-search{display:flex}
+ header#home.menu-open .header-inner{flex-wrap:wrap}
+ header#home.menu-open .header-search{display:flex;flex-basis:100%;order:3;margin-top:4px}
+ header#home.menu-open nav{gap:10px;padding-block:14px}
+ header#home nav>a,header#home nav>button{padding:9px 12px;border-radius:9px;background:#e9e1d3;white-space:normal}
+ .announcement>.shell{min-height:22px}
+ .announcement,.announcement button{font-size:8px}
+ body#top .hero-layout{padding-block:110px 74px}
+ body#top .hero .hero-food[data-hero-image="0"]{object-position:var(--hero-position,92%) center}
+ body#top .hero .hero-food[data-hero-image="1"]{object-position:var(--hero-position,68%) center}
+ body#top .hero-copy{width:min(92%,360px)}
+ body#top .hero h1{font-size:clamp(31px,8vw,43px);line-height:1.6}
+ body#top .hero-description{font-size:14px;line-height:1.9}
+ body#top .hero-slider-ready .hero-slide-controls{display:flex;align-items:center;position:absolute;right:12px;bottom:14px;gap:8px;z-index:2;direction:ltr}
+ body#top .hero-actions{margin-top:22px}
+}
+@media(max-width:380px){header#home .brand>.brand-word{font-size:clamp(18px,5.4vw,20px)}header#home .brand img{width:26px;height:26px}header#home .brand small{font-size:5px}header#home .header-actions{gap:1px}header#home .header-inner{gap:4px}header#home .icon-button{width:32px}.mobile-language select{width:37px}}
+@media(prefers-reduced-motion:reduce){body#top .button,body#top .journal-card{transition:none}body#top .button:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){body#top .hero .hero-food[data-hero-image],.hero-slide-dots>button::after{transition:none}}

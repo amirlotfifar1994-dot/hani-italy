@@ -1,0 +1,21 @@
+// Isolated browser fixture. Never used by the normal preview or production server.
+import http from 'node:http';
+import fs from 'node:fs/promises';
+import {mkdtemp} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createComments} from '../server/comments.mjs';
+import {createCatalogue} from '../server/catalogue.mjs';
+import {createSeo} from '../server/seo.mjs';
+import {posts} from '../server/blog-content.mjs';
+const root=path.resolve(fileURLToPath(new URL('../dist/',import.meta.url))),dir=await mkdtemp(path.join(tmpdir(),'persia-comments-ui-')),database=path.join(dir,'fixture.sqlite'),origin='http://127.0.0.1:4195';
+const user={id:'ui-fixture-user',name:'کاربر پیش‌نمایش',role:'admin',email:'fixture@example.invalid'};
+const authorize=req=>{if(req.headers.host!==new URL(origin).host||(!['GET','HEAD'].includes(req.method)&&req.headers.origin!==origin))throw Object.assign(new Error(),{status:403,code:'origin'});return user;};
+const catalogue=await createCatalogue({database,origin,uploadDir:path.join(dir,'uploads'),seed:JSON.parse(await fs.readFile(path.join(root,'catalogue.json'),'utf8')),authorize});
+const comments=createComments({database,origin,identify:()=>user,authorize,resolveTarget:(kind,target)=>{const p=kind==='product'?catalogue.publicProducts().find(p=>p.id===target):kind==='article'?posts.find(p=>p.slug===target):null;return p?{title:kind==='product'?p.name:{fa:p.fa.title,en:p.en.title,it:p.it.title}}:null;}});
+const seo=await createSeo({root,catalogue,comments,origin});
+const mime={'.js':'text/javascript','.css':'text/css','.webp':'image/webp','.svg':'image/svg+xml','.json':'application/json'};
+const server=http.createServer(async(req,res)=>{try{const url=new URL(req.url,origin);if(url.pathname==='/api/auth/session'){res.writeHead(200,{'Content-Type':'application/json'}).end(JSON.stringify({user,adminSetupRequired:false}));return;}if(await comments.handle(req,res,url))return;if(await catalogue.handle(req,res,url))return;if(seo.handle(req,res,url))return;const file=path.resolve(root,'.'+decodeURIComponent(url.pathname));if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream'}).end(await fs.readFile(file));}catch{res.writeHead(404).end();}});
+server.listen(4195,'127.0.0.1',()=>console.log('Isolated comments UI fixture: '+origin));
+async function close(){server.close();comments.close();catalogue.close();await fs.rm(dir,{recursive:true,force:true});process.exit(0);}process.on('SIGINT',close);process.on('SIGTERM',close);

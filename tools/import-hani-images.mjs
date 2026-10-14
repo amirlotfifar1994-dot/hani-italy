@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+const rows = [["okra","okra-stew-meatless-2",460,"Okra-Stew-Meatless","Okra, Tomato Paste, Onion, Vegetable Oil, Lemon Juice, Saffron, Black Pepper, Salt."],["herb-stew","herb-fish-stew",460,"Ghalieh-Mahi","Fenugreek, Coriander, Tamarind, Vegetable Oil, Onion, Garlic, Red Pepper, Black Pepper, Salt."],["curd","eggplant-curd-2",460,"Eggplant-Curd","Eggplant, Onion, Vegetable Oil, Garlic, Dried Mint, Black Pepper, Turmeric, Salt."],["baghali","baghali-ghatogh",460,"Baghali-Ghatogh","Beans, Dry Dill, Vegetable Oil, Garlic, Turmeric, Salt."],["sholezard","sholezard",460,"Sholezard","Rice, Sugar, Slivered Almonds, Rose Water, Cardamom, Saffron."],["fried-eggplant","fried-eggplant",360,"Eggplant","Eggplant, Salt, Frying Oil."],["baghali-rice","rice-broad-beans",350,"ShevidPolo-2","Rice 73.7%, Broad Beans 15%, Dill 7%, Vegetable Oil, Salt, Saffron."],["ghormeh-herbs","fried-ghormeh-herbs",300,"SabziGhorme-1","Parsley 48%, Leek 24%, Frying Oil 22%, Fenugreek 6%."],["mirza","mirza-ghasemi",460,"Mirzaghasemi-1","Eggplant, Onion, Tomato, Vegetable Oil, Garlic, Salt, Turmeric, Pepper, Water."],["masala","masala-sauce",460,"Masala-1","Tomatoes Paste, Cream, Onion, Garlic, Ginger, Vegetable Oil, Butter, Salt, Coriander, Almonds, Masala Spice, Cumin, Turmeric, Cardamom, Red Pepper, Paprika, Sugar, Water."],["mushroom-beans","baked-beans",460,"LobiyaGharch-1","Pinto Beans 35%, Mushroom 20%, Onion 7%, Tomato Paste 7%, Vegetable Oil, Sugar, Vinegar, Salt, Spices."]];
+for (const [id,slug,weight,image] of rows) {
+  const url='https://hanifoods.nl/wp-content/uploads/2024/06/'+image+'.webp';
+  const response=await fetch(url);
+  if(!response.ok || !response.headers.get('content-type')?.startsWith('image/')) throw new Error(id+': invalid image response '+response.status);
+  const bytes=Buffer.from(await response.arrayBuffer());
+  await fs.writeFile(new URL('../dist/assets/hani/'+id+'.webp', import.meta.url),bytes);
+  console.log(id+': '+bytes.length+' bytes');
+}

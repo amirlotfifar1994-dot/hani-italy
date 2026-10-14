@@ -1,0 +1,7 @@
+.seo-local-home{display:grid;grid-template-columns:auto 1fr auto;gap:30px;align-items:center;border-top:1px solid #d8cdbb;border-bottom:1px solid #d8cdbb;padding-block:35px;margin-block:35px 55px;color:#173f39}
+.seo-local-home-mark{font-size:11px;letter-spacing:2px;color:#987544;writing-mode:vertical-rl;white-space:nowrap;margin:0}
+.seo-local-home h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:34px;line-height:1.35;margin:0 0 12px}
+.seo-local-home div>p{font-size:14px;line-height:1.9;margin:0;max-width:650px}
+.seo-local-home .button{white-space:normal;text-align:center}
+html[dir=rtl] .seo-local-home h2{font-family:'Vazirmatn',sans-serif;font-size:24px;line-height:1.9}
+@media(max-width:760px){.seo-local-home{grid-template-columns:1fr;gap:16px;padding-block:26px}.seo-local-home-mark{writing-mode:horizontal-tb}.seo-local-home h2{font-size:29px}.seo-local-home .button{justify-self:start}html[dir=rtl] .seo-local-home h2{font-size:21px}}

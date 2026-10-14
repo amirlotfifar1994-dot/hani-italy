@@ -1,0 +1,14 @@
+.git/
+.local-data/
+.env
+.env.*
+node_modules/
+screenshots/
+research/*
+!research/city-photo-credits.json
+!research/city-food-photo-credits.json
+!research/city-food-generated-credits.json
+!research/journal-inline-images-2026-10-08.json
+!research/journal-inline-extra-images-2026-10-08.json
+%SystemDrive%/
+*.log

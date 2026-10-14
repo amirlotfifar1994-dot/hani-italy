@@ -1,0 +1,58 @@
+/* Store operations workspace */
+:root{--cream:#f3f5f1;--white:#fff;--line:#dfe5df;--muted:#718079}
+.adm-top{height:78px;border-bottom:1px solid #ffffff12}
+.adm-brand{font-size:24px}.adm-brand img{width:36px;height:36px}
+.adm-frame{max-width:none;grid-template-columns:228px minmax(0,1fr);min-height:calc(100svh - 78px)}
+.adm-sidebar{background:var(--deep);color:#e6eeea;border:0;padding:32px 18px}
+.adm-side-caption{color:#ddc796;font-size:11px;line-height:2.4;letter-spacing:1.4px;margin-inline:13px}
+.adm-side-caption span{font-size:8px;letter-spacing:2.2px;color:#9cb5ad}
+.adm-sidebar nav{gap:6px}.adm-sidebar nav button{font-size:12px;min-height:47px;border:1px solid transparent;color:#c1d1ca;transition:background .2s,color .2s}
+.adm-sidebar nav button:hover{background:#ffffff0b;color:white}
+.adm-sidebar nav button[aria-current]{background:#f0e7d2;color:#153e35;box-shadow:0 5px 16px #0000000f}
+.adm-nav-icon{font-family:'DM Sans',sans-serif;display:inline-grid;place-items:center;width:22px;font-size:19px}
+.adm-sidebar .adm-side-bottom{border-color:#ffffff21;color:#96b2a7;margin-top:36px;padding-inline:12px}
+.adm-side-bottom strong{color:#e4ece7;margin:8px 0}.adm-side-bottom button{color:#b9c8c2}
+.adm-main{max-width:1700px;width:100%;margin-inline:auto;padding:34px clamp(18px,3vw,46px) 70px}
+.adm-heading h1{font-size:28px;letter-spacing:-.025em}.adm-heading p:not(.adm-eyebrow){font-size:12px}
+.adm-card,.adm-stat{border-radius:16px;box-shadow:0 3px 16px #193f3503}
+.adm-button{border-radius:11px;font-weight:500;min-height:44px;transition:box-shadow .2s,background .2s}
+.adm-button:hover:not(:disabled){box-shadow:0 4px 14px #14382e13}
+.adm-button.primary:hover:not(:disabled){background:#24564b}
+.adm-stat{padding:20px 23px;position:relative;overflow:hidden}.adm-stat:after{content:'';position:absolute;inset-inline-end:20px;bottom:20px;width:6px;height:6px;border-radius:50%;background:#c6b17e}
+.adm-stat strong{font-size:34px;font-weight:600;letter-spacing:-.04em}.adm-stat small{font-size:8px;letter-spacing:1px}
+.adm-workspace-hero{position:relative;overflow:hidden;border-radius:20px;background:linear-gradient(115deg,#153d34,#225c4d);color:white;padding:32px 35px;margin-bottom:26px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.adm-workspace-hero>div,.adm-workspace-hero>a{position:relative;z-index:1}
+.adm-workspace-hero .adm-eyebrow{color:#dac89b}.adm-workspace-hero h1{font-size:30px;line-height:1.6;margin:12px 0 8px;letter-spacing:-.035em}.adm-workspace-hero p:not(.adm-eyebrow){font-size:12px;color:#d1dfd6;max-width:570px;margin:0}
+.adm-workspace-hero .adm-button{background:#ffffff0a;border-color:#ffffff40;color:#f6efd9;font-size:12px;white-space:nowrap}
+.adm-hero-mark{font-size:240px;line-height:1;color:#bcb1830b;position:absolute;inset-inline-end:12%;top:-80px;transform:rotate(15deg)}
+.adm-shortcuts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:0 0 25px}
+.adm-shortcut{border:1px solid var(--line);background:white;border-radius:14px;display:flex;align-items:center;gap:12px;min-height:82px;padding:16px;text-align:start;transition:background .2s,border-color .2s}
+.adm-shortcut:hover{background:#f8faf6;border-color:#9db5a5}.adm-shortcut strong{font-weight:500;font-size:12px;flex:1}.adm-shortcut>span:last-child{font-size:15px;color:#927d4f}
+.adm-shortcut-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#edf2e9;color:#285948;font:20px 'DM Sans',sans-serif;flex-shrink:0}
+.adm-dashboard-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:22px;align-items:stretch}
+.adm-health button{background:transparent;border-radius:10px;padding:12px 16px;font-size:12px}.adm-health button strong{font-size:22px}
+.adm-dashboard-connect{display:flex;flex-direction:column;justify-content:center;align-items:start;padding:30px}.adm-dashboard-connect>span{font-size:34px;color:#af9664;margin-bottom:16px}.adm-dashboard-connect>p:not(.adm-eyebrow){font-size:12px;line-height:2;color:var(--muted)}.adm-dashboard-connect .adm-button{font-size:12px;margin-top:12px}
+.adm-table{font-size:12px}.adm-table td{padding:16px}.adm-table th{padding:14px 16px;background:#f6f8f4;font-weight:500}
+.adm-table tbody tr:hover{background:#fafcf8}.adm-product{min-width:195px;max-width:300px}.adm-product img,.adm-product-art{width:50px;height:56px;border-radius:10px}.adm-product strong{font-size:12px}.adm-product small{font-size:9px}
+.adm-quick-controls input{width:84px;min-height:38px}.adm-quick-controls .adm-button{min-height:38px;white-space:nowrap;font-size:10px}.adm-table [data-quick-stock]{min-width:180px}.adm-table [data-quick-stock]>small{white-space:normal;max-width:180px;font-size:9px;display:block;margin-top:6px;color:var(--muted)}
+.adm-order-tools{display:grid;grid-template-columns:minmax(160px,1fr) 190px auto;gap:14px;align-items:end;margin-bottom:20px}
+.adm-order-tools label{font-size:11px;display:grid;gap:7px;color:var(--muted)}
+.adm-orders-table td small{display:block;margin-top:7px;color:var(--muted);font-size:10px;overflow-wrap:anywhere;white-space:normal;max-width:220px}
+.adm-orders-table .adm-order-demo{color:#8b7035}.adm-orders-table td:nth-child(2){min-width:155px}.adm-orders-table .adm-button{font-size:10px;min-height:40px;padding:8px 12px}
+.adm-orders-pagination{margin-top:22px;justify-content:end;font-size:12px}
+.adm-empty{padding:55px 24px}.adm-empty h2{font-size:17px;margin:16px 0}.adm-empty p{font-size:12px}.adm-empty-icon{display:inline-grid;place-items:center;width:65px;height:65px;border-radius:20px;background:#edf2e9;font-size:32px;color:#597860}
+.adm-integrations{display:grid;grid-template-columns:1fr 1fr;gap:24px}.adm-integration{padding:26px}
+.adm-integration-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:24px}.adm-integration-top .adm-badge{white-space:normal}
+.adm-integration-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:#edf2e9;font-size:28px;color:#325d4e;flex-shrink:0}
+.adm-integration h2{font-size:20px}.adm-integration>p{font-size:12px;color:var(--muted);line-height:2;min-height:72px;margin-bottom:25px}
+.adm-integration-toggle{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px;cursor:pointer}.adm-integration-toggle small{display:block;font-size:10px;color:var(--muted);margin-top:6px}
+.adm-connection-metrics{display:grid;grid-template-columns:1fr 1fr;margin:24px 0;gap:15px}.adm-connection-metrics strong{display:block;font-size:25px;font-weight:500}.adm-connection-metrics span{font-size:10px;color:var(--muted)}
+.adm-setup-guide{font-size:12px;border-top:1px solid var(--line);padding-top:20px}.adm-setup-guide summary{cursor:pointer;min-height:36px}.adm-setup-guide p{font-size:11px;line-height:2;color:var(--muted)}.adm-setup-guide ul{padding-inline-start:18px;line-height:2.5;font-size:10px;overflow-wrap:anywhere}.adm-setup-guide code{overflow-wrap:anywhere;font-size:11px}.adm-setup-guide a{font-size:11px}
+.adm-order-dialog{width:min(850px,calc(100vw - 28px));max-width:850px;max-height:90svh;padding:28px}.adm-order-dialog .adm-heading h2{font-size:18px}.adm-order-dialog .adm-heading .adm-button{font-size:11px}.adm-order-dialog .adm-table td{white-space:normal;min-width:75px}.adm-order-dialog .adm-table td:first-child{min-width:180px}.adm-order-dialog .adm-table small{display:block;font-size:10px;color:var(--muted)}
+.adm-receipt-meta{display:flex;gap:18px;align-items:center;flex-wrap:wrap;font-size:11px;margin-bottom:24px}.adm-receipt-total{display:flex;justify-content:space-between;gap:20px;padding:24px 16px;border-bottom:1px solid var(--line)}.adm-receipt-total span{font-size:12px}.adm-receipt-total strong{font-size:24px;font-weight:600}.adm-order-dialog .adm-actions{padding-top:15px}.adm-order-dialog .adm-actions button{font-size:11px}
+@media(min-width:801px){.adm-sidebar{position:sticky;top:0;height:100svh;overflow:auto}.adm-top{position:relative}.adm-table-wrap{scrollbar-width:thin}}
+@media(max-width:1100px){.adm-frame{grid-template-columns:195px minmax(0,1fr)}.adm-sidebar{padding-inline:12px}.adm-workspace-hero{padding:26px}.adm-workspace-hero h1{font-size:25px}.adm-shortcuts{grid-template-columns:1fr 1fr}.adm-dashboard-grid,.adm-integrations{grid-template-columns:1fr}.adm-integration>p{min-height:0}}
+@media(max-width:800px){.adm-frame{display:block}.adm-sidebar{padding:10px 16px}.adm-sidebar nav{display:flex;gap:5px;overflow:auto;scrollbar-width:thin}.adm-sidebar nav button{min-height:44px;font-size:11px;padding:9px 12px}.adm-side-caption{display:none}.adm-main{padding:24px 20px 55px}.adm-workspace-hero{padding:26px}.adm-top{height:auto;min-height:78px}.adm-top-actions{width:auto}.adm-workspace-hero .adm-button{font-size:10px}.adm-workspace-hero h1{font-size:24px}}
+@media(max-width:550px){.adm-top{padding:15px 16px;gap:12px}.adm-brand{font-size:21px}.adm-brand small{font-size:7px;letter-spacing:1.6px}.adm-brand img{width:31px;height:31px}.adm-top-actions{width:100%;font-size:10px}.adm-main{padding:22px 14px 40px}.adm-workspace-hero{display:block;padding:23px 22px}.adm-workspace-hero .adm-button{margin-top:20px}.adm-workspace-hero h1{font-size:23px}.adm-workspace-hero p:not(.adm-eyebrow){font-size:11px}.adm-shortcuts{gap:10px}.adm-shortcut{padding:12px;gap:9px;min-height:76px}.adm-shortcut strong{font-size:10px}.adm-shortcut-icon{width:29px;height:33px;font-size:17px}.adm-stat{padding:17px}.adm-stat strong{font-size:29px}.adm-stat span{font-size:11px}.adm-stat:after{inset-inline-end:14px;bottom:14px}.adm-order-tools{grid-template-columns:1fr 1fr;gap:10px}.adm-order-tools label:first-child{grid-column:1/-1}.adm-heading{gap:10px}.adm-heading h1{font-size:23px}.adm-integration{padding:22px}.adm-integration h2{font-size:18px}.adm-order-dialog{padding:20px 16px}.adm-order-dialog .adm-heading h2{font-size:14px}.adm-receipt-meta{gap:12px}.adm-dashboard-connect{padding:24px}.adm-orders-pagination{justify-content:center}}
+@media(prefers-reduced-motion:reduce){.adm-button,.adm-sidebar nav button,.adm-shortcut{transition:none}}
+@media print{body>*{display:none!important}body>#admin-order-details[open]{display:block!important;position:static;max-height:none;width:100%;max-width:none;border:0;margin:0;padding:10px;background:white;color:black}.adm-order-dialog .adm-actions,.adm-order-dialog [data-order-close],#admin-order-feedback{display:none!important}.adm-order-dialog .adm-table-wrap{overflow:visible}.adm-order-dialog .adm-table{font-size:11px}.adm-order-dialog .adm-heading{margin-bottom:20px}dialog::backdrop{display:none}}

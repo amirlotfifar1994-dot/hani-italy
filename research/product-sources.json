@@ -1,0 +1,473 @@
+{
+  "source": "Hani Netherlands",
+  "catalogue": "https://hanifoods.nl/products/",
+  "prices": "Demonstration only; not sourced",
+  "products": [
+    {
+      "slug": "aloo-esfenaj",
+      "url": "https://hanifoods.nl/products/aloo-esfenaj/",
+      "weight": 460,
+      "ingredients": "Spinach 40%, Plum with Core 15%, Vegetable Oil, Onion, Salt, Lemon Juice, Turmeric, Pepper.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "ashreshte",
+      "url": "https://hanifoods.nl/products/ashreshte/",
+      "weight": 460,
+      "ingredients": "Pottage Macaroni, Vegetable ( Coriander, Parsley, Leek, Spinach ), Pinto Beans, Red Beans, Lentil, Pea, Onion, Vegetable Oil, Salt, Turmeric, Pepper, Flour, Mint, Garlic.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "baked-pinto-beans",
+      "url": "https://hanifoods.nl/products/baked-pinto-beans/",
+      "weight": 460,
+      "ingredients": "Pinto Beans 55%, Onion 7%, Tomato Paste 7%, Vegetable Oil, Sugar, Pepper, Vinegar, Turmeric.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "celery-stew",
+      "url": "https://hanifoods.nl/products/celery-stew/",
+      "weight": 460,
+      "ingredients": "Celery 33%, Parsley 9.76%, Onion, Vegetable Oil, Mint, Salt, Lemon Juice, Tomato Paste, Turmeric, Pepper.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "dolme",
+      "url": "https://hanifoods.nl/products/dolme/",
+      "weight": 460,
+      "ingredients": "Grape Leaves, Rice, Split Peas, Tomato Paste, Fresh Aromatic Herbs, Vegetable Oil, Salt, Turmeric, Pepper, Soya, Sugar, Lemon Juice, Water.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "fesenjan-stew",
+      "url": "https://hanifoods.nl/products/fesenjan-stew/",
+      "weight": 460,
+      "ingredients": "Walnut 45%, Plum with Core 5.3%, Pomegranate Paste, Vegetable Oil, Onion, Sugar, Lemon Juice, Salt, Tomato Paste.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "gheimeh-bademjan-stew",
+      "url": "https://hanifoods.nl/products/gheimeh-bademjan-stew/",
+      "weight": 460,
+      "ingredients": "Split Peas 22%, Eggplant 16%, Vegetable Oil, Onion, Tomato Paste, Salt, Dried Lemon, Turmeric, Pepper.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "gheimeh-stew",
+      "url": "https://hanifoods.nl/products/gheimeh-stew/",
+      "weight": 460,
+      "ingredients": "Split Peas 24%, Potato 11%, Onion 6%, Vegetable Oil, Tomato Paste, Salt, Dried Lemon, Lemon Juice, Pepper, Turmeric.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "ghormeh-stew",
+      "url": "https://hanifoods.nl/products/ghormeh-stew/",
+      "weight": 460,
+      "ingredients": "Vegetables ( Fenugreek, Parsley, Leek ) 25%, Red Beans 21%, Onion 6%, Vegetable Oil, Salt, Dried Lemon, Lemon Juice, Pepper.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "marcaroni-lasagna-sauce",
+      "url": "https://hanifoods.nl/products/marcaroni-lasagna-sauce/",
+      "weight": 460,
+      "ingredients": "Soya, Mushroom, Bell Pepper, Tomato, Onion, Vegetable Oil, Tomato Paste, Lemon Juice, Salt, Black Pepper, Ginger, Thyme, Garlic Powder, Curry Powder, Turmeric, Cinnamon, Vegetable Oil, Onion, Salt, Lemon Juice, Turmeric, Pepper.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "saffron-rice",
+      "url": "https://hanifoods.nl/products/saffron-rice/",
+      "weight": 330,
+      "ingredients": "Rice 96.7%, Vegetable Oil, Salt, Saffron.",
+      "captured": "2026-10-02"
+    },
+    {
+      "slug": "okra-stew-meatless-2",
+      "url": "https://hanifoods.nl/products/okra-stew-meatless-2/",
+      "weight": 460,
+      "ingredients": "Okra, Tomato Paste, Onion, Vegetable Oil, Lemon Juice, Saffron, Black Pepper, Salt.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Okra-Stew-Meatless.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "herb-fish-stew",
+      "url": "https://hanifoods.nl/products/herb-fish-stew/",
+      "weight": 460,
+      "ingredients": "Fenugreek, Coriander, Tamarind, Vegetable Oil, Onion, Garlic, Red Pepper, Black Pepper, Salt.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Ghalieh-Mahi.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "eggplant-curd-2",
+      "url": "https://hanifoods.nl/products/eggplant-curd-2/",
+      "weight": 460,
+      "ingredients": "Eggplant, Onion, Vegetable Oil, Garlic, Dried Mint, Black Pepper, Turmeric, Salt.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Eggplant-Curd.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "baghali-ghatogh",
+      "url": "https://hanifoods.nl/products/baghali-ghatogh/",
+      "weight": 460,
+      "ingredients": "Beans, Dry Dill, Vegetable Oil, Garlic, Turmeric, Salt.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Baghali-Ghatogh.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "sholezard",
+      "url": "https://hanifoods.nl/products/sholezard/",
+      "weight": 460,
+      "ingredients": "Rice, Sugar, Slivered Almonds, Rose Water, Cardamom, Saffron.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Sholezard.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "fried-eggplant",
+      "url": "https://hanifoods.nl/products/fried-eggplant/",
+      "weight": 360,
+      "ingredients": "Eggplant, Salt, Frying Oil.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Eggplant.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "rice-broad-beans",
+      "url": "https://hanifoods.nl/products/rice-broad-beans/",
+      "weight": 350,
+      "ingredients": "Rice 73.7%, Broad Beans 15%, Dill 7%, Vegetable Oil, Salt, Saffron.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/ShevidPolo-2.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "fried-ghormeh-herbs",
+      "url": "https://hanifoods.nl/products/fried-ghormeh-herbs/",
+      "weight": 300,
+      "ingredients": "Parsley 48%, Leek 24%, Frying Oil 22%, Fenugreek 6%.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/SabziGhorme-1.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "mirza-ghasemi",
+      "url": "https://hanifoods.nl/products/mirza-ghasemi/",
+      "weight": 460,
+      "ingredients": "Eggplant, Onion, Tomato, Vegetable Oil, Garlic, Salt, Turmeric, Pepper, Water.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Mirzaghasemi-1.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "masala-sauce",
+      "url": "https://hanifoods.nl/products/masala-sauce/",
+      "weight": 460,
+      "ingredients": "Tomatoes Paste, Cream, Onion, Garlic, Ginger, Vegetable Oil, Butter, Salt, Coriander, Almonds, Masala Spice, Cumin, Turmeric, Cardamom, Red Pepper, Paprika, Sugar, Water.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Masala-1.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "baked-beans",
+      "url": "https://hanifoods.nl/products/baked-beans/",
+      "weight": 460,
+      "ingredients": "Pinto Beans 35%, Mushroom 20%, Onion 7%, Tomato Paste 7%, Vegetable Oil, Sugar, Vinegar, Salt, Spices.",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/LobiyaGharch-1.webp",
+      "captured": "2026-10-03"
+    },
+    {
+      "slug": "okra-tin-480",
+      "url": "https://hanifoods.nl/products/okra-stew-meatless/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Okra-Stew-Meatless-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 41
+    },
+    {
+      "slug": "celery-tin-480",
+      "url": "https://hanifoods.nl/products/celery-stew-2/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Celery-Stew-Meatless-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 42
+    },
+    {
+      "slug": "ghormeh-tin-480",
+      "url": "https://hanifoods.nl/products/ghormeh-stew-2/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Ghormeh-Stew-Meatless-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 43
+    },
+    {
+      "slug": "gheimeh-tin-480",
+      "url": "https://hanifoods.nl/products/gheimeh-stew-2/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Gheimeh-Stew-Meatless-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 44
+    },
+    {
+      "slug": "eggplant-tin-480",
+      "url": "https://hanifoods.nl/products/gheimeh-bademjan-stew-2/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Gheimeh-Bademjan-Stew-Meatless-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 45
+    },
+    {
+      "slug": "fesenjan-tin-480",
+      "url": "https://hanifoods.nl/products/fesenjan-stew-2/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Fesenjan-Stew-Meatless-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 46
+    },
+    {
+      "slug": "ash-tin-480",
+      "url": "https://hanifoods.nl/products/ash-reshteh/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Ash-Reshteh-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 48
+    },
+    {
+      "slug": "ash-shole-ghalamkar-tin-480",
+      "url": "https://hanifoods.nl/products/ash-shole-ghalamkar/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Ash-Shole-Ghalamkar.webp",
+      "publicationHold": true,
+      "workbookRow": 49
+    },
+    {
+      "slug": "haleem-tin-480",
+      "url": "https://hanifoods.nl/products/haleem-meatless/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Haleem-Meatless-480-gr.webp",
+      "publicationHold": true,
+      "workbookRow": 50
+    },
+    {
+      "slug": "curd-tin-480",
+      "url": "https://hanifoods.nl/products/eggplant-curd/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Eggplant-Curd-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 52
+    },
+    {
+      "slug": "fried-eggplant-tin-480",
+      "url": "https://hanifoods.nl/products/fried-eggplant-2/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/ried-Eggplant-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 53
+    },
+    {
+      "slug": "mirza-tin-480",
+      "url": "https://hanifoods.nl/products/mirza-ghasemi-2/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Mirza-Ghasemi-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 54
+    },
+    {
+      "slug": "cooked-spinach-tin-480",
+      "url": "https://hanifoods.nl/products/cooked-spinach/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Cooked-Spinach-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 55
+    },
+    {
+      "slug": "broad-beans-tin-460",
+      "url": "https://hanifoods.nl/products/broad-beans/",
+      "weight": 460,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Broad-Beans-460-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 57
+    },
+    {
+      "slug": "dolmeh-tin-480",
+      "url": "https://hanifoods.nl/products/dolmeh/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Dolmeh-480-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 59
+    },
+    {
+      "slug": "kuku-herbs-tin-460",
+      "url": "https://hanifoods.nl/products/kuku-sabzi-herbs/",
+      "weight": 460,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Kuku-Sabzi-Herbs-460-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 60
+    },
+    {
+      "slug": "kufteh-tabrizi-tin-460",
+      "url": "https://hanifoods.nl/products/kufteh-tabrizi/",
+      "weight": 460,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Kufteh-Tabrizi-460-gr.webp",
+      "publicationHold": true,
+      "workbookRow": 61
+    },
+    {
+      "slug": "ghormeh-herbs-tin-460",
+      "url": "https://hanifoods.nl/products/fried-ghormeh-herbs-2/",
+      "weight": 460,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Ghormeh-Herbs-460-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 63
+    },
+    {
+      "slug": "mint-parsley-tin-460",
+      "url": "https://hanifoods.nl/products/fried-mint-and-parsley/",
+      "weight": 460,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Mint-and-Parsley-460-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 64
+    },
+    {
+      "slug": "celery-herbs-tin-460",
+      "url": "https://hanifoods.nl/products/fried-celery-herbs/",
+      "weight": 460,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Celery-Herbs-460-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 65
+    },
+    {
+      "slug": "fried-onion-tin-200",
+      "url": "https://hanifoods.nl/products/fried-onion/",
+      "weight": 200,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Onion-200-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 66
+    },
+    {
+      "slug": "fried-garlic-tin-300",
+      "url": "https://hanifoods.nl/products/fried-garlic/",
+      "weight": 300,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Fried-Garlic-300-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 67
+    },
+    {
+      "slug": "caramelized-onion-tin-480",
+      "url": "https://hanifoods.nl/products/caramelized-onion/",
+      "weight": 480,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Caramelized-Onion.webp",
+      "publicationHold": false,
+      "workbookRow": 68
+    },
+    {
+      "slug": "onion-puree-tin-460",
+      "url": "https://hanifoods.nl/products/onion-puree/",
+      "weight": 460,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Onion-Puree-460-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 69
+    },
+    {
+      "slug": "samanoo-tin-600",
+      "url": "https://hanifoods.nl/products/samanoo/",
+      "weight": 600,
+      "packaging": "tinplate",
+      "ingredients": null,
+      "ingredientsVerified": false,
+      "captured": "2026-10-05",
+      "imageUrl": "https://hanifoods.nl/wp-content/uploads/2024/06/Samanoo-600-gr.webp",
+      "publicationHold": false,
+      "workbookRow": 71
+    }
+  ],
+  "scope": "Assortment reconciled against Listino_Hani_Organized.xlsx: 47 Hani SKUs (22 aluminium, 25 tinplate). Three tins are held as drafts until the meatless pack is confirmed. New tins have no assigned selling price or received stock."
+}

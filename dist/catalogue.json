@@ -1,0 +1,1939 @@
+[
+  {
+    "id": "ghormeh",
+    "category": "stews",
+    "slug": "ghormeh-stew",
+    "weight": 460,
+    "cents": 490,
+    "name": [
+      "قرمه‌سبزی بدون گوشت",
+      "Ghormeh Sabzi, meatless",
+      "Ghormeh Sabzi senza carne"
+    ],
+    "ingredients": [
+      "سبزی قرمه، لوبیا قرمز، پیاز، روغن گیاهی و لیموعمانی",
+      "Herbs, red beans, onion, vegetable oil and dried lime",
+      "Erbe aromatiche, fagioli rossi, cipolla, olio vegetale e lime essiccato"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/ghormeh.webp",
+    "sourceUrl": "https://hanifoods.nl/products/ghormeh-stew/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "GHORMEH",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "ghormeh"
+  },
+  {
+    "id": "gheimeh",
+    "category": "stews",
+    "slug": "gheimeh-stew",
+    "weight": 460,
+    "cents": 490,
+    "name": [
+      "قیمه بدون گوشت",
+      "Gheimeh, meatless",
+      "Gheimeh senza carne"
+    ],
+    "ingredients": [
+      "لپه، سیب‌زمینی، پیاز، روغن گیاهی، رب گوجه و لیموعمانی",
+      "Split peas, potato, onion, vegetable oil, tomato paste and dried lime",
+      "Piselli spezzati, patate, cipolla, olio vegetale, concentrato di pomodoro e lime essiccato"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/gheimeh.webp",
+    "sourceUrl": "https://hanifoods.nl/products/gheimeh-stew/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "GHEIMEH",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "gheimeh"
+  },
+  {
+    "id": "fesenjan",
+    "category": "stews",
+    "slug": "fesenjan-stew",
+    "weight": 460,
+    "cents": 590,
+    "name": [
+      "فسنجان بدون گوشت",
+      "Fesenjan, meatless",
+      "Fesenjan senza carne"
+    ],
+    "ingredients": [
+      "گردو، آلو با هسته، رب انار، روغن گیاهی و پیاز",
+      "Walnuts, plums with stones, pomegranate paste, vegetable oil and onion",
+      "Noci, prugne con nocciolo, pasta di melograno, olio vegetale e cipolla"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/fesenjan.webp",
+    "sourceUrl": "https://hanifoods.nl/products/fesenjan-stew/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "FESENJAN",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "fesenjan"
+  },
+  {
+    "id": "eggplant",
+    "category": "stews",
+    "slug": "gheimeh-bademjan-stew",
+    "weight": 460,
+    "cents": 520,
+    "name": [
+      "قیمه بادمجان بدون گوشت",
+      "Gheimeh Bademjan, meatless",
+      "Gheimeh Bademjan senza carne"
+    ],
+    "ingredients": [
+      "لپه، بادمجان، روغن گیاهی، پیاز، رب گوجه و لیموعمانی",
+      "Split peas, aubergine, vegetable oil, onion, tomato paste and dried lime",
+      "Piselli spezzati, melanzane, olio vegetale, cipolla, concentrato di pomodoro e lime essiccato"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/eggplant.webp",
+    "sourceUrl": "https://hanifoods.nl/products/gheimeh-bademjan-stew/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "EGGPLANT",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "eggplant"
+  },
+  {
+    "id": "celery",
+    "category": "stews",
+    "slug": "celery-stew",
+    "weight": 460,
+    "cents": 490,
+    "name": [
+      "خورشت کرفس بدون گوشت",
+      "Celery stew, meatless",
+      "Stufato di sedano senza carne"
+    ],
+    "ingredients": [
+      "کرفس، جعفری، پیاز، روغن گیاهی، نعناع و آبلیمو",
+      "Celery, parsley, onion, vegetable oil, mint and lemon juice",
+      "Sedano, prezzemolo, cipolla, olio vegetale, menta e succo di limone"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/celery.webp",
+    "sourceUrl": "https://hanifoods.nl/products/celery-stew/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "CELERY",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "celery"
+  },
+  {
+    "id": "spinach",
+    "category": "stews",
+    "slug": "aloo-esfenaj",
+    "weight": 460,
+    "cents": 520,
+    "name": [
+      "آلو اسفناج بدون گوشت",
+      "Spinach & plum stew, meatless",
+      "Stufato di spinaci e prugne senza carne"
+    ],
+    "ingredients": [
+      "اسفناج، آلو با هسته، روغن گیاهی، پیاز و آبلیمو",
+      "Spinach, plums with stones, vegetable oil, onion and lemon juice",
+      "Spinaci, prugne con nocciolo, olio vegetale, cipolla e succo di limone"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/spinach.webp",
+    "sourceUrl": "https://hanifoods.nl/products/aloo-esfenaj/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "SPINACH",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "spinach"
+  },
+  {
+    "id": "rice",
+    "category": "meals",
+    "slug": "saffron-rice",
+    "weight": 330,
+    "cents": 350,
+    "name": [
+      "برنج زعفرانی",
+      "Saffron rice",
+      "Riso allo zafferano"
+    ],
+    "ingredients": [
+      "برنج، روغن گیاهی، نمک و زعفران",
+      "Rice, vegetable oil, salt and saffron",
+      "Riso, olio vegetale, sale e zafferano"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/rice.webp",
+    "sourceUrl": "https://hanifoods.nl/products/saffron-rice/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "RICE",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "rice"
+  },
+  {
+    "id": "dolmeh",
+    "category": "meals",
+    "slug": "dolme",
+    "weight": 460,
+    "cents": 550,
+    "name": [
+      "دلمه برگ مو",
+      "Stuffed vine leaves",
+      "Involtini di foglie di vite"
+    ],
+    "ingredients": [
+      "برگ مو، برنج، لپه، سبزی معطر و سویا",
+      "Vine leaves, rice, split peas, aromatic herbs and soya",
+      "Foglie di vite, riso, piselli spezzati, erbe aromatiche e soia"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/dolmeh.webp",
+    "sourceUrl": "https://hanifoods.nl/products/dolme/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "DOLMEH",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "dolmeh"
+  },
+  {
+    "id": "ash",
+    "category": "pantry",
+    "slug": "ashreshte",
+    "weight": 460,
+    "cents": 450,
+    "name": [
+      "آش رشته",
+      "Ash Reshteh noodle soup",
+      "Ash Reshteh, zuppa con pasta"
+    ],
+    "ingredients": [
+      "رشته و آرد، سبزی، لوبیا، عدس، نخود، پیاز و نعناع",
+      "Noodles and flour, herbs, beans, lentils, peas, onion and mint",
+      "Pasta e farina, erbe, fagioli, lenticchie, piselli, cipolla e menta"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/ash.webp",
+    "sourceUrl": "https://hanifoods.nl/products/ashreshte/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "ASH",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "ash"
+  },
+  {
+    "id": "beans",
+    "category": "pantry",
+    "slug": "baked-pinto-beans",
+    "weight": 460,
+    "cents": 390,
+    "name": [
+      "خوراک لوبیا چیتی با سس گوجه",
+      "Pinto beans in tomato sauce",
+      "Fagioli borlotti in salsa di pomodoro"
+    ],
+    "ingredients": [
+      "لوبیا چیتی، پیاز، رب گوجه، روغن گیاهی و ادویه",
+      "Pinto beans, onion, tomato paste, vegetable oil and spices",
+      "Fagioli borlotti, cipolla, concentrato di pomodoro, olio vegetale e spezie"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/beans.webp",
+    "sourceUrl": "https://hanifoods.nl/products/baked-pinto-beans/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "BEANS",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "beans"
+  },
+  {
+    "id": "soya",
+    "category": "pantry",
+    "slug": "marcaroni-lasagna-sauce",
+    "weight": 460,
+    "cents": 450,
+    "name": [
+      "سس ماکارونی و لازانیا با سویا",
+      "Pasta & lasagna sauce with soya",
+      "Sugo per pasta e lasagne con soia"
+    ],
+    "ingredients": [
+      "سویا، قارچ، فلفل دلمه‌ای، گوجه، پیاز و ادویه",
+      "Soya, mushrooms, bell pepper, tomato, onion and spices",
+      "Soia, funghi, peperoni, pomodoro, cipolla e spezie"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/soya.webp",
+    "sourceUrl": "https://hanifoods.nl/products/marcaroni-lasagna-sauce/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "SOYA",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "soya"
+  },
+  {
+    "id": "okra",
+    "category": "stews",
+    "slug": "okra-stew-meatless-2",
+    "weight": 460,
+    "cents": 490,
+    "name": [
+      "خورشت بامیه بدون گوشت",
+      "Okra stew, meatless",
+      "Stufato di gombo senza carne"
+    ],
+    "ingredients": [
+      "بامیه، رب گوجه، پیاز، روغن گیاهی، آبلیمو و زعفران",
+      "Okra, tomato paste, onion, vegetable oil, lemon juice and saffron",
+      "Gombo, concentrato di pomodoro, cipolla, olio vegetale, limone e zafferano"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/okra.webp",
+    "sourceUrl": "https://hanifoods.nl/products/okra-stew-meatless-2/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "OKRA",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "okra"
+  },
+  {
+    "id": "herb-stew",
+    "category": "stews",
+    "slug": "herb-fish-stew",
+    "weight": 460,
+    "cents": 490,
+    "name": [
+      "قلیه بدون ماهی",
+      "Ghalieh herb stew, without fish",
+      "Ghalieh, stufato di erbe senza pesce"
+    ],
+    "ingredients": [
+      "شنبلیله، گشنیز، تمرهندی، روغن گیاهی، پیاز و سیر",
+      "Fenugreek, coriander, tamarind, vegetable oil, onion and garlic",
+      "Fieno greco, coriandolo, tamarindo, olio vegetale, cipolla e aglio"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/herb-stew.webp",
+    "sourceUrl": "https://hanifoods.nl/products/herb-fish-stew/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "HERB-STEW",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "herb-stew"
+  },
+  {
+    "id": "curd",
+    "category": "pantry",
+    "slug": "eggplant-curd-2",
+    "weight": 460,
+    "cents": 490,
+    "name": [
+      "کشک بادمجان",
+      "Kashk-e Bademjan (eggplant curd)",
+      "Kashk-e Bademjan"
+    ],
+    "ingredients": [
+      "بادمجان، پیاز، روغن گیاهی، سیر و نعناع خشک",
+      "Aubergine, onion, vegetable oil, garlic and dried mint",
+      "Melanzane, cipolla, olio vegetale, aglio e menta essiccata"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/curd.webp",
+    "sourceUrl": "https://hanifoods.nl/products/eggplant-curd-2/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "CURD",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "curd"
+  },
+  {
+    "id": "baghali",
+    "category": "meals",
+    "slug": "baghali-ghatogh",
+    "weight": 460,
+    "cents": 490,
+    "name": [
+      "باقلا قاتق",
+      "Baghali Ghatogh",
+      "Baghali Ghatogh"
+    ],
+    "ingredients": [
+      "لوبیا، شوید خشک، روغن گیاهی، سیر و زردچوبه",
+      "Beans, dried dill, vegetable oil, garlic and turmeric",
+      "Fagioli, aneto essiccato, olio vegetale, aglio e curcuma"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/baghali.webp",
+    "sourceUrl": "https://hanifoods.nl/products/baghali-ghatogh/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "BAGHALI",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "baghali"
+  },
+  {
+    "id": "sholezard",
+    "category": "desserts",
+    "slug": "sholezard",
+    "weight": 460,
+    "cents": 390,
+    "name": [
+      "شله‌زرد",
+      "Sholezard saffron rice pudding",
+      "Sholezard, budino di riso allo zafferano"
+    ],
+    "ingredients": [
+      "برنج، شکر، خلال بادام، گلاب، هل و زعفران",
+      "Rice, sugar, slivered almonds, rose water, cardamom and saffron",
+      "Riso, zucchero, mandorle, acqua di rose, cardamomo e zafferano"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/sholezard.webp",
+    "sourceUrl": "https://hanifoods.nl/products/sholezard/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "SHOLEZARD",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "sholezard"
+  },
+  {
+    "id": "fried-eggplant",
+    "category": "pantry",
+    "slug": "fried-eggplant",
+    "weight": 360,
+    "cents": 390,
+    "name": [
+      "بادمجان سرخ‌شده",
+      "Fried eggplant",
+      "Melanzane fritte"
+    ],
+    "ingredients": [
+      "بادمجان، نمک و روغن سرخ‌کردنی",
+      "Aubergine, salt and frying oil",
+      "Melanzane, sale e olio per friggere"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/fried-eggplant.webp",
+    "sourceUrl": "https://hanifoods.nl/products/fried-eggplant/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "FRIED-EGGPLANT",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "fried-eggplant"
+  },
+  {
+    "id": "baghali-rice",
+    "category": "meals",
+    "slug": "rice-broad-beans",
+    "weight": 350,
+    "cents": 390,
+    "name": [
+      "باقالی پلو",
+      "Rice with broad beans",
+      "Riso con fave e aneto"
+    ],
+    "ingredients": [
+      "برنج، باقلا، شوید، روغن گیاهی، نمک و زعفران",
+      "Rice, broad beans, dill, vegetable oil, salt and saffron",
+      "Riso, fave, aneto, olio vegetale, sale e zafferano"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/baghali-rice.webp",
+    "sourceUrl": "https://hanifoods.nl/products/rice-broad-beans/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "BAGHALI-RICE",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "baghali-rice"
+  },
+  {
+    "id": "ghormeh-herbs",
+    "category": "pantry",
+    "slug": "fried-ghormeh-herbs",
+    "weight": 300,
+    "cents": 350,
+    "name": [
+      "سبزی قرمه سرخ‌شده",
+      "Fried Ghormeh herbs",
+      "Erbe fritte per Ghormeh Sabzi"
+    ],
+    "ingredients": [
+      "جعفری، تره، روغن سرخ‌کردنی و شنبلیله",
+      "Parsley, leek, frying oil and fenugreek",
+      "Prezzemolo, porro, olio per friggere e fieno greco"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/ghormeh-herbs.webp",
+    "sourceUrl": "https://hanifoods.nl/products/fried-ghormeh-herbs/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "GHORMEH-HERBS",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "ghormeh-herbs"
+  },
+  {
+    "id": "mirza",
+    "category": "pantry",
+    "slug": "mirza-ghasemi",
+    "weight": 460,
+    "cents": 490,
+    "name": [
+      "میرزا قاسمی",
+      "Mirza Ghasemi",
+      "Mirza Ghasemi"
+    ],
+    "ingredients": [
+      "بادمجان، پیاز، گوجه، روغن گیاهی و سیر",
+      "Aubergine, onion, tomato, vegetable oil and garlic",
+      "Melanzane, cipolla, pomodoro, olio vegetale e aglio"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/mirza.webp",
+    "sourceUrl": "https://hanifoods.nl/products/mirza-ghasemi/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "MIRZA",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "mirza"
+  },
+  {
+    "id": "masala",
+    "category": "pantry",
+    "slug": "masala-sauce",
+    "weight": 460,
+    "cents": 450,
+    "name": [
+      "سس ماسالا",
+      "Masala sauce",
+      "Salsa Masala"
+    ],
+    "ingredients": [
+      "رب گوجه، خامه، پیاز، سیر، زنجبیل، کره، بادام و ادویه",
+      "Tomato paste, cream, onion, garlic, ginger, butter, almonds and spices",
+      "Concentrato di pomodoro, panna, cipolla, aglio, zenzero, burro, mandorle e spezie"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/masala.webp",
+    "sourceUrl": "https://hanifoods.nl/products/masala-sauce/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "MASALA",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "masala"
+  },
+  {
+    "id": "mushroom-beans",
+    "category": "pantry",
+    "slug": "baked-beans",
+    "weight": 460,
+    "cents": 420,
+    "name": [
+      "خوراک لوبیا چیتی با قارچ",
+      "Pinto beans with mushrooms",
+      "Fagioli borlotti con funghi"
+    ],
+    "ingredients": [
+      "لوبیا چیتی، قارچ، پیاز، رب گوجه، روغن گیاهی و ادویه",
+      "Pinto beans, mushrooms, onion, tomato paste, vegetable oil and spices",
+      "Fagioli borlotti, funghi, cipolla, concentrato di pomodoro, olio vegetale e spezie"
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/mushroom-beans.webp",
+    "sourceUrl": "https://hanifoods.nl/products/baked-beans/",
+    "unit": "g",
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "MUSHROOM-BEANS",
+    "version": 1,
+    "meatless": true,
+    "packaging": "aluminium",
+    "familyId": "mushroom-beans"
+  },
+  {
+    "id": "okra-tin-480",
+    "category": "stews",
+    "slug": "okra-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "okra",
+    "guideProductId": "okra",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "خورشت بامیه بدون گوشت",
+      "Okra stew, meatless",
+      "Stufato di gombo senza carne"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "خورشت بامیه بدون گوشت هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Okra stew, meatless, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Stufato di gombo senza carne, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/okra-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/okra-stew-meatless/",
+    "sku": "HANI-TIN-OKRA-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": true,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 41
+  },
+  {
+    "id": "celery-tin-480",
+    "category": "stews",
+    "slug": "celery-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "celery",
+    "guideProductId": "celery",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "خورشت کرفس بدون گوشت",
+      "Celery stew, meatless",
+      "Stufato di sedano senza carne"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "خورشت کرفس بدون گوشت هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Celery stew, meatless, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Stufato di sedano senza carne, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/celery-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/celery-stew-2/",
+    "sku": "HANI-TIN-CELERY-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": true,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 42
+  },
+  {
+    "id": "ghormeh-tin-480",
+    "category": "stews",
+    "slug": "ghormeh-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "ghormeh",
+    "guideProductId": "ghormeh",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "قرمه‌سبزی بدون گوشت",
+      "Ghormeh Sabzi, meatless",
+      "Ghormeh Sabzi senza carne"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "قرمه‌سبزی بدون گوشت هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Ghormeh Sabzi, meatless, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Ghormeh Sabzi senza carne, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/ghormeh-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/ghormeh-stew-2/",
+    "sku": "HANI-TIN-GHORMEH-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": true,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 43
+  },
+  {
+    "id": "gheimeh-tin-480",
+    "category": "stews",
+    "slug": "gheimeh-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "gheimeh",
+    "guideProductId": "gheimeh",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "قیمه بدون گوشت",
+      "Gheimeh, meatless",
+      "Gheimeh senza carne"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "قیمه بدون گوشت هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Gheimeh, meatless, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Gheimeh senza carne, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/gheimeh-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/gheimeh-stew-2/",
+    "sku": "HANI-TIN-GHEIMEH-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": true,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 44
+  },
+  {
+    "id": "eggplant-tin-480",
+    "category": "stews",
+    "slug": "eggplant-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "eggplant",
+    "guideProductId": "eggplant",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "قیمه بادمجان بدون گوشت",
+      "Gheimeh Bademjan, meatless",
+      "Gheimeh Bademjan senza carne"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "قیمه بادمجان بدون گوشت هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Gheimeh Bademjan, meatless, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Gheimeh Bademjan senza carne, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/eggplant-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/gheimeh-bademjan-stew-2/",
+    "sku": "HANI-TIN-EGGPLANT-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": true,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 45
+  },
+  {
+    "id": "fesenjan-tin-480",
+    "category": "stews",
+    "slug": "fesenjan-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "fesenjan",
+    "guideProductId": "fesenjan",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "فسنجان بدون گوشت",
+      "Fesenjan, meatless",
+      "Fesenjan senza carne"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "فسنجان بدون گوشت هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Fesenjan, meatless, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Fesenjan senza carne, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/fesenjan-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/fesenjan-stew-2/",
+    "sku": "HANI-TIN-FESENJAN-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": true,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 46
+  },
+  {
+    "id": "ash-tin-480",
+    "category": "pantry",
+    "slug": "ash-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "ash",
+    "guideProductId": "ash",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "آش رشته",
+      "Ash Reshteh noodle soup",
+      "Ash Reshteh, zuppa con pasta"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "آش رشته هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Ash Reshteh noodle soup, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Ash Reshteh, zuppa con pasta, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/ash-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/ash-reshteh/",
+    "sku": "HANI-TIN-ASH-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 48
+  },
+  {
+    "id": "ash-shole-ghalamkar-tin-480",
+    "category": "meals",
+    "slug": "ash-shole-ghalamkar-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "ash-shole-ghalamkar",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "آش شله‌قلمکار",
+      "Ash Shole Ghalamkar",
+      "Ash shole ghalamkar"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "آش شله‌قلمکار هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Ash Shole Ghalamkar, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Ash shole ghalamkar, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/ash-shole-ghalamkar-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/ash-shole-ghalamkar/",
+    "sku": "HANI-TIN-ASH-SHOLE-GHALAMKAR-480",
+    "status": "draft",
+    "publicationHold": true,
+    "publicationHoldReason": "User instruction: do not publish until a meatless version is confirmed.",
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 49
+  },
+  {
+    "id": "haleem-tin-480",
+    "category": "meals",
+    "slug": "haleem-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "haleem",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "حلیم",
+      "Haleem",
+      "Halim"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "حلیم هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Haleem, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Halim, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/haleem-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/haleem-meatless/",
+    "sku": "HANI-TIN-HALEEM-480",
+    "status": "draft",
+    "publicationHold": true,
+    "publicationHoldReason": "User instruction: do not publish until a meatless version is confirmed.",
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 50
+  },
+  {
+    "id": "curd-tin-480",
+    "category": "pantry",
+    "slug": "curd-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "curd",
+    "guideProductId": "curd",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "کشک بادمجان",
+      "Kashk-e Bademjan (eggplant curd)",
+      "Kashk-e Bademjan"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "کشک بادمجان هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Kashk-e Bademjan (eggplant curd), 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Kashk-e Bademjan, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/curd-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/eggplant-curd/",
+    "sku": "HANI-TIN-CURD-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 52
+  },
+  {
+    "id": "fried-eggplant-tin-480",
+    "category": "pantry",
+    "slug": "fried-eggplant-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "fried-eggplant",
+    "guideProductId": "fried-eggplant",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "بادمجان سرخ‌شده",
+      "Fried eggplant",
+      "Melanzane fritte"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "بادمجان سرخ‌شده هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Fried eggplant, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Melanzane fritte, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/fried-eggplant-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/fried-eggplant-2/",
+    "sku": "HANI-TIN-FRIED-EGGPLANT-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 53
+  },
+  {
+    "id": "mirza-tin-480",
+    "category": "pantry",
+    "slug": "mirza-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "mirza",
+    "guideProductId": "mirza",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "میرزا قاسمی",
+      "Mirza Ghasemi",
+      "Mirza Ghasemi"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "میرزا قاسمی هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Mirza Ghasemi, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Mirza Ghasemi, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/mirza-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/mirza-ghasemi-2/",
+    "sku": "HANI-TIN-MIRZA-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 54
+  },
+  {
+    "id": "cooked-spinach-tin-480",
+    "category": "pantry",
+    "slug": "cooked-spinach-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "cooked-spinach",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "اسفناج پخته",
+      "Cooked Spinach",
+      "Spinaci cotti"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "اسفناج پخته هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Cooked Spinach, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Spinaci cotti, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/cooked-spinach-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/cooked-spinach/",
+    "sku": "HANI-TIN-COOKED-SPINACH-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 55
+  },
+  {
+    "id": "broad-beans-tin-460",
+    "category": "pantry",
+    "slug": "broad-beans-tin-460",
+    "weight": 460,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "broad-beans",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "باقلا",
+      "Broad Beans",
+      "Fave"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "باقلا هانی، قوطی فلزی 460 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Broad Beans, 460 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Fave, lattina da 460 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/broad-beans-tin-460.webp",
+    "sourceUrl": "https://hanifoods.nl/products/broad-beans/",
+    "sku": "HANI-TIN-BROAD-BEANS-460",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 57
+  },
+  {
+    "id": "dolmeh-tin-480",
+    "category": "meals",
+    "slug": "dolmeh-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "dolmeh",
+    "guideProductId": "dolmeh",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "دلمه برگ مو",
+      "Stuffed vine leaves",
+      "Involtini di foglie di vite"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "دلمه برگ مو هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Stuffed vine leaves, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Involtini di foglie di vite, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/dolmeh-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/dolmeh/",
+    "sku": "HANI-TIN-DOLMEH-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 59
+  },
+  {
+    "id": "kuku-herbs-tin-460",
+    "category": "pantry",
+    "slug": "kuku-herbs-tin-460",
+    "weight": 460,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "kuku-herbs",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "سبزی کوکو",
+      "Kuku Sabzi Herbs",
+      "Erbe per kuku sabzi"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "سبزی کوکو هانی، قوطی فلزی 460 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Kuku Sabzi Herbs, 460 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Erbe per kuku sabzi, lattina da 460 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/kuku-herbs-tin-460.webp",
+    "sourceUrl": "https://hanifoods.nl/products/kuku-sabzi-herbs/",
+    "sku": "HANI-TIN-KUKU-HERBS-460",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 60
+  },
+  {
+    "id": "kufteh-tabrizi-tin-460",
+    "category": "meals",
+    "slug": "kufteh-tabrizi-tin-460",
+    "weight": 460,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "kufteh-tabrizi",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "کوفته تبریزی",
+      "Kufteh Tabrizi",
+      "Kufteh Tabrizi"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "کوفته تبریزی هانی، قوطی فلزی 460 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Kufteh Tabrizi, 460 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Kufteh Tabrizi, lattina da 460 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/kufteh-tabrizi-tin-460.webp",
+    "sourceUrl": "https://hanifoods.nl/products/kufteh-tabrizi/",
+    "sku": "HANI-TIN-KUFTEH-TABRIZI-460",
+    "status": "draft",
+    "publicationHold": true,
+    "publicationHoldReason": "User instruction: do not publish until a meatless version is confirmed.",
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 61
+  },
+  {
+    "id": "ghormeh-herbs-tin-460",
+    "category": "pantry",
+    "slug": "ghormeh-herbs-tin-460",
+    "weight": 460,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "ghormeh-herbs",
+    "guideProductId": "ghormeh-herbs",
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "سبزی قرمه سرخ‌شده",
+      "Fried Ghormeh herbs",
+      "Erbe fritte per Ghormeh Sabzi"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "سبزی قرمه سرخ‌شده هانی، قوطی فلزی 460 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Fried Ghormeh herbs, 460 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Erbe fritte per Ghormeh Sabzi, lattina da 460 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/ghormeh-herbs-tin-460.webp",
+    "sourceUrl": "https://hanifoods.nl/products/fried-ghormeh-herbs-2/",
+    "sku": "HANI-TIN-GHORMEH-HERBS-460",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 63
+  },
+  {
+    "id": "mint-parsley-tin-460",
+    "category": "pantry",
+    "slug": "mint-parsley-tin-460",
+    "weight": 460,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "mint-parsley",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "نعناع و جعفری سرخ‌شده",
+      "Fried Mint and Parsley",
+      "Menta e prezzemolo soffritti"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "نعناع و جعفری سرخ‌شده هانی، قوطی فلزی 460 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Fried Mint and Parsley, 460 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Menta e prezzemolo soffritti, lattina da 460 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/mint-parsley-tin-460.webp",
+    "sourceUrl": "https://hanifoods.nl/products/fried-mint-and-parsley/",
+    "sku": "HANI-TIN-MINT-PARSLEY-460",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 64
+  },
+  {
+    "id": "celery-herbs-tin-460",
+    "category": "pantry",
+    "slug": "celery-herbs-tin-460",
+    "weight": 460,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "celery-herbs",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "سبزی کرفس سرخ‌شده",
+      "Fried Celery Herbs",
+      "Erbe soffritte per khoresh di sedano"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "سبزی کرفس سرخ‌شده هانی، قوطی فلزی 460 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Fried Celery Herbs, 460 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Erbe soffritte per khoresh di sedano, lattina da 460 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/celery-herbs-tin-460.webp",
+    "sourceUrl": "https://hanifoods.nl/products/fried-celery-herbs/",
+    "sku": "HANI-TIN-CELERY-HERBS-460",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 65
+  },
+  {
+    "id": "fried-onion-tin-200",
+    "category": "pantry",
+    "slug": "fried-onion-tin-200",
+    "weight": 200,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "fried-onion",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "پیازداغ",
+      "Fried Onion",
+      "Cipolla soffritta"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "پیازداغ هانی، قوطی فلزی 200 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Fried Onion, 200 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Cipolla soffritta, lattina da 200 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/fried-onion-tin-200.webp",
+    "sourceUrl": "https://hanifoods.nl/products/fried-onion/",
+    "sku": "HANI-TIN-FRIED-ONION-200",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 66
+  },
+  {
+    "id": "fried-garlic-tin-300",
+    "category": "pantry",
+    "slug": "fried-garlic-tin-300",
+    "weight": 300,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "fried-garlic",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "سیرداغ",
+      "Fried Garlic",
+      "Aglio soffritto"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "سیرداغ هانی، قوطی فلزی 300 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Fried Garlic, 300 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Aglio soffritto, lattina da 300 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/fried-garlic-tin-300.webp",
+    "sourceUrl": "https://hanifoods.nl/products/fried-garlic/",
+    "sku": "HANI-TIN-FRIED-GARLIC-300",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 67
+  },
+  {
+    "id": "caramelized-onion-tin-480",
+    "category": "pantry",
+    "slug": "caramelized-onion-tin-480",
+    "weight": 480,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "caramelized-onion",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "پیاز کاراملی",
+      "Caramelized Onion",
+      "Cipolla caramellata"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "پیاز کاراملی هانی، قوطی فلزی 480 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Caramelized Onion, 480 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Cipolla caramellata, lattina da 480 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/caramelized-onion-tin-480.webp",
+    "sourceUrl": "https://hanifoods.nl/products/caramelized-onion/",
+    "sku": "HANI-TIN-CARAMELIZED-ONION-480",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 68
+  },
+  {
+    "id": "onion-puree-tin-460",
+    "category": "pantry",
+    "slug": "onion-puree-tin-460",
+    "weight": 460,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "onion-puree",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "پوره پیاز",
+      "Onion Puree",
+      "Purea di cipolla"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "پوره پیاز هانی، قوطی فلزی 460 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Onion Puree, 460 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Purea di cipolla, lattina da 460 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/onion-puree-tin-460.webp",
+    "sourceUrl": "https://hanifoods.nl/products/onion-puree/",
+    "sku": "HANI-TIN-ONION-PUREE-460",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 69
+  },
+  {
+    "id": "samanoo-tin-600",
+    "category": "desserts",
+    "slug": "samanoo-tin-600",
+    "weight": 600,
+    "unit": "g",
+    "packaging": "tinplate",
+    "familyId": "samanoo",
+    "guideProductId": null,
+    "cents": null,
+    "compareAtCents": null,
+    "stock": null,
+    "stockPending": true,
+    "name": [
+      "سمنو",
+      "Samanoo",
+      "Samanu"
+    ],
+    "ingredients": [
+      "",
+      "",
+      ""
+    ],
+    "description": [
+      "سمنو هانی، قوطی فلزی 600 گرمی. اطلاعات ترکیبات و حساسیت‌ها را از برچسب همین بسته بررسی کنید.",
+      "Hani Samanoo, 600 g tin. Check the label of this exact pack for ingredients and allergens.",
+      "Hani Samanu, lattina da 600 g. Consulta l’etichetta di questa confezione per ingredienti e allergeni."
+    ],
+    "brand": "Hani",
+    "image": "assets/hani/samanoo-tin-600.webp",
+    "sourceUrl": "https://hanifoods.nl/products/samanoo/",
+    "sku": "HANI-TIN-SAMANOO-600",
+    "status": "published",
+    "publicationHold": false,
+    "publicationHoldReason": null,
+    "meatless": false,
+    "example": false,
+    "managed": true,
+    "assortmentSource": "Listino_Hani_Organized.xlsx",
+    "assortmentRow": 71
+  },
+  {
+    "unit": "g",
+    "example": true,
+    "brand": null,
+    "image": "assets/persia/grocery-selection.webp",
+    "id": "rice-sack",
+    "category": "rice",
+    "weight": 2000,
+    "cents": 1290,
+    "sprite": 0,
+    "name": [
+      "برنج دانه‌بلند",
+      "Long-grain rice",
+      "Riso a chicco lungo"
+    ],
+    "ingredients": [
+      "برنج دانه‌بلند؛ نمونه مجموعه پیشنهادی",
+      "Long-grain rice; illustrative assortment",
+      "Riso a chicco lungo; assortimento illustrativo"
+    ],
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "RICE-SACK",
+    "version": 1,
+    "meatless": false
+  },
+  {
+    "unit": "g",
+    "example": true,
+    "brand": null,
+    "image": "assets/persia/grocery-selection.webp",
+    "id": "saffron",
+    "category": "spices",
+    "weight": 1,
+    "cents": 890,
+    "sprite": 1,
+    "name": [
+      "زعفران",
+      "Saffron",
+      "Zafferano"
+    ],
+    "ingredients": [
+      "رشته زعفران؛ نمونه مجموعه پیشنهادی",
+      "Saffron threads; illustrative assortment",
+      "Stimmi di zafferano; assortimento illustrativo"
+    ],
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "SAFFRON",
+    "version": 1,
+    "meatless": false
+  },
+  {
+    "unit": "g",
+    "example": true,
+    "brand": null,
+    "image": "assets/persia/grocery-selection.webp",
+    "id": "pistachios",
+    "category": "nuts",
+    "weight": 250,
+    "cents": 650,
+    "sprite": 2,
+    "name": [
+      "پسته با پوست",
+      "Pistachios in shell",
+      "Pistacchi in guscio"
+    ],
+    "ingredients": [
+      "پسته؛ حاوی مغزهای درختی؛ نمونه نمایشی",
+      "Pistachios; contains tree nuts; illustrative example",
+      "Pistacchi; contiene frutta a guscio; esempio illustrativo"
+    ],
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "PISTACHIOS",
+    "version": 1,
+    "meatless": false
+  },
+  {
+    "unit": "ml",
+    "example": true,
+    "brand": null,
+    "image": "assets/persia/grocery-selection.webp",
+    "id": "rosewater",
+    "category": "tea",
+    "weight": 500,
+    "cents": 390,
+    "sprite": 3,
+    "name": [
+      "گلاب",
+      "Rose water",
+      "Acqua di rose"
+    ],
+    "ingredients": [
+      "گلاب؛ نمونه نمایشی، مشخصات محصول نهایی تأیید نشده",
+      "Rose water; illustrative example, final specification unconfirmed",
+      "Acqua di rose; esempio illustrativo, specifiche finali da confermare"
+    ],
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "ROSEWATER",
+    "version": 1,
+    "meatless": false
+  },
+  {
+    "unit": "g",
+    "example": true,
+    "brand": null,
+    "image": "assets/persia/grocery-selection.webp",
+    "id": "dates",
+    "category": "nuts",
+    "weight": 500,
+    "cents": 590,
+    "sprite": 4,
+    "name": [
+      "خرما",
+      "Dates",
+      "Datteri"
+    ],
+    "ingredients": [
+      "خرما؛ نمونه مجموعه پیشنهادی",
+      "Dates; illustrative assortment",
+      "Datteri; assortimento illustrativo"
+    ],
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "DATES",
+    "version": 1,
+    "meatless": false
+  },
+  {
+    "unit": "g",
+    "example": true,
+    "brand": null,
+    "image": "assets/persia/grocery-selection.webp",
+    "id": "black-tea",
+    "category": "tea",
+    "weight": 250,
+    "cents": 750,
+    "sprite": 5,
+    "name": [
+      "چای سیاه",
+      "Loose-leaf black tea",
+      "Tè nero in foglie"
+    ],
+    "ingredients": [
+      "چای سیاه؛ نمونه مجموعه پیشنهادی",
+      "Black tea; illustrative assortment",
+      "Tè nero; assortimento illustrativo"
+    ],
+    "status": "published",
+    "stock": null,
+    "description": [
+      "",
+      "",
+      ""
+    ],
+    "sku": "BLACK-TEA",
+    "version": 1,
+    "meatless": false
+  }
+]

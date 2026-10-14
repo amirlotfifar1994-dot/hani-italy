@@ -1,0 +1,932 @@
+{
+  "skip": [
+    "رفتن به فروشگاه",
+    "Go to the shop",
+    "Vai al negozio"
+  ],
+  "announcement": [
+    "ایران در دل ما، ایتالیا خانه ما",
+    "Iran in our hearts. Italy, our home.",
+    "L’Iran nel cuore. L’Italia, casa nostra."
+  ],
+  "preview": [
+    "پیش‌نمایش",
+    "Store preview ↗",
+    "Anteprima del negozio ↗"
+  ],
+  "search": [
+    "جست‌وجوی محصول",
+    "Search products",
+    "Cerca prodotti"
+  ],
+  "favorites": [
+    "علاقه‌مندی‌ها",
+    "Favourites",
+    "Preferiti"
+  ],
+  "cart": [
+    "سبد خرید",
+    "Shopping bag",
+    "Carrello"
+  ],
+  "menu": [
+    "فهرست",
+    "Menu",
+    "Menu"
+  ],
+  "haniBrand": [
+    "محصولات هانی",
+    "Hani products",
+    "Prodotti Hani"
+  ],
+  "all": [
+    "همه محصولات",
+    "All products",
+    "Tutti i prodotti"
+  ],
+  "riceCategory": [
+    "برنج و غلات",
+    "Rice & grains",
+    "Riso e Cereali"
+  ],
+  "spices": [
+    "ادویه و چاشنی",
+    "Spices & seasonings",
+    "Spezie e Condimenti"
+  ],
+  "nuts": [
+    "خشکبار و شیرینی",
+    "Nuts & dried fruit",
+    "Dolci e Frutta Secca"
+  ],
+  "tea": [
+    "چای و نوشیدنی",
+    "Tea & drinks",
+    "Tè e Bevande"
+  ],
+  "roots": [
+    "ریشه‌های ما",
+    "Our roots",
+    "Le nostre radici"
+  ],
+  "navCaption": [
+    "بیشتر از یک فروشگاه، تکه‌ای از خانه",
+    "More than a shop. A piece of home.",
+    "Più di un negozio, un pezzo di casa."
+  ],
+  "heroEyebrow": [
+    "خانه هر کجا که باشیم",
+    "Home, wherever we are",
+    "Casa, ovunque siamo"
+  ],
+  "heroTitle": [
+    "دور از خانه<br><em>هنوز کنار هم</em>",
+    "Far from home.<br><em>Still together.</em>",
+    "Lontani,<br><em>ma sempre<br>insieme.</em>"
+  ],
+  "heroBody": [
+    "طعم‌های ایران نزدیک‌تر از همیشه از برنج و زعفران تا خشکبار چای و غذای آماده برای آن‌هایی که خانه را در دلشان دارند",
+    "The flavours of Iran, a little closer. Rice, saffron, nuts, tea and ready meals — for everyone who carries home in their heart.",
+    "I sapori dell’Iran, ora più vicini. Riso, zafferano, frutta secca, tè e piatti pronti, per chi porta la propria terra nel cuore."
+  ],
+  "explore": [
+    "کشف غذاهای هانی",
+    "Discover Hani foods",
+    "Scopri i piatti Hani"
+  ],
+  "heroPostcard": [
+    "هر جا که باشیم<br>ایران با ماست",
+    "Wherever we are,<br>Iran is with us.",
+    "Ovunque siamo,<br>l’Iran è con noi."
+  ],
+  "editorialCaption": [
+    "تصویر مفهومی · ایران و ایتالیا",
+    "Editorial illustration · Iran & Italy",
+    "Immagine concettuale · Iran e Italia"
+  ],
+  "ready": [
+    "غذاهای آماده",
+    "Ready meals",
+    "Conserve e Piatti Pronti"
+  ],
+  "regional": [
+    "طعم‌های محلی",
+    "Regional flavours",
+    "Prodotti Regionali"
+  ],
+  "soon": [
+    "به‌زودی",
+    "Coming soon",
+    "In arrivo"
+  ],
+  "homeware": [
+    "خانه و زندگی",
+    "Home & tradition",
+    "Casa e Tradizione"
+  ],
+  "gifts": [
+    "هدیه‌های ایرانی",
+    "Persian gifts",
+    "Idee Regalo"
+  ],
+  "categoryMessage": [
+    "همان طعم‌ها.<br>مسیرهای تازه.<br>آدم‌های نزدیک‌تر.",
+    "Same flavours.<br>New paths.<br>Closer together.",
+    "Stessi sapori.<br>Nuove strade.<br>Persone più vicine."
+  ],
+  "shopEyebrow": [
+    "شروع مجموعه پرشیا مارکت",
+    "The beginning of Persia Market",
+    "La prima selezione Persia Market"
+  ],
+  "shopTitle": [
+    "از غذاهای هانی شروع می‌کنیم",
+    "We begin with Hani flavours",
+    "Iniziamo con i sapori Hani"
+  ],
+  "samplePrices": [
+    "قیمت‌ها آزمایشی هستند",
+    "Preview prices",
+    "Prezzi dimostrativi"
+  ],
+  "sort": [
+    "مرتب‌سازی",
+    "Sort by",
+    "Ordina per"
+  ],
+  "featured": [
+    "هانی در اولویت",
+    "Hani first",
+    "Prima Hani"
+  ],
+  "priceLow": [
+    "قیمت: کم به زیاد",
+    "Price: low to high",
+    "Prezzo: crescente"
+  ],
+  "priceHigh": [
+    "قیمت: زیاد به کم",
+    "Price: high to low",
+    "Prezzo: decrescente"
+  ],
+  "sortName": [
+    "نام محصول",
+    "Product name",
+    "Nome del prodotto"
+  ],
+  "reset": [
+    "پاک‌کردن فیلترها",
+    "Clear filters",
+    "Cancella filtri"
+  ],
+  "viewCatalogue": [
+    "مشاهده همه محصولات",
+    "View all products",
+    "Vedi tutti i prodotti"
+  ],
+  "noResults": [
+    "محصولی پیدا نشد",
+    "No products found",
+    "Nessun prodotto trovato"
+  ],
+  "trySearch": [
+    "عبارت دیگری امتحان کنید یا فیلترها را پاک کنید.",
+    "Try another search or clear your filters.",
+    "Prova un’altra ricerca o cancella i filtri."
+  ],
+  "editorialEyebrow": [
+    "از عطر تا خاطره",
+    "From aroma to memory",
+    "Dai profumi ai ricordi"
+  ],
+  "editorialTitle": [
+    "فراتر از مواد غذایی،<br>خاطره‌ها هستند.",
+    "More than ingredients.<br>They’re memories.",
+    "Più di ingredienti,<br>sono ricordi."
+  ],
+  "editorialBody": [
+    "یک فنجان چای، عطر زعفران و طعمی که قصه شما را تعریف می‌کند.",
+    "A cup of tea, the scent of saffron, a flavour that tells your story.",
+    "Una tazza di tè, il profumo dello zafferano e i sapori che raccontano la tua storia."
+  ],
+  "editorialAction": [
+    "کشف طعم‌ها",
+    "Discover the flavours",
+    "Scopri ora"
+  ],
+  "catalogSource": [
+    "محصولات هانی بر اساس فهرست ۴۷ قلمی عرضه و کاتالوگ هلند ثبت شده‌اند. اطلاعات هر وزن و بسته‌بندی را جداگانه بررسی کنید. منبع محصولات: ",
+    "Hani products follow the 47-item assortment list and Netherlands catalogue. Check each weight and pack separately. Product source: ",
+    "I prodotti Hani seguono la lista di 47 referenze e il catalogo olandese. Consulta separatamente ogni peso e confezione. Fonte dei prodotti: "
+  ],
+  "haniNL": [
+    "کاتالوگ هانی هلند ↗",
+    "Hani Netherlands catalogue ↗",
+    "Catalogo Hani Paesi Bassi ↗"
+  ],
+  "storyEyebrow": [
+    "ریشه‌های مشترک، مسیرهای تازه",
+    "Shared roots, new paths",
+    "Stesse radici, nuove strade"
+  ],
+  "storyTitle": [
+    "یک جامعه،<br><em>فراتر از فاصله‌ها.</em>",
+    "A community,<br><em>beyond distance.</em>",
+    "Una comunità,<br><em>oltre le distanze.</em>"
+  ],
+  "storyBody": [
+    "پرشیا مارکت برای همه کسانی است که دلشان طعم ایران می‌خواهد؛ ایرانی‌های ساکن ایتالیا و آن‌هایی که تازه با فرهنگ و خوراک ما آشنا می‌شوند.",
+    "Persia Market is for everyone who craves a taste of Iran: Iranians living in Italy and anyone discovering our food and culture.",
+    "Persia Market è per chi desidera i sapori dell’Iran: gli iraniani in Italia e chi sta scoprendo la nostra cucina e cultura."
+  ],
+  "communityAction": [
+    "داستان ما",
+    "Our story",
+    "La nostra storia"
+  ],
+  "rootsCaption": [
+    "از ریشه‌های ما<br>تا خاطره‌های تازه",
+    "From our roots<br>to new memories",
+    "Dalle nostre radici<br>a nuovi ricordi"
+  ],
+  "tableCaption": [
+    "سفره‌ای آشنا،<br>در شهری تازه",
+    "A familiar table,<br>in a new city",
+    "Una tavola familiare,<br>in una nuova città"
+  ],
+  "communityNote": [
+    "جایمان عوض می‌شود،<br>ریشه‌هایمان نه.",
+    "Different places.<br>Same roots.",
+    "Cambiano i luoghi.<br>Restano le radici."
+  ],
+  "promise": [
+    "دو فرهنگ.<br>یک خانه.<br>طعم‌هایی که<br>ما را کنار هم می‌آورند.",
+    "Two cultures.<br>One home.<br>Flavours that<br>bring us together.",
+    "Due culture.<br>Una casa.<br>Sapori che<br>ci uniscono."
+  ],
+  "networkEyebrow": [
+    "از ایران تا ایتالیا",
+    "From Iran to Italy",
+    "Dall’Iran all’Italia"
+  ],
+  "networkTitle": [
+    "طعم ایران،<br>در خانه شما",
+    "Iranian flavours,<br>at home in Italy.",
+    "I sapori dell’Iran,<br>a casa tua."
+  ],
+  "networkBody": [
+    "پرشیا مارکت، خانهٔ آنلاین طعم‌های ایرانی در ایتالیاست. از برنج و زعفران تا خشکبار، چای و غذاهای آماده، مجموعه‌ای از برندها را با نگاه به سلیقه و سفرهٔ شما کنار هم می‌آوریم. هانی یکی از برندهای این مجموعه است.",
+    "Persia Market is an online home for Iranian flavours in Italy. From rice and saffron to nuts, tea and ready meals, we bring together brands with your tastes and table in mind. Hani is one of the names in our collection.",
+    "Persia Market è la casa online dei sapori iraniani in Italia. Dal riso e lo zafferano alla frutta secca, al tè e ai piatti pronti, riuniamo diversi marchi pensando ai tuoi gusti e alla tua tavola. Hani è uno dei nomi della nostra collezione."
+  ],
+  "storyBody2": [
+    "در فروشگاه، طعم‌های محبوبتان را پیدا کنید و در مجلهٔ پرشیا، دستورهای آشپزی، قصه‌های فرهنگی و راهنمای شهرهای ایتالیا را بخوانید. خرید و کشف، در کنار هم؛ برای پیوند دادن ریشه‌های آشنا با زندگی امروز.",
+    "Discover familiar flavours in the shop, then explore recipes, cultural stories and Italian city guides in Persia Journal. Shopping and discovery come together, connecting familiar roots with everyday life.",
+    "Scopri i sapori di casa nel negozio e le ricette, le storie culturali e le guide alle città italiane nel Journal Persia. Acquisti e scoperte si incontrano, unendo le nostre radici alla vita di oggi."
+  ],
+  "networkStatus": [
+    "سوپرمارکت ایرانی آنلاین برای سراسر ایتالیا",
+    "An online Iranian supermarket for all of Italy",
+    "Un supermercato iraniano online per tutta l’Italia"
+  ],
+  "faqEyebrow": [
+    "پیش از سفارش",
+    "Before you order",
+    "Prima di ordinare"
+  ],
+  "faqTitle": [
+    "پاسخ‌های روشن<br />برای خرید راحت‌تر.",
+    "Clear answers.<br>Easier shopping.",
+    "Risposte chiare.<br>Acquisti più semplici."
+  ],
+  "contact": [
+    "ارتباط با ما",
+    "Contact us ↗",
+    "Contatti ↗"
+  ],
+  "faq1": [
+    "آیا خرید واقعی فعال است؟",
+    "Can I place a real order?",
+    "Posso effettuare un ordine reale?"
+  ],
+  "faq1a": [
+    "در این نسخه می‌توانید محصول انتخاب کنید، سبد خرید بسازید و سفارش آزمایشی را بررسی کنید. پرداخت، ارسال و ثبت سفارش واقعی هنوز فعال نیست.",
+    "You can choose products, build a bag and review a demo order. Payments, shipping and real orders are not yet active.",
+    "Puoi scegliere prodotti, creare un carrello e provare un ordine dimostrativo. Pagamenti, spedizioni e ordini reali non sono ancora attivi."
+  ],
+  "faq2": [
+    "آیا پرشیا مارکت فقط محصولات هانی دارد؟",
+    "Does Persia Market only sell Hani?",
+    "Persia Market propone solo prodotti Hani?"
+  ],
+  "faq2a": [
+    "خیر. پرشیا مارکت یک سوپرمارکت با مجموعه‌ای از برندهاست. برنج، زعفران، خشکبار، چای، نوشیدنی و غذای آماده در ساختار فروشگاه قرار دارند؛ هانی یکی از برندهای مجموعه است.",
+    "No. Persia Market brings together different brands. The shop includes rice, saffron, nuts, tea, drinks and ready meals; Hani is one of the brands.",
+    "No. Persia Market riunisce diversi marchi. Il negozio comprende riso, zafferano, frutta secca, tè, bevande e piatti pronti; Hani è uno dei marchi."
+  ],
+  "faq3": [
+    "هزینه و زمان ارسال چقدر است؟",
+    "What are the shipping costs and times?",
+    "Quali sono costi e tempi di spedizione?"
+  ],
+  "faq3a": [
+    "هزینه، محدوده ارسال و زمان تحویل پیش از شروع فروش واقعی نهایی می‌شوند. در سفارش آزمایشی هزینه ارسال محاسبه نمی‌شود.",
+    "Shipping costs, delivery areas and times will be confirmed before real sales begin. Shipping is not calculated for demo orders.",
+    "Costi, zone e tempi di consegna saranno confermati prima dell’inizio delle vendite reali. La spedizione non è calcolata negli ordini dimostrativi."
+  ],
+  "faq4": [
+    "آیا شعبه حضوری دارید؟",
+    "Do you have physical stores?",
+    "Avete negozi fisici?"
+  ],
+  "faq4a": [
+    "آدرس و زمان افتتاح شعب پس از قطعی‌شدن اعلام خواهد شد.",
+    "The project begins with an online store. Addresses and opening dates will be announced here once confirmed.",
+    "Il progetto inizia con un negozio online. Indirizzi e date di apertura saranno annunciati qui dopo la conferma."
+  ],
+  "footerMotto": [
+    "خانه همیشه با ماست.",
+    "Home is always with us.",
+    "Casa è sempre con noi."
+  ],
+  "help": [
+    "راهنمای خرید",
+    "Shopping guide",
+    "Guida agli acquisti"
+  ],
+  "shipping": [
+    "ارسال و تحویل",
+    "Shipping & delivery",
+    "Spedizione e consegna"
+  ],
+  "faqShort": [
+    "سؤال‌های متداول",
+    "Frequently asked questions",
+    "Domande frequenti"
+  ],
+  "myDemoOrders": [
+    "خریدهای آزمایشی من",
+    "My demo purchases",
+    "I miei acquisti di prova"
+  ],
+  "privacy": [
+    "حریم خصوصی",
+    "Privacy",
+    "Privacy"
+  ],
+  "story": [
+    "داستان ما",
+    "Our story",
+    "La nostra storia"
+  ],
+  "network": [
+    "پرشیا مارکت در ایتالیا",
+    "Persia Market in Italy",
+    "Persia Market in Italia"
+  ],
+  "footerNote": [
+    "دو فرهنگ، یک خانه.",
+    "Two cultures. One home.",
+    "Due culture. Un’unica casa."
+  ],
+  "footerBottom": [
+    "از سرزمین ما، برای زندگی امروز.",
+    "From our roots, for life today.",
+    "Dalla nostra terra, per la vita di oggi."
+  ],
+  "backTop": [
+    "بازگشت به بالا ↑",
+    "Back to top ↑",
+    "Torna su ↑"
+  ],
+  "close": [
+    "بستن",
+    "Close",
+    "Chiudi"
+  ],
+  "yourSelection": [
+    "انتخاب شما",
+    "Your selection",
+    "La tua selezione"
+  ],
+  "subtotal": [
+    "جمع محصولات",
+    "Product subtotal",
+    "Subtotale prodotti"
+  ],
+  "shippingPending": [
+    "\n          هزینه ارسال در نسخه آزمایشی محاسبه نمی‌شود.\n        ",
+    "Shipping is not calculated in this preview.",
+    "La spedizione non è calcolata in questa anteprima."
+  ],
+  "reviewOrder": [
+    "بررسی سفارش</span\n          ><span aria-hidden=\"true\">←",
+    "Review your order",
+    "Rivedi l’ordine"
+  ],
+  "noPayment": [
+    "\n          آزمایشی · بدون پرداخت و ارسال واقعی\n        ",
+    "Demo · No payment or real delivery",
+    "Demo · Nessun pagamento o consegna reale"
+  ],
+  "orderTitle": [
+    "بررسی سفارش آزمایشی",
+    "Review your demo order",
+    "Rivedi l’ordine dimostrativo"
+  ],
+  "destination": [
+    "مقصد",
+    "Destination",
+    "Destinazione"
+  ],
+  "reviewStep": [
+    "مرور سفارش",
+    "Review",
+    "Riepilogo"
+  ],
+  "receiptStep": [
+    "رسید",
+    "Receipt",
+    "Ricevuta"
+  ],
+  "destinationTitle": [
+    "مقصد آزمایشی در ایتالیا",
+    "A demo destination in Italy",
+    "Una destinazione di prova in Italia"
+  ],
+  "destinationNote": [
+    "برای خرید آزمایشی، شهر و کد پستی وارد کنید. با تأیید، اقلام، مبلغ و مقصد آزمایشی در پنل مدیریت ثبت می‌شوند. نام، نشانی خیابان و اطلاعات پرداخت لازم نیست.",
+    "Enter a city and postal code for demo checkout. Confirmation records the items, subtotal and demo destination for store management. No name, street address or payment details are needed.",
+    "Inserisci città e CAP per l’acquisto di prova. La conferma registra articoli, subtotale e destinazione dimostrativa nel pannello di gestione. Nome, indirizzo stradale e dati di pagamento non sono richiesti."
+  ],
+  "city": [
+    "شهر",
+    "City",
+    "Città"
+  ],
+  "postalCode": [
+    "کد پستی (CAP)",
+    "Postcode (CAP)",
+    "Codice postale (CAP)"
+  ],
+  "postcodeHelp": [
+    "کد پستی باید پنج رقم باشد.",
+    "Use a five-digit Italian postcode.",
+    "Inserisci un CAP italiano di cinque cifre."
+  ],
+  "country": [
+    "کشور",
+    "Country",
+    "Paese"
+  ],
+  "italy": [
+    "ایتالیا",
+    "Italy",
+    "Italia"
+  ],
+  "continueReview": [
+    "ادامه به مرور سفارش →",
+    "Continue to review →",
+    "Continua al riepilogo →"
+  ],
+  "backToBasket": [
+    "بازگشت به سبد",
+    "Back to basket",
+    "Torna al carrello"
+  ],
+  "orderNotice": [
+    "\n        این سفارش آزمایشی است. هیچ مبلغی دریافت نمی‌شود و محصولی ارسال نخواهد\n        شد.\n      ",
+    "This is a demo order. No payment will be taken and no products will be shipped.",
+    "Questo è un ordine dimostrativo. Non sarà richiesto alcun pagamento e non saranno spediti prodotti."
+  ],
+  "confirmDemo": [
+    "\n          تأیید خرید آزمایشی\n        ",
+    "Confirm demo purchase",
+    "Conferma acquisto dimostrativo"
+  ],
+  "editDestination": [
+    "ویرایش مقصد",
+    "Edit destination",
+    "Modifica destinazione"
+  ],
+  "demoSuccess": [
+    "خرید آزمایشی تکمیل شد",
+    "Demo purchase complete",
+    "Acquisto dimostrativo completato"
+  ],
+  "demoSuccessBody": [
+    "سفارش آزمایشی در پنل مدیریت ثبت شد و رسیدش در این مرورگر هم ذخیره شده است. پرداخت و ارسال واقعی انجام نشده است.",
+    "Your demo order was recorded for store management, and its receipt is also saved in this browser. No payment or shipment has occurred.",
+    "Il tuo ordine dimostrativo è registrato nel pannello di gestione e la ricevuta è salvata anche in questo browser. Non sono stati effettuati pagamenti o spedizioni."
+  ],
+  "download": [
+    "\n          دریافت خلاصه خرید\n        ",
+    "Download purchase summary",
+    "Scarica il riepilogo"
+  ],
+  "localOnly": [
+    "فقط در این مرورگر",
+    "Only in this browser",
+    "Solo in questo browser"
+  ],
+  "ordersNote": [
+    "پنج خرید آزمایشی آخر در این مرورگر نگه‌داری می‌شوند. این‌ها سفارش واقعی نیستند.",
+    "Your five latest demo purchases stay in this browser. These are not real orders.",
+    "Gli ultimi cinque acquisti di prova restano in questo browser. Non sono ordini reali."
+  ],
+  "heroImageAlt": [
+    "ترکیب هنری تخت‌جمشید و کلسیوم رم با سفرهٔ ایرانی و ایتالیایی",
+    "An artistic panorama of Persepolis and the Colosseum with Iranian and Italian food",
+    "Un panorama artistico di Persepoli e del Colosseo con cibi iraniani e italiani"
+  ],
+  "heroImageAlt2": [
+    "تصویر هنری شهرهای ایران و میلان در کنار چای و خوراکی‌های ایرانی",
+    "An artistic panorama of Iranian cities and Milan with Persian tea and food",
+    "Un panorama artistico delle città iraniane e di Milano con tè e cibi persiani"
+  ],
+  "headerSearch": [
+    "جست‌وجوی محصولات ایرانی…",
+    "Search Persian groceries…",
+    "Cerca prodotti iraniani…"
+  ],
+  "add": [
+    "افزودن",
+    "Add",
+    "Aggiungi"
+  ],
+  "added": [
+    "به سبد خرید اضافه شد",
+    "Added to your bag",
+    "Aggiunto al carrello"
+  ],
+  "meatless": [
+    "بدون گوشت",
+    "Meatless",
+    "Senza carne"
+  ],
+  "grams": [
+    "گرم",
+    "g",
+    "g"
+  ],
+  "productCount": [
+    "محصول",
+    "products",
+    "prodotti"
+  ],
+  "productCountOne": [
+    "محصول",
+    "product",
+    "prodotto"
+  ],
+  "emptyCart": [
+    "سبد خرید شما خالی است",
+    "Your bag is empty",
+    "Il carrello è vuoto"
+  ],
+  "emptyCartBody": [
+    "یک طعم آشنا از فروشگاه انتخاب کنید.",
+    "Choose a familiar flavour from the shop.",
+    "Scegli un sapore familiare dal negozio."
+  ],
+  "remove": [
+    "حذف",
+    "Remove",
+    "Rimuovi"
+  ],
+  "increase": [
+    "افزایش تعداد",
+    "Increase quantity",
+    "Aumenta quantità"
+  ],
+  "decrease": [
+    "کاهش تعداد",
+    "Decrease quantity",
+    "Riduci quantità"
+  ],
+  "details": [
+    "جزئیات محصول",
+    "Product details",
+    "Dettagli prodotto"
+  ],
+  "mainIngredients": [
+    "ترکیبات اصلی",
+    "Main ingredients",
+    "Ingredienti principali"
+  ],
+  "ingredientNote": [
+    "این فهرست خلاصه است. ترکیبات کامل، آلرژن‌ها و روش مصرف را در منبع و روی بسته‌بندی رسمی بررسی کنید. بدون گوشت لزوماً به معنی وگان نیست.",
+    "This is a summary. Check the source and official packaging for ingredients, allergens and preparation. Meatless does not necessarily mean vegan.",
+    "È un riepilogo. Controlla fonte e confezione per ingredienti, allergeni e preparazione. Senza carne non significa necessariamente vegano."
+  ],
+  "priceNote": [
+    "قیمت آزمایشی؛ قیمت فروش نهایی نشده است.",
+    "Preview price; the sale price is not yet confirmed.",
+    "Prezzo dimostrativo; il prezzo di vendita non è ancora confermato."
+  ],
+  "source": [
+    "مشاهده محصول در هانی هلند ↗",
+    "View product at Hani Netherlands ↗",
+    "Vedi prodotto su Hani Paesi Bassi ↗"
+  ],
+  "favoriteAdd": [
+    "افزودن به علاقه‌مندی‌ها",
+    "Save to favourites",
+    "Salva nei preferiti"
+  ],
+  "favoriteRemove": [
+    "حذف از علاقه‌مندی‌ها",
+    "Remove from favourites",
+    "Rimuovi dai preferiti"
+  ],
+  "limit": [
+    "حداکثر تعداد در پیش‌نمایش ۹۹ عدد است",
+    "The preview limit is 99 per product",
+    "Il limite dimostrativo è 99 per prodotto"
+  ],
+  "contactBody": [
+    "برای ارتباط با پرشیا مارکت از شمارهٔ زیر استفاده کنید.",
+    "Contact Persia Market using the phone number below.",
+    "Contatta Persia Market al numero qui sotto."
+  ],
+  "privacyBody": [
+    "اطلاعاتی که برای حساب وارد می‌کنید، شامل نام، ایمیل، شماره تماس و آدرس‌ها، روی سرور فروشگاه نگه‌داری می‌شود؛ رمزها هش می‌شوند و نشست ورود از کوکی استفاده می‌کند. سبد و علاقه‌مندی‌ها در مرورگر و جدا برای هر حساب می‌مانند. سفارش آزمایشی پس از تأیید، با اقلام، مبلغ، شهر و کد پستی روی سرور برای مدیریت ثبت می‌شود؛ در صورت ورود، به حساب شما مرتبط است. با فعال شدن اعلان ایمیل، خلاصه سفارش از سرویس ارسال به ایمیل مدیریت فرستاده می‌شود. رسیدهای اخیر در مرورگر هم قابل دریافت‌اند. پرداخت و ارسال واقعی فعال نیست.",
+    "Account information you provide, including name, email, phone and addresses, is stored on the store server. Passwords are hashed and sessions use cookies. Bags and favourites remain in the browser, separately for each account. Confirmed demo orders record items, subtotal, city and postcode on the server for store management and are associated with your account when signed in. When email notifications are enabled, the order summary is sent through the delivery provider to the management inbox. Recent browser receipts remain downloadable. Real payments and shipping are not active.",
+    "I dati forniti per l’account, inclusi nome, email, telefono e indirizzi, sono conservati sul server del negozio. Le password sono memorizzate come hash e le sessioni usano cookie. Carrello e preferiti restano nel browser, separati per account. Gli ordini dimostrativi confermati registrano articoli, subtotale, città e CAP sul server per la gestione e vengono collegati all’account se hai effettuato l’accesso. Attivando le notifiche email, il riepilogo è inviato tramite il servizio di invio alla casella di gestione. Le ricevute recenti restano scaricabili nel browser. Pagamenti e spedizioni reali non sono attivi."
+  ],
+  "previewBody": [
+    "این نسخه طراحی و خرید آزمایشی پرشیا مارکت است. محصولات هانی از کاتالوگ هانی هلند هستند؛ سایر کالاها نمونه نمایشی‌اند و برند و تأمین‌کننده نهایی ندارند. همه قیمت‌ها آزمایشی‌اند. پرداخت، ارسال و شعب واقعی فعال نیستند.",
+    "This is the Persia Market design and shopping preview. Hani items come from Hani Netherlands; other groceries are illustrative examples without final brands or suppliers. All prices are examples. Payments, delivery and physical stores are not active.",
+    "Questa è l’anteprima di Persia Market. I prodotti Hani provengono dal catalogo Hani Paesi Bassi; gli altri sono esempi senza marchi o fornitori definitivi. Tutti i prezzi sono dimostrativi. Pagamenti, consegne e negozi fisici non sono attivi."
+  ],
+  "sampleProduct": [
+    "نمونه مجموعه",
+    "Assortment example",
+    "Esempio assortimento"
+  ],
+  "sampleBrand": [
+    "منتخب نمایشی",
+    "Preview selection",
+    "Selezione dimostrativa"
+  ],
+  "millilitres": [
+    "میلی‌لیتر",
+    "ml",
+    "ml"
+  ],
+  "assortmentNote": [
+    "این محصول، نمونه نمایشی برای طراحی مجموعه فروشگاه است. تصویر، وزن و قیمت نمونه‌اند؛ برند و تأمین‌کننده نهایی هنوز انتخاب نشده‌اند.",
+    "This is an illustrative example for the store assortment. Image, weight and price are examples; the final brand and supplier have not been selected.",
+    "Questo è un esempio per il design dell’assortimento. Immagine, peso e prezzo sono dimostrativi; marchio e fornitore finali non sono ancora scelti."
+  ],
+  "regionalBody": [
+    "طعم‌های محلی ایران به مجموعه آینده پرشیا مارکت اضافه می‌شوند. محصولات و تأمین‌کنندگان این دسته هنوز نهایی نشده‌اند.",
+    "Regional Persian flavours will join the future assortment. Products and suppliers for this category are not confirmed yet.",
+    "I sapori regionali iraniani entreranno nell’assortimento futuro. Prodotti e fornitori non sono ancora confermati."
+  ],
+  "homewareBody": [
+    "ظروف، وسایل سفره و انتخاب‌های مرتبط با فرهنگ ایرانی در برنامه گسترش فروشگاه هستند. مجموعه این دسته هنوز نهایی نشده است.",
+    "Tableware and items celebrating Persian culture are planned for the shop expansion. This assortment is not confirmed yet.",
+    "Stoviglie e oggetti della cultura persiana sono previsti per l’espansione del negozio. L’assortimento non è ancora confermato."
+  ],
+  "giftsBody": [
+    "بسته‌های هدیه ایرانی در برنامه مجموعه آینده هستند. پس از انتخاب محصولات و بسته‌بندی نهایی در همین بخش نمایش داده می‌شوند.",
+    "Persian gift sets are planned for the future collection. They will appear here once products and packaging are finalized.",
+    "Le confezioni regalo persiane sono previste per la collezione futura. Saranno mostrate qui dopo la scelta dei prodotti e del packaging."
+  ],
+  "categories": [
+    "دسته‌بندی‌ها",
+    "Categories",
+    "Categorie"
+  ],
+  "rice": [
+    "برنج و غلات",
+    "Rice & grains",
+    "Riso e Cereali"
+  ],
+  "stews": [
+    "خورشت‌های ایرانی",
+    "Persian stews",
+    "Stufati persiani"
+  ],
+  "meals": [
+    "برنج و غذاهای آماده",
+    "Rice & prepared meals",
+    "Riso e piatti pronti"
+  ],
+  "pantry": [
+    "آش و خوراک",
+    "Soups & pantry meals",
+    "Zuppe e piatti in dispensa"
+  ],
+  "of": [
+    "از",
+    "of",
+    "di"
+  ],
+  "cityInvalid": [
+    "نام شهر باید حداقل دو حرف داشته باشد.",
+    "Enter a city name with at least two characters.",
+    "Inserisci una città con almeno due caratteri."
+  ],
+  "noDemoOrders": [
+    "هنوز خرید آزمایشی ندارید.",
+    "No demo purchases yet.",
+    "Non hai ancora acquisti di prova."
+  ],
+  "viewReceipt": [
+    "مشاهده رسید",
+    "View receipt",
+    "Vedi ricevuta"
+  ],
+  "viewHani": [
+    "مشاهده همه محصولات هانی ←",
+    "View all Hani products →",
+    "Vedi tutti i prodotti Hani →"
+  ],
+  "desserts": [
+    "دسرهای ایرانی",
+    "Persian desserts",
+    "Dolci persiani"
+  ],
+  "contactPhone": [
+    "شماره تماس",
+    "Phone",
+    "Telefono"
+  ],
+  "contactEmail": [
+    "ایمیل پشتیبانی",
+    "Support email",
+    "Email di assistenza"
+  ],
+  "contactAddress": [
+    "آدرس فروشگاه",
+    "Store address",
+    "Indirizzo negozio"
+  ],
+  "offers": [
+    "تخفیف‌ها",
+    "Offers",
+    "Offerte"
+  ],
+  "dailyOfferEyebrow": [
+    "پیشنهادهای امروز · پرشیا مارکت",
+    "TODAY AT PERSIA MARKET",
+    "OGGI DA PERSIA MARKET"
+  ],
+  "dailyOfferTitle": [
+    "تخفیف‌های شگفت‌انگیز",
+    "Daily discoveries",
+    "Offerte del giorno"
+  ],
+  "dailyOfferIntro": [
+    "طعم‌های آشنا، با پیشنهادهای ویژه روزانه.",
+    "Familiar flavours. A special price for today.",
+    "I sapori di casa, a un prezzo speciale."
+  ],
+  "dailyOfferTime": [
+    "بر اساس تقویم ایتالیا",
+    "Italian store calendar",
+    "Calendario italiano"
+  ],
+  "dailyOfferNote": [
+    "هر پیشنهاد تا پایان روز اعلام‌شده اعتبار دارد؛ قیمت و خرید فعلاً آزمایشی است.",
+    "Each offer ends on its stated last day. Prices and checkout remain a demo.",
+    "Ogni offerta termina alla fine del giorno indicato. Prezzi e acquisti restano dimostrativi."
+  ],
+  "dailyOfferUntil": [
+    "پایان پیشنهاد:",
+    "Offer ends:",
+    "Termina il:"
+  ],
+  "dailyOfferFeature": [
+    "طعم آشنا.<br>پیشنهاد تازه.",
+    "Same flavours.<br>Fresh discoveries.",
+    "Sapori di casa.<br>Nuove occasioni."
+  ],
+  "dailyOfferBrowse": [
+    "همه طعم‌ها را ببین",
+    "Explore every flavour",
+    "Scopri tutti i sapori"
+  ],
+  "dailyOfferSoon": [
+    "به‌زودی",
+    "Coming soon",
+    "In arrivo"
+  ],
+  "dailyOfferEmptyTitle": [
+    "پیشنهادهای تازه<br>در راه‌اند.",
+    "Something special<br>is on its way.",
+    "Le buone occasioni<br>stanno arrivando."
+  ],
+  "dailyOfferEmptyBody": [
+    "فعلاً پیشنهاد روزانه‌ای فعال نیست. تا پیشنهاد بعدی، طعم‌های پرشیا مارکت را کشف کن.",
+    "No daily offers are active right now. Explore the flavours of Persia Market while we prepare the next selection.",
+    "Al momento non ci sono offerte giornaliere attive. Nel frattempo, scopri i sapori di Persia Market."
+  ],
+  "dailyOfferEmptyAction": [
+    "کشف محصولات",
+    "Discover the collection",
+    "Esplora i prodotti"
+  ],
+  "blog": [
+    "مجله پرشیا",
+    "Persia Journal",
+    "Il Journal di Persia"
+  ],
+  "journalTitle": [
+    "از سفره تا سفر؛ داستان‌های ما",
+    "From table to travel, our stories",
+    "Dalla tavola al viaggio, le nostre storie"
+  ],
+  "journalAll": [
+    "همه داستان‌ها ↗",
+    "All stories ↗",
+    "Tutte le storie ↗"
+  ],
+  "journalIntro": [
+    "غذاهای ایرانی، زندگی در ایتالیا و خاطره‌هایی که ما را نزدیک می‌کنند.",
+    "Persian flavours, life in Italy and memories that bring us closer.",
+    "Sapori persiani, vita in Italia e ricordi che ci avvicinano."
+  ],
+  "editorialImageAlt": [
+    "چیدمان مفهومی زعفران، خشکبار و چای برای معرفی طعم‌های ایرانی",
+    "Conceptual arrangement of saffron, nuts and tea introducing Persian flavours",
+    "Composizione concettuale di zafferano, frutta secca e tè per presentare i sapori persiani"
+  ],
+  "rootsImageAlt": [
+    "تصویر مفهومی معماری و باغ‌های ایران در کنار زندگی در ایتالیا",
+    "Conceptual illustration of Iranian architecture and gardens alongside life in Italy",
+    "Illustrazione concettuale di architettura e giardini iraniani accanto alla vita in Italia"
+  ],
+  "tableImageAlt": [
+    "تصویر مفهومی یک سفره با چای، خرما و مغزها در فضای ایتالیا",
+    "Conceptual table with tea, dates and nuts in an Italian-inspired setting",
+    "Tavola concettuale con tè, datteri e frutta secca in un ambiente ispirato all’Italia"
+  ],
+  "pricePending": [
+    "قیمت به‌زودی",
+    "Price to be confirmed",
+    "Prezzo da confermare"
+  ],
+  "stockPending": [
+    "موجودی در انتظار تأیید",
+    "Availability to be confirmed",
+    "Disponibilità da confermare"
+  ],
+  "notReady": [
+    "فروش به‌زودی",
+    "Available soon",
+    "Presto disponibile"
+  ],
+  "ingredientsPending": [
+    "اطلاعات ترکیبات و حساسیت‌های این بسته در حال تکمیل است.",
+    "Ingredients and allergen information for this pack are being completed.",
+    "Ingredienti e allergeni di questa confezione sono in fase di completamento."
+  ],
+  "aluminium": [
+    "بسته آلومینیومی",
+    "Aluminium tray",
+    "Vaschetta in alluminio"
+  ],
+  "tinplate": [
+    "قوطی فلزی",
+    "Tin",
+    "Lattina"
+  ],
+  "localShopping": [
+    "خرید و ارسال در ایتالیا",
+    "Shopping and delivery in Italy",
+    "Acquisti e consegne in Italia"
+  ],
+  "localShoppingTitle": [
+    "طعم‌های ایرانی، برای زندگی در ایتالیا",
+    "Persian groceries for life in Italy",
+    "Sapori persiani per vivere in Italia"
+  ],
+  "localShoppingIntro": [
+    "پرشیا مارکت برای فروش آنلاین در سراسر ایتالیا طراحی شده است. راهنمای انتخاب محصولات، وضعیت ارسال و مقاله‌های شهرها را بخوانید. خرید در نسخه فعلی آزمایشی است.",
+    "Persia Market is designed for online sales throughout Italy. Explore product selection, delivery status and city guides. Checkout in this version is a demo.",
+    "Persia Market è pensato per vendite online in tutta Italia. Scopri scelta dei prodotti, stato delle consegne e guide delle città. Gli acquisti sono dimostrativi."
+  ],
+  "heroPanHint": [
+    "برای کشف تصویر، بکشید",
+    "Swipe to explore",
+    "Scorri per esplorare"
+  ],
+  "heroRoute": [
+    "ایران ← ایتالیا",
+    "IRAN → ITALY",
+    "IRAN → ITALIA"
+  ],
+  "footerRoute": [
+    "ایران ← ایتالیا · ریشه‌های مشترک",
+    "IRAN → ITALY · SAME ROOTS",
+    "IRAN → ITALIA · RADICI COMUNI"
+  ],
+  "publicPhone": [
+    "+31110000111",
+    "+31110000111",
+    "+31110000111"
+  ]
+}

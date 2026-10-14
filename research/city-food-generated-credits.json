@@ -1,0 +1,116 @@
+[
+  {
+    "key": "verona-2",
+    "name": "Risotto all’Amarone",
+    "kind": "editorial",
+    "src": "/assets/journal/city-foods/verona-2.webp",
+    "width": 960,
+    "height": 640,
+    "bytes": 86424,
+    "source": "/assets/journal/city-foods/verona-2.webp",
+    "credit": {
+      "fa": "",
+      "en": "",
+      "it": ""
+    },
+    "provenance": "Generated with the built-in imagegen tool on 2026-10-09; illustrative serving, not a restaurant photograph.",
+    "cardImage": "/assets/journal/city-foods/verona-2-card.webp",
+    "cardWidth": 640,
+    "cardHeight": 420
+  },
+  {
+    "key": "verona-3",
+    "name": "Bollito con pearà",
+    "kind": "editorial",
+    "src": "/assets/journal/city-foods/verona-3.webp",
+    "width": 960,
+    "height": 640,
+    "bytes": 101456,
+    "source": "/assets/journal/city-foods/verona-3.webp",
+    "credit": {
+      "fa": "",
+      "en": "",
+      "it": ""
+    },
+    "provenance": "Generated with the built-in imagegen tool on 2026-10-09; illustrative serving, not a restaurant photograph.",
+    "cardImage": "/assets/journal/city-foods/verona-3-card.webp",
+    "cardWidth": 640,
+    "cardHeight": 420
+  },
+  {
+    "key": "milan-3",
+    "name": "Ossobuco",
+    "kind": "editorial",
+    "src": "/assets/journal/city-foods/milan-3.webp",
+    "width": 960,
+    "height": 640,
+    "bytes": 94956,
+    "source": "/assets/journal/city-foods/milan-3.webp",
+    "credit": {
+      "fa": "",
+      "en": "",
+      "it": ""
+    },
+    "provenance": "Generated with the built-in imagegen tool on 2026-10-09; illustrative serving, not a restaurant photograph.",
+    "cardImage": "/assets/journal/city-foods/milan-3-card.webp",
+    "cardWidth": 640,
+    "cardHeight": 420
+  },
+  {
+    "key": "florence-3",
+    "name": "Bistecca alla fiorentina",
+    "kind": "editorial",
+    "src": "/assets/journal/city-foods/florence-3.webp",
+    "width": 960,
+    "height": 640,
+    "bytes": 140324,
+    "source": "/assets/journal/city-foods/florence-3.webp",
+    "credit": {
+      "fa": "",
+      "en": "",
+      "it": ""
+    },
+    "provenance": "Generated with the built-in imagegen tool on 2026-10-09; illustrative serving, not a restaurant photograph.",
+    "cardImage": "/assets/journal/city-foods/florence-3-card.webp",
+    "cardWidth": 640,
+    "cardHeight": 420
+  },
+  {
+    "key": "palermo-3",
+    "name": "Arancine",
+    "kind": "editorial",
+    "src": "/assets/journal/city-foods/palermo-3.webp",
+    "width": 960,
+    "height": 640,
+    "bytes": 92172,
+    "source": "/assets/journal/city-foods/palermo-3.webp",
+    "credit": {
+      "fa": "",
+      "en": "",
+      "it": ""
+    },
+    "provenance": "Generated with the built-in imagegen tool on 2026-10-09; illustrative serving, not a restaurant photograph.",
+    "cardImage": "/assets/journal/city-foods/palermo-3-card.webp",
+    "cardWidth": 640,
+    "cardHeight": 420
+  },
+  {
+    "key": "palermo-4",
+    "name": "Cannoli",
+    "kind": "editorial",
+    "src": "/assets/journal/city-foods/palermo-4.webp",
+    "width": 960,
+    "height": 640,
+    "bytes": 107128,
+    "source": "/assets/journal/city-foods/palermo-4.webp",
+    "credit": {
+      "fa": "",
+      "en": "",
+      "it": ""
+    },
+    "provenance": "Generated with the built-in imagegen tool on 2026-10-09; illustrative serving, not a restaurant photograph.",
+    "cardImage": "/assets/journal/city-foods/palermo-4-card.webp",
+    "cardWidth": 640,
+    "cardHeight": 420
+  }
+]

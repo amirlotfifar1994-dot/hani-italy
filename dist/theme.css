@@ -1,0 +1,182 @@
+/* Hani theme: catalogue structure from concept 15, warmth from concept 07.
+   Source concepts belong to the user's Italy research gallery. */
+:root {
+  --paper: #fbf8f1;
+  --ink: #332b24;
+  --muted: #70645a;
+}
+html { scroll-padding-top: 155px; }
+.header-inner { min-height: 90px; gap: 45px; }
+.header-search {
+  display: flex; align-items: center; flex: 1;
+  max-width: 540px; margin-inline: auto;
+  background: #f2ede4; border: 1px solid var(--line); border-radius: 4px;
+}
+.header-search input { width: 100%; min-width: 0; padding: 11px 18px; border: 0; background: none; outline: none; font-size: 13px; }
+.header-search button { display: grid; place-items: center; padding: 12px 15px; background: none; color: var(--red); }
+.header-search:focus-within { outline: 2px solid var(--red); outline-offset: 3px; }
+header nav { display: flex; min-height: 47px; border-top: 1px solid var(--line); padding-block: 8px; font-size: 13px; gap: 32px; }
+.nav-caption { margin-inline-start: auto; font: 400 12px "DM Sans", sans-serif; color: var(--muted); }
+.hero {
+  display: block; position: relative; isolation: isolate; overflow: hidden;
+  padding: 0; background: #ede4d5;
+}
+.hero-scene { position: absolute; inset: 0; z-index: -2; direction: ltr; }
+.hero .hero-food {
+  width: 100%; height: 100%; border: 0; border-radius: 0; transform: none;
+  margin: 0; box-shadow: none; object-fit: cover; object-position: 50% 60%;
+}
+.hero::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, transparent 24%, #fbf8f100 36%, #fbf8f1ed 60%, #fbf8f1 85%);
+}
+.hero-layout { position: relative; min-height: 610px; display: flex; justify-content: flex-end; direction: ltr; align-items: center; padding-block: 40px 48px; }
+.hero-copy { width: 43%; padding: 0; direction: rtl; }
+html[dir="ltr"] .hero-copy { direction: ltr; }
+.hero .eyebrow { font-size: 12px; color: var(--red-dark); }
+.hero h1 { font-size: clamp(40px, 4.25vw, 65px); line-height: 1.7; letter-spacing: -1.9px; margin-block: 17px 5px; }
+.hero-italian { font: italic 400 19px/1.6 Georgia, serif; color: #8f6252; text-align: inherit; margin-bottom: 19px; }
+html[dir="rtl"] .hero-italian { text-align: right; }
+html[lang="it"] .hero-italian { display: none; }
+.hero-description { font-size: 15px; line-height: 2.05; max-width: 430px; color: #64574d; }
+.hero-actions { margin-block: 23px; gap: 25px; flex-wrap: wrap; }
+.hero .button { min-height: 49px; padding-inline: 24px; gap: 27px; }
+.hero .text-link { font-size: 12px; }
+.hero-note { border: 0; padding: 0; margin-top: 26px; gap: 9px; font-size: 11px; color: #705e4f; }
+.hero-note .leaf { font-size: 25px; color: var(--red); }
+.hero .hero-pack {
+  position: absolute; left: 0; right: auto; bottom: 36px;
+  display: flex; gap: 16px; align-items: center; width: 310px;
+  padding: 12px 17px; border: 1px solid #fff7e3ad; border-radius: 5px;
+  background: #fffaf2f0; backdrop-filter: blur(10px); color: var(--ink);
+  transform: none; box-shadow: 0 8px 25px #36271c17;
+  text-align: start; direction: rtl;
+}
+html[dir="ltr"] .hero .hero-pack { direction: ltr; }
+.hero .hero-pack img { flex-shrink: 0; height: 76px; width: 56px; object-fit: contain; mix-blend-mode: multiply; }
+.hero .hero-pack > span { text-align: start; margin: 0; font-size: 12px; }
+.hero-pack small { display: block; font-size: 10px; color: var(--muted); margin-bottom: 4px; }
+.hero-pack strong { font-size: 12px; font-weight: 600; display: block; }
+.hero-pack span > span { font: 10px/1.8 "DM Sans", sans-serif; color: var(--muted); display: block; }
+.hero-pack > b { font-size: 23px; color: var(--red); font-weight: 400; margin-inline-start: auto; }
+.hero-pack:hover { background: white; border-color: var(--red); }
+.hero-image-caption { position: absolute; left: 0; bottom: 9px; font-size: 9px; color: white; background: #3024209e; padding: 1px 6px; border-radius: 2px; }
+.values-band { background: var(--red-dark); color: #fff7e9; }
+.values { border: 0; padding-block: 22px; }
+.values > div { align-items: center; border-color: #ffffff32; }
+.values > div > span { color: #efbe9c; font-size: 25px; }
+.values strong { font-size: 13px; font-weight: 500; }
+.values small { color: #f0d3c6; font-size: 11px; }
+.section { padding-top: 62px; }
+.section h2 { font-size: 29px; }
+.section-heading { margin-bottom: 25px; }
+.category-grid { gap: 20px; }
+.category-card { min-height: 175px; padding: 21px 24px; border-radius: 5px; }
+.category-card.stew { background: #f0e5d8; }
+.category-card.rice { background: #ece7d8; }
+.category-card.pantry { background: #e7e9de; }
+.category-index { display: none; }
+.category-card h3 { font-size: 17px; margin-top: 0; }
+.category-italian { font: 11px/1.8 "DM Sans", sans-serif; color: #756456; display: block; }
+html[lang="it"] .category-italian { display: none; }
+.category-card p { font-size: 11px; margin-top: 5px; }
+.category-arrow { width: 26px; height: 26px; margin-top: 12px; }
+.category-card img { width: 35%; height: 124px; transform: rotate(-5deg); margin: 0; }
+.product-card { border-radius: 5px; border-color: #eee6da; display: flex; flex-direction: column; }
+.product-photo { background: #f4f0e9; }
+.product-content { flex: 1; display: flex; flex-direction: column; }
+.product-bottom { margin-top: auto; }
+.product-secondary { display: block; font: 11px/1.75 "DM Sans", sans-serif; color: var(--muted); text-align: start; min-height: 39px; }
+.product-secondary[lang="fa"] { font-family: "Vazirmatn", sans-serif; }
+.product-content > p { margin-block: 6px 17px; }
+.food-feature { border-radius: 5px; }
+html[lang="en"] .hero h1, html[lang="it"] .hero h1 { font-size: clamp(42px, 4.65vw, 70px); line-height: 1.09; letter-spacing: -0.055em; margin-block: 23px 18px; }
+@media (min-width: 1650px) {
+  .hero-scene { left: calc((100% - 1600px) / 2); right: calc((100% - 1600px) / 2); }
+  .hero::after { background: linear-gradient(90deg, #ede4d5, transparent 14%, transparent 40%, #fbf8f1ed 65%, #fbf8f1 90%); }
+}
+@media (max-width: 1100px) {
+  .header-inner { gap: 22px; }
+  .hero-layout { min-height: 560px; }
+  .hero-copy { width: 44%; }
+  .hero h1 { font-size: 45px; }
+  .hero-description { font-size: 14px; }
+  .hero::after { background: linear-gradient(90deg, transparent 15%, #fbf8f100 28%, #fbf8f1eb 56%, #fbf8f1 85%); }
+  .category-card { padding: 20px 18px; }
+  .category-card h3 { font-size: 15px; white-space: normal; }
+}
+@media (max-width: 900px) {
+  html { scroll-padding-top: 145px; }
+  .header-inner { flex-wrap: wrap; min-height: 82px; padding-block: 14px; gap: 12px 20px; }
+  .header-search { order: 3; flex-basis: 100%; max-width: none; }
+  .header-search input { padding-block: 8px; }
+  .header-search button { padding-block: 9px; }
+  header nav { display: none; padding-block: 14px; margin-inline: auto; gap: 15px 26px; }
+  header.menu-open nav { display: flex; }
+  .nav-caption { display: none; }
+  .hero-layout { min-height: 510px; padding-block: 32px; }
+  .hero-copy { width: 49%; }
+  .hero h1 { font-size: 37px; letter-spacing: -1.3px; }
+  html[lang="en"] .hero h1, html[lang="it"] .hero h1 { font-size: 44px; }
+  .hero-italian { font-size: 16px; }
+  .hero .eyebrow { font-size: 10px; }
+  .hero-actions { gap: 16px; }
+  .hero .hero-pack { width: 245px; gap: 10px; bottom: 36px; padding: 10px 12px; }
+  .hero .hero-pack img { width: 43px; height: 64px; }
+  .hero-pack strong { font-size: 10px; }
+  .hero-pack small { font-size: 9px; }
+  .hero-note { font-size: 10px; line-height: 1.8; }
+  .values > div { gap: 11px; padding-inline: 14px; }
+  .values strong { font-size: 11px; }
+  .values small { font-size: 10px; }
+  .values > div > span { font-size: 20px; }
+  .category-card { padding: 18px 13px; }
+  .category-card h3 { font-size: 13px; }
+  .category-italian, .category-card p { font-size: 10px; }
+}
+@media (max-width: 650px) {
+  html { scroll-padding-top: 138px; }
+  .header-inner { gap: 8px; padding-block: 8px 12px; }
+  .header-search { margin-top: 4px; }
+  .header-search input { font-size: 12px; }
+  .hero-layout { min-height: 0; padding-block: 28px 305px; display: block; }
+  .hero-copy { width: 100%; position: relative; }
+  .hero-scene { top: auto; bottom: 0; height: 340px; }
+  .hero .hero-food { object-position: 32% 73%; width: 135%; max-width: none; }
+  .hero { background: var(--paper); }
+  .hero::after { background: linear-gradient(180deg, var(--paper) 0%, var(--paper) 52%, #fbf8f100 70%); }
+  .hero h1 { font-size: 39px; line-height: 1.6; margin-block: 10px 2px; letter-spacing: -1.4px; }
+  html[lang="en"] .hero h1, html[lang="it"] .hero h1 { font-size: 44px; line-height: 1.12; margin-block: 16px 15px; }
+  .hero .eyebrow { font-size: 11px; }
+  .hero-italian { font-size: 16px; margin-bottom: 13px; }
+  .hero-description { max-width: 440px; font-size: 13px; line-height: 1.95; }
+  .hero-actions { margin-block: 19px 13px; gap: 21px; }
+  .hero .button { min-height: 44px; padding: 9px 17px; font-size: 12px; }
+  .hero .text-link { font-size: 11px; }
+  .hero-note { margin-top: 15px; }
+  .hero .hero-pack { left: 0; bottom: 30px; width: 240px; padding: 9px 12px; }
+  .hero .hero-pack img { width: 40px; height: 59px; }
+  .hero-image-caption { bottom: 6px; font-size: 8px; }
+  .values { padding-block: 17px; gap: 0; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .values > div { padding-inline: 10px; gap: 5px; display: block; }
+  .values > div > span { font-size: 14px; display: block; line-height: 1.4; margin-bottom: 6px; }
+  .values strong { font-size: 10px; line-height: 1.7; display: block; }
+  .values small { font-size: 9px; line-height: 1.9; margin-top: 5px; }
+  .section { padding-top: 38px; }
+  .section h2 { font-size: 24px; }
+  .section-heading { gap: 15px; margin-bottom: 19px; }
+  .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; }
+  .category-card { flex-direction: column-reverse; padding: 14px 7px; min-height: 0; text-align: center; gap: 10px; border-radius: 5px; }
+  .category-card h3 { font-size: 11px; line-height: 1.9; }
+  .category-card img { width: 64px; height: 84px; margin: 0; }
+  .category-italian { font-size: 8px; min-height: 27px; margin-top: 4px; }
+  .category-card p, .category-arrow { display: none; }
+  .product-secondary { font-size: 10px; min-height: 35px; }
+  .product-title { min-height: 47px; }
+}
+@media (max-width: 360px) {
+  .hero h1 { font-size: 33px; }
+  html[lang="en"] .hero h1, html[lang="it"] .hero h1 { font-size: 38px; }
+  .category-grid { gap: 6px; }
+  .hero-actions { gap: 15px; }
+}

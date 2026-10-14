@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ghormeh",
+    "scene": "Overhead close-up of Ghormeh Sabzi preparation, a wooden board with chopped parsley, coriander and spring onion greens, a small bowl of cooked red kidney beans, whole dried limes and sliced mushrooms; a wide pan of gently cooking dark green herbs in background. No meat. Show ingredients distinctly, not a plated finished dish.",
+    "alt": [
+      "سبزی خردشده، لوبیا پخته، قارچ و لیموعمانی برای آماده‌سازی قرمه‌سبزی",
+      "Chopped herbs, cooked beans, mushrooms and dried limes for Ghormeh Sabzi",
+      "Erbe tritate, fagioli cotti, funghi e lime secchi per il Ghormeh Sabzi"
+    ],
+    "prompt": "Use case: photorealistic-natural. Asset type: a unique inline instructional food image for the Persia Market cooking journal. Scene: Overhead close-up of Ghormeh Sabzi preparation, a wooden board with chopped parsley, coriander and spring onion greens, a small bowl of cooked red kidney beans, whole dried limes and sliced mushrooms; a wide pan of gently cooking dark green herbs in background. No meat. Show ingredients distinctly, not a plated finished dish. Style: authentic editorial food photograph, natural window light, warm cream stone countertop with restrained teal ceramic accents, realistic ingredients and textures, landscape 3:2 composition. No lettering, logos, packaging, watermark or simulated manufacturer facility. Home preparation, not a commercial product photo.",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-eab61fc3-25c6-4ff6-9b5c-36a9776f6365.png",
+    "localOriginal": "research/generated-journal-details/ghormeh.png",
+    "output": {
+      "src": "/assets/journal/details-v1/ghormeh.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 207802
+    }
+  },
+  {
+    "id": "gheimeh",
+    "scene": "A real kitchen mise en place for meatless Persian Gheimeh: dry yellow split peas in a small ceramic bowl, cooked yellow split peas separately, tomato paste in a spoon, a peeled potato being cut into thin matchsticks on a wooden board, neat knife visible with no hands. No meat, no finished stew.",
+    "alt": [
+      "لپه خشک و پخته، رب گوجه و خلال سیب‌زمینی برای قیمه",
+      "Dry and cooked split peas, tomato paste and potato matchsticks for Gheimeh",
+      "Legumi secchi e cotti, concentrato di pomodoro e patate per il Gheimeh"
+    ],
+    "prompt": "Use case: photorealistic-natural. Asset type: a unique inline instructional food image for the Persia Market cooking journal. Scene: A real kitchen mise en place for meatless Persian Gheimeh: dry yellow split peas in a small ceramic bowl, cooked yellow split peas separately, tomato paste in a spoon, a peeled potato being cut into thin matchsticks on a wooden board, neat knife visible with no hands. No meat, no finished stew. Style: authentic editorial food photograph, natural window light, warm cream stone countertop with restrained teal ceramic accents, realistic ingredients and textures, landscape 3:2 composition. No lettering, logos, packaging, watermark or simulated manufacturer facility. Home preparation, not a commercial product photo.",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-717a3607-98cf-439e-b84f-ba809f53b1c4.png",
+    "localOriginal": "research/generated-journal-details/gheimeh.png",
+    "output": {
+      "src": "/assets/journal/details-v1/gheimeh.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 143266
+    }
+  },
+  {
+    "id": "dolmeh",
+    "scene": "Close overhead cooking tutorial still life: three separate prepared vine leaves laid on wooden board, one has a small spoonful of rice herb and yellow split pea filling in the centre, another has its two sides folded inwards, the third is a completed small rolled vine-leaf parcel. Small bowl of filling and brined leaves at edge. Correct leaf anatomy, no text, no hands, no meat. Visually demonstrates folding without an implausible merged collage.",
+    "alt": [
+      "برگ مو باز، مواد میانی و مراحل تا کردن دلمه روی تخته",
+      "Open vine leaves, filling and three stages of folding Dolmeh",
+      "Foglie di vite, ripieno e tre fasi di piegatura del Dolmeh"
+    ],
+    "prompt": "Use case: photorealistic-natural. Asset type: a unique inline instructional food image for the Persia Market cooking journal. Scene: Close overhead cooking tutorial still life: three separate prepared vine leaves laid on wooden board, one has a small spoonful of rice herb and yellow split pea filling in the centre, another has its two sides folded inwards, the third is a completed small rolled vine-leaf parcel. Small bowl of filling and brined leaves at edge. Correct leaf anatomy, no text, no hands, no meat. Visually demonstrates folding without an implausible merged collage. Style: authentic editorial food photograph, natural window light, warm cream stone countertop with restrained teal ceramic accents, realistic ingredients and textures, landscape 3:2 composition. No lettering, logos, packaging, watermark or simulated manufacturer facility. Home preparation, not a commercial product photo.",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-e14ff35a-4b58-433d-bbc2-be1ede90260a.png",
+    "localOriginal": "research/generated-journal-details/dolmeh.png",
+    "output": {
+      "src": "/assets/journal/details-v1/dolmeh.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 210310
+    }
+  },
+  {
+    "id": "fesenjan",
+    "scene": "Close side overhead of preparation for vegetarian Fesenjan: walnut halves and finely ground walnuts in separate bowls, dark pomegranate molasses being measured with a spoon above a small cream bowl, whole fresh pomegranate cut open and sliced mushrooms on board. No meat, no finished dish. Walnut texture clearly granular rather than nut butter.",
+    "alt": [
+      "گردو آسیاب‌شده، رب انار و قارچ برای پایه فسنجان",
+      "Ground walnuts, pomegranate molasses and mushrooms for Fesenjan",
+      "Noci macinate, melassa di melograno e funghi per il Fesenjan"
+    ],
+    "prompt": "Use case: photorealistic-natural. Asset type: a unique inline instructional food image for the Persia Market cooking journal. Scene: Close side overhead of preparation for vegetarian Fesenjan: walnut halves and finely ground walnuts in separate bowls, dark pomegranate molasses being measured with a spoon above a small cream bowl, whole fresh pomegranate cut open and sliced mushrooms on board. No meat, no finished dish. Walnut texture clearly granular rather than nut butter. Style: authentic editorial food photograph, natural window light, warm cream stone countertop with restrained teal ceramic accents, realistic ingredients and textures, landscape 3:2 composition. No lettering, logos, packaging, watermark or simulated manufacturer facility. Home preparation, not a commercial product photo.",
+    "source": "C:\\Users\\Amir\\.codex\\generated_images\\01a0fdab-505a-7b52-9108-2acccf2883b3\\exec-51e54867-4e32-4ed6-9fbf-c6a12f7800d1.png",
+    "localOriginal": "research/generated-journal-details/fesenjan.png",
+    "output": {
+      "src": "/assets/journal/details-v1/fesenjan.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 179614
+    }
+  }
+]
