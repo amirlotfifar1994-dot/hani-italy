@@ -64,15 +64,16 @@ export async function createCatalogue({database,uploadDir,seed,authorize,origin}
   try{
    const user=authorize(req);
    if(url.pathname==='/api/admin/products'&&req.method==='GET'){send(res,200,{products:all(),revision:revision(),user,...settingsData()});return true;}
-   const quick=url.pathname.match(/^\/api\/admin\/products\/([a-zA-Z0-9-]{1,80})\/(price|offer)$/);
+   const quick=url.pathname.match(/^\/api\/admin\/products\/([a-zA-Z0-9-]{1,80})\/(price|offer|stock)$/);
    if(quick&&req.method==='PUT'){
     const data=await body(req);if(!Number.isInteger(data.version))throw failure(400,'invalidProduct');
     if(quick[2]==='price'&&(!Number.isInteger(data.cents)||data.cents<1||data.cents>1000000))throw failure(400,'invalidProduct');
     if(quick[2]==='offer')validateOffer(data.offer);
+    if(quick[2]==='stock'&&data.stock!==null&&(!Number.isInteger(data.stock)||data.stock<0||data.stock>1000000))throw failure(400,'invalidProduct');
     let product,version,updatedAt=new Date().toISOString();
     db.exec('BEGIN IMMEDIATE');try{
      const record=db.prepare('SELECT * FROM catalogue WHERE id=?').get(quick[1]);if(!record)throw failure(404,'notFound');if(record.version!==data.version)throw failure(409,'conflict');
-     const previous=JSON.parse(record.data),input={...previous,...(quick[2]==='price'?{cents:data.cents}:{dailyOffer:data.offer})};
+     const previous=JSON.parse(record.data),input={...previous,...(quick[2]==='price'?{cents:data.cents}:quick[2]==='stock'?{stock:data.stock,stockPending:false}:{dailyOffer:data.offer})};
      if(quick[2]==='price'&&input.compareAtCents!==null&&input.compareAtCents!==undefined&&input.compareAtCents<=input.cents)throw failure(400,'invalidDiscount');
      product=validate(input,quick[1],previous);
      // null explicitly removes a campaign rather than falling back to the old value.

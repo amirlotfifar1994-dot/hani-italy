@@ -2,6 +2,8 @@ import http from "node:http";
 import {randomBytes} from 'node:crypto';
 import {createSeo} from '../server/seo.mjs';
 import {createCatalogue} from '../server/catalogue.mjs';
+import {createOrders} from '../server/orders.mjs';
+import {createCommunications} from '../server/communications.mjs';
 import {createAuth} from "../server/auth.mjs";
 import {createComments} from '../server/comments.mjs';
 import {posts} from '../server/blog-content.mjs';
@@ -28,6 +30,8 @@ if(production&&!/^[A-Za-z0-9_-]{43,128}$/.test(adminSetupToken))throw Error('Pro
 const setupExpires=(await fs.stat(setupFile).catch(()=>({mtimeMs:Date.now()}))).mtimeMs+86400000;
 const auth=createAuth({database,origin,adminSetupToken,setupExpires,requireAdminMfa:production||process.env.REQUIRE_ADMIN_MFA==='true',clientAddress,google:{clientId:process.env.GOOGLE_CLIENT_ID,clientSecret:process.env.GOOGLE_CLIENT_SECRET}});
 const catalogue=await createCatalogue({database,origin,uploadDir,seed:JSON.parse(await fs.readFile(path.join(root,'catalogue.json'),'utf8')),authorize:auth.authorize});
+const communications=createCommunications({database,origin,products:catalogue.publicProducts,authorize:auth.authorize,audit:auth.audit});
+const orders=createOrders({database,origin,products:catalogue.publicProducts,identify:auth.identify,authorize:auth.authorize,allowRequest:auth.allowOrderRequest,audit:auth.audit,communications});
 const comments=createComments({database,origin,identify:auth.identify,authorize:auth.authorize,resolveTarget:(kind,target)=>{const item=kind==='product'?catalogue.publicProducts().find(p=>p.id===target):kind==='article'?posts.find(p=>p.slug===target):null;return item?{title:kind==='product'?item.name:{fa:item.fa.title,en:item.en.title,it:item.it.title}}:null;}});
 const seo=await createSeo({root,catalogue,comments,origin,siteUrl,indexing:process.env.SEO_INDEXING==='true'});
 const mime = {
@@ -55,6 +59,8 @@ const server=http
       if(requestUrl.pathname.startsWith('/api/admin/')&&!['GET','HEAD'].includes(req.method)){res.once('finish',()=>{if(res.statusCode>=200&&res.statusCode<300){const user=auth.identify(req);auth.audit('admin.'+req.method.toLowerCase(),user?.id,requestUrl.pathname);}});}
       if(await auth.handle(req,res,requestUrl))return;
       if(await comments.handle(req,res,requestUrl))return;
+      if(await communications.handle(req,res,requestUrl))return;
+      if(await orders.handle(req,res,requestUrl))return;
       if(await catalogue.handle(req,res,requestUrl))return;
       if(seo.handle(req,res,requestUrl))return;
       if(req.method!=="GET"&&req.method!=="HEAD"){res.writeHead(405).end();return;}
@@ -90,5 +96,5 @@ const server=http
   );
 server.maxRequestsPerSocket=100;
 let stopping=false;
-function shutdown(){if(stopping)return;stopping=true;server.close(()=>{comments.close();catalogue.close();auth.close();});const timer=setTimeout(()=>{server.closeAllConnections();},10000);timer.unref();}
+function shutdown(){if(stopping)return;stopping=true;server.close(async()=>{await communications.close();orders.close();comments.close();catalogue.close();auth.close();});const timer=setTimeout(()=>{server.closeAllConnections();},10000);timer.unref();}
 process.on('SIGTERM',shutdown);process.on('SIGINT',shutdown);

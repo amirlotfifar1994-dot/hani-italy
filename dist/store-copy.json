@@ -455,9 +455,9 @@
     "Una destinazione di prova in Italia"
   ],
   "destinationNote": [
-    "برای آزمایش خرید، یک شهر و کد پستی وارد کنید. نیازی به نام، نشانی یا اطلاعات پرداخت نیست.",
-    "Enter a city and postcode to try checkout. No name, street address or payment details needed.",
-    "Inserisci città e CAP per provare l’acquisto. Non servono nome, indirizzo o dati di pagamento."
+    "برای خرید آزمایشی، شهر و کد پستی وارد کنید. با تأیید، اقلام، مبلغ و مقصد آزمایشی در پنل مدیریت ثبت می‌شوند. نام، نشانی خیابان و اطلاعات پرداخت لازم نیست.",
+    "Enter a city and postal code for demo checkout. Confirmation records the items, subtotal and demo destination for store management. No name, street address or payment details are needed.",
+    "Inserisci città e CAP per l’acquisto di prova. La conferma registra articoli, subtotale e destinazione dimostrativa nel pannello di gestione. Nome, indirizzo stradale e dati di pagamento non sono richiesti."
   ],
   "city": [
     "شهر",
@@ -515,9 +515,9 @@
     "Acquisto dimostrativo completato"
   ],
   "demoSuccessBody": [
-    "رسید آزمایشی در این مرورگر ذخیره شد. سفارش واقعی ثبت نشده و مبلغی دریافت نشده است.",
-    "Your demo receipt is saved in this browser. No real order or payment has been made.",
-    "La ricevuta di prova è salvata in questo browser. Nessun ordine reale o pagamento è stato effettuato."
+    "سفارش آزمایشی در پنل مدیریت ثبت شد و رسیدش در این مرورگر هم ذخیره شده است. پرداخت و ارسال واقعی انجام نشده است.",
+    "Your demo order was recorded for store management, and its receipt is also saved in this browser. No payment or shipment has occurred.",
+    "Il tuo ordine dimostrativo è registrato nel pannello di gestione e la ricevuta è salvata anche in questo browser. Non sono stati effettuati pagamenti o spedizioni."
   ],
   "download": [
     "\n          دریافت خلاصه خرید\n        ",
@@ -650,9 +650,9 @@
     "Contatta Persia Market al numero qui sotto."
   ],
   "privacyBody": [
-    "برای حساب ثبت‌شده، نام، ایمیل، شماره تماس و آدرس‌ها روی سرور محلی ذخیره می‌شود. رمز به صورت هش ذخیره می‌شود و نشست ورود با کوکی نگهداری می‌شود. سبد، علاقه‌مندی‌ها و خریدهای آزمایشی در این مرورگر، جدا برای هر حساب می‌مانند. ارسال ایمیل و فروش واقعی فعال نیست.",
-    "Registered account names, emails, phone numbers and addresses are saved on the local server. Passwords are hashed and sessions use cookies. Bags, favourites and demo purchases remain in this browser, separated by account. Email delivery and real sales are not active.",
-    "Nome, email, telefono e indirizzi degli account registrati sono salvati sul server locale. Le password sono salvate come hash e le sessioni usano cookie. Carrello, preferiti e acquisti di prova restano nel browser, separati per account. Invio email e vendite reali non sono attivi."
+    "اطلاعاتی که برای حساب وارد می‌کنید، شامل نام، ایمیل، شماره تماس و آدرس‌ها، روی سرور فروشگاه نگه‌داری می‌شود؛ رمزها هش می‌شوند و نشست ورود از کوکی استفاده می‌کند. سبد و علاقه‌مندی‌ها در مرورگر و جدا برای هر حساب می‌مانند. سفارش آزمایشی پس از تأیید، با اقلام، مبلغ، شهر و کد پستی روی سرور برای مدیریت ثبت می‌شود؛ در صورت ورود، به حساب شما مرتبط است. با فعال شدن اعلان ایمیل، خلاصه سفارش از سرویس ارسال به ایمیل مدیریت فرستاده می‌شود. رسیدهای اخیر در مرورگر هم قابل دریافت‌اند. پرداخت و ارسال واقعی فعال نیست.",
+    "Account information you provide, including name, email, phone and addresses, is stored on the store server. Passwords are hashed and sessions use cookies. Bags and favourites remain in the browser, separately for each account. Confirmed demo orders record items, subtotal, city and postcode on the server for store management and are associated with your account when signed in. When email notifications are enabled, the order summary is sent through the delivery provider to the management inbox. Recent browser receipts remain downloadable. Real payments and shipping are not active.",
+    "I dati forniti per l’account, inclusi nome, email, telefono e indirizzi, sono conservati sul server del negozio. Le password sono memorizzate come hash e le sessioni usano cookie. Carrello e preferiti restano nel browser, separati per account. Gli ordini dimostrativi confermati registrano articoli, subtotale, città e CAP sul server per la gestione e vengono collegati all’account se hai effettuato l’accesso. Attivando le notifiche email, il riepilogo è inviato tramite il servizio di invio alla casella di gestione. Le ricevute recenti restano scaricabili nel browser. Pagamenti e spedizioni reali non sono attivi."
   ],
   "previewBody": [
     "این نسخه طراحی و خرید آزمایشی پرشیا مارکت است. محصولات هانی از کاتالوگ هانی هلند هستند؛ سایر کالاها نمونه نمایشی‌اند و برند و تأمین‌کننده نهایی ندارند. همه قیمت‌ها آزمایشی‌اند. پرداخت، ارسال و شعب واقعی فعال نیستند.",

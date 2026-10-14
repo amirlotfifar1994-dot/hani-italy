@@ -15,6 +15,6 @@ async function loadScript(src){await new Promise((resolve,reject)=>{const script
 try{const data=await window.PersiaAuth.request('/api/catalogue');window.PersiaCatalogue=data.products;window.PersiaCatalogueRevision=data.revision;}catch{window.PersiaCatalogue=window.PersiaInitialCatalogue?.products||[];window.PersiaCatalogueRevision=window.PersiaInitialCatalogue?.revision;}
 window.PersiaCopy=await (await fetch('/store-copy.json')).json();
 window.PersiaComments=await import('./comments.js?v=1');
-await loadScript('/app.js?v=public-home-6');
+await loadScript('/app.js?v=public-home-7');
 window.PersiaStoreReady=true;
 await loadScript('account.js?v=account-fixes-2');

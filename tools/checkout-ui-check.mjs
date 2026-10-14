@@ -22,6 +22,8 @@ try{
   Object.assign(state.catalogue.products.find(p=>p.id==='gheimeh'),{cents:257,compareAtCents:null,stock:4,stockPending:false});
   await context.route('https://fonts.googleapis.com/**',r=>r.fulfill({contentType:'text/css',body:''}));
   await context.route('**/api/catalogue',async route=>{state.requested?.();if(state.hold)await state.hold;if(state.offline)await route.abort();else await route.fulfill({json:state.catalogue})});
+  state.orderRequests=0;state.orderKeys=new Map();state.abortOrderOnce=false;
+  await context.route('**/api/orders',async route=>{const input=route.request().postDataJSON();state.orderRequests++;if(state.offline){await route.abort();return;}if(input.lines.some(line=>state.catalogue.products.find(p=>p.id===line.id)?.cents!==line.cents)){await route.fulfill({status:409,json:{error:'catalogueChanged'}});return;}let order=state.orderKeys.get(input.key);if(!order){order={id:'PM-DEMO-00000001',createdAt:new Date().toISOString(),totalCents:input.lines.reduce((sum,line)=>sum+line.cents*line.quantity,0)};state.orderKeys.set(input.key,order);}if(state.abortOrderOnce){state.abortOrderOnce=false;await route.abort();return;}await route.fulfill({json:{order}});});
   await context.addInitScript(b=>{if(!localStorage.getItem('fixture-seeded')){localStorage.setItem('persia.v1.basket',JSON.stringify(b));localStorage.setItem('fixture-seeded','1')}},basket);
   const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));await page.goto(origin+'/?lang='+lang);await page.waitForFunction(()=>window.PersiaStoreReady);
   return{context,page,state};
@@ -35,6 +37,7 @@ try{
   await page.locator('#delivery-postcode').fill(lang==='fa'?'۰۰۱۸۵':'00185');assert.equal(await page.locator('#delivery-postcode').inputValue(),'00185');await page.locator('#delivery-form [type=submit]').click();
   await page.locator('#confirm-demo').dblclick();await page.locator('#order-success').waitFor();assert.equal(await page.locator('#cart-count').textContent(),lang==='fa'?'۰':'0');
   assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('persia.v1.orders')).length),1,'A repeated confirmation creates only one receipt');
+  assert.equal(state.orderRequests,1,'Repeated confirmation creates only one server request');
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'Mobile invoice stays within viewport');
   if(lang==='fa'){await mkdir(path.join(root,'screenshots'),{recursive:true});await page.screenshot({path:path.join(root,'screenshots/checkout-receipt-mobile.png')});}
   const download=page.waitForEvent('download');await page.locator('#download-order').click();const file=await download,receipt=await readFile(await file.path(),'utf8');assert.ok(receipt.includes(amount)&&receipt.includes('00185'));assert.match(file.suggestedFilename(),/^PM-DEMO-[A-F0-9]{8}\.txt$/);
@@ -49,6 +52,9 @@ try{
   if(change==='stock')Object.assign(state.catalogue.products.find(p=>p.id==='ghormeh'),{cents:349,stock:1});
   await page.evaluate(()=>window.dispatchEvent(new Event('focus')));await requested;await page.locator('#confirm-demo').click();
   assert.equal(await page.locator('#confirm-demo').isDisabled(),true,'Confirmation awaits the existing request');assert.equal(await page.locator('#order-success').isVisible(),false);release();await page.locator('#cart-dialog').waitFor();assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('persia.v1.orders')||'[]').length),0,'Changed '+change+' prevents receipt creation');await context.close();
+ }
+ {
+  const {context,page,state}=await fixture();await review(page);state.abortOrderOnce=true;await page.locator('#confirm-demo').click();await page.waitForFunction(()=>!document.querySelector('#confirm-demo').disabled);assert.equal(await page.locator('#order-success').isVisible(),false);assert.equal(state.orderKeys.size,1,'Server committed despite a lost response');await page.reload();await page.waitForFunction(()=>window.PersiaStoreReady);await review(page);await page.locator('#confirm-demo').click();await page.locator('#order-success').waitFor();assert.equal(state.orderKeys.size,1,'Retry after reload reuses the persisted idempotency key');await context.close();
  }
  {
   const {context,page,state}=await fixture();await review(page);state.offline=true;await page.locator('#confirm-demo').click();await page.evaluate(()=>refreshCatalogue());assert.equal(await page.locator('#order-success').isVisible(),false,'Failed catalogue verification cannot confirm stale prices');assert.equal(await page.locator('#confirm-demo').isEnabled(),true,'Failed verification remains retryable');state.offline=false;await page.locator('#confirm-demo').click();await page.locator('#order-success').waitFor();await context.close();

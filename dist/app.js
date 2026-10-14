@@ -4,7 +4,7 @@ const $$ = (s) => [...document.querySelectorAll(s)];
 const languageIndex = { fa: 0, en: 1, it: 2 };
 const dictionary = window.PersiaCopy || {};
 const customerStorageKey = key => {
-  const privateKey = /^persia\.v1\.(basket|favorites|orders)$/.test(key);
+  const privateKey = /^persia\.v1\.(basket|favorites|orders|checkoutPending)$/.test(key);
   return privateKey && window.PersiaAuth?.user ? "persia.user."+window.PersiaAuth.user.id+"."+key.split(".").pop() : key;
 };
 const store = {
@@ -493,13 +493,13 @@ $("#cart-open").addEventListener("click", () => {
   openDialog("cart-dialog");
 });
 $("#checkout").addEventListener("click", async () => {
-  if (checkoutStarting) return;
+  if (checkoutStarting || confirmingOrder) return;
   checkoutStarting = true;
   $("#checkout").disabled = true;
   try {
     if (!await refreshCatalogue()) { toast(t("catalogueUnavailable")); return; }
     if (!basketLines().length || !$("#cart-dialog").open) return;
-    orderSnapshot = { lines: basketLines().map(line => ({ ...line, cents: products.find(p => p.id === line.id).cents, name:[...products.find(p=>p.id===line.id).name] })), date: new Date().toISOString() };
+    orderSnapshot = { key: crypto.randomUUID(), lines: basketLines().map(line => ({ ...line, cents: products.find(p => p.id === line.id).cents, name:[...products.find(p=>p.id===line.id).name] })), date: new Date().toISOString() };
     $("#delivery-form").reset();
     setOrderStep("destination");
     renderOrder();
@@ -517,6 +517,7 @@ $("#delivery-postcode").addEventListener("input", event => {
 });
 $("#delivery-form").addEventListener("submit", event => {
   event.preventDefault();
+  if(confirmingOrder)return;
   if (!orderSnapshot) return;
   const city = $("#delivery-city").value.trim();
   $("#delivery-city").setCustomValidity(city.length < 2 ? t("cityInvalid") : "");
@@ -527,6 +528,7 @@ $("#delivery-form").addEventListener("submit", event => {
   $("#confirm-demo").focus();
 });
 $("#edit-destination").addEventListener("click", () => {
+  if(confirmingOrder)return;
   setOrderStep("destination");
   $("#delivery-city").focus();
 });
@@ -544,11 +546,27 @@ $("#confirm-demo").addEventListener("click", async () => {
     if (!await refreshCatalogue()) { toast(t("catalogueUnavailable")); return; }
     if (orderSnapshot !== snapshot || snapshot.destination !== destination || !$("#order-dialog").open || $("#order-actions").hidden) return;
     if(snapshot.lines.some(line=>{const p=products.find(p=>p.id===line.id);return !canBuy(p)||line.quantity>(p.stock??99)||line.cents!==p.cents;})){toast(t("catalogueChanged"));$("#order-dialog").close();renderCart();openDialog("cart-dialog");return;}
-    orderSnapshot.id = "PM-DEMO-" + crypto.randomUUID().replaceAll("-", "").slice(0, 8).toUpperCase();
-    orderSnapshot.date = new Date().toISOString();
+    if(!snapshot.serverOrder){
+      try{
+        const signature=JSON.stringify({userId:window.PersiaAuth?.user?.id||null,city:destination.city,postcode:destination.postcode,lines:snapshot.lines.map(({id,quantity,cents})=>({id,quantity,cents})).sort((a,b)=>a.id.localeCompare(b.id))});
+        const pending=store.read('persia.v1.checkoutPending',null);
+        if(pending?.signature===signature&&typeof pending.key==='string'&&/^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/.test(pending.key))snapshot.key=pending.key;
+        store.write('persia.v1.checkoutPending',{signature,key:snapshot.key});
+        const response=await fetch('/api/orders',{method:'POST',credentials:'same-origin',signal:AbortSignal.timeout(15000),headers:{'Content-Type':'application/json',...(window.PersiaAuth?.user?{'X-Persia-User':window.PersiaAuth.user.id}:{})},body:JSON.stringify({key:snapshot.key,city:destination.city,postcode:destination.postcode,lines:snapshot.lines.map(({id,quantity,cents})=>({id,quantity,cents}))})});
+        const data=await response.json().catch(()=>({}));
+        if(!response.ok){if(data.error==='catalogueChanged'){toast(t('catalogueChanged'));$('#order-dialog').close();renderCart();openDialog('cart-dialog');}else toast(t('catalogueUnavailable'));return;}
+        if(!data.order?.id||data.order.totalCents!==snapshot.lines.reduce((sum,line)=>sum+line.quantity*line.cents,0)){toast(t('catalogueUnavailable'));return;}
+        snapshot.serverOrder=data.order;
+        if(Array.isArray(data.order.lines))snapshot.lines=data.order.lines;
+      }catch{toast(t('catalogueUnavailable'));return;}
+    }
+    orderSnapshot = snapshot;
+    orderSnapshot.id = snapshot.serverOrder.id;
+    orderSnapshot.date = snapshot.serverOrder.createdAt;
     orderHistory.unshift(orderSnapshot);
     orderHistory.splice(5);
     store.write("persia.v1.orders", orderHistory);
+    store.write('persia.v1.checkoutPending',null);
     for (const line of orderSnapshot.lines) {
       const remaining = (basket[line.id] || 0) - line.quantity;
       if (remaining > 0) basket[line.id] = remaining;

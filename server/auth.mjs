@@ -162,5 +162,5 @@ export function createAuth({database,origin,google={},fetchFn=fetch,adminSetupTo
    send(res,404,{error:'notFound'});return true;
   }catch(error){send(res,error.status||500,{error:error.code||'serverError'});return true;}
  }
- return {handle,authorize,identify:req=>rowToUser(session(req)),setupRequired,audit:security.audit,allowRequest:req=>security.limit('api.request',clientAddress(req),600,60000),close:()=>db.close()};
+ return {handle,authorize,identify:req=>rowToUser(session(req)),setupRequired,audit:security.audit,allowRequest:req=>security.limit('api.request',clientAddress(req),600,60000),allowOrderRequest:req=>security.limit('orders.create',clientAddress(req),10,900000),close:()=>db.close()};
 }
